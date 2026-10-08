@@ -1,0 +1,122 @@
+{
+  "cage.py": {
+    "mtime": 1791499338.3053176,
+    "seen": 1791499657.8641303,
+    "ast_hash": "bf2323573c03e8d5402da7f8994be83e",
+    "semantic_hash": ""
+  },
+  "judge.py": {
+    "mtime": 1791499007.051757,
+    "seen": 1791499657.8641357,
+    "ast_hash": "301dbfa47b03a3e10f0296d16b121c28",
+    "semantic_hash": ""
+  },
+  "out/gold/gold/archify.json": {
+    "mtime": 1791498920.0637205,
+    "seen": 1791499657.8641381,
+    "ast_hash": "c52a20b492837ea0241d09a77cfccad4",
+    "semantic_hash": ""
+  },
+  "out/gold/gold/caveman.json": {
+    "mtime": 1791498920.1157222,
+    "seen": 1791499657.8641398,
+    "ast_hash": "b5bd78c11c6bcdae0b78b689901c152f",
+    "semantic_hash": ""
+  },
+  "out/gold/gold/claude-mem.json": {
+    "mtime": 1791498920.166724,
+    "seen": 1791499657.864141,
+    "ast_hash": "49fd7f694017fe87b2614f7b1b529085",
+    "semantic_hash": ""
+  },
+  "out/gold/gold/diagram-design.json": {
+    "mtime": 1791498920.2197258,
+    "seen": 1791499657.8641427,
+    "ast_hash": "52298889ffd9b79184f1ac40a46a4dec",
+    "semantic_hash": ""
+  },
+  "out/gold/gold/e2e.json": {
+    "mtime": 1791498920.2737277,
+    "seen": 1791499657.864144,
+    "ast_hash": "01b4348f60bafd6166531a90ca0ed1ea",
+    "semantic_hash": ""
+  },
+  "out/gold/gold/jev-ultrafast.json": {
+    "mtime": 1791498920.3227293,
+    "seen": 1791499657.864145,
+    "ast_hash": "2ff9b29f71003720f610f741ee9ff055",
+    "semantic_hash": ""
+  },
+  "out/gold/gold/marketingskills.json": {
+    "mtime": 1791498920.3727312,
+    "seen": 1791499657.8641462,
+    "ast_hash": "405592a268a7179fa12686e577cd8564",
+    "semantic_hash": ""
+  },
+  "out/gold/gold/mirofish.json": {
+    "mtime": 1791498920.4197328,
+    "seen": 1791499657.8641474,
+    "ast_hash": "e8949ab9971fb61e038b589d44bca5d0",
+    "semantic_hash": ""
+  },
+  "out/gold/gold/nullmotion.json": {
+    "mtime": 1791498920.4687345,
+    "seen": 1791499657.8641486,
+    "ast_hash": "153ea83169d464c4b1481f2fbaa8279f",
+    "semantic_hash": ""
+  },
+  "out/gold/gold/openclaw.json": {
+    "mtime": 1791498920.515736,
+    "seen": 1791499657.8641503,
+    "ast_hash": "01d90ebc5b6465432d04a1a9f77a027d",
+    "semantic_hash": ""
+  },
+  "out/gold/gold/openmontage.json": {
+    "mtime": 1791498920.562738,
+    "seen": 1791499657.8641512,
+    "ast_hash": "b960de1c35f18d805aafe8b50c45b264",
+    "semantic_hash": ""
+  },
+  "out/gold/gold/photocraft.json": {
+    "mtime": 1791498920.6167397,
+    "seen": 1791499657.8641527,
+    "ast_hash": "ebee69bda040cf327c3bd7fb1bc7b14d",
+    "semantic_hash": ""
+  },
+  "out/gold/gold/ponytail.json": {
+    "mtime": 1791498920.6707416,
+    "seen": 1791499657.8641539,
+    "ast_hash": "d702eeb0156e812671b4ef56c1f2891d",
+    "semantic_hash": ""
+  },
+  "out/gold/gold/starnet.json": {
+    "mtime": 1791498920.7197433,
+    "seen": 1791499657.864155,
+    "ast_hash": "1ec87c9b2b0c19a62c0762315cd60040",
+    "semantic_hash": ""
+  },
+  "out/gold/gold/statim-auto.json": {
+    "mtime": 1791498920.768745,
+    "seen": 1791499657.8641565,
+    "ast_hash": "3f9ec4f8a2c945511bd06fc993a544f4",
+    "semantic_hash": ""
+  },
+  "out/gold/gold/strata.json": {
+    "mtime": 1791498920.8157468,
+    "seen": 1791499657.8641574,
+    "ast_hash": "699a192c2838c5cb89af784c6f8adea8",
+    "semantic_hash": ""
+  },
+  "run-dev.sh": {
+    "mtime": 1791498915.8925743,
+    "seen": 1791499657.8641589,
+    "ast_hash": "68baae1aca3be166f9c7017f25749526",
+    "semantic_hash": ""
+  },
+  "PROTOCOL.md": {
+    "mtime": 1791498931.1351078,
+    "seen": 1791499657.8641603,
+    "ast_hash": "cfa5f14a4fbea21a9a04525c58998210",
+    "semantic_hash": ""
+  }
+}

@@ -13,7 +13,6 @@ from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
 FILMS = Path.home() / "motion-studio/films"
-SCRATCH = Path(tempfile.gettempdir())
 
 
 def codex(p):
@@ -23,13 +22,16 @@ def codex(p):
         return Path(out.name).read_text()
 
 
+# The digest is untrusted README text: every judge runs read-only in its own empty throwaway folder.
 def gemini(p):
-    return subprocess.run(["agy", "-p", p], text=True, capture_output=True, timeout=900, cwd=SCRATCH).stdout
+    with tempfile.TemporaryDirectory() as empty:
+        return subprocess.run(["agy", "-p", p], text=True, capture_output=True, timeout=900, cwd=empty).stdout
 
 
 def grok(p):
-    return subprocess.run(["cursor-agent", "-p", "--trust", "--mode", "ask", "--model", "cursor-grok-4.5-high", "--output-format", "text", p],
-                          text=True, capture_output=True, timeout=900, cwd=SCRATCH).stdout
+    with tempfile.TemporaryDirectory() as empty:
+        return subprocess.run(["cursor-agent", "-p", "--trust", "--mode", "ask", "--model", "cursor-grok-4.5-high", "--output-format", "text", p],
+                              text=True, capture_output=True, timeout=900, cwd=empty).stdout
 
 
 JUDGES = {"codex": codex, "gemini": gemini, "grok": grok}
@@ -38,7 +40,7 @@ LABELS = "XYZWV"
 
 def prompt(digest, scripts):
     body = "\n\n".join(f"SCRIPT {LABELS[i]}:\n" + "\n".join(lines) for i, lines in enumerate(scripts))
-    return f"""You judge narration scripts for a 65-80 second Instagram reel about one GitHub repository. The narrator reads
+    return f"""Do not run any tool or command; only read this message and answer. You judge narration scripts for a 65-80 second Instagram reel about one GitHub repository. The narrator reads
 each script aloud over the repo page. The REPO DIGEST below is the only truth about the repo.
 
 Judge like a demanding social-media editor who also checks facts:

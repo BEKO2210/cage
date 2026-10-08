@@ -64,18 +64,18 @@ def readme(digest, limit=14000):
 
 NAME = lambda f: f["repo"].split("/")[1]
 SLOTS = [  # id, job, min words, max words, needs a sourced number
-    ("hook", "Open with the single most surprising sourced number about {name}. A viewer must stop scrolling. Name what the number measures.", 10, 18, True),
-    ("problem", "Name the problem {name} solves: the pain a developer feels today, from the README.", 12, 22, False),
-    ("what", "Say in plain words what {name} is and who it is for. No number needed.", 12, 20, False),
-    ("how", "Explain how it works: the one mechanism that makes it different. Concrete, no buzzwords.", 14, 24, False),
-    ("how2", "Show it in action: one concrete example of input and result from the README.", 14, 24, False),
-    ("proof", "Give proof: a benchmark or measured result with its number, and against what.", 14, 24, True),
-    ("proof2", "Give a second, different proof or a striking detail with its number (not one already used).", 12, 22, True),
-    ("detail", "One more concrete thing it does that the lines so far did not mention, from the README.", 12, 22, False),
-    ("trust", "Build trust: stars, licence, who uses it or who made it. Use the real star count rounded down if you round.", 10, 18, False),
-    ("start", "How to start: name the install command or the first step from the README, in spoken words.", 10, 18, False),
-    ("share", "Ask the viewer to share or save it. Start with 'Send this to someone who' or 'Save this for'. Never ask to follow.", 8, 14, False),
-    ("end", "Close with a short punchline that names {name}.", 4, 10, False),
+    ("hook", "Open with the single most surprising sourced number about {name}. A viewer must stop scrolling. Name what the number measures.", 12, 20, True),
+    ("problem", "Name the problem {name} solves: the pain a developer feels today, from the README.", 14, 24, False),
+    ("what", "Say in plain words what {name} is and who it is for. No number needed.", 14, 22, False),
+    ("how", "Explain how it works: the one mechanism that makes it different. Concrete, no buzzwords.", 16, 26, False),
+    ("how2", "Show it in action: one concrete example of input and result from the README.", 16, 26, False),
+    ("proof", "Give proof: a benchmark or measured result with its number, and against what.", 16, 26, True),
+    ("proof2", "Give a second, different proof or a striking detail with its number (not one already used).", 14, 24, True),
+    ("detail", "One more concrete thing it does that the lines so far did not mention, from the README.", 14, 24, False),
+    ("trust", "Build trust: licence, who made it, who uses or tested it. Name the star count only if it is 1,000 or more (rounded down if you round).", 12, 20, False),
+    ("start", "How to start: name the install command or the first step from the README, in spoken words.", 12, 20, False),
+    ("share", "Ask the viewer to share or save it. Start with 'Send this to someone who' or 'Save this for'. Never ask to follow.", 10, 16, False),
+    ("end", "Close with a short punchline that names {name}.", 6, 12, False),
 ]
 FILLER = re.compile(r"\b(revolutionary|game[- ]?chang\w*|unleash\w*|seamless\w*|supercharg\w*|cutting[- ]edge|next[- ]level|"
                     r"powerful|ultimate|incredible|amazing|mind[- ]blowing|insane|journey|elevate|delve|harness)\b", re.I)
@@ -158,7 +158,9 @@ LINE: {say}
 
 Check only concrete claims about the repo: what it does, its features, numbers, who made, uses or tested it, comparisons.
 Such a claim is supported only if the sources state it (same meaning, same numbers, same actor: "X studied it" is not
-"X uses it"). Superlatives about the repo ("biggest", "fastest", "game-changing") are unsupported unless stated.
+"X uses it"). Every number must stay attached to what the sources attach it to: the same measure, unit, hardware, input
+size and comparison. Two true numbers from different measurements put side by side ("54 ms on GPU vs ORT at 266 ms",
+when 266 ms was a CPU run) are unsupported. Superlatives about the repo ("biggest", "fastest", "game-changing") are unsupported unless stated.
 Do NOT flag framing that makes no claim about the repo: the problem developers face, an invitation to share or save,
 a punchline, a paraphrase in simpler words.
 Answer as JSON: {{"unsupported": ["<claim> - <why>", ...]}} (an empty list if every claim is supported)"""

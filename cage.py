@@ -50,12 +50,12 @@ def numbers_in(text):
 
 def fact_sheet(digest, facts):
     sec = re.search(r"## Sentences with numbers \(verbatim\)\n(.*?)\n## ", digest, re.S)
-    lines = [l[2:].strip()[:260] for l in (sec.group(1) if sec else "").splitlines() if l.startswith("- ")]
+    lines = [l[2:].strip()[:400] for l in (sec.group(1) if sec else "").splitlines() if l.startswith("- ")]
     head = [f"{facts['repo']}: {facts.get('description', '')}", f"{facts.get('stars', 0):,} GitHub stars, main language {facts.get('language')}"]
     return [f"F{i}: {t}" for i, t in enumerate(head + lines)]
 
 
-def readme(digest, limit=6000):
+def readme(digest, limit=14000):
     sec = re.search(r"## README by section\n(.*?)\n## Sentences", digest, re.S)
     return (sec.group(1) if sec else digest)[:limit]
 
@@ -155,8 +155,11 @@ README:
 
 LINE: {say}
 
-Split the line into its claims. A claim is supported only if the sources state it (same meaning, same numbers, same
-actor: "X studied it" is not "X uses it"). Opinions like "biggest", "game-changing" are unsupported.
+Check only concrete claims about the repo: what it does, its features, numbers, who made, uses or tested it, comparisons.
+Such a claim is supported only if the sources state it (same meaning, same numbers, same actor: "X studied it" is not
+"X uses it"). Superlatives about the repo ("biggest", "fastest", "game-changing") are unsupported unless stated.
+Do NOT flag framing that makes no claim about the repo: the problem developers face, an invitation to share or save,
+a punchline, a paraphrase in simpler words.
 Answer as JSON: {{"unsupported": ["<claim> - <why>", ...]}} (an empty list if every claim is supported)"""
     try:
         bad = json.loads(llm(p, model, temperature=0, fmt="json")).get("unsupported") or []

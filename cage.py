@@ -82,7 +82,7 @@ FILLER = re.compile(r"\b(revolutionary|game[- ]?chang\w*|unleash\w*|seamless\w*|
 
 
 TENS = r"(twenty|thirty|forty|fifty|sixty|seventy|eighty|ninety)"
-SPELLED = re.compile(rf"\b({TENS}([- ]\w+)?|\w+ point \w+|(eleven|twelve|thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen)|"
+SPELLED = re.compile(rf"\b({TENS}([- ]\w+)?|(zero|one|two|three|four|five|six|seven|eight|nine) point \w+|(eleven|twelve|thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen)|"
                      r"\w+ (hundred|thousand|million|billion))\b", re.I)
 
 

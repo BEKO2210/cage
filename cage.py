@@ -17,7 +17,7 @@ GUIDE = Path.home() / "motion-studio/films/_reel/story-guide.md"
 
 def llm(prompt, model, temperature=0.7, fmt=None):
     req = {"model": model, "prompt": prompt, "stream": False, "think": False, "keep_alive": "10m",
-           "options": {"temperature": temperature, "num_ctx": 16384}}
+           "options": {"temperature": temperature, "num_ctx": 8192}}
     if fmt:
         req["format"] = fmt
     r = subprocess.run(["ssh", "pop", "mkdir -p ~/reel && flock ~/reel/gpu.lock curl -s http://localhost:11434/api/generate -d @-"],
@@ -81,6 +81,11 @@ FILLER = re.compile(r"\b(revolutionary|game[- ]?chang\w*|unleash\w*|seamless\w*|
                     r"powerful|ultimate|incredible|amazing|mind[- ]blowing|insane|journey|elevate|delve|harness)\b", re.I)
 
 
+TENS = r"(twenty|thirty|forty|fifty|sixty|seventy|eighty|ninety)"
+SPELLED = re.compile(rf"\b({TENS}([- ]\w+)?|\w+ point \w+|(eleven|twelve|thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen)|"
+                     r"\w+ (hundred|thousand|million|billion))\b", re.I)
+
+
 def check_line(say, slot, ok_nums, used_nums):
     _, _, lo, hi, needs_num = slot
     errs = []
@@ -106,6 +111,8 @@ def check_line(say, slot, ok_nums, used_nums):
         errs.append("no superlatives unless the facts say exactly that")
     if "`" in say or re.search(r"\d+(\.\d+)?[kKmM]\b", say):
         errs.append("spoken words only: no code marks, no 15k-style shortcuts (say the full number from the facts)")
+    if SPELLED.search(say):                                                # "thirty-three point two" slips past the number check
+        errs.append("write every number in digits exactly as in the facts, never in words")
     if re.search(r"\bfollow\b", say, re.I):
         errs.append("never ask to follow")
     return errs

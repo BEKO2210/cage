@@ -1,0 +1,18 @@
+{
+ "lines": [
+  "A 125-billion-parameter AI on your own gaming PC, writing 94 tokens a second.",
+  "This is Strata. It runs Qwen3.8-Flash-Next on a normal PC.",
+  "This voxel garden came from one prompt, written live on an RTX 5070.",
+  "Inside is a team of 24,576 small experts. Each word needs only 10.",
+  "So Strata shares the work across your whole PC: graphics card, RAM and processor.",
+  "A small helper guesses the next words, and the big model checks them at once: the same answer, 1.6 to 1.8× sooner.",
+  "On an RTX 5070 it writes 94 tokens a second, faster than you can read.",
+  "A coding version fits 32 GB of RAM and reaches 91% of the full model's SWE-bench score.",
+  "Setup is one sentence to your coding assistant: it checks your PC and picks the model.",
+  "Be patient: while the model starts, your PC can freeze for 1 to 3 minutes.",
+  "Send this to someone with a gaming PC and a 12 GB card.",
+  "Strata. Free, open source, and running at home."
+ ],
+ "words": 169,
+ "log": []
+}

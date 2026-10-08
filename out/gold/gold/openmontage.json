@@ -1,0 +1,18 @@
+{
+ "lines": [
+  "It cost $1.33 to make this 60-second Pixar-style short.",
+  "Behind it is OpenMontage, an open-source repo with over 63,000 stars.",
+  "You describe the video. There's no orchestrator code: your coding agent runs the production, from research and script to the final edit.",
+  "Your agent gets 12 pipelines, 100+ tools, and 700+ skill files that teach it the craft.",
+  "Every provider choice is scored on seven dimensions: task fit first, then quality, control and reliability.",
+  "Before you see anything, it reviews its own render. If the review fails, you never see the video.",
+  "You stay in control. Script, scenes and assets all wait for your sign-off on a live storyboard.",
+  "It quotes the cost before it spends, and caps the budget at $10 by default.",
+  "You can also start from a video you love. It keeps the pacing and the hook, and changes the topic.",
+  "No paid API keys? It still makes real videos, with free Piper narration and open footage from NASA.",
+  "To start, clone the repo and run make setup. Then tell your agent what to make.",
+  "OpenMontage. Link in the caption."
+ ],
+ "words": 183,
+ "log": []
+}

@@ -1,0 +1,20 @@
+{
+ "lines": [
+  "391,000 stars in under a year. This is OpenClaw.",
+  "The AI that really does things, on your own computer.",
+  "It meets you in the chats you use: WhatsApp, Telegram, Slack, Discord, iMessage and over 20 more.",
+  "Plus native apps for macOS, iOS, Android, Windows and Linux.",
+  "Your state, memory and credentials live on your hardware.",
+  "Every message flows into one local Gateway, the control plane for sessions, tools and channels.",
+  "Claude, Codex or a local model: plugins you swap without changing anything else.",
+  "Inbound messages count as untrusted. Unknown senders need your approval first.",
+  "One line installs it on macOS, Linux or Windows.",
+  "Then onboard: it checks model access, creates the workspace and configures the Gateway.",
+  "Hundreds of contributors build it in the open, led by an independent non-profit foundation.",
+  "Backed by donors like Amazon, OpenAI and Red Hat.",
+  "MIT licensed. Your assistant, on your devices.",
+  "OpenClaw. The lobster way."
+ ],
+ "words": 150,
+ "log": []
+}

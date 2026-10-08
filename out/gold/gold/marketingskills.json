@@ -1,0 +1,18 @@
+{
+ "lines": [
+  "53,319 stars for one idea: teach your coding agent marketing.",
+  "It's a collection of AI agent skills for marketing tasks. They run in Claude Code, Codex, Cursor and Windsurf.",
+  "Each skill is a markdown file with specialized knowledge and a workflow for one task.",
+  "One skill is the foundation: product-marketing. Every other skill checks it first to understand your product, audience and positioning.",
+  "Then you just ask: help me optimize this landing page for conversions. Your agent checks your product context, then uses the cro skill.",
+  "Ask for homepage copy, and it uses copywriting. Ask for GA4 tracking, and it uses analytics.",
+  "There are 50 skills, from SEO audits and pricing to churn prevention and cold email.",
+  "A single skill holds 140 SaaS marketing ideas.",
+  "There's even a marketing council: a simulated board of advisors.",
+  "The library is free and MIT-licensed, and it's been forked 7,937 times.",
+  "Installing takes one command: npx skills add coreyhaines31 marketingskills.",
+  "Built by Corey Haines. Try it on your next landing page."
+ ],
+ "words": 167,
+ "log": []
+}

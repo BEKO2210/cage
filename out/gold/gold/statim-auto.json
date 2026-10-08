@@ -1,0 +1,17 @@
+{
+ "lines": [
+  "This tiny engine beats an 8B-parameter LLM. And it's 11× faster.",
+  "It's called Statim. It reads text or JSON, and answers typed questions.",
+  "Send it a support ticket. In one forward pass, you get the department, the urgency, and whether they want a refund.",
+  "Under the hood, your text and every question become one token sequence. One encoder pass, and all the answers come out at once.",
+  "No Python. No PyTorch. Just one 5 MB binary.",
+  "On a single RTX 3070, it makes 68 decisions per second. Qwen3-8B manages about 6.",
+  "Cold start to first answer? Under half a second, on a plain CPU.",
+  "Already using Laya or Jev? Statim speaks the same protocol. Just change the base URL.",
+  "Want to try it first? There's a live demo in your browser. No install, no key.",
+  "Download. Start. Ask. Three steps, and you're running.",
+  "Statim. Open source, on GitHub."
+ ],
+ "words": 148,
+ "log": []
+}

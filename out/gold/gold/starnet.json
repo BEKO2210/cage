@@ -1,0 +1,18 @@
+{
+ "lines": [
+  "1,080 people starred a pixel-art space station. Its crew? Real AI agents.",
+  "StarNet is a local-first desktop app, and the station isn't decoration.",
+  "The layout you draw is the workflow the agents run. Rooms are teams. Hallways are handoff lanes. Placed objects are real capability grants.",
+  "Several agents run at once. Real model calls, real tools, real cost.",
+  "Night Shift keeps them working while you're away, on an adjustable leash. Every away-action is logged.",
+  "Unclear task? It asks one question with options, over Telegram or Slack, instead of guessing.",
+  "No simulated work, no simulated spend. The interface never shows what the harness can't prove.",
+  "It's 92% JavaScript. The sidecar uses Node core modules only, so nothing to install.",
+  "Clone the repo, run one Node command, open localhost 8787, and bring your own key.",
+  "No key, no bill: pull qwen3 8B in Ollama. Expect about 10 GB of graphics memory.",
+  "Coming from OpenClaw or Hermes? StarNet imports your agent.",
+  "StarNet. Your machine, your data, your crew."
+ ],
+ "words": 165,
+ "log": []
+}

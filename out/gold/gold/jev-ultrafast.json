@@ -1,0 +1,18 @@
+{
+ "lines": [
+  "7.1 seconds. That is how long this AI agent needs to search flights from Zürich to London.",
+  "It is Jev Ultrafast, a browser agent from Browser Use. Give it one goal, and it does the clicking.",
+  "Every page becomes a numbered table of buttons and fields.",
+  "One request picks the move and the target: click element 7, or type into field 3. A small model writes the text.",
+  "Two decisions, one network round trip, and no screenshots in the loop.",
+  "Against the previous version, median task time fell 25%, and browser calls dropped from 1,092 to 101.",
+  "The same agent opened a Wikipedia article in 2.8 seconds, and a hotel search in 1.9.",
+  "The model never writes selectors, coordinates or JavaScript. Every click is checked against the live page.",
+  "It is an MVP, and says so: frames, canvas and uploads are still out of reach.",
+  "Clone it, add two API keys, and start the demo.",
+  "Send this to someone who still clicks through flight searches.",
+  "Jev Ultrafast. One request per decision."
+ ],
+ "words": 171,
+ "log": []
+}

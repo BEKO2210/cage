@@ -1,0 +1,18 @@
+{
+ "lines": [
+  "This 30-second ad started as 7 rough drafts. Now you can watch both at once.",
+  "It's called Null Motion: the finished ad on top, its drafts underneath, in sync, frame for frame.",
+  "Ads look effortless, but every one starts as a plan: which idea goes where, when each move lands.",
+  "It finds every real scene change, then cuts the ad into 3–8 sections.",
+  "Each section gets one plain draft: black and white, one simple move.",
+  "The film's clock drives every draft, and the one on screen is outlined in orange.",
+  "Then one click exports it all, frame by frame, without dropping one.",
+  "Three example ads ship with the repo, already split into 7, 8 and 3 drafts.",
+  "No npm install, no API keys, no account. It works on the first run.",
+  "Clone it, run npm start, and hit Download in Chrome or Edge.",
+  "Your own ads stay local, and the page never calls an outside server.",
+  "Null Motion. Free, local, and 705 stars on GitHub."
+ ],
+ "words": 165,
+ "log": []
+}

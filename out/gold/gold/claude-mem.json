@@ -1,0 +1,18 @@
+{
+ "lines": [
+  "97k stars for one plugin that gives Claude Code a memory.",
+  "Normally, a new session starts without anything the last one learned.",
+  "claude-mem captures everything your agent does, compresses it with AI, and injects relevant context into future sessions.",
+  "Five lifecycle hooks follow every session. Each tool call becomes an observation, summarized and stored in SQLite and Chroma.",
+  "When Claude needs the past, it searches its memory in three layers.",
+  "First, a compact index: 50 to 100 tokens per result. Full details come only for filtered IDs: 500 to 1,000.",
+  "Filter first, fetch later: about 10× fewer tokens.",
+  "Not just Claude Code: it works with Codex, Gemini, Copilot, OpenCode and more.",
+  "Wrap sensitive content in private tags, and it stays out of storage.",
+  "One command installs it: npx claude-mem install. Or add it from the plugin marketplace inside Claude Code.",
+  "Context that survives every session. Send this to someone who re-explains their project every morning.",
+  "claude-mem. Apache 2.0, because agent memory should be easy to embed."
+ ],
+ "words": 166,
+ "log": []
+}

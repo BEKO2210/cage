@@ -1,0 +1,18 @@
+{
+ "lines": [
+  "63 tokens become 20, and the fix stays the same.",
+  "Caveman makes your AI agent say less and read less.",
+  "It started as a joke in April 2026. Now it is past 100,000 stars.",
+  "Caveman is a voice, not broken grammar. It answers first and drops the greeting. Code and commands stay untouched.",
+  "A normal agent explains a React bug in 63 tokens. Caveman needs 20, ultracave 14, megacave 13.",
+  "Adobe Research found it 1.4 to 2.4× cheaper. JetBrains ran 86 coding tasks with no measurable quality loss.",
+  "Then caveman grew a proxy that shrinks what the agent reads. A 28,041-token CSV drops to 314.",
+  "Across whole sessions, input drops 33.2%, and all 18 answers stay right.",
+  "Web pages shrink too. A 200-row table takes 121 tokens instead of 15,704.",
+  "One line installs it in Claude Code, Codex, Cursor and 30+ more.",
+  "Send this to someone whose agent never stops talking.",
+  "Caveman save you token. Star cost zero."
+ ],
+ "words": 158,
+ "log": []
+}

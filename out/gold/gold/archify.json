@@ -1,0 +1,19 @@
+{
+ "lines": [
+  "Over 77,000 stars. Number one on GitHub Trending.",
+  "Archify turns any idea, plan or codebase into an interactive diagram.",
+  "One prompt: draw the architecture of this project. It reads 1,671 files, validates, renders and runs a browser check.",
+  "Under the hood, your words become typed JSON. Validators and layout rules check it, and only a passing diagram ships.",
+  "Explain an agent workflow. Follow a cache miss. Explore service relationships.",
+  "Point it at a repo and ask for 8 to 12 core components, one primary path and trust boundaries. The result: a source-backed system map.",
+  "Five diagram types: architecture, workflow, sequence, data flow and lifecycle.",
+  "Then refine it in chat: add Redis, move auth to the left, highlight the rollback path.",
+  "Every diagram is explorable: focus a node, trace downstream, probe a route.",
+  "Download it. Open it. One self-contained HTML file. Send it to anyone, no install needed.",
+  "And it's checked: the Proof Lab holds all 11 scenarios, their JSON sources and validation receipts.",
+  "It works with Claude Code, Codex, Cursor and OpenCode. One line installs it.",
+  "Archify. Open source, MIT licensed."
+ ],
+ "words": 181,
+ "log": []
+}

@@ -1,0 +1,19 @@
+{
+ "lines": [
+  "42 diagram types in your own brand, in 60 seconds.",
+  "A skill for Claude Code, Codex, Copilot, Droid and Pi. No generic rounded boxes.",
+  "Its maker used to fight Figma for 30 minutes, or skip the diagram.",
+  "Now the agent draws architecture maps, flowcharts, Sankey, fishbone, Wardley maps, even exploded axonometric views.",
+  "Give it your website. It reads the palette and the font stack, then maps them to roles: paper, ink and accent.",
+  "It shows the diff, writes your tokens, and every new diagram wears your colors.",
+  "Then it checks contrast against WCAG AA and proposes fixes.",
+  "Old draw.io, Mermaid or Excalidraw files? It redraws them at your chosen detail.",
+  "Faithful keeps up to 24 nodes, balanced 12, simplified 7. A ledger lists what got dropped.",
+  "45.7k stars. Every pull request is checked on Linux, Windows and macOS.",
+  "Install takes two commands: add the marketplace, then the plugin.",
+  "Send this to someone who still fights Figma for every diagram.",
+  "diagram-design. Editorial diagrams your designer won't hate."
+ ],
+ "words": 166,
+ "log": []
+}

@@ -1,0 +1,18 @@
+{
+ "lines": [
+  "34 tools, 27 blend modes, and not one line of Adobe code.",
+  "This is PhotoCraft, Photoshop rebuilt from scratch in pure Rust.",
+  "If you know Photoshop, you already know it. Every menu and shortcut sits where you expect.",
+  "Every button runs one of 500+ commands, and the command line and AI agents call the same ones.",
+  "It opens real Photoshop files, and re-saves 307 of 309 with the same render. All 116 shape layers match Photoshop's pixels.",
+  "It draws on the GPU, without Electron. A radius-180 blur on 3.6 megapixels takes under a second.",
+  "Every filter previews live on the canvas, only inside your selection.",
+  "Under the hood sit 24 crates and over 1,700 tests.",
+  "It is early alpha, and the team says so: not yet a replacement for daily pro work.",
+  "It runs on Mac, Windows and Linux, even in the browser. Clone it and cargo run.",
+  "Send this to a designer who wants a free, open-source Photoshop.",
+  "PhotoCraft. Free, open source, and pure Rust."
+ ],
+ "words": 166,
+ "log": []
+}

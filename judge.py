@@ -1,10 +1,9 @@
 """Blind judges from three companies rank narrations of the same repo.
 
 python3 judge.py <tag> <film> [<film> ...] --arms out/gold/gold out/cage/qwen3_8b ... [--judges codex,gemini,grok]
-Each judge sees the repo digest and the scripts as X/Y/Z in its own order (rotated per repo and judge), never which arm
-wrote which. Appends to results/<tag>.jsonl one row per (film, judge): ranking by arm + factual errors by arm."""
+Each judge sees the repo digest and the scripts as X/Y/Z, never which arm wrote which. The order is a Latin square:
+over every 3 judges each arm sits once in each position, and odd films reverse it, so position bias cancels out. Appends to results/<tag>.jsonl one row per (film, judge): ranking by arm + factual errors by arm."""
 import json
-import random
 import re
 import subprocess
 import sys
@@ -82,19 +81,22 @@ if __name__ == "__main__":
         for ji, judge in enumerate(judges):
             if (film, judge) in done:
                 continue
-            order = list(arms)
-            random.Random(f"{tag}-{film}-{judge}").shuffle(order)               # each judge its own, reproducible order
-            res = None
+            base = arms[::-1] if fi % 2 else list(arms)
+            k = (fi + ji) % len(arms)
+            order = base[k:] + base[:k]
+            lab = {LABELS[i]: a for i, a in enumerate(order)}
+            label = lambda l: lab.get(re.sub(r"(?i)^\s*script\s*", "", str(l)).strip()[:1].upper())
+            row = None
             for _ in range(2):
                 res = parse(JUDGES[judge](prompt(digest, [scripts[a] for a in order])))
-                if res and len(res.get("ranking", [])) == len(order):
+                ranking = [label(l) for l in (res or {}).get("ranking", [])]
+                if sorted(filter(None, ranking)) == sorted(arms) and len(ranking) == len(arms):   # a full, clean ranking only
+                    row = {"film": film, "judge": judge, "order": order, "ranking": ranking,
+                           "errors": {label(k) or k: v for k, v in (res.get("errors") or {}).items()}, "why": res.get("why", "")}
                     break
-            if not res:
-                print(f"{film} {judge}: no verdict")
+            if not row:
+                print(f"{film} {judge}: no clean verdict - not saved, rerun to retry")
                 continue
-            lab = {LABELS[i]: a for i, a in enumerate(order)}
-            row = {"film": film, "judge": judge, "ranking": [lab.get(l.strip()[-1:], l) for l in res["ranking"]],
-                   "errors": {lab.get(k.strip()[-1:], k): v for k, v in (res.get("errors") or {}).items()}, "why": res.get("why", "")}
             with out.open("a") as f:
                 f.write(json.dumps(row, ensure_ascii=False) + "\n")
             print(f"{film} {judge}: {' > '.join(row['ranking'])}")

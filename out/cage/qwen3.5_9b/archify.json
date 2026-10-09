@@ -1,0 +1,542 @@
+{
+ "lines": [
+  "tt-a1i/archify has 77286 stars on GitHub to turn any codebase into an interactive diagram.",
+  "You waste hours trying to map your own messy system logic while reading raw files.",
+  "It is a skill for Claude Code to map complex systems into beautiful interactive diagrams instantly.",
+  "An agent reads your code or description to build an interactive diagram you can explore and share.",
+  "Input a request tracing cache misses then query the database, and see the diagram update clearly.",
+  "Archify sits at #1 on GitHub Trending weekly lists.",
+  "The output is a standalone HTML file you can open anywhere without needing an internet connection or the original repo.",
+  "It is open source under MIT license and tested by real developers.",
+  "Run npx skills add tt-a1i/archify -g in your terminal.\nThen describe any system to see its diagram appear.",
+  "Save this for when you need to understand a system fast.",
+  "Archify is that interactive diagram you need."
+ ],
+ "words": 155,
+ "log": [
+  {
+   "slot": "hook",
+   "try": 0,
+   "say": "This repo has seventy seven thousand two hundred and eighty six stars on GitHub because it turns code into interactive diagrams.",
+   "errs": [
+    "has 21 words, must have 12-20",
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "hook",
+   "try": 1,
+   "say": "tt-a1i/archify holds seventy seven thousand two hundred and eighty six GitHub stars for turning code into diagrams.",
+   "errs": [
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "hook",
+   "try": 2,
+   "say": "tt-a1i/archify has 77286 stars on GitHub to turn any codebase into an interactive diagram.",
+   "errs": []
+  },
+  {
+   "slot": "hook",
+   "try": 0,
+   "say": "It has over seventy-seven thousand stars on GitHub.\nThis number measures community interest in this tool.",
+   "errs": [
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "hook",
+   "try": 1,
+   "say": "77286 GitHub stars measure its popularity.",
+   "errs": [
+    "has 6 words, must have 12-20"
+   ]
+  },
+  {
+   "slot": "hook",
+   "try": 2,
+   "say": "Seventy-seven thousand two hundred eighty-six GitHub stars show how popular Archify is for turning code into diagrams.",
+   "errs": [
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "hook",
+   "try": 0,
+   "say": "tt-a1i/archify has seventy-seven thousand stars, measuring GitHub interest.",
+   "errs": [
+    "has 8 words, must have 12-20",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "hook",
+   "try": 1,
+   "say": "tt-a1i/archify has seventy-seven thousand stars. That is its GitHub interest.",
+   "errs": [
+    "has 10 words, must have 12-20",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "hook",
+   "try": 2,
+   "say": "tt-a1i/archify has seventy-seven thousand stars on GitHub.",
+   "errs": [
+    "has 7 words, must have 12-20",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "problem",
+   "try": 0,
+   "say": "It turns messy code into clear maps you can explore.",
+   "errs": [
+    "has 10 words, must have 14-24"
+   ]
+  },
+  {
+   "slot": "problem",
+   "try": 1,
+   "say": "You stare at complex code until the architecture finally makes sense.",
+   "errs": [
+    "has 11 words, must have 14-24"
+   ]
+  },
+  {
+   "slot": "problem",
+   "try": 2,
+   "say": "You waste hours trying to map your own messy system logic while reading raw files.",
+   "errs": []
+  },
+  {
+   "slot": "problem",
+   "try": 0,
+   "say": "You stare at a tangled codebase until you understand how it actually works.",
+   "errs": [
+    "has 13 words, must have 14-24"
+   ]
+  },
+  {
+   "slot": "problem",
+   "try": 1,
+   "say": "You face a messy system where flows are hidden inside complex files.",
+   "errs": [
+    "has 12 words, must have 14-24"
+   ]
+  },
+  {
+   "slot": "problem",
+   "try": 2,
+   "say": "You fight against tangled code that hides its true flow until you draw it yourself with Archify.",
+   "errs": []
+  },
+  {
+   "slot": "problem",
+   "try": 0,
+   "say": "Struggling to visualize complex systems or understand hidden dependencies in your codebase? Archify turns any text description into a clear interactive map instantly.",
+   "errs": []
+  },
+  {
+   "slot": "what",
+   "try": 0,
+   "say": "It is a skill for Claude Code to map complex systems into beautiful interactive diagrams instantly.",
+   "errs": []
+  },
+  {
+   "slot": "what",
+   "try": 0,
+   "say": "Archify turns your messy code into a clear interactive diagram for anyone to understand.",
+   "errs": []
+  },
+  {
+   "slot": "what",
+   "try": 0,
+   "say": "Archify is an agent tool that turns your ideas into beautiful interactive diagrams for developers like you.",
+   "errs": []
+  },
+  {
+   "slot": "how",
+   "try": 0,
+   "say": "An agent reads your code or description to build an interactive diagram you can explore and share.",
+   "errs": []
+  },
+  {
+   "slot": "how",
+   "try": 0,
+   "say": "An agent reads your code or description and builds a typed diagram map that validates every connection before you see it.",
+   "errs": []
+  },
+  {
+   "slot": "how",
+   "try": 0,
+   "say": "The agent reads your code or description to build a typed structure, then validates it before rendering the final interactive view.",
+   "errs": []
+  },
+  {
+   "slot": "how2",
+   "try": 0,
+   "say": "Give a prompt like Browser to API and Redis cache miss to draw that exact flow instantly.",
+   "errs": []
+  },
+  {
+   "slot": "how2",
+   "try": 0,
+   "say": "Input a browser to database trace description and watch it render instantly with clear paths.",
+   "errs": [
+    "has 15 words, must have 16-26"
+   ]
+  },
+  {
+   "slot": "how2",
+   "try": 1,
+   "say": "Input a request tracing cache misses then query the database, and see the diagram update clearly.",
+   "errs": []
+  },
+  {
+   "slot": "how2",
+   "try": 0,
+   "say": "Describe a browser request to an API with Redis and PostgreSQL, then watch it turn into a clear interactive diagram.",
+   "errs": []
+  },
+  {
+   "slot": "proof",
+   "try": 0,
+   "say": "OpenLux pricing is only eight point zero four percent of official rates for Claude.",
+   "errs": [
+    "has 14 words, must have 16-26",
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 1,
+   "say": "The Proof Lab contains all eleven checked-in scenarios with their validation receipts.",
+   "errs": [
+    "has 12 words, must have 16-26",
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 2,
+   "say": "The Proof Lab holds eleven checked scenarios with validation receipts for each.",
+   "errs": [
+    "has 12 words, must have 16-26",
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 0,
+   "say": "The Proof Lab contains all eleven checked-in scenarios with validation receipts.",
+   "errs": [
+    "has 11 words, must have 16-26",
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 1,
+   "say": "The Proof Lab holds twelve checked-in scenarios with their JSON sources to validate results.",
+   "errs": [
+    "has 14 words, must have 16-26",
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 2,
+   "say": "The Proof Lab holds eleven checked-in scenarios with their JSON sources to validate results.",
+   "errs": [
+    "has 14 words, must have 16-26",
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 0,
+   "say": "The output is standalone HTML you open instantly to explore without needing a server.",
+   "errs": [
+    "has 14 words, must have 16-26",
+    "must contain a number from the facts"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 1,
+   "say": "The Proof Lab contains all eleven checked scenarios with their validation receipts.",
+   "errs": [
+    "has 12 words, must have 16-26",
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 2,
+   "say": "The Proof Lab shows eleven checked scenarios with their validation receipts.",
+   "errs": [
+    "has 11 words, must have 16-26",
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "proof",
+   "dropped": true
+  },
+  {
+   "slot": "proof2",
+   "try": 0,
+   "say": "It outputs standalone HTML files you can download and explore offline with zero setup.",
+   "errs": [
+    "must contain a number from the facts"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 1,
+   "say": "OpenLux pricing starts at 4% of official rates for OpenAI models, while validation checks wait about twenty-four hours.",
+   "errs": [
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 2,
+   "say": "Archify sits at #1 on GitHub Trending weekly lists.",
+   "errs": [
+    "has 9 words, must have 14-24"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 0,
+   "say": "The output is a standalone HTML file that opens instantly in any browser without needing servers.",
+   "errs": [
+    "must contain a number from the facts"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 1,
+   "say": "The Proof Lab holds 11 checked scenarios with their validation receipts.",
+   "errs": [
+    "has 11 words, must have 14-24"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 2,
+   "say": "The proof lab includes all eleven validated scenarios. Their sources are stored in JSON format for inspection.",
+   "errs": [
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 0,
+   "say": "Export it to PNG or HTML for anyone to view. The output is a standalone file you can open anywhere.",
+   "errs": [
+    "must contain a number from the facts"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 1,
+   "say": "The Proof Lab holds 11 checked scenarios with their validation receipts.",
+   "errs": [
+    "has 11 words, must have 14-24"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 2,
+   "say": "The Proof Lab contains all eleven validated scenarios plus JSON sources.",
+   "errs": [
+    "has 11 words, must have 14-24",
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "detail",
+   "try": 0,
+   "say": "The output is a standalone HTML file you can open anywhere without needing an internet connection or the original repo.",
+   "errs": []
+  },
+  {
+   "slot": "detail",
+   "try": 0,
+   "say": "It validates your layout rules against a source file before saving changes to keep diagrams stable.",
+   "errs": []
+  },
+  {
+   "slot": "detail",
+   "try": 0,
+   "say": "It generates a standalone HTML file you can open anywhere without needing any special tools.",
+   "errs": []
+  },
+  {
+   "slot": "trust",
+   "try": 0,
+   "say": "It is open source under MIT license and tested by real developers.",
+   "errs": []
+  },
+  {
+   "slot": "trust",
+   "try": 0,
+   "say": "It is open source MIT licensed by tt-a1i and trusted to generate standalone HTML files.",
+   "errs": []
+  },
+  {
+   "slot": "trust",
+   "try": 0,
+   "say": "It is MIT licensed and trusted by thousands of developers worldwide.",
+   "errs": [
+    "has 11 words, must have 12-20",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "trust",
+   "try": 1,
+   "say": "The MIT license lets anyone use or modify this open-source tool built by tt-a1i.",
+   "errs": []
+  },
+  {
+   "slot": "start",
+   "try": 0,
+   "say": "Run this install command to add it globally.",
+   "errs": [
+    "has 8 words, must have 12-20"
+   ]
+  },
+  {
+   "slot": "start",
+   "try": 1,
+   "say": "Run npx skills add tt-a1i/archify -g in your terminal.\nThen describe any system to see its diagram appear.",
+   "errs": []
+  },
+  {
+   "slot": "start",
+   "try": 0,
+   "say": "Run npx skills add tt-a1i/archify to install this skill.",
+   "errs": [
+    "has 9 words, must have 12-20"
+   ]
+  },
+  {
+   "slot": "start",
+   "try": 1,
+   "say": "Run npx skills add tt-a1i/archify -g in your terminal today.",
+   "errs": [
+    "has 10 words, must have 12-20"
+   ]
+  },
+  {
+   "slot": "start",
+   "try": 2,
+   "say": "Run this command to install Archify instantly.",
+   "errs": [
+    "has 7 words, must have 12-20"
+   ]
+  },
+  {
+   "slot": "start",
+   "try": 0,
+   "say": "Install with npx skills add tt-a1i/archify -g to get started.",
+   "errs": [
+    "has 10 words, must have 12-20"
+   ]
+  },
+  {
+   "slot": "start",
+   "try": 1,
+   "say": "Run this command in your terminal: npx skills add tt-a1i/archify -g.",
+   "errs": [
+    "has 11 words, must have 12-20"
+   ]
+  },
+  {
+   "slot": "start",
+   "try": 2,
+   "say": "Copy the install line to try it without any setup first.",
+   "errs": [
+    "has 11 words, must have 12-20"
+   ]
+  },
+  {
+   "slot": "share",
+   "try": 0,
+   "say": "Save this for when you need to understand a system fast.",
+   "errs": []
+  },
+  {
+   "slot": "share",
+   "try": 0,
+   "say": "Share this with a teammate struggling to read complex code logic today.",
+   "errs": [
+    "must start with 'Send this to someone who' or 'Save this for'"
+   ]
+  },
+  {
+   "slot": "share",
+   "try": 1,
+   "say": "Save this for when you need to explain your system clearly.",
+   "errs": []
+  },
+  {
+   "slot": "share",
+   "try": 0,
+   "say": "Send this to a teammate struggling with code they can't visualize.",
+   "errs": [
+    "must start with 'Send this to someone who' or 'Save this for'"
+   ]
+  },
+  {
+   "slot": "share",
+   "try": 1,
+   "say": "Share this diagram link before you close your browser tab.",
+   "errs": [
+    "must start with 'Send this to someone who' or 'Save this for'"
+   ]
+  },
+  {
+   "slot": "share",
+   "try": 2,
+   "say": "Save this for later, then send the link to a friend.",
+   "errs": []
+  },
+  {
+   "slot": "end",
+   "try": 0,
+   "say": "Archify is that interactive diagram you need.",
+   "errs": []
+  },
+  {
+   "slot": "end",
+   "try": 0,
+   "say": "Archify turns your code into a clear visual map you can explore.",
+   "errs": []
+  },
+  {
+   "slot": "end",
+   "try": 0,
+   "say": "Name it Archify and see your system clearly.",
+   "errs": []
+  }
+ ]
+}

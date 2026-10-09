@@ -1,0 +1,18 @@
+{
+ "lines": [
+  "This tiny engine beats an 8B-parameter LLM. And it's 11× faster.",
+  "On one RTX 3070, it yields **68** decisions per second. The comparison uses the same model and tokens.",
+  "Short inputs on CPU: Statim is **257 ms** per state. ONNX Runtime takes **266 ms**. Parity holds.",
+  "Resident memory at start-up is **276 MiB**. ONNX Runtime needs nearly twice that. Trust the numbers.",
+  "On S1Bench with **3,880** items, it scores macro accuracy of **0.638**. It beats the untuned base.",
+  "With only **307M** parameters, it wins nine of fourteen decision categories. Qwen3-8B gets five.",
+  "Runtime is just **5.5 MB** plus a GGUF file. Laya needs Python stacks and heavy libraries.",
+  "Cold start to first answer takes only **0.76 s**. ONNX Runtime waits over two seconds.",
+  "Download the **3 MB** engine and model in one curl command. Verify with SHA checksums.",
+  "Call `POST  v1 systemone` to decide for one state. The API returns answers instantly.",
+  "Source code is Apache-2.0, free for any use. No hidden licenses or keys required.",
+  "Send this to someone who needs fast AI decisions today."
+ ],
+ "words": 176,
+ "log": []
+}

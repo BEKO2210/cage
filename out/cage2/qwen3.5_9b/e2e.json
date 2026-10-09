@@ -1,0 +1,916 @@
+{
+ "lines": [
+  "It has 3,788 stars and is TypeScript.",
+  "Developers struggle to run natural language tests across web and mobile apps on every pull request or schedule.",
+  "e2e is a next-generation testing framework for web and mobile. It runs natural language tests on pull requests or schedules.",
+  "It uses a web engine for browsers and an agent-device engine to run tests on iOS or Android simulators.",
+  "Input is a natural language prompt like upgrade to Pro. The result is an automated check that verifies the member became Pro.",
+  "The project is under active development heading toward version 1.",
+  "@e2e-dev/github posts results as a PR comment.",
+  "The CLI writes a config and an example test after you ask for an engine, web or mobile.",
+  "The project is in active development on the way to version 1.",
+  "Built by Tester Army with licence under active development to version 1.",
+  "Run npx e2e init to choose an engine and get a config with an example test.",
+  "Send this to someone who wants simpler end-to-end tests for their web or mobile apps.",
+  "Try the next-gen framework from tester-army slash e2e."
+ ],
+ "words": 184,
+ "log": [
+  {
+   "slot": "hook",
+   "try": 0,
+   "say": "It has 3,788 stars and is TypeScript.",
+   "receipt": "3,788 GitHub stars... main language TypeScript",
+   "errs": [
+    "has 7 words, must have 12-20"
+   ]
+  },
+  {
+   "slot": "hook",
+   "try": 1,
+   "say": "E2e holds three thousand seven hundred eighty-eight GitHub stars.",
+   "receipt": "F1: 3,788 GitHub stars",
+   "errs": [
+    "has 9 words, must have 12-20",
+    "write every number in digits exactly as in the facts, never in words",
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "hook",
+   "try": 2,
+   "say": "Three thousand seven hundred eighty-eight GitHub stars measure e2e.",
+   "receipt": "F1: 3,788 GitHub stars",
+   "errs": [
+    "has 9 words, must have 12-20",
+    "write every number in digits exactly as in the facts, never in words",
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "hook",
+   "try": 0,
+   "say": "Three thousand seven hundred eighty eight stars measure popularity for this TypeScript testing framework.",
+   "receipt": "3,788 GitHub stars",
+   "errs": [
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words",
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "hook",
+   "try": 1,
+   "say": "Three thousand seven hundred eighty eight GitHub stars measure popularity for this TypeScript framework.",
+   "receipt": "3,788 GitHub stars, main language TypeScript",
+   "errs": [
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "hook",
+   "try": 2,
+   "say": "3788 is the GitHub star count.",
+   "receipt": "F1: 3,788 GitHub stars",
+   "errs": [
+    "has 6 words, must have 12-20",
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "hook",
+   "try": 0,
+   "say": "tester-army/e2e has 3,788 GitHub stars.",
+   "receipt": "F1: 3,788 GitHub stars",
+   "errs": [
+    "has 5 words, must have 12-20",
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "hook",
+   "try": 1,
+   "say": "tester-army/e2e holds 3,788 GitHub stars.",
+   "receipt": "F1: tester-army/e2e ... 3,788 GitHub stars",
+   "errs": [
+    "has 5 words, must have 12-20",
+    "receipt not found word for word in the sources: \"f1: tester-army/e2e\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "hook",
+   "try": 2,
+   "say": "tester-army/e2e holds 3,788 GitHub stars.",
+   "receipt": "F1: 3,788 GitHub stars",
+   "errs": [
+    "has 5 words, must have 12-20",
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "problem",
+   "try": 0,
+   "say": "Developers struggle to run natural language tests across web and mobile apps on every pull request or schedule.",
+   "receipt": "e2e is an end-to-end testing framework for web and mobile apps... runs natural language tests on web and mobile apps, on every pull request or on a schedule",
+   "errs": []
+  },
+  {
+   "slot": "problem",
+   "try": 0,
+   "say": "It ends testing at a screen instead of breaking builds.",
+   "receipt": "e2e is an end-to-end testing framework for web and mobile apps.",
+   "errs": [
+    "has 10 words, must have 14-24"
+   ]
+  },
+  {
+   "slot": "problem",
+   "try": 1,
+   "say": "Current tools stop when the browser crashes or fail to handle mobile devices properly.",
+   "receipt": "... e2e is an end-to-end testing framework for web and mobile apps.",
+   "errs": []
+  },
+  {
+   "slot": "problem",
+   "try": 0,
+   "say": "Write tests in natural language instead of complex code.",
+   "receipt": "e2e is an end-to-end testing framework for web and mobile apps.",
+   "errs": [
+    "has 9 words, must have 14-24"
+   ]
+  },
+  {
+   "slot": "problem",
+   "try": 1,
+   "say": "Today you write complicated test scripts manually when e2e handles them with simple natural language.",
+   "receipt": "\"e2e is an end-to-end testing framework for web and mobile apps.\" ... \"runs natural language tests on web and mobile apps\"",
+   "errs": [
+    "receipt not found word for word in the sources: \"\"e2e is an end-to-end testing framework for web and mobile apps.\"\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "problem",
+   "try": 2,
+   "say": "Today you write complicated test scripts manually when e2e handles them with simple natural language.",
+   "receipt": "\"...end-to-end testing framework...\"",
+   "errs": [
+    "receipt not found word for word in the sources: \"\"\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "what",
+   "try": 0,
+   "say": "e2e is an end-to-end testing framework for web and mobile apps built by TesterArmy.",
+   "receipt": "e2e is an end-to-end testing framework for web and mobile apps. ... e2e is built by TesterArmy",
+   "errs": [
+    "repeats words an earlier line already said: \"web and mobile apps\" - say something new"
+   ]
+  },
+  {
+   "slot": "what",
+   "try": 1,
+   "say": "e2e is a next-generation testing framework for web and mobile. It runs natural language tests on pull requests or schedules.",
+   "receipt": "tester-army/e2e: Next generation e2e testing framework for web and mobile apps... on every pull request or on a schedule.",
+   "errs": []
+  },
+  {
+   "slot": "what",
+   "try": 0,
+   "say": "e2e is an end-to-end testing framework for web and mobile apps.",
+   "receipt": "e2e is an end-to-end testing framework for web and mobile apps.",
+   "errs": [
+    "has 11 words, must have 14-22",
+    "repeats words an earlier line already said: \"web and mobile apps\" - say something new"
+   ]
+  },
+  {
+   "slot": "what",
+   "try": 1,
+   "say": "e2e is a framework to run natural language tests on web or mobile.",
+   "receipt": "e2e is end-to-end testing framework ... runs natural language tests",
+   "errs": [
+    "has 13 words, must have 14-22",
+    "repeats words an earlier line already said: \"run natural language tests\" - say something new",
+    "receipt not found word for word in the sources: \"e2e is end-to-end testing framework\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "what",
+   "try": 2,
+   "say": "It is an end to end testing framework for web and mobile apps.",
+   "receipt": "e2e is an end-to-end testing framework for web and mobile apps.",
+   "errs": [
+    "has 13 words, must have 14-22",
+    "repeats words an earlier line already said: \"web and mobile apps\" - say something new"
+   ]
+  },
+  {
+   "slot": "what",
+   "try": 0,
+   "say": "e2e is an end-to-end testing framework for web and mobile apps built by TesterArmy.",
+   "receipt": "e2e is an end-to-end testing framework for web and mobile apps. e2e is built by TesterArmy",
+   "errs": [
+    "repeats words an earlier line already said: \"web and mobile apps\" - say something new",
+    "receipt not found word for word in the sources: \"e2e is an end-to-end testing framework for web and mobile apps. e2e is built by \" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "what",
+   "try": 1,
+   "say": "It runs natural language tests on your pull requests or schedule.",
+   "receipt": "...runs natural language tests... on every pull request...",
+   "errs": [
+    "has 11 words, must have 14-22"
+   ]
+  },
+  {
+   "slot": "what",
+   "try": 2,
+   "say": "e2e is an end-to-end testing framework for web and mobile apps.",
+   "receipt": "e2e is an end-to-end testing framework for web and mobile apps.",
+   "errs": [
+    "has 11 words, must have 14-22",
+    "repeats words an earlier line already said: \"web and mobile apps\" - say something new"
+   ]
+  },
+  {
+   "slot": "how",
+   "try": 0,
+   "say": "It uses a web engine for browsers and an agent-device engine to run tests on iOS or Android simulators.",
+   "receipt": "@e2e-dev/web | Browser engine: Chromium, Firefox, and WebKit through Playwright. ... @e2e-dev/mobile | iOS and Android engine: simulators and emulators through agent-device.",
+   "errs": []
+  },
+  {
+   "slot": "how",
+   "try": 0,
+   "say": "It uses agent-device to run iOS and Android simulators, plus Playwright for browsers.",
+   "receipt": "@e2e-dev/mobile | iOS and Android engine: simulators and emulators through agent-device. @e2e-dev/web | Browser engine: Chromium, Firefox, and WebKit through Playwright.",
+   "errs": [
+    "has 13 words, must have 16-26",
+    "receipt not found word for word in the sources: \"@e2e-dev/mobile ios and android engine: simulators and emulators through agent-d\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "how",
+   "try": 1,
+   "say": "It uses Playwright for Chromium, Firefox, WebKit browsers.",
+   "receipt": "| `@e2e-dev/web` | Browser engine: Chromium, Firefox, and WebKit through Playwright.",
+   "errs": [
+    "has 8 words, must have 16-26"
+   ]
+  },
+  {
+   "slot": "how",
+   "try": 2,
+   "say": "The web engine runs Chromium, Firefox, and WebKit through Playwright.",
+   "receipt": "@e2e-dev/web | Browser engine: Chromium, Firefox, and WebKit through Playwright.",
+   "errs": [
+    "has 10 words, must have 16-26"
+   ]
+  },
+  {
+   "slot": "how",
+   "try": 0,
+   "say": "It uses an engine for web or mobile and agent-device to run simulators, emulators, Chromium, Firefox, WebKit on iOS and Android.",
+   "receipt": "| `@e2e-dev/web` | Browser engine: Chromium, Firefox, and WebKit through Playwright. |\n| `@e2e-dev/mobile` | iOS and Android engine: simulators and emulators through agent-device.",
+   "errs": [
+    "not in the sources: It uses an engine for web or mobile and agent-device to run simulators, emulators"
+   ]
+  },
+  {
+   "slot": "how",
+   "try": 1,
+   "say": "The CLI writes a config then runs tests via Playwright browsers or iOS Android engines.",
+   "receipt": "`init` asks for an engine, web or mobile... Chromium, Firefox, WebKit through Playwright.... iOS and Android engine: simulators and emulators through agent-device.",
+   "errs": [
+    "has 15 words, must have 16-26",
+    "receipt not found word for word in the sources: \"chromium, firefox, webkit through playwright\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "how",
+   "try": 2,
+   "say": "It uses Chromium Firefox WebKit browsers or iOS Android engines directly.",
+   "receipt": "@e2e-dev/web Browser engine: Chromium Firefox and WebKit through Playwright ... @e2e-dev/mobile iOS and Android engine simulators emulators agent-device",
+   "errs": [
+    "has 11 words, must have 16-26",
+    "receipt not found word for word in the sources: \"@e2e-dev/web browser engine: chromium firefox and webkit through playwright\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "how2",
+   "try": 0,
+   "say": "Try running npx e2e init to create a config and an example test.",
+   "receipt": "`init` asks for an engine, web or mobile, and a model provider, then writes a config and an example test.\n```\\nnpx e2e init\\n```\\",
+   "errs": [
+    "has 13 words, must have 16-26",
+    "receipt not found word for word in the sources: \"init asks for an engine, web or mobile, and a model provider, then writes a conf\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "how2",
+   "try": 1,
+   "say": "Run npx e2e init to ask for an engine and write a config.",
+   "receipt": "`init` asks for an engine, web or mobile, and a model provider, then writes a config",
+   "errs": [
+    "has 13 words, must have 16-26"
+   ]
+  },
+  {
+   "slot": "how2",
+   "try": 2,
+   "say": "Try running the command shown in quick start.",
+   "receipt": "`npx e2e init` asks for an engine.",
+   "errs": [
+    "has 8 words, must have 16-26",
+    "receipt not found word for word in the sources: \"npx e2e init asks for an engine.\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "how2",
+   "try": 0,
+   "say": "Input a test describing an upgrade, and get code that automates it.",
+   "receipt": "test('a member upgrades to Pro', async ({ app, agent, screen }) => { ...",
+   "errs": [
+    "has 12 words, must have 16-26"
+   ]
+  },
+  {
+   "slot": "how2",
+   "try": 1,
+   "say": "Paste this example test about upgrading to Pro.",
+   "receipt": "// tests/checkout.e2e.ts\\nimport { test, expect } from 'e2e';\\n\\ntest('a member upgrades to Pro', async ({ app, agent, screen }) => {",
+   "errs": [
+    "has 8 words, must have 16-26",
+    "receipt not found word for word in the sources: \"// tests/checkout.e2e.ts nimport { test, expect } from 'e2e'; n ntest('a member \" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "how2",
+   "try": 2,
+   "say": "Paste this example test about upgrading to Pro.",
+   "receipt": "// tests/checkout.e2e.ts import { test, expect } from 'e2e';\\n \\ntest('a member upgrades to Pro', async ({ app, agent, screen }) => {",
+   "errs": [
+    "has 8 words, must have 16-26",
+    "receipt not found word for word in the sources: \"// tests/checkout.e2e.ts import { test, expect } from 'e2e'; n ntest('a member u\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "how2",
+   "try": 0,
+   "say": "The init command asks for an engine and a model provider, then writes a config.",
+   "receipt": "`init` asks for an engine, web or mobile, and a model provider, then writes a config",
+   "errs": [
+    "has 15 words, must have 16-26"
+   ]
+  },
+  {
+   "slot": "how2",
+   "try": 1,
+   "say": "Run npx e2e init to ask for the engine and write an example test.",
+   "receipt": "`init` asks for an engine... then writes a config",
+   "errs": [
+    "has 14 words, must have 16-26"
+   ]
+  },
+  {
+   "slot": "how2",
+   "try": 2,
+   "say": "Input is a natural language prompt like upgrade to Pro. The result is an automated check that verifies the member became Pro.",
+   "receipt": "... test('a member upgrades to Pro', async ({ app, agent, screen }) => { ... } ...",
+   "errs": []
+  },
+  {
+   "slot": "proof",
+   "try": 0,
+   "say": "Proof is active development on its way to version one point zero.",
+   "receipt": "> e2e is in active development on the way to 1.0.",
+   "errs": [
+    "has 12 words, must have 16-26",
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 1,
+   "say": "Receipt shows active development on its way to version 1.",
+   "receipt": "> [!NOTE] > e2e is in active development on the way to 1.",
+   "errs": [
+    "has 10 words, must have 16-26"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 2,
+   "say": "The project is under active development heading toward version 1.",
+   "receipt": "> [!NOTE] > e2e is in active development on the way to 1.",
+   "errs": [
+    "has 10 words, must have 16-26"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 0,
+   "say": "Proof is in active development toward version one point zero.",
+   "receipt": "> [!NOTE] > e2e is in active development on the way to 1.0.",
+   "errs": [
+    "has 10 words, must have 16-26",
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 1,
+   "say": "The CLI sends anonymous usage data but no test content or credentials.",
+   "receipt": "the CLI sends anonymous usage data, such as which commands and engines run and where runs fail, but no test content, app content, or credentials.",
+   "errs": [
+    "has 12 words, must have 16-26",
+    "must contain a number from the facts"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 2,
+   "say": "Check telemetry for run failures without sending app data.",
+   "receipt": "The CLI sends anonymous usage data ... but no test content, app content ...",
+   "errs": [
+    "has 9 words, must have 16-26",
+    "must contain a number from the facts"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 0,
+   "say": "Proof is in active development toward version one zero.",
+   "receipt": "> [!NOTE] > e2e is in active development on the way to 1.0.",
+   "errs": [
+    "has 9 words, must have 16-26",
+    "must contain a number from the facts"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 1,
+   "say": "Proof comes from Tester Army running checks on pull requests or schedules to verify natural language tests work.",
+   "receipt": "... runs natural language tests on web and mobile apps, on every pull request or on a schedule ...",
+   "errs": [
+    "must contain a number from the facts",
+    "repeats words an earlier line already said: \"on pull requests or\" - say something new"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 2,
+   "say": "Proof is in Tester Army results showing 3,788 GitHub stars for this TypeScript framework.",
+   "receipt": "F1: 3,788 GitHub stars, main language TypeScript",
+   "errs": [
+    "has 14 words, must have 16-26",
+    "repeats a number already said: 3788"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 0,
+   "say": ". It reports results in pull request comments and sends anonymous usage data.",
+   "receipt": "@e2e-dev/github | Reporter that posts results as a pull request comment.",
+   "errs": [
+    "has 13 words, must have 14-24",
+    "must contain a number from the facts"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 1,
+   "say": "The GitHub reporter posts results as pull request comments.",
+   "receipt": "@e2e-dev/github | Reporter that posts results as a pull request comment.",
+   "errs": [
+    "has 9 words, must have 14-24",
+    "must contain a number from the facts"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 2,
+   "say": "The CLI sends anonymous usage data about failures while keeping all credentials safe.",
+   "receipt": "Telemetry: The CLI sends anonymous usage data, such as which commands and engines run and where runs fail, but no test content, app content, or credentials.",
+   "errs": [
+    "has 13 words, must have 14-24",
+    "must contain a number from the facts",
+    "receipt not found word for word in the sources: \"telemetry: the cli sends anonymous usage data, such as which commands and engine\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 0,
+   "say": "The CLI sends anonymous usage data without test content, app content, or credentials.",
+   "receipt": "The CLI sends anonymous usage data, such as which commands and engines run and where runs fail, but no test content, app content, or credentials.",
+   "errs": [
+    "has 13 words, must have 14-24",
+    "must contain a number from the facts"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 1,
+   "say": "The CLI sends anonymous usage data like commands that run but never includes your test content or app credentials.",
+   "receipt": "Telemetry The CLI sends anonymous usage data, such as which commands and engines run and where runs fail, but no test content, app content, or credentials.",
+   "errs": [
+    "must contain a number from the facts"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 2,
+   "say": "@e2e-dev/github reports results in pull request comments.",
+   "receipt": "| `@e2e-dev/github` | Reporter that posts results as a pull request comment.",
+   "errs": [
+    "has 7 words, must have 14-24"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 0,
+   "say": "TesterArmy builds it to run on every pull request or schedule.",
+   "receipt": "e2e is built by TesterArmy, the agentic testing platform that runs natural language tests on web and mobile apps, on every pull request or on a schedule.",
+   "errs": [
+    "has 11 words, must have 14-24",
+    "must contain a number from the facts",
+    "repeats words an earlier line already said: \"every pull request or\" - say something new"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 1,
+   "say": "@e2e-dev/github posts results as a PR comment.",
+   "receipt": "| @e2e-dev/github | Reporter that posts results as a pull request comment.",
+   "errs": [
+    "has 7 words, must have 14-24"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 2,
+   "say": "The GitHub reporter package shares test results directly in pull request comments.",
+   "receipt": "`@e2e-dev/github` | Reporter that posts results as a pull request comment.",
+   "errs": [
+    "has 12 words, must have 14-24",
+    "must contain a number from the facts"
+   ]
+  },
+  {
+   "slot": "detail",
+   "try": 0,
+   "say": "The CLI writes a config and an example test after you ask for an engine, web or mobile.",
+   "receipt": "`init` asks for an engine, web or mobile, and a model provider, then writes a config and an example test.",
+   "errs": []
+  },
+  {
+   "slot": "detail",
+   "try": 0,
+   "say": "It also includes a kernel for hosted browsers and an SDK that acts as both runner and CLI.",
+   "receipt": "@e2e-dev/kernel Kernel hosted browsers for the web engine. | `e2e` The SDK, runner, and CLI.",
+   "errs": [
+    "receipt not found word for word in the sources: \"@e2e-dev/kernel kernel hosted browsers for the web engine. e2e the sdk, runner, \" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "detail",
+   "try": 1,
+   "say": "The SDK runs as a CLI with agents managing simulators.",
+   "receipt": "@e2e-dev/kernel | Kernel hosted browsers for the web engine.",
+   "errs": [
+    "has 10 words, must have 14-24"
+   ]
+  },
+  {
+   "slot": "detail",
+   "try": 2,
+   "say": "The e2e package includes the runner.",
+   "receipt": "| `e2e` | The SDK, runner,",
+   "errs": [
+    "has 6 words, must have 14-24",
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "detail",
+   "try": 0,
+   "say": "The CLI writes a config and an example test after you choose an engine.",
+   "receipt": "'init asks for an engine, web or mobile... then writes a config and an example test.'",
+   "errs": [
+    "receipt not found word for word in the sources: \"'init asks for an engine, web or mobile\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "detail",
+   "try": 1,
+   "say": "The init command chooses your engine then writes a config.",
+   "receipt": "`init` asks for an engine, web or mobile, and a model provider, then writes a config",
+   "errs": [
+    "has 10 words, must have 14-24"
+   ]
+  },
+  {
+   "slot": "detail",
+   "try": 2,
+   "say": "The npx e2e init command asks for an engine before writing the configuration.",
+   "receipt": "`init` asks for an engine ... then writes a config",
+   "errs": [
+    "has 13 words, must have 14-24"
+   ]
+  },
+  {
+   "slot": "detail2",
+   "try": 0,
+   "say": "It sends anonymous usage data without sharing test content or credentials.",
+   "receipt": "Telemetry The CLI sends anonymous usage data, such as which commands and engines run and where runs fail, but no test content, app content, or credentials.",
+   "errs": [
+    "has 11 words, must have 12-22"
+   ]
+  },
+  {
+   "slot": "detail2",
+   "try": 1,
+   "say": "The CLI creates a config file once you pick your engine.",
+   "receipt": "`init` asks for an engine, web or mobile, and a model provider, then writes a config and an example test.",
+   "errs": [
+    "has 11 words, must have 12-22"
+   ]
+  },
+  {
+   "slot": "detail2",
+   "try": 2,
+   "say": "The project is in active development on the way to version 1.",
+   "receipt": "> [!NOTE] > e2e is in active development on the way to 1.",
+   "errs": []
+  },
+  {
+   "slot": "detail2",
+   "try": 0,
+   "say": "It sends anonymous data about commands and engine runs.",
+   "receipt": "The CLI sends anonymous usage data, such as which commands and engines run",
+   "errs": [
+    "has 9 words, must have 12-22"
+   ]
+  },
+  {
+   "slot": "detail2",
+   "try": 1,
+   "say": "The CLI writes config after asking for an engine or model provider.",
+   "receipt": "`init` asks for an engine, web or mobile, and a model provider, then writes a config",
+   "errs": []
+  },
+  {
+   "slot": "detail2",
+   "try": 0,
+   "say": "The CLI sends anonymous usage data but never collects test content, app content, or credentials.",
+   "receipt": "Telemetry\nThe CLI sends anonymous usage data, such as which commands and engines run and where runs fail, but no test content, app content, or credentials.",
+   "errs": []
+  },
+  {
+   "slot": "trust",
+   "try": 0,
+   "say": "Made by TesterArmy, who built an agentic testing platform.",
+   "receipt": "e2e is built by TesterArmy, the agentic testing platform that runs natural language tests on web and mobile apps, on every pull request or on a schedule.",
+   "errs": [
+    "has 9 words, must have 12-20"
+   ]
+  },
+  {
+   "slot": "trust",
+   "try": 1,
+   "say": "Built by Tester Army with over three thousand seven hundred stars on GitHub.",
+   "receipt": "e2e is built by TesterArmy ... tester-army/e2e: 3,788 GitHub stars ...",
+   "errs": [
+    "write every number in digits exactly as in the facts, never in words",
+    "receipt not found word for word in the sources: \"tester-army/e2e: 3,788 github stars\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "trust",
+   "try": 2,
+   "say": "Built by Tester Army with licence under active development to version 1.",
+   "receipt": "Made by TesterArmy ... e2e is in active development on the way to 1.0.",
+   "errs": []
+  },
+  {
+   "slot": "trust",
+   "try": 0,
+   "say": "Built by TesterArmy and trusted with over a thousand stars.",
+   "receipt": "@e2e-dev/github posts results as a pull request comment ... e2e is built by TesterArmy",
+   "errs": [
+    "has 10 words, must have 12-20",
+    "write every number in digits exactly as in the facts, never in words",
+    "receipt not found word for word in the sources: \"@e2e-dev/github posts results as a pull request comment\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "trust",
+   "try": 1,
+   "say": "Built by TesterArmy with over three thousand seven hundred eighty-eight stars.",
+   "receipt": "F0: tester-army/e2e: Next generation e2e testing framework for web and mobile apps.",
+   "errs": [
+    "has 11 words, must have 12-20",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "trust",
+   "try": 2,
+   "say": "Built by TesterArmy with a licence under active development on GitHub.",
+   "receipt": "@e2e-dev/github posts results as a PR comment ... Made by TesterArmy ... e2e is in active development on the way to 1.0.",
+   "errs": [
+    "has 11 words, must have 12-20",
+    "receipt not found word for word in the sources: \"@e2e-dev/github posts results as a pr comment\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "trust",
+   "try": 0,
+   "say": "Made by TesterArmy, it uses a license and has many users testing web apps.",
+   "receipt": "@e2e-dev/github posts results as a pull request comment ... e2e is built by TesterArmy",
+   "errs": [
+    "receipt not found word for word in the sources: \"@e2e-dev/github posts results as a pull request comment\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "trust",
+   "try": 1,
+   "say": "Made by TesterArmy, licence unknown but GitHub stars are over three thousand.",
+   "receipt": "... Made by TesterArmy ...",
+   "errs": [
+    "write every number in digits exactly as in the facts, never in words",
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "trust",
+   "try": 2,
+   "say": "Built by TesterArmy with a license included.",
+   "receipt": "e2e is built by TesterArmy,",
+   "errs": [
+    "has 7 words, must have 12-20"
+   ]
+  },
+  {
+   "slot": "start",
+   "try": 0,
+   "say": "Run init to pick an engine and model, then it writes a config.",
+   "receipt": "`init` asks for an engine, web or mobile, and a model provider, then writes a config and an example test.",
+   "errs": []
+  },
+  {
+   "slot": "start",
+   "try": 0,
+   "say": "Run npx e2e init to get started.",
+   "receipt": "`npx e2e init`",
+   "errs": [
+    "has 7 words, must have 12-20",
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "start",
+   "try": 1,
+   "say": "Run npx e2e init to get started.",
+   "receipt": "",
+   "errs": [
+    "has 7 words, must have 12-20",
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "start",
+   "try": 2,
+   "say": "Run npx e2e init to get started with web or mobile.",
+   "receipt": "`init` asks for an engine, web or mobile",
+   "errs": [
+    "has 11 words, must have 12-20"
+   ]
+  },
+  {
+   "slot": "start",
+   "try": 0,
+   "say": "Run npx e2e init to choose an engine and get a config with an example test.",
+   "receipt": "`init` asks for an engine, web or mobile, and a model provider, then writes a config and an example test.",
+   "errs": []
+  },
+  {
+   "slot": "share",
+   "try": 0,
+   "say": "Send this to someone struggling with app testing.",
+   "receipt": "e2e is an end-to-end testing framework for web and mobile apps.",
+   "errs": [
+    "has 8 words, must have 10-16"
+   ]
+  },
+  {
+   "slot": "share",
+   "try": 1,
+   "say": "Save this for your next pull request or schedule.",
+   "receipt": "... on a pull request ... on a schedule.",
+   "errs": [
+    "has 9 words, must have 10-16",
+    "repeats words an earlier line already said: \"pull request or schedule\" - say something new"
+   ]
+  },
+  {
+   "slot": "share",
+   "try": 2,
+   "say": "Share this with a teammate building mobile apps.",
+   "receipt": "...tester-army/e2e ... iOS and Android engine...",
+   "errs": [
+    "has 8 words, must have 10-16",
+    "must start with 'Send this to someone who' or 'Save this for'"
+   ]
+  },
+  {
+   "slot": "share",
+   "try": 0,
+   "say": "Send this to a tester building end-to-end checks for web or mobile.",
+   "receipt": "e2e is an end-to-end testing framework for web and mobile apps.",
+   "errs": [
+    "must start with 'Send this to someone who' or 'Save this for'"
+   ]
+  },
+  {
+   "slot": "share",
+   "try": 1,
+   "say": "Save this for when you need an e2e framework that posts results as a pull request comment.",
+   "receipt": "@e2e-dev/github posts results as a PR comment.",
+   "errs": [
+    "has 17 words, must have 10-16",
+    "repeats words an earlier line already said: \"posts results as a\" - say something new"
+   ]
+  },
+  {
+   "slot": "share",
+   "try": 2,
+   "say": "Send this to someone who wants automated checks.",
+   "receipt": "e2e is an end-to-end testing framework for web and mobile apps.",
+   "errs": [
+    "has 8 words, must have 10-16"
+   ]
+  },
+  {
+   "slot": "share",
+   "try": 0,
+   "say": "Send this to someone who wants simpler end-to-end tests for their web or mobile apps.",
+   "receipt": "e2e is an end-to-end testing framework for web and mobile apps.",
+   "errs": []
+  },
+  {
+   "slot": "end",
+   "try": 0,
+   "say": "Get end-to-end tests for web and mobile apps.",
+   "receipt": "e2e is an end-to-end testing framework for web and mobile apps.",
+   "errs": [
+    "repeats words an earlier line already said: \"end to end tests\" - say something new"
+   ]
+  },
+  {
+   "slot": "end",
+   "try": 1,
+   "say": "Try the next-gen framework from tester-army slash e2e.",
+   "receipt": "F0: tester-army/e2e: Next generation e2e testing framework for web and mobile apps.",
+   "errs": []
+  },
+  {
+   "slot": "end",
+   "try": 0,
+   "say": "End-to-end testing is built for natural language workflows.",
+   "receipt": "e2e is an end-to-end testing framework for web and mobile apps.",
+   "errs": []
+  },
+  {
+   "slot": "end",
+   "try": 0,
+   "say": "End-to-end testing is now simpler.",
+   "receipt": "e2e is an end-to-end testing framework for web and mobile apps.",
+   "errs": [
+    "has 5 words, must have 6-12"
+   ]
+  },
+  {
+   "slot": "end",
+   "try": 1,
+   "say": "End-to-end tests are ready for you.",
+   "receipt": "e2e: Next generation e2e testing framework for web and mobile apps.",
+   "errs": [
+    "repeats words an earlier line already said: \"end to end tests\" - say something new"
+   ]
+  },
+  {
+   "slot": "end",
+   "try": 2,
+   "say": "Try e2e today.",
+   "receipt": "tester-army/e2e : Next generation e2e testing framework for web and mobile apps.",
+   "errs": [
+    "has 3 words, must have 6-12"
+   ]
+  }
+ ]
+}

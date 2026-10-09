@@ -1,0 +1,9 @@
+{
+ "lines": [
+  "This tiny engine beats an 8B-parameter LLM. And it's 11× faster.",
+  "OpenClaw runs on your own computer, not the cloud.",
+  "It handles Discord, Slack, iMessage, and more instantly."
+ ],
+ "words": 28,
+ "log": []
+}

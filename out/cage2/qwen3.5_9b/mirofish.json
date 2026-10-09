@@ -1,0 +1,1022 @@
+{
+ "lines": [
+  "MiroFish has 76,712 GitHub stars.",
+  "Developers struggle to map reality with a swarm intelligence mirror.",
+  "MiroFish uses multi-agent technology to make predictions about public opinion events like university trends.",
+  "It runs a simulation engine powered by OASIS to generate reports on trending events.",
+  "Try Dream of the Red Chamber Lost Ending Simulation to see deep prediction of the lost ending.",
+  "You can run a simulation on trending public opinion events.",
+  "You can run it with Node.js, Python and uv tools on your machine.",
+  "MiroFish is supported by Shanda Group and uses OASIS for its simulation engine.",
+  "First copy the example environment file, then edit your local dot env to add needed keys.",
+  "Save this for a deep prediction simulation on public opinion events.",
+  "Try the universal swarm intelligence engine named MiroFish."
+ ],
+ "words": 131,
+ "log": [
+  {
+   "slot": "hook",
+   "try": 0,
+   "say": "MiroFish has seventy-six thousand seven hundred twelve stars...",
+   "receipt": "76,712 GitHub stars",
+   "errs": [
+    "has 8 words, must have 12-20",
+    "must contain a number from the facts",
+    "no '...' in the spoken line (that belongs in the receipt only)",
+    "write every number in digits exactly as in the facts, never in words",
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "hook",
+   "try": 1,
+   "say": "MiroFish has seventy-six thousand seven hundred twelve GitHub stars.",
+   "receipt": "76,712 GitHub stars",
+   "errs": [
+    "has 9 words, must have 12-20",
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words",
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "hook",
+   "try": 2,
+   "say": "MiroFish has seventy-six thousand seven hundred twelve GitHub stars.",
+   "receipt": "**MiroFish** is a next-generation AI prediction engine powered by multi-agent technology.\n\n### (intro)\n简洁通用的群体智能引擎，预测万物 A Simple and Universal Swarm Intelligence Engine, Predicting Anything ![GitHub Stars](https://github.com/666ghj/MiroFish/stargazers)",
+   "errs": [
+    "has 9 words, must have 12-20",
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words",
+    "receipt not found word for word in the sources: \"mirofish is a next-generation ai prediction engine powered by multi-agent techno\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "hook",
+   "try": 0,
+   "say": "It has seventy-six thousand seven hundred twelve stars on GitHub.",
+   "receipt": "76,712 GitHub stars",
+   "errs": [
+    "has 10 words, must have 12-20",
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words",
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "hook",
+   "try": 1,
+   "say": "MiroFish has seventy-six thousand seven hundred twelve stars on GitHub.",
+   "receipt": "76,712 GitHub stars",
+   "errs": [
+    "has 10 words, must have 12-20",
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words",
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "hook",
+   "try": 2,
+   "say": "MiroFish has 76,712 GitHub stars.",
+   "receipt": "F1: 76,712 GitHub stars, main language Python",
+   "errs": [
+    "has 5 words, must have 12-20"
+   ]
+  },
+  {
+   "slot": "hook",
+   "try": 0,
+   "say": "MiroFish has seventy-six thousand seven hundred twelve GitHub stars.",
+   "receipt": "76,712 GitHub stars",
+   "errs": [
+    "has 9 words, must have 12-20",
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words",
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "hook",
+   "try": 1,
+   "say": "MiroFish has 76712 GitHub stars measuring project popularity.",
+   "receipt": "F1: 76,712 GitHub stars",
+   "errs": [
+    "has 8 words, must have 12-20",
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "hook",
+   "try": 2,
+   "say": "MiroFish has seventy-six thousand seven hundred twelve GitHub stars measuring popularity.",
+   "receipt": "76,712 GitHub stars, main language Python",
+   "errs": [
+    "has 11 words, must have 12-20",
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "problem",
+   "try": 0,
+   "say": "MiroFish maps reality with a swarm intelligence mirror.",
+   "receipt": "dedicated to creating a swarm intelligence mirror that maps reality.",
+   "errs": [
+    "has 8 words, must have 14-24"
+   ]
+  },
+  {
+   "slot": "problem",
+   "try": 1,
+   "say": "MiroFish predicts anything using multi-agent technology to map reality.",
+   "receipt": "**MiroFish** is a next-generation AI prediction engine powered by multi-agent technology.\nOur Vision\nMiroFish is dedicated to creating a swarm intelligence mirror that maps reality.",
+   "errs": [
+    "has 9 words, must have 14-24"
+   ]
+  },
+  {
+   "slot": "problem",
+   "try": 2,
+   "say": "Developers face a chaotic digital landscape where truth is hard to find.",
+   "receipt": "... multi-agent technology maps reality ...",
+   "errs": [
+    "has 12 words, must have 14-24",
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "problem",
+   "try": 0,
+   "say": "Developers need a swarm intelligence engine that maps reality.",
+   "receipt": "MiroFish is dedicated to creating a swarm intelligence mirror that maps reality.",
+   "errs": [
+    "has 9 words, must have 14-24"
+   ]
+  },
+  {
+   "slot": "problem",
+   "try": 1,
+   "say": "Developers face chaos in predicting complex events.",
+   "receipt": "**MiroFish is dedicated to creating a swarm intelligence mirror that maps reality.**",
+   "errs": [
+    "has 7 words, must have 14-24"
+   ]
+  },
+  {
+   "slot": "problem",
+   "try": 2,
+   "say": "Predicting public opinion on trending topics is hard.",
+   "receipt": "MiroFish ... multi-agent technology",
+   "errs": [
+    "has 8 words, must have 14-24",
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "problem",
+   "try": 0,
+   "say": "Developers struggle to map reality with a swarm intelligence mirror.",
+   "receipt": "MiroFish is dedicated to creating a swarm intelligence mirror that maps reality.",
+   "errs": [
+    "has 10 words, must have 14-24"
+   ]
+  },
+  {
+   "slot": "problem",
+   "try": 1,
+   "say": "Developers face hard limits when trying to predict anything.",
+   "receipt": "...A Simple and Universal Swarm Intelligence Engine, Predicting Anything...",
+   "errs": [
+    "has 9 words, must have 14-24"
+   ]
+  },
+  {
+   "slot": "problem",
+   "try": 2,
+   "say": "MiroFish acts as a swarm intelligence mirror that maps reality.",
+   "receipt": "our Vision MiroFish is dedicated to creating a swarm intelligence mirror that maps reality.",
+   "errs": [
+    "has 10 words, must have 14-24"
+   ]
+  },
+  {
+   "slot": "what",
+   "try": 0,
+   "say": "MiroFish is a swarm intelligence engine that predicts anything for you.",
+   "receipt": "**MiroFish** is a next-generation AI prediction engine powered by multi-agent technology.\nOur Vision\nMiroFish is dedicated to creating a swarm intelligence mirror that maps reality.",
+   "errs": [
+    "has 11 words, must have 14-22"
+   ]
+  },
+  {
+   "slot": "what",
+   "try": 1,
+   "say": "MiroFish uses multi-agent technology to map reality with a swarm intelligence mirror.",
+   "receipt": "**MiroFish** is a next-generation AI prediction engine powered by multi-agent technology.\n### Our Vision\nMiroFish is dedicated to creating a swarm intelligence mirror that maps reality.",
+   "errs": [
+    "has 12 words, must have 14-22",
+    "repeats words an earlier line already said: \"a swarm intelligence mirror\" - say something new"
+   ]
+  },
+  {
+   "slot": "what",
+   "try": 2,
+   "say": "MiroFish is a prediction engine for you to simulate public opinion events.",
+   "receipt": "**⚡ Overview**\n\n**MiroFish** is a next-generation AI prediction engine powered by multi-agent technology.\n### Our Vision\nMiroFish is dedicated to creating a swarm intelligence mirror that maps reality.",
+   "errs": [
+    "has 12 words, must have 14-22"
+   ]
+  },
+  {
+   "slot": "what",
+   "try": 0,
+   "say": "MiroFish is a swarm intelligence engine that maps reality using multi-agent technology to predict anything.",
+   "receipt": "**MiroFish** is dedicated to creating a swarm intelligence mirror that maps reality. MiroFish is a next-generation AI prediction engine powered by multi-agent technology.",
+   "errs": [
+    "receipt not found word for word in the sources: \"mirofish is dedicated to creating a swarm intelligence mirror that maps reality.\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "what",
+   "try": 1,
+   "say": "MiroFish creates a swarm intelligence mirror that maps reality.",
+   "receipt": "dedicated to creating a swarm intelligence mirror that maps reality",
+   "errs": [
+    "has 9 words, must have 14-22",
+    "repeats words an earlier line already said: \"a swarm intelligence mirror\" - say something new"
+   ]
+  },
+  {
+   "slot": "what",
+   "try": 2,
+   "say": "MiroFish is a prediction engine for trending events.",
+   "receipt": "**MiroFish** is a next-generation AI prediction engine powered by multi-agent technology.",
+   "errs": [
+    "has 8 words, must have 14-22"
+   ]
+  },
+  {
+   "slot": "what",
+   "try": 0,
+   "say": "MiroFish is a swarm intelligence mirror that maps reality for anyone wanting to predict anything.",
+   "receipt": "A Simple and Universal Swarm Intelligence Engine, Predicting Anything ... MiroFish is dedicated to creating a swarm intelligence mirror that maps reality.",
+   "errs": [
+    "repeats words an earlier line already said: \"a swarm intelligence mirror\" - say something new"
+   ]
+  },
+  {
+   "slot": "what",
+   "try": 1,
+   "say": "MiroFish uses multi-agent technology to make predictions about public opinion events like university trends.",
+   "receipt": "**MiroFish** is a next-generation AI prediction engine powered by multi-agent technology.",
+   "errs": []
+  },
+  {
+   "slot": "how",
+   "try": 0,
+   "say": "It runs a BettaFish simulation that predicts missing story endings using hundreds of thousands of words.",
+   "receipt": "MiroFish's deep prediction of the lost ending based on hundreds of thousands of words from the first 80 chapters of \"Dream of the Red C\"",
+   "errs": [
+    "write every number in digits exactly as in the facts, never in words",
+    "receipt not found word for word in the sources: \"mirofish's deep prediction of the lost ending based on hundreds of thousands of \" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "how",
+   "try": 1,
+   "say": "It simulates missing story endings using data from the first 80 chapters.",
+   "receipt": "...deep prediction of the lost ending based on ...the first 80 chapters...",
+   "errs": [
+    "has 12 words, must have 16-26"
+   ]
+  },
+  {
+   "slot": "how",
+   "try": 2,
+   "say": "An LLM API drives simulations with fewer than 40 rounds.",
+   "receipt": "High consumption, try simulations with fewer than 40 rounds first",
+   "errs": [
+    "has 10 words, must have 16-26"
+   ]
+  },
+  {
+   "slot": "how",
+   "try": 0,
+   "say": "It runs a simulation engine powered by OASIS to generate reports on trending events.",
+   "receipt": "MiroFish is a next-generation AI prediction engine ... MiroFish's simulation engine is powered by **OASIS (Open Agent Social Interaction**",
+   "errs": [
+    "has 14 words, must have 16-26"
+   ]
+  },
+  {
+   "slot": "how",
+   "try": 1,
+   "say": "The backend uses Python version three point eleven or higher running the OASIS engine.",
+   "receipt": "| **Python** | ≥3.11, ≤3.12 | Backend runtime",
+   "errs": [
+    "has 14 words, must have 16-26",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "how",
+   "try": 2,
+   "say": "The system runs Python version three point eleven through twelve. It uses OASIS to power multi-agent technology.",
+   "receipt": "**Python** | ≥3.11, ≤3.12",
+   "errs": [
+    "write every number in digits exactly as in the facts, never in words",
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "how",
+   "try": 0,
+   "say": "It runs a BettaFish simulation that predicts missing story endings from existing text.",
+   "receipt": "Dream of the Red Chamber Lost Ending Simulation Click the image to watch MiroFish's deep prediction of the lost ending based on hundreds of thousands of words from the first 80 chapters",
+   "errs": [
+    "has 13 words, must have 16-26"
+   ]
+  },
+  {
+   "slot": "how",
+   "try": 1,
+   "say": "OASIS powers the engine to map reality for public opinion reports.",
+   "receipt": "MiroFish is a next-generation AI prediction engine powered by multi-agent technology.\n... MiroFish's simulation engine is powered by OASIS (Open Agent Social Interaction ...",
+   "errs": [
+    "has 11 words, must have 16-26"
+   ]
+  },
+  {
+   "slot": "how",
+   "try": 2,
+   "say": "OASIS drives multi-agent technology in simulations like Dream of the Red Chamber.",
+   "receipt": "**MiroFish** is a next-generation AI prediction engine powered by multi-agent technology.\nClick the image to watch MiroFish's deep prediction of the lost ending based on hundreds of thousands of words from the first 80 chapters",
+   "errs": [
+    "has 12 words, must have 16-26",
+    "receipt not found word for word in the sources: \"mirofish is a next-generation ai prediction engine powered by multi-agent techno\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "how2",
+   "try": 0,
+   "say": "Watch it predict a lost ending using hundreds of thousands of words from Dream of the Red Chamber.",
+   "receipt": "[2] ... deep prediction of the lost ending based on hundreds of thousands of words ...",
+   "errs": [
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "how2",
+   "try": 1,
+   "say": "See predictions on Wuhan University trends or a lost ending using hundreds of thousands of words from Dream of the Red Chamber.",
+   "receipt": "... prediction simulation on trending public opinion events ... hundreds of thousands of words from the first 80 chapters",
+   "errs": [
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "how2",
+   "try": 2,
+   "say": "See Deep Prediction on Lost Ending based on hundreds of thousands of words from Dream of the Red Chamber.",
+   "receipt": "Click the image to watch MiroFish's deep prediction of the lost ending based on hundreds of thousands of words from the first 80 chapters",
+   "errs": [
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "how2",
+   "try": 0,
+   "say": "Try simulating a dream ending based on hundreds of thousands of words from the first eighty chapters.",
+   "receipt": "Dream of the Red Chamber Lost Ending Simulation ... hundreds of thousands of words from the first 80 chapters",
+   "errs": [
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "how2",
+   "try": 1,
+   "say": "Watch MiroFish predict a lost ending using text from the first 80 chapters.",
+   "receipt": "2. Dream of the Red Chamber Lost Ending Simulation Click the image to watch MiroFish's deep prediction of the lost ending based on hundreds of thousands of words from the first 80 chapters of \"Dream of the Red C\"",
+   "errs": [
+    "has 13 words, must have 16-26",
+    "receipt not found word for word in the sources: \"2. dream of the red chamber lost ending simulation click the image to watch miro\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "how2",
+   "try": 2,
+   "say": "Watch MiroFish predict a lost ending using text from the first 80 chapters.",
+   "receipt": "",
+   "errs": [
+    "has 13 words, must have 16-26",
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "how2",
+   "try": 0,
+   "say": "Watch it predict the lost ending to Dream of the Red Chamber using hundreds of thousands of words.",
+   "receipt": "Deep prediction of the lost ending based on hundreds of thousands of words from the first 80 chapters of \"Dream of the Red C\"",
+   "errs": [
+    "write every number in digits exactly as in the facts, never in words",
+    "receipt not found word for word in the sources: \"deep prediction of the lost ending based on hundreds of thousands of words from \" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "how2",
+   "try": 1,
+   "say": "Watch MiroFish predict Dream of the Red Chamber's missing ending using hundreds of thousands of words.",
+   "receipt": "deep prediction of the lost ending based on hundreds of thousands of words from the first 80 chapters of \"Dream of the Red C\"",
+   "errs": [
+    "write every number in digits exactly as in the facts, never in words",
+    "receipt not found word for word in the sources: \"deep prediction of the lost ending based on hundreds of thousands of words from \" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "how2",
+   "try": 2,
+   "say": "Try Dream of the Red Chamber Lost Ending Simulation to see deep prediction of the lost ending.",
+   "receipt": "Dream of the Red Chamber Lost Ending Simulation ... deep prediction of the lost ending",
+   "errs": []
+  },
+  {
+   "slot": "proof",
+   "try": 0,
+   "say": "We tested it on Dream of the Red Chamber using hundreds of thousands of words from the first eighty chapters.",
+   "receipt": "MiroFish's deep prediction of the lost ending based on hundreds of thousands of words from the first 80 chapters of \"Dream of the Red C",
+   "errs": [
+    "must contain a number from the facts",
+    "repeats words an earlier line already said: \"dream of the red\" - say something new",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 1,
+   "say": "The simulation engine uses OASIS to map reality.",
+   "receipt": "**MiroFish is dedicated to creating a swarm intelligence mirror that maps reality.**",
+   "errs": [
+    "has 8 words, must have 16-26",
+    "must contain a number from the facts"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 2,
+   "say": "The Wuhan University Public Opinion Report is generated by BettaFish.",
+   "receipt": "Click the image to watch the complete demo video for prediction using BettaFish-generated \"Wuhan University Public Opinion Report\"",
+   "errs": [
+    "has 10 words, must have 16-26",
+    "must contain a number from the facts"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 0,
+   "say": "It simulates Wuhan University public opinion trends.",
+   "receipt": "1. Wuhan University Public Opinion Simulation + MiroFish Project Introduction Click the image to watch the complete demo video for prediction using BettaFish-generated \"Wuhan University Public Opinion Report\"",
+   "errs": [
+    "has 7 words, must have 16-26",
+    "must contain a number from the facts"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 1,
+   "say": "The benchmark shows OASIS predicts text against hundreds of thousands of chapters.",
+   "receipt": "MiroFish's deep prediction of the lost ending based on hundreds of thousands of words from the first 80 chapters",
+   "errs": [
+    "has 12 words, must have 16-26",
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 2,
+   "say": "The engine maps reality using OASIS across hundreds of thousands of text chapters.",
+   "receipt": "**Dream of the Red Chamber Lost Ending Simulation**... based on hundreds of thousands of words from the first 80 chapters",
+   "errs": [
+    "has 13 words, must have 16-26",
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 0,
+   "say": "Verify its power with a simulation predicting Wuhan University public opinion trends.",
+   "receipt": "Wuhan University Public Opinion Simulation + MiroFish Project Introduction Click the image to watch the complete demo video for prediction using BettaFish-generated \"Wuhan University Public Opinion Report\"",
+   "errs": [
+    "has 12 words, must have 16-26",
+    "must contain a number from the facts"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 1,
+   "say": "See stats showing thousands of stars on GitHub.",
+   "receipt": "76,712 GitHub stars",
+   "errs": [
+    "has 8 words, must have 16-26",
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words",
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 2,
+   "say": "Check OASIS powering simulations with hundreds of thousands of words.",
+   "receipt": "MiroFish's deep prediction of the lost ending based on hundreds of thousands of words",
+   "errs": [
+    "has 10 words, must have 16-26",
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "proof",
+   "dropped": true
+  },
+  {
+   "slot": "proof2",
+   "try": 0,
+   "say": "Strategic support comes from Shanda Group.",
+   "receipt": "**MiroFish has received strategic support and incubation from Shanda Group!**",
+   "errs": [
+    "has 6 words, must have 14-24",
+    "must contain a number from the facts"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 1,
+   "say": "OASIS powers the simulation engine.",
+   "receipt": "MiroFish's simulation engine is powered by OASIS",
+   "errs": [
+    "has 5 words, must have 14-24",
+    "must contain a number from the facts"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 2,
+   "say": "Shanda Group supports this project. It uses Python code for the backend.",
+   "receipt": "**MiroFish has received strategic support and incubation from Shanda Group!** ... main language Python",
+   "errs": [
+    "has 12 words, must have 14-24",
+    "must contain a number from the facts"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 0,
+   "say": "MiroFish gets strategic support from Shanda Group while running on OASIS.",
+   "receipt": "**MiroFish has received strategic support and incubation from Shanda Group!** MiroFish's simulation engine is powered by **OASIS (Open Agent Social Interaction**",
+   "errs": [
+    "has 11 words, must have 14-24",
+    "must contain a number from the facts"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 1,
+   "say": "Shanda Group supports MiroFish running on OASIS.",
+   "receipt": "**MiroFish has received strategic support and incubation from Shanda Group!** MiroFish's simulation engine is powered by **OASIS**",
+   "errs": [
+    "has 7 words, must have 14-24",
+    "must contain a number from the facts"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 2,
+   "say": "MiroFish requires Node.js version eighteen or higher.",
+   "receipt": "| **Node.js** | 18+ | Frontend runtime, includes npm | `node -v` |",
+   "errs": [
+    "has 7 words, must have 14-24",
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 0,
+   "say": "MiroFish is incubated with support from Shanda Group.",
+   "receipt": "**MiroFish has received strategic support and incubation from Shanda Group!**",
+   "errs": [
+    "has 8 words, must have 14-24",
+    "must contain a number from the facts"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 1,
+   "say": "OASIS powers MiroFish to predict anything.",
+   "receipt": "MiroFish is a next-generation AI prediction engine powered by multi-agent technology.",
+   "errs": [
+    "has 6 words, must have 14-24",
+    "must contain a number from the facts"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 2,
+   "say": "Strategic support comes from Shanda Group.",
+   "receipt": "**MiroFish has received strategic support and incubation from Shanda Group**!",
+   "errs": [
+    "has 6 words, must have 14-24",
+    "must contain a number from the facts",
+    "receipt not found word for word in the sources: \"mirofish has received strategic support and incubation from shanda group !\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "dropped": true
+  },
+  {
+   "slot": "detail",
+   "try": 0,
+   "say": "It predicts lost story endings from hundreds of thousands of words in Dream of the Red Chamber.",
+   "receipt": "MiroFish's deep prediction of the lost ending based on hundreds of thousands of words from the first 80 chapters of \"Dream of the Red C",
+   "errs": [
+    "repeats words an earlier line already said: \"dream of the red\" - say something new",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "detail",
+   "try": 1,
+   "say": "You can run a simulation on trending public opinion events.",
+   "receipt": "Welcome to visit our online demo environment and experience a prediction simulation on trending public opinion events we've prepared for you: mirofish-live-demo",
+   "errs": [
+    "has 10 words, must have 14-24"
+   ]
+  },
+  {
+   "slot": "detail",
+   "try": 2,
+   "say": "You can simulate the lost ending of Dream of the Red Chamber based on hundreds of thousands of words from its first eighty chapters.",
+   "receipt": "Dream of the Red Chamber Lost Ending Simulation Click the image to watch MiroFish's deep prediction of the lost ending based on hundreds of thousands of words from the first 80 chapters of \"Dream of the Red C\"",
+   "errs": [
+    "repeats words an earlier line already said: \"dream of the red\" - say something new",
+    "write every number in digits exactly as in the facts, never in words",
+    "receipt not found word for word in the sources: \"dream of the red chamber lost ending simulation click the image to watch mirofis\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "detail",
+   "try": 0,
+   "say": "It copies configuration files to run on Node.js and Python.",
+   "receipt": "| Tool | Version | Description | Check Installation |\n| **Node.js** | 18+ | Frontend runtime, includes npm | `node -v` |\n| **Python** | ≥3.11, ≤3.12 | Backend runtime | `python --version` |",
+   "errs": [
+    "has 10 words, must have 14-24"
+   ]
+  },
+  {
+   "slot": "detail",
+   "try": 1,
+   "say": "Copy the example config file before editing environment keys for setup.",
+   "receipt": "# Copy the example configuration file\ncp .env.example .env\n# Edit the .env file and fill in the required API keys",
+   "errs": [
+    "has 11 words, must have 14-24"
+   ]
+  },
+  {
+   "slot": "detail",
+   "try": 2,
+   "say": "You can simulate Wuhan University public opinion trends.",
+   "receipt": "Click the image to watch the complete demo video for prediction using BettaFish-generated \"Wuhan University Public Opinion Report\"",
+   "errs": [
+    "has 8 words, must have 14-24"
+   ]
+  },
+  {
+   "slot": "detail",
+   "try": 0,
+   "say": "It requires Node.js version 18 or higher and Python between three point eleven and three point twelve.",
+   "receipt": "| **Node.js** | 18+ | Frontend runtime, includes npm |\n| **Python** | ≥3.11, ≤3.12 | Backend runtime | `python --version`|",
+   "errs": [
+    "write every number in digits exactly as in the facts, never in words",
+    "receipt not found word for word in the sources: \"node.js 18+ frontend runtime, includes npm python ≥3.11, ≤3.12 backend runtime p\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "detail",
+   "try": 1,
+   "say": "It needs Node dot one eight plus for the front end.",
+   "receipt": "| **Node.js** | 18+ | Frontend runtime, includes npm",
+   "errs": [
+    "has 11 words, must have 14-24",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "detail",
+   "try": 2,
+   "say": "You can deploy using Node version eighteen or higher.",
+   "receipt": "| **Node.js** | 18+ | Frontend runtime, includes npm",
+   "errs": [
+    "has 9 words, must have 14-24",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "detail2",
+   "try": 0,
+   "say": "You can run it with Node.js, Python and uv tools on your machine.",
+   "receipt": "| **Node.js** | 18+ | Frontend runtime, includes npm | `node -v` |\n| **Python** | ≥3.11, ≤3.12 | Backend runtime | `python --version` |\n| **uv** | Latest | Python package manager | `uv --version` |",
+   "errs": []
+  },
+  {
+   "slot": "detail2",
+   "try": 0,
+   "say": "It requires Node.js 18 and Python 3.12 to run.",
+   "receipt": "**Node.js** | 18+ ... **Python** | ≥3.11, ≤3.12 ...",
+   "errs": [
+    "has 9 words, must have 12-22"
+   ]
+  },
+  {
+   "slot": "detail2",
+   "try": 1,
+   "say": "You need a Linux environment with an LLM API key.",
+   "receipt": "LLM_API_KEY=your_api_key ... Option 1: Source Code Deployment (Recommended) ... Prerequisites ...",
+   "errs": [
+    "has 10 words, must have 12-22"
+   ]
+  },
+  {
+   "slot": "detail2",
+   "try": 2,
+   "say": "You need Node.js 18 plus Python version 3.11 for the backend.",
+   "receipt": "| **Node.js** | 18+ | Frontend runtime, includes npm | `node -v` |\n| **Python** | ≥3.11, ≤3.12 | Backend runtime | `python --version` |",
+   "errs": [
+    "has 11 words, must have 12-22"
+   ]
+  },
+  {
+   "slot": "detail2",
+   "try": 0,
+   "say": "You need Node.js 18 plus and Python version three point one one or higher to run it.",
+   "receipt": "| **Node.js** | 18+ | Frontend runtime, includes npm | `node -v` |\n| **Python** | ≥3.11, ≤3.12 | Backend runtime | `python --version` |",
+   "errs": [
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "detail2",
+   "try": 1,
+   "say": "You can deploy using Node.js 18 plus and Python version three point eleven.",
+   "receipt": "| **Node.js** | 18+ | Frontend runtime, includes npm |\n| **Python** | ≥3.11",
+   "errs": [
+    "write every number in digits exactly as in the facts, never in words",
+    "receipt not found word for word in the sources: \"node.js 18+ frontend runtime, includes npm python ≥3.11\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "detail2",
+   "try": 2,
+   "say": "Copy config file dot env example to dot env then edit for API keys.",
+   "receipt": "# Copy the example configuration file\ncp .env.example .env\n\n# Edit the .env file and fill in the required API keys",
+   "errs": []
+  },
+  {
+   "slot": "trust",
+   "try": 0,
+   "say": "Shanda Group supported it, and OASIS powers its engine.",
+   "receipt": "**MiroFish has received strategic support and incubation from Shanda Group!** MiroFish's simulation engine is powered by **OASIS (Open Agent Social Interaction**",
+   "errs": [
+    "has 9 words, must have 12-20"
+   ]
+  },
+  {
+   "slot": "trust",
+   "try": 1,
+   "say": "Shanda supports MiroFish while OASIS powers the engine.",
+   "receipt": "**MiroFish** has received strategic support and incubation from Shanda Group! MiroFish's simulation engine is powered by **OASIS (Open Agent Social Interaction ...",
+   "errs": [
+    "has 8 words, must have 12-20"
+   ]
+  },
+  {
+   "slot": "trust",
+   "try": 2,
+   "say": "OASIS powers this engine with strategic support from Shanda Group.",
+   "receipt": "**MiroFish has received strategic support and incubation from Shanda Group!** MiroFish's simulation engine is powered by **OASIS (Open Agent Social Interaction**",
+   "errs": [
+    "has 10 words, must have 12-20"
+   ]
+  },
+  {
+   "slot": "trust",
+   "try": 0,
+   "say": "Shanda Group incubates this OASIS engine that you can run on your own machine.",
+   "receipt": "**MiroFish has received strategic support and incubation from Shanda Group!** MiroFish's simulation engine is powered by **OASIS (Open Agent Social Interaction** ... You can run it with Node.js, Python and uv tools on your machine.",
+   "errs": [
+    "receipt not found word for word in the sources: \"you can run it with node.js, python and uv tools on your machine.\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "trust",
+   "try": 1,
+   "say": "MiroFish comes from Shanda Group and uses OASIS to predict anything.",
+   "receipt": "**Acknowledgments**\\n**MiroFish has received strategic support and incubation from Shanda Group!** MiroFish's simulation engine is powered by **OASIS (Open Agent Social Interaction**",
+   "errs": [
+    "has 11 words, must have 12-20",
+    "receipt not found word for word in the sources: \"acknowledgments n mirofish has received strategic support and incubation from sh\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "trust",
+   "try": 2,
+   "say": "MiroFish is backed by Shanda Group with OASIS power.",
+   "receipt": "**MiroFish has received strategic support and incubation from Shanda Group!** MiroFish's simulation engine is powered by **OASIS (Open Agent Social Interaction**...",
+   "errs": [
+    "has 9 words, must have 12-20"
+   ]
+  },
+  {
+   "slot": "trust",
+   "try": 0,
+   "say": "MiroFish is supported by Shanda Group and uses OASIS for its simulation engine.",
+   "receipt": "**MiroFish has received strategic support and incubation from Shanda Group!** MiroFish's simulation engine is powered by **OASIS (Open Agent Social Interaction",
+   "errs": []
+  },
+  {
+   "slot": "start",
+   "try": 0,
+   "say": "Copy .env.example, then run uv to start.",
+   "receipt": ". Copy the example configuration file ... cp .env.example .env",
+   "errs": [
+    "has 7 words, must have 12-20",
+    "receipt not found word for word in the sources: \". copy the example configuration file\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "start",
+   "try": 1,
+   "say": "Copy .env.example to your project folder.",
+   "receipt": "# Copy the example configuration file\ncp .env.example .env",
+   "errs": [
+    "has 6 words, must have 12-20"
+   ]
+  },
+  {
+   "slot": "start",
+   "try": 2,
+   "say": "Copy the example environment file named dot env example into your local directory.",
+   "receipt": "# Copy the example configuration file\ncp .env.example .env",
+   "errs": []
+  },
+  {
+   "slot": "start",
+   "try": 0,
+   "say": "",
+   "receipt": "",
+   "errs": [
+    "has 0 words, must have 12-20",
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "start",
+   "try": 1,
+   "say": "Copy .env.example to dot env then run uv sync.",
+   "receipt": "cp .env.example .env ... # Copy the example configuration file",
+   "errs": [
+    "has 9 words, must have 12-20"
+   ]
+  },
+  {
+   "slot": "start",
+   "try": 2,
+   "say": "First copy the example config file to your environment variables.",
+   "receipt": "cp .env.example .env",
+   "errs": [
+    "has 10 words, must have 12-20",
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "start",
+   "try": 0,
+   "say": "Copy .env.example to dot env, then configure LLM API keys.",
+   "receipt": "cp .env.example .env ... Edit the .env file and fill in the required API keys",
+   "errs": [
+    "has 10 words, must have 12-20"
+   ]
+  },
+  {
+   "slot": "start",
+   "try": 1,
+   "say": "First copy the example environment file, then edit your local dot env to add needed keys.",
+   "receipt": "# Copy the example configuration file\ncp .env.example .env\n\n# Edit the .env file and fill in the required API keys",
+   "errs": []
+  },
+  {
+   "slot": "share",
+   "try": 0,
+   "say": "Save this for a deep prediction simulation on public opinion events.",
+   "receipt": "MiroFish is dedicated to creating a swarm intelligence mirror that maps reality.",
+   "errs": []
+  },
+  {
+   "slot": "share",
+   "try": 0,
+   "say": "Send this to someone who wants a swarm intelligence mirror that maps reality.",
+   "receipt": "MiroFish is dedicated to creating a swarm intelligence mirror that maps reality.",
+   "errs": [
+    "repeats words an earlier line already said: \"a swarm intelligence mirror\" - say something new"
+   ]
+  },
+  {
+   "slot": "share",
+   "try": 1,
+   "say": "Save this for your next Python project using Node.js, uv.",
+   "receipt": "| **Python** | ≥3.11, ≤3.12 | Backend runtime |\n| **Node.js** | 18+ | Frontend runtime, includes npm | `node -v` |\n| **uv** | Latest | Python package manager | `uv --version` |",
+   "errs": []
+  },
+  {
+   "slot": "share",
+   "try": 0,
+   "say": "Save this to predict events like university trends with a swarm engine built on OASIS.",
+   "receipt": "MiroFish is dedicated to creating a swarm intelligence mirror that maps reality... MiroFish's simulation engine is powered by **OASIS (Open Agent Social Interaction",
+   "errs": [
+    "must start with 'Send this to someone who' or 'Save this for'",
+    "repeats words an earlier line already said: \"events like university trends\" - say something new"
+   ]
+  },
+  {
+   "slot": "share",
+   "try": 1,
+   "say": "Save this to map reality using a swarm mirror.",
+   "receipt": "MiroFish is dedicated to creating a swarm intelligence mirror that maps reality.",
+   "errs": [
+    "has 9 words, must have 10-16",
+    "must start with 'Send this to someone who' or 'Save this for'"
+   ]
+  },
+  {
+   "slot": "share",
+   "try": 2,
+   "say": "Save this for a deep prediction of the lost ending in Dream of the Red Chamber.",
+   "receipt": "Dream of the Red Chamber Lost Ending Simulation MiroFish's deep prediction of the lost ending based on hundreds of thousands of words from the first 80 chapters of \"Dream of the Red C\"",
+   "errs": [
+    "repeats words an earlier line already said: \"deep prediction of the\" - say something new"
+   ]
+  },
+  {
+   "slot": "end",
+   "try": 0,
+   "say": "A swarm intelligence mirror maps reality.",
+   "receipt": "MiroFish is dedicated to creating a swarm intelligence mirror that maps reality.",
+   "errs": [
+    "repeats words an earlier line already said: \"a swarm intelligence mirror\" - say something new"
+   ]
+  },
+  {
+   "slot": "end",
+   "try": 1,
+   "say": "MiroFish predicts anything.",
+   "receipt": "A Simple and Universal Swarm Intelligence Engine, Predicting Anything",
+   "errs": [
+    "has 3 words, must have 6-12"
+   ]
+  },
+  {
+   "slot": "end",
+   "try": 2,
+   "say": "MiroFish mirrors reality using OASIS.",
+   "receipt": "Our Vision MiroFish is dedicated to creating a swarm intelligence mirror that maps reality... simulation engine is powered by **OASIS**",
+   "errs": [
+    "has 5 words, must have 6-12"
+   ]
+  },
+  {
+   "slot": "end",
+   "try": 0,
+   "say": "Map reality with MiroFish.",
+   "receipt": "MiroFish is dedicated to creating a swarm intelligence mirror that maps reality.",
+   "errs": [
+    "has 4 words, must have 6-12"
+   ]
+  },
+  {
+   "slot": "end",
+   "try": 1,
+   "say": "Try the universal swarm intelligence engine named MiroFish.",
+   "receipt": "MiroFish is a Simple and Universal Swarm Intelligence Engine",
+   "errs": []
+  },
+  {
+   "slot": "end",
+   "try": 0,
+   "say": "MiroFish maps reality with multi-agent swarm intelligence.",
+   "receipt": "**MiroFish** is a next-generation AI prediction engine powered by multi-agent technology.",
+   "errs": []
+  }
+ ]
+}

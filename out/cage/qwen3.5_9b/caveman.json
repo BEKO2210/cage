@@ -1,0 +1,532 @@
+{
+ "lines": [
+  "Caveman uses 33.2% fewer input tokens for whole coding sessions while keeping every answer correct.",
+  "Agents talk too much when reading huge logs or tables.\nCaveman stops the chatter to save your tokens.",
+  "Caveman is a simple skill that makes your AI agent speak clearly and quietly for all coders.",
+  "It strips articles and extra phrases from your agent's replies without losing any facts or code.",
+  "Watch CSV drop 28041 to 314 tokens or logs shrink from 22810 down to 348.",
+  "Logs cut to 98.5% smaller than the original file size. The skill shrinks data while keeping every number exact.",
+  "Web pages drop to 121 tokens instead of 15704 for agent browsing.",
+  "It keeps every path and error message intact while shrinking code blocks to fewer words.",
+  "Apache licensed by Julius Brussee with 110,358 stars and trusted by Adobe Research.",
+  "Run npx skills add JuliusBrussee/caveman -g in your terminal to start using the skill now.",
+  "Save this for your next coding session to stop wasting tokens.",
+  "Caveman keeps your code clean and quiet."
+ ],
+ "words": 173,
+ "log": [
+  {
+   "slot": "hook",
+   "try": 0,
+   "say": "Caveman cuts input tokens by thirty-three point two percent in a whole coding session.",
+   "errs": [
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "hook",
+   "try": 1,
+   "say": "Caveman cuts input tokens by thirty-three point two percent.",
+   "errs": [
+    "has 9 words, must have 12-20",
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "hook",
+   "try": 2,
+   "say": "Caveman saves web pages to one hundred twenty-one tokens instead of fifteen thousand seven hundred four.",
+   "errs": [
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "hook",
+   "try": 0,
+   "say": "Caveman uses 33.2% fewer input tokens for whole coding sessions while keeping every answer correct.",
+   "errs": []
+  },
+  {
+   "slot": "hook",
+   "try": 0,
+   "say": "Caveman shrank a web page to just one hundred twenty-one tokens instead of fifteen thousand seventy-four.\n\nThis measures input size for your agent.",
+   "errs": [
+    "has 23 words, must have 12-20",
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "hook",
+   "try": 1,
+   "say": "Caveman turned a web page into twelve-one tokens instead of fifteen thousand seven hundred four.",
+   "errs": [
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "hook",
+   "try": 2,
+   "say": "Caveman makes an agent read web pages using only 121 tokens instead of fifteen thousand seven hundred four.",
+   "errs": [
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "problem",
+   "try": 0,
+   "say": "Agents chatter through long files and verbose tool calls.",
+   "errs": [
+    "has 9 words, must have 14-24"
+   ]
+  },
+  {
+   "slot": "problem",
+   "try": 1,
+   "say": "Agents talk too much when reading huge logs or tables.\nCaveman stops the chatter to save your tokens.",
+   "errs": []
+  },
+  {
+   "slot": "problem",
+   "try": 0,
+   "say": "Developers waste tokens reading long web pages and compressing massive log files.",
+   "errs": [
+    "has 12 words, must have 14-24"
+   ]
+  },
+  {
+   "slot": "problem",
+   "try": 1,
+   "say": "Agents chatter too much while browsing tables or scanning huge logs.",
+   "errs": [
+    "has 11 words, must have 14-24"
+   ]
+  },
+  {
+   "slot": "problem",
+   "try": 2,
+   "say": "Agents waste tokens reading large files like CSVs or JSON instead of summarizing them first.",
+   "errs": []
+  },
+  {
+   "slot": "problem",
+   "try": 0,
+   "say": "Agents chatter endlessly between tool calls and read huge snapshots instead of speaking plainly.",
+   "errs": []
+  },
+  {
+   "slot": "what",
+   "try": 0,
+   "say": "Caveman is a simple skill that makes your AI agent speak clearly and quietly for all coders.",
+   "errs": []
+  },
+  {
+   "slot": "what",
+   "try": 0,
+   "say": "It is a tool for coding agents that speaks simply to read less and talk less.",
+   "errs": []
+  },
+  {
+   "slot": "what",
+   "try": 0,
+   "say": "Caveman is a simple tool for developers that makes your AI talk less and read smaller files.",
+   "errs": []
+  },
+  {
+   "slot": "how",
+   "try": 0,
+   "say": "It replaces standard summaries with a strict voice that uses plain English and keeps all data exact.",
+   "errs": []
+  },
+  {
+   "slot": "how",
+   "try": 0,
+   "say": "It strips articles and extra phrases from your agent's replies without losing any facts or code.",
+   "errs": []
+  },
+  {
+   "slot": "how",
+   "try": 0,
+   "say": "It works by stripping away empty words while keeping every number and code line exactly the same.",
+   "errs": []
+  },
+  {
+   "slot": "how2",
+   "try": 0,
+   "say": "Watch a web page shrink from fifteen thousand tokens down to just one hundred twenty-one.",
+   "errs": [
+    "has 15 words, must have 16-26",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "how2",
+   "try": 1,
+   "say": "Watch a web page shrink from fifteen thousand seven hundred four tokens down to just one hundred twenty-one.",
+   "errs": [
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "how2",
+   "try": 2,
+   "say": "A 200-row table shrinks from fifteen thousand seventy-four tokens down to just one hundred twenty-one.",
+   "errs": [
+    "has 15 words, must have 16-26",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "how2",
+   "try": 0,
+   "say": "Watch logs shrink from twenty-two thousand to three hundred and forty-eight tokens while keeping all data intact.",
+   "errs": [
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "how2",
+   "try": 1,
+   "say": "Watch CSV drop 28041 to 314 tokens or logs shrink from 22810 down to 348.",
+   "errs": [
+    "has 15 words, must have 16-26"
+   ]
+  },
+  {
+   "slot": "how2",
+   "try": 2,
+   "say": "See a CSV file drop thousands of tokens instantly while logs shrink just as fast.",
+   "errs": [
+    "has 15 words, must have 16-26",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "how2",
+   "try": 0,
+   "say": "See a Playwright snapshot read down to just one hundred and twenty-one tokens.",
+   "errs": [
+    "has 13 words, must have 16-26",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "how2",
+   "try": 1,
+   "say": "Try /caveman browse on a two hundred row table to get one hundred twenty-one tokens instead of fifteen thousand seven hundred forty-four.",
+   "errs": [
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "how2",
+   "try": 2,
+   "say": "Try /caveman browse on a table with two hundred rows to get 121 tokens instead of 15704.",
+   "errs": [
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 0,
+   "say": "Logs cut to 98.5% smaller than the original file size. The skill shrinks data while keeping every number exact.",
+   "errs": []
+  },
+  {
+   "slot": "proof",
+   "try": 0,
+   "say": "Adobe Research found it costs one point four to two point four times less per model across five datasets.",
+   "errs": [
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 1,
+   "say": "Adobe Research cut costs by 1.4 to 2.4 times per model across five datasets.",
+   "errs": [
+    "has 14 words, must have 16-26",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 2,
+   "say": "Adobe Research cut costs by 1.4 to 2.4 times per model on five datasets.",
+   "errs": [
+    "has 14 words, must have 16-26",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 0,
+   "say": "Adobe Research cut costs by two point four times on five datasets while keeping all eight models accurate.",
+   "errs": [
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 1,
+   "say": "Adobe Research cut costs by 1.4 to 2 times on five datasets with eight models.",
+   "errs": [
+    "has 15 words, must have 16-26",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 2,
+   "say": "Adobe Research cut costs by 1.4 to 2 times on five datasets with eight models.",
+   "errs": [
+    "has 15 words, must have 16-26",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 0,
+   "say": "Web pages shrink to just one hundred twenty-one tokens from fifteen thousand seven hundred and four.",
+   "errs": [
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 1,
+   "say": "Web pages read by agents drop to twelve-one tokens instead of fifteen thousand seven hundred and four.",
+   "errs": [
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 2,
+   "say": "Web pages shrink to 129 times smaller size instead of 15704 tokens.",
+   "errs": [
+    "has 12 words, must have 14-24",
+    "numbers not in the facts: 129 (copy numbers verbatim from the facts)"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 0,
+   "say": "Web pages shrink from fifteen thousand to just one hundred twenty-one tokens.",
+   "errs": [
+    "has 12 words, must have 14-24",
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 1,
+   "say": "Caveman browse reads tables with only 129.8 times fewer tokens than normal snapshots.",
+   "errs": [
+    "has 13 words, must have 14-24"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 2,
+   "say": "/ultracave cuts output by twenty-six-nine-three tokens versus six-thousand-ninety-eight without any loss.",
+   "errs": [
+    "has 11 words, must have 14-24",
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 0,
+   "say": "It also shrinks web pages to just one hundred twenty-one tokens instead of fifteen thousand seven hundred four.",
+   "errs": [
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 1,
+   "say": "Web pages drop to 121 tokens instead of 15704 for agent browsing.",
+   "errs": [
+    "has 12 words, must have 14-24"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 2,
+   "say": "Web pages read by the agent drop to exactly 121 tokens instead of fifteen thousand seven hundred four for browsing.",
+   "errs": [
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "detail",
+   "try": 0,
+   "say": "It keeps every path and error message intact while shrinking code blocks to fewer words.",
+   "errs": []
+  },
+  {
+   "slot": "detail",
+   "try": 0,
+   "say": "It also compresses big memory files like CLAUDE.md by forty-six percent while keeping every heading and code block intact.",
+   "errs": [
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "detail",
+   "try": 1,
+   "say": "Also compresses memory files like CLAUDE.md by forty-six percent while keeping every heading and code block intact.",
+   "errs": [
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "detail",
+   "try": 2,
+   "say": "Also compresses memory files like CLAUDE.md by forty-six percent while keeping every heading and code block intact.",
+   "errs": [
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "detail",
+   "try": 0,
+   "say": "It wraps props in useMemo so React re-renders fewer times without breaking anything.",
+   "errs": [
+    "has 13 words, must have 14-24"
+   ]
+  },
+  {
+   "slot": "detail",
+   "try": 1,
+   "say": "Use the megacave mode to wrap props in useMemo for faster React re-renders.",
+   "errs": [
+    "has 13 words, must have 14-24"
+   ]
+  },
+  {
+   "slot": "detail",
+   "try": 2,
+   "say": "Wrap component props with useMemo or use new refs before rendering to stop unnecessary updates.",
+   "errs": []
+  },
+  {
+   "slot": "trust",
+   "try": 0,
+   "say": "Julius Brussee built it with an Apache license and Adobe Research tested it.",
+   "errs": []
+  },
+  {
+   "slot": "trust",
+   "try": 0,
+   "say": "Apache licensed by Julius Brussee with 110,358 stars and trusted by Adobe Research.",
+   "errs": []
+  },
+  {
+   "slot": "trust",
+   "try": 0,
+   "say": "Julius Brussee made it with an Apache license and Adobe tested it.",
+   "errs": []
+  },
+  {
+   "slot": "start",
+   "try": 0,
+   "say": "Run npx skills add JuliusBrussee/caveman -g to install it now.",
+   "errs": [
+    "has 10 words, must have 12-20"
+   ]
+  },
+  {
+   "slot": "start",
+   "try": 1,
+   "say": "Run this command in your terminal to add the skill immediately.",
+   "errs": [
+    "has 11 words, must have 12-20"
+   ]
+  },
+  {
+   "slot": "start",
+   "try": 2,
+   "say": "Run npx skills add JuliusBrussee/caveman -g in your terminal to start using the skill now.",
+   "errs": []
+  },
+  {
+   "slot": "start",
+   "try": 0,
+   "say": "Run this command to add the skill globally for all your coding tools.",
+   "errs": []
+  },
+  {
+   "slot": "start",
+   "try": 0,
+   "say": "Type npx skills add JuliusBrussee/caveman -g to install the skill now.",
+   "errs": [
+    "has 11 words, must have 12-20"
+   ]
+  },
+  {
+   "slot": "start",
+   "try": 1,
+   "say": "Type this command to start using Caveman immediately on your machine.",
+   "errs": [
+    "has 11 words, must have 12-20"
+   ]
+  },
+  {
+   "slot": "start",
+   "try": 2,
+   "say": "Type npx skills add JuliusBrussee/caveman -g to get started.",
+   "errs": [
+    "has 9 words, must have 12-20"
+   ]
+  },
+  {
+   "slot": "share",
+   "try": 0,
+   "say": "Save this for your next coding session to stop wasting tokens.",
+   "errs": []
+  },
+  {
+   "slot": "share",
+   "try": 0,
+   "say": "Save this for your next coding session where you want to save tokens.",
+   "errs": []
+  },
+  {
+   "slot": "share",
+   "try": 0,
+   "say": "Save this for later if you hate long agent chatter.",
+   "errs": []
+  },
+  {
+   "slot": "end",
+   "try": 0,
+   "say": "Caveman keeps your code clean and quiet.",
+   "errs": []
+  },
+  {
+   "slot": "end",
+   "try": 0,
+   "say": "Caveman is the simple skill for your agent.",
+   "errs": []
+  },
+  {
+   "slot": "end",
+   "try": 0,
+   "say": "Caveman turns code into clear talk.",
+   "errs": []
+  }
+ ]
+}

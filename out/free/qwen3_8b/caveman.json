@@ -1,0 +1,17 @@
+{
+ "lines": [
+  "Caveman cuts 33.2% input tokens. 18 of 18 answers right.",
+  "The proxy shrinks logs, CSV, YAML, JSON, and test output 98.5% to 99.1%.",
+  "Same fix. 63 token become 20. Brain still big.",
+  "Caveman makes your AI agent say less and read less. Code stays intact.",
+  "It’s a voice, not broken grammar. One idea per sentence.",
+  "No chatter between tool calls. One line per phase.",
+  "Adobe Research cites it. JetBrains A B tested it.",
+  "Elastic remade it for Elasticsearch. 63.6% fewer response tokens.",
+  "No measurable quality loss. 8.5% fewer output tokens.",
+  "Send this to someone who wants to save tokens. Save this for your next project.",
+  "Star the repo. Learn more at JuliusBrussee caveman."
+ ],
+ "words": 113,
+ "log": []
+}

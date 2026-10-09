@@ -1,0 +1,869 @@
+{
+ "lines": [
+  "This repo has 705 GitHub stars for watching ads play over rough drafts.",
+  "Every ad starts as a rough plan with ideas for sections and timing. Then each move lands perfectly.",
+  "NullMotion lets you watch a finished motion-graphics ad play over the rough drafts it grew from.",
+  "It runs a small HyperFrames engine where each draft is an HTML scene on a paused GSAP timeline.",
+  "Export a finished ad over its roughs then save that full sequence as one MP4.",
+  "Run it locally with Node 22+ and export using Chrome or Edge.",
+  "The HyperFrames engine is open source with no dependencies, and you can join their Discord community.",
+  "Clone it and run npm start.",
+  "Save this for later or send it to someone building ads.",
+  "Stop editing roughs and watch NullMotion."
+ ],
+ "words": 131,
+ "log": [
+  {
+   "slot": "hook",
+   "try": 0,
+   "say": "This repo has over seven hundred GitHub stars.",
+   "receipt": "705 GitHub stars",
+   "errs": [
+    "has 8 words, must have 12-20",
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words",
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "hook",
+   "try": 1,
+   "say": "This repo has seven hundred five GitHub stars.",
+   "receipt": "| | 705 GitHub stars, main language HTML",
+   "errs": [
+    "has 8 words, must have 12-20",
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "hook",
+   "try": 2,
+   "say": "This repo holds seven hundred five GitHub stars.",
+   "receipt": "| | 705 GitHub stars",
+   "errs": [
+    "has 8 words, must have 12-20",
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words",
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "hook",
+   "try": 0,
+   "say": "NullMotion has over seven hundred and five stars on GitHub.",
+   "receipt": "705 GitHub stars",
+   "errs": [
+    "has 10 words, must have 12-20",
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words",
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "hook",
+   "try": 1,
+   "say": "NullMotion has 705 stars.",
+   "receipt": "F1: 705 GitHub stars",
+   "errs": [
+    "has 4 words, must have 12-20",
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "hook",
+   "try": 2,
+   "say": "NullMotion holds seven hundred five GitHub stars.",
+   "receipt": "**705** GitHub stars, main language HTML",
+   "errs": [
+    "has 7 words, must have 12-20",
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "hook",
+   "try": 0,
+   "say": "This repo has 705 GitHub stars for watching ads play over rough drafts.",
+   "receipt": "F1: 705 GitHub stars, main language HTML ... Watch a finished motion-graphics ad play over the HyperFrames drafts it grew from",
+   "errs": []
+  },
+  {
+   "slot": "problem",
+   "try": 0,
+   "say": "Motion-graphics ads look effortless, but every one starts as a rough plan.",
+   "receipt": "Motion-graphics ads look effortless, but every one starts as a rough plan:",
+   "errs": [
+    "has 12 words, must have 14-24"
+   ]
+  },
+  {
+   "slot": "problem",
+   "try": 1,
+   "say": "Every ad looks easy until you map ideas to sections.",
+   "receipt": "Motion-graphics ads look effortless, but every one starts as a rough plan: which idea goes in which section",
+   "errs": [
+    "has 10 words, must have 14-24"
+   ]
+  },
+  {
+   "slot": "problem",
+   "try": 2,
+   "say": "Motion graphics ads look effortless but start as rough plans.",
+   "receipt": "Motion-graphics ads look effortless, but every one starts as a rough plan: which idea goes in which section, and when each move lands.",
+   "errs": [
+    "has 10 words, must have 14-24"
+   ]
+  },
+  {
+   "slot": "problem",
+   "try": 0,
+   "say": "Motion graphics ads look effortless but start as rough plans deciding when moves land.",
+   "receipt": "\"every one starts as a rough plan: which idea goes in which section, and when each move lands.\" ... \"Motion-graphics ads look effortless,\"",
+   "errs": [
+    "receipt not found word for word in the sources: \"\"every one starts as a rough plan: which idea goes in which section, and when ea\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "problem",
+   "try": 1,
+   "say": "Motion graphics ads look effortless but every one starts as a rough plan.",
+   "receipt": "Motion-graphics ads look effortless, but every one starts as a rough plan",
+   "errs": [
+    "has 13 words, must have 14-24"
+   ]
+  },
+  {
+   "slot": "problem",
+   "try": 2,
+   "say": "Motion graphics ads are effortless, yet each begins with a detailed rough draft.",
+   "receipt": "Motion-graphics ads look effortless, but every one starts as a rough plan: which idea goes in which section, and when each move lands.",
+   "errs": [
+    "has 13 words, must have 14-24"
+   ]
+  },
+  {
+   "slot": "problem",
+   "try": 0,
+   "say": "Ads look effortless but start as rough plans.",
+   "receipt": "**Motion-graphics ads look effortless, but every one starts as a rough plan:** which idea goes in which section...",
+   "errs": [
+    "has 8 words, must have 14-24"
+   ]
+  },
+  {
+   "slot": "problem",
+   "try": 1,
+   "say": "Motion ads are easy to watch but hard to plan section by section.",
+   "receipt": "Motion-graphics ads look effortless, but every one starts as a rough plan: which idea goes in which section...",
+   "errs": [
+    "has 13 words, must have 14-24"
+   ]
+  },
+  {
+   "slot": "problem",
+   "try": 2,
+   "say": "Every ad starts as a rough plan with ideas for sections and timing. Then each move lands perfectly.",
+   "receipt": "... Motion-graphics ads look effortless, but every one starts as a rough plan: which idea goes in which section, and when each move lands.",
+   "errs": []
+  },
+  {
+   "slot": "what",
+   "try": 0,
+   "say": "NullMotion is a local tool that lets you watch finished ads over their rough drafts and export everything.",
+   "receipt": "`blixvip/NullMotion`: Watch a finished motion-graphics ad play over the HyperFrames drafts it grew from, frame-synced, and export the breakdown as an MP4.",
+   "errs": [
+    "receipt not found word for word in the sources: \"blixvip/nullmotion : watch a finished motion-graphics ad play over the hyperfram\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "what",
+   "try": 1,
+   "say": "NullMotion is a local tool that lets you watch a finished motion-graphics ad play over the HyperFrames drafts.",
+   "receipt": "blixvip/NullMotion: Watch a finished motion-graphics ad play over the HyperFrames drafts it grew from",
+   "errs": []
+  },
+  {
+   "slot": "what",
+   "try": 0,
+   "say": "NullMotion lets you watch a finished ad play over its rough drafts and export the whole breakdown.",
+   "receipt": "Watch a finished motion-graphics ad play over the rough drafts it grew from, frame-synced. Then export the whole breakdown as one MP4.",
+   "errs": [
+    "receipt not found word for word in the sources: \"watch a finished motion-graphics ad play over the rough drafts it grew from, fra\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "what",
+   "try": 1,
+   "say": "NullMotion lets you watch a finished motion-graphics ad play over the rough drafts it grew from.",
+   "receipt": "Watch a finished motion-graphics ad play over the HyperFrames drafts it grew from",
+   "errs": []
+  },
+  {
+   "slot": "what",
+   "try": 0,
+   "say": "NullMotion lets you watch a finished ad play over its rough drafts and export every scene.",
+   "receipt": "Watch a finished motion-graphics ad play over the rough drafts it grew from, frame-synced",
+   "errs": []
+  },
+  {
+   "slot": "how",
+   "try": 0,
+   "say": "It runs a small HyperFrames engine where each draft is an HTML scene on a paused GSAP timeline.",
+   "receipt": "`public/drafts.mjs` is a small HyperFrames engine: each draft is a 640×360 HTML scene on a paused GSAP timeline.",
+   "errs": []
+  },
+  {
+   "slot": "how",
+   "try": 0,
+   "say": "It runs a small HyperFrames engine where each draft is an HTML scene on a paused GSAP timeline.",
+   "receipt": "",
+   "errs": [
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "how",
+   "try": 1,
+   "say": "Each draft is a sixty-by-sixty-four zero times three-six-zero HTML scene on a paused GSAP timeline.",
+   "receipt": "`public/drafts.mjs` is a small HyperFrames engine: each draft is a 640×360 HTML scene on a paused GSAP timeline.",
+   "errs": [
+    "has 15 words, must have 16-26",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "how",
+   "try": 2,
+   "say": "Drafts are sixty-four by three-six-zero HTML scenes on a paused GSAP timeline.",
+   "receipt": "`public/drafts.mjs` is a small HyperFrames engine: each draft is a 640×360 HTML scene on a paused GSAP timeline.",
+   "errs": [
+    "has 12 words, must have 16-26",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "how",
+   "try": 0,
+   "say": "It uses a small HyperFrames engine where each draft is an HTML scene on a paused GSAP timeline.",
+   "receipt": "`public/drafts.mjs` is a small HyperFrames engine: each draft is a 640×360 HTML scene on a paused GSAP timeline.",
+   "errs": []
+  },
+  {
+   "slot": "how2",
+   "try": 0,
+   "say": "The Infinite Global payments example shows seven drafts building a thirty-second ad in one export.",
+   "receipt": "| **Infinite · Global payments** | 0:30 | 7|",
+   "errs": [
+    "has 15 words, must have 16-26",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "how2",
+   "try": 1,
+   "say": "Watch an infinite global payments ad play over seven drafts before exporting to MP4.",
+   "receipt": "**Infinite · Global payments** | 0:30 | 7|",
+   "errs": [
+    "has 14 words, must have 16-26",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "how2",
+   "try": 2,
+   "say": "Watch an infinite global payments ad play over seven drafts before exporting to MP4.",
+   "receipt": "| **Infinite · Global payments** | 0:30 | 7|",
+   "errs": [
+    "has 14 words, must have 16-26",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "how2",
+   "try": 0,
+   "say": "The showcase includes a one-minute SaaS launch sequence built from eight separate drafts.",
+   "receipt": "| **SaaS · Launch sequence** | 1:02 | 8 |",
+   "errs": [
+    "has 13 words, must have 16-26",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "how2",
+   "try": 1,
+   "say": "Watch a SaaS launch sequence that is two minutes long.",
+   "receipt": "| **SaaS · Launch sequence** | 1:02 |",
+   "errs": [
+    "has 10 words, must have 16-26",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "how2",
+   "try": 2,
+   "say": "Check Infinite Global payments which is thirty seconds long with seven drafts.",
+   "receipt": "| **Infinite · Global payments** | 0:30 | 7 |",
+   "errs": [
+    "has 12 words, must have 16-26",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "how2",
+   "try": 0,
+   "say": "See three examples like an Infinite Global payments ad with seven drafts or a SaaS Launch sequence with eight.",
+   "receipt": "| **Infinite · Global payments** | 0:30 | 7 |\n| **SaaS · Launch sequence** | 1:02 | 8 |",
+   "errs": [
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "how2",
+   "try": 1,
+   "say": "Watch a finished motion-graphics ad play over the rough drafts for Infinite Global payments at seven seconds.",
+   "receipt": "| | **Infinite · Global payments** | 0:30 | 7|",
+   "errs": [
+    "repeats words an earlier line already said: \"a finished motion graphics\" - say something new",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "how2",
+   "try": 2,
+   "say": "See Infinite Global payments at 0:30 length with seven drafts.",
+   "receipt": "| | **Infinite · Global payments** | 0:30 | 7 |",
+   "errs": [
+    "has 10 words, must have 16-26",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "how2",
+   "dropped": true
+  },
+  {
+   "slot": "proof",
+   "try": 0,
+   "say": "Exported breakdowns work in Chrome or Edge using WebCodecs and requestVideoFrameCallback.",
+   "receipt": "**Chrome or Edge** | MP4 export (WebCodecs + `requestVideoFrameCallback`). Playback works in any modern browser.",
+   "errs": [
+    "has 11 words, must have 16-26",
+    "must contain a number from the facts"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 1,
+   "say": "Three reference clips include an infinite global payments ad with seven drafts.",
+   "receipt": "| Infinite · Global payments | 0:30 | 7|",
+   "errs": [
+    "has 12 words, must have 16-26",
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 2,
+   "say": "The showcase includes an infinite global payments clip with seven drafts.",
+   "receipt": "| **Infinite · Global payments** | 0:30 | 7 |",
+   "errs": [
+    "has 11 words, must have 16-26",
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 0,
+   "say": "The showcase offers three references, one named Infinite Global payments with a length of 0:30 and seven drafts.",
+   "receipt": "| | **Infinite · Global payments** | 0:30 | 7|",
+   "errs": [
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 1,
+   "say": "The showcase offers three references including Infinite Global payments with a length of 0:30.",
+   "receipt": "| | **Infinite · Global payments** | 0:30 | 7|",
+   "errs": [
+    "has 14 words, must have 16-26",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 2,
+   "say": "The showcase includes Infinite Global payments at thirty seconds long with seven drafts.",
+   "receipt": "| | **Infinite · Global payments** | 0:30 | 7 |",
+   "errs": [
+    "has 13 words, must have 16-26",
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 0,
+   "say": "Three references ship ready to play, including a SaaS launch sequence with eight drafts.",
+   "receipt": "| **SaaS · Launch sequence** | 1:02 | 8|",
+   "errs": [
+    "has 14 words, must have 16-26",
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 1,
+   "say": "Three references ship ready to play, including an Infinite Global payments ad with seven drafts.",
+   "receipt": "| | **Infinite · Global payments** | 0:30 | 7 |",
+   "errs": [
+    "has 15 words, must have 16-26",
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 2,
+   "say": "Three references ship ready to play: Infinite Global payments uses seven drafts.",
+   "receipt": "| | **Infinite · Global payments** | 0:30 | 7|",
+   "errs": [
+    "has 12 words, must have 16-26",
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "proof",
+   "dropped": true
+  },
+  {
+   "slot": "proof2",
+   "try": 0,
+   "say": "Three reference clips come ready, showing an infinite ad with seven drafts or a launch sequence needing eight.",
+   "receipt": "| | **Infinite · Global payments** | 0:30 | 7 || | **SaaS · Launch sequence** | 1:02 | 8",
+   "errs": [
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 1,
+   "say": "The showcase includes an infinite ad with seven drafts or a launch sequence requiring eight.",
+   "receipt": "| **Infinite · Global payments** | 0:30 | 7 |\n| **SaaS · Launch sequence** | 1:02 | 8|",
+   "errs": [
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 2,
+   "say": "Check the reference table for an infinite ad with seven drafts or a motion study needing three.",
+   "receipt": "| **Infinite · Global payments** | 0:30 | 7 |\n| | **Motion study 08** | 0:03 | 3 |",
+   "errs": [
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words",
+    "receipt not found word for word in the sources: \"infinite · global payments 0:30 7 motion study 08 0:03 3\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 0,
+   "say": "It shows three references like an Infinite Global payments ad with seven drafts.",
+   "receipt": "| **Infinite · Global payments** | 0:30 | 7|",
+   "errs": [
+    "has 13 words, must have 14-24",
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 1,
+   "say": "The showcase includes an Infinite Global payments ad with seven drafts.",
+   "receipt": "| **Infinite · Global payments** | 0:30 | 7 |",
+   "errs": [
+    "has 11 words, must have 14-24",
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 2,
+   "say": "The showcase offers an Infinite Global payments ad with seven drafts.",
+   "receipt": "| | **Infinite · Global payments** | 0:30 | 7 |",
+   "errs": [
+    "has 11 words, must have 14-24",
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 0,
+   "say": "The showcase includes a thirty-second global payments clip built from seven distinct drafts.",
+   "receipt": "| **Infinite · Global payments** | 0:30 | 7 |",
+   "errs": [
+    "has 13 words, must have 14-24",
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 1,
+   "say": "The showcase includes an infinite global payments clip built from seven distinct drafts.",
+   "receipt": "| **Infinite · Global payments** | 0:30 | 7 |",
+   "errs": [
+    "has 13 words, must have 14-24",
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 2,
+   "say": "The showcase includes an infinite global payments clip built from seven distinct drafts.",
+   "receipt": "| | **Infinite · Global payments** | 0:30 | 7|",
+   "errs": [
+    "has 13 words, must have 14-24",
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "dropped": true
+  },
+  {
+   "slot": "detail",
+   "try": 0,
+   "say": "Export a breakdown or build drafts for your own ad.",
+   "receipt": "### 🎬 Show what you made\nExported a breakdown or built drafts for your own ad?",
+   "errs": [
+    "has 10 words, must have 14-24"
+   ]
+  },
+  {
+   "slot": "detail",
+   "try": 1,
+   "say": "Export the whole breakdown as an MP4 to show what you made after building drafts.",
+   "receipt": "export the whole breakdown as an MP4 ... built your own ad ...",
+   "errs": [
+    "receipt not found word for word in the sources: \"export the whole breakdown as an mp4\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "detail",
+   "try": 2,
+   "say": "Export a finished ad over its roughs then save that full sequence as one MP4.",
+   "receipt": "Watch a finished motion-graphics ad play over the HyperFrames drafts it grew from, frame-synced, and export the breakdown as an MP4.",
+   "errs": []
+  },
+  {
+   "slot": "detail",
+   "try": 0,
+   "say": "It exports the whole breakdown as one MP4 or imports local references with Python.",
+   "receipt": "Watch a finished motion-graphics ad play over the rough drafts it grew from, frame-synced.Then export the whole breakdown as one MP4. ... Imported media stays local in `.local-media/` and `public/references/",
+   "errs": []
+  },
+  {
+   "slot": "detail",
+   "try": 0,
+   "say": "You can import other media and plan sections to rebuild the showcase.",
+   "receipt": "Imported media stays local in `.local-media/` ... node scripts/plan-sections.mjs      # sections + scene cuts",
+   "errs": [
+    "has 12 words, must have 14-24"
+   ]
+  },
+  {
+   "slot": "detail",
+   "try": 1,
+   "say": "You can import your own references and use FFprobe tools.",
+   "receipt": "**FFmpeg / ffprobe** (optional) | Importing your own references",
+   "errs": [
+    "has 10 words, must have 14-24"
+   ]
+  },
+  {
+   "slot": "detail",
+   "try": 2,
+   "say": "Import media locally to plan sections with Python scripts.",
+   "receipt": "| **Python 3** (optional) | `scripts/import-motionclone.py`.|",
+   "errs": [
+    "has 9 words, must have 14-24"
+   ]
+  },
+  {
+   "slot": "detail2",
+   "try": 0,
+   "say": "Run it locally with Node.js 22 plus Chrome or Edge.",
+   "receipt": "| **Node.js 22+** | Running the local server (`npm start`). No dependencies to install. |\n| **Chrome or Edge** | MP4 export (WebCodecs + `requestVideoFrameCallback`).",
+   "errs": [
+    "has 10 words, must have 12-22"
+   ]
+  },
+  {
+   "slot": "detail2",
+   "try": 1,
+   "say": "Run the local server with Node version twenty-two using a modern browser.",
+   "receipt": "| **Node.js 22+** | Running the local server (`npm start`). No dependencies to install.",
+   "errs": [
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "detail2",
+   "try": 2,
+   "say": "Install Python three if you plan to import external motion references.",
+   "receipt": "**Python 3** (optional) | `scripts/import-motionclone.py`.",
+   "errs": [
+    "has 11 words, must have 12-22",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "detail2",
+   "try": 0,
+   "say": "Run it locally with Node 22+ and export using Chrome or Edge.",
+   "receipt": "| **Node.js 22+** | Running the local server (`npm start`). No dependencies to install. |\n| **Chrome or Edge** | MP4 export (WebCodecs + `requestVideoFrameCallback`).",
+   "errs": []
+  },
+  {
+   "slot": "detail2",
+   "try": 0,
+   "say": "Run it locally with Node.js and Chrome or Edge to export.",
+   "receipt": "**Node.js 22+** | Running the local server (`npm start`). No dependencies to install. **Chrome or Edge** | MP4 export (WebCodecs + `requestVideoFrameCallback`).",
+   "errs": [
+    "has 11 words, must have 12-22"
+   ]
+  },
+  {
+   "slot": "detail2",
+   "try": 1,
+   "say": "Install Node twenty-two plus run start then use Google or Microsoft browsers.",
+   "receipt": "Node.js 22+ Running the local server (`npm start`). Chrome or Edge",
+   "errs": [
+    "write every number in digits exactly as in the facts, never in words",
+    "receipt not found word for word in the sources: \"node.js 22+ running the local server ( npm start ). chrome or edge\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "detail2",
+   "try": 2,
+   "say": "Run Node twenty-two plus, use Chrome or Edge.",
+   "receipt": "**Node.js 22+** | Running the local server (`npm start`). No dependencies to install.\n| **Chrome or Edge** | MP4 export (WebCodecs + `requestVideoFrameCallback`).",
+   "errs": [
+    "has 8 words, must have 12-22",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "trust",
+   "try": 0,
+   "say": "The HyperFrames engine is open source with no dependencies, and you can join their Discord community.",
+   "receipt": "Join the Discord: discord.gg/zEB4VjmfSb ... The repo ships three references ... local, zero dependencies.",
+   "errs": []
+  },
+  {
+   "slot": "trust",
+   "try": 0,
+   "say": "It is open source, made by blixvip and used for ads with 705 GitHub stars.",
+   "receipt": "blixvip/NullMotion ... 705 GitHub stars",
+   "errs": [
+    "repeats a number already said: 705",
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "trust",
+   "try": 1,
+   "say": "Made by blixvip with over seven hundred GitHub stars.",
+   "receipt": "F1: 705 GitHub stars, main language HTML",
+   "errs": [
+    "has 9 words, must have 12-20",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "trust",
+   "try": 2,
+   "say": "Created by blixvip with a license to use freely. The project has received seven hundred five GitHub stars.",
+   "receipt": "Join the Discord: discord.gg/zEB4VjmfSb ... 705 GitHub stars ...",
+   "errs": [
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "trust",
+   "try": 0,
+   "say": "Created locally with no dependencies, join their Discord community for help.",
+   "receipt": "Local, zero dependencies. Join the Discord",
+   "errs": [
+    "has 11 words, must have 12-20"
+   ]
+  },
+  {
+   "slot": "trust",
+   "try": 1,
+   "say": "Created by blixvip with 705 GitHub stars.",
+   "receipt": "F1: 705 GitHub stars",
+   "errs": [
+    "has 7 words, must have 12-20",
+    "repeats a number already said: 705",
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "trust",
+   "try": 2,
+   "say": "Created by blixvip with seven hundred five GitHub stars.",
+   "receipt": "F1: 705 GitHub stars, main language HTML",
+   "errs": [
+    "has 9 words, must have 12-20",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "start",
+   "try": 0,
+   "say": "Clone it and run npm start.",
+   "receipt": "# 1. get it\nnpm start",
+   "errs": [
+    "has 6 words, must have 12-20"
+   ]
+  },
+  {
+   "slot": "start",
+   "try": 1,
+   "say": "Clone the repo then run npm start to see demos.",
+   "receipt": "# 1. get it\ngit clone https://github.com/blixvip/NullMotion.git && cd NullMotion   # 1. get it\nnpm start                                                              # 2. run it (Node 22+, nothin",
+   "errs": [
+    "has 10 words, must have 12-20",
+    "receipt not found word for word in the sources: \"1. get it git clone https://github.com/blixvip/nullmotion.git && cd nullmotion 1\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "start",
+   "try": 2,
+   "say": "Run this command to install, then run npm start.",
+   "receipt": "# 1. get it\nnpm start                                                              # 2. run it (Node 22+, nothin",
+   "errs": [
+    "has 9 words, must have 12-20"
+   ]
+  },
+  {
+   "slot": "start",
+   "try": 0,
+   "say": "Run npm start to run it locally without installing any dependencies.",
+   "receipt": "# 2. run it (Node 22+, nothin",
+   "errs": [
+    "has 11 words, must have 12-20"
+   ]
+  },
+  {
+   "slot": "start",
+   "try": 1,
+   "say": "Run git clone NullMotion then use npm start.",
+   "receipt": "git clone https://github.com/blixvip/NullMotion.git && cd NullMotion   # 1. get it\nnpm start                                                              # 2. run it (Node 22+, nothin",
+   "errs": [
+    "has 8 words, must have 12-20"
+   ]
+  },
+  {
+   "slot": "start",
+   "try": 2,
+   "say": "Clone the repo with that command, then run npm start.",
+   "receipt": "# 1. get it\nnpm start                                                              # 2. run it (Node 22+, nothin",
+   "errs": [
+    "has 10 words, must have 12-20"
+   ]
+  },
+  {
+   "slot": "start",
+   "try": 0,
+   "say": "Git clone NullMotion to get it, then run npm start.",
+   "receipt": "# 1. get it\nnpm start",
+   "errs": [
+    "has 10 words, must have 12-20"
+   ]
+  },
+  {
+   "slot": "start",
+   "try": 1,
+   "say": "Run git clone the repo and change into its folder.",
+   "receipt": "git clone https://github.com/blixvip/NullMotion.git && cd NullMotion",
+   "errs": [
+    "has 10 words, must have 12-20"
+   ]
+  },
+  {
+   "slot": "start",
+   "try": 2,
+   "say": "First run npm start to see the local server.",
+   "receipt": "`npm start`",
+   "errs": [
+    "has 9 words, must have 12-20",
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "share",
+   "try": 0,
+   "say": "Save this for your next rough plan and share it with a designer who needs to see drafts.",
+   "receipt": "Watch a finished motion-graphics ad play over the HyperFrames drafts it grew from, frame-synced",
+   "errs": [
+    "has 18 words, must have 10-16"
+   ]
+  },
+  {
+   "slot": "share",
+   "try": 1,
+   "say": "Save this for later or send it to someone building ads.",
+   "receipt": "Exported a breakdown or built drafts for your own ad?",
+   "errs": []
+  },
+  {
+   "slot": "share",
+   "try": 0,
+   "say": "Save this for when you need to watch an ad over its drafts.",
+   "receipt": "Watch a finished motion-graphics ad play over the rough drafts it grew from, frame-synced,",
+   "errs": []
+  },
+  {
+   "slot": "share",
+   "try": 0,
+   "say": "Save this for when you want to see an ad's full growth.",
+   "receipt": "Watch a finished motion-graphics ad play over the HyperFrames drafts it grew from, frame-synced",
+   "errs": []
+  },
+  {
+   "slot": "end",
+   "try": 0,
+   "say": "NullMotion builds your ads from rough drafts.",
+   "receipt": "Watch a finished motion-graphics ad play over the rough drafts it grew from",
+   "errs": []
+  },
+  {
+   "slot": "end",
+   "try": 0,
+   "say": "Stop editing roughs and watch NullMotion.",
+   "receipt": "Watch a finished motion-graphics ad play over the HyperFrames drafts it grew from, frame-synced, and export the breakdown as an MP4.",
+   "errs": []
+  },
+  {
+   "slot": "end",
+   "try": 0,
+   "say": "Export your breakdown with NullMotion today.",
+   "receipt": "Watch a finished motion-graphics ad play over the rough drafts it grew from, frame-synced, and export the breakdown as an MP4.",
+   "errs": []
+  }
+ ]
+}

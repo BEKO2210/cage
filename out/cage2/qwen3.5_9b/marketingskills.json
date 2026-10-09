@@ -1,0 +1,910 @@
+{
+ "lines": [
+  "This repo has 53,319 stars.",
+  "Developers struggle to give AI agents specialized marketing knowledge for tasks like copy or SEO.",
+  "It installs specialized skills so AI agents can handle B2B cold emails, SEO audits, and growth engineering tasks.",
+  "Skills are markdown files installed to give agents specialized workflows that reference each other for shared context.",
+  "Just ask 'optimize this landing page for conversions' to trigger conversion skills.",
+  "v2.0 consolidates page-cro and form-cro into one single cro skill.",
+  "It tracks 140 SaaS marketing ideas and manages churn prevention flows.",
+  "It sets up analytics tracking and manages a full lead lifecycle for sales teams.",
+  "You can install via CLI, clone a fork to customize it, or use SkillKit for multiple agents.",
+  "The license is MIT and creators use this repo across many projects.",
+  "Clone the repo or run this command to install all marketing skills.",
+  "Send this to someone who needs AI marketing skills.",
+  "Get specialized marketing skills for your AI agents today."
+ ],
+ "words": 161,
+ "log": [
+  {
+   "slot": "hook",
+   "try": 0,
+   "say": "Fifty-three thousand GitHub stars measure interest in AI marketing skills.",
+   "receipt": "53,319 GitHub stars",
+   "errs": [
+    "has 10 words, must have 12-20",
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words",
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "hook",
+   "try": 1,
+   "say": "Fifty-three thousand stars measure interest.",
+   "receipt": "53,319 GitHub stars",
+   "errs": [
+    "has 5 words, must have 12-20",
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words",
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "hook",
+   "try": 2,
+   "say": "Fifty-three thousand stars measure interest.",
+   "receipt": "53,319 GitHub stars",
+   "errs": [
+    "has 5 words, must have 12-20",
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words",
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "hook",
+   "try": 0,
+   "say": "Fifty-three thousand three hundred and nineteen GitHub stars count this repo's popularity.",
+   "receipt": "53,319 GitHub stars",
+   "errs": [
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words",
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "hook",
+   "try": 1,
+   "say": "53,319 GitHub stars measure this repo's popularity.",
+   "receipt": "F1: 53,319 GitHub stars",
+   "errs": [
+    "has 7 words, must have 12-20",
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "hook",
+   "try": 2,
+   "say": "53,319 GitHub stars measure this repo's popularity.",
+   "receipt": "F1: 53,319 GitHub stars",
+   "errs": [
+    "has 7 words, must have 12-20",
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "hook",
+   "try": 0,
+   "say": "This repo has 53,319 stars.",
+   "receipt": "F1: 53,319 GitHub stars, main language JavaScript",
+   "errs": [
+    "has 5 words, must have 12-20"
+   ]
+  },
+  {
+   "slot": "hook",
+   "try": 1,
+   "say": "This GitHub project has exactly fifty-three thousand three hundred nineteen stars.",
+   "receipt": "| | cold-email | Write B2B cold emails and follow-up sequences that get replies.",
+   "errs": [
+    "has 11 words, must have 12-20",
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "hook",
+   "try": 2,
+   "say": "This repo holds fifty-three thousand three hundred nineteen stars.",
+   "receipt": "| | 53,319 GitHub stars, main language JavaScript| (from F1)",
+   "errs": [
+    "has 9 words, must have 12-20",
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words",
+    "receipt not found word for word in the sources: \"53,319 github stars, main language javascript (from f1)\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "problem",
+   "try": 0,
+   "say": "Developers struggle to give AI agents specialized marketing knowledge for tasks like SEO and copywriting.",
+   "receipt": "Skills are markdown files that give AI agents specialized knowledge and workflows for specific tasks.",
+   "errs": []
+  },
+  {
+   "slot": "problem",
+   "try": 0,
+   "say": "Developers face a fragmented approach to marketing tasks.",
+   "receipt": "| Skill | Description |\n|----------------------|-----------------------------------------------------------|\n| ab-testing           | When the user wants to plan, design, or implement an A/B test ...",
+   "errs": [
+    "has 8 words, must have 14-24",
+    "receipt not found word for word in the sources: \"skill description ---------------------- ---------------------------------------\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "problem",
+   "try": 1,
+   "say": "Skills are markdown files giving agents specialized knowledge.",
+   "receipt": "markdown files that give AI agents specialized knowledge",
+   "errs": [
+    "has 8 words, must have 14-24"
+   ]
+  },
+  {
+   "slot": "problem",
+   "try": 2,
+   "say": "Developers lack marketing skills for AI agents like Claude Code.",
+   "receipt": "Skills are markdown files that give AI agents specialized knowledge ...",
+   "errs": [
+    "has 10 words, must have 14-24"
+   ]
+  },
+  {
+   "slot": "problem",
+   "try": 0,
+   "say": "Developers struggle to give AI agents specialized marketing knowledge for tasks like copy or SEO.",
+   "receipt": "| ab-testing | When the user wants to plan, design, or implement an A/B test or experiment, or build a growth experimentation prog",
+   "errs": []
+  },
+  {
+   "slot": "what",
+   "try": 0,
+   "say": "It is a collection of skills giving AI agents specialized knowledge for marketing tasks.",
+   "receipt": "| What are Skills? |\n|---|\n| **Skills** are markdown files that give AI agents specialized knowledge and workflows for specific tasks. |",
+   "errs": [
+    "receipt not found word for word in the sources: \"what are skills? --- skills are markdown files that give ai agents specialized k\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "what",
+   "try": 1,
+   "say": "Skills are markdown files giving AI agents specialized knowledge for tasks like SEO.",
+   "receipt": "\"Skills are markdown files that give AI agents specialized knowledge... When the user wants to optimize content for AI search engines\"",
+   "errs": [
+    "has 13 words, must have 14-22",
+    "repeats words an earlier line already said: \"knowledge for tasks like\" - say something new",
+    "receipt not found word for word in the sources: \"\"skills are markdown files that give ai agents specialized knowledge\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "what",
+   "try": 2,
+   "say": "Skills are markdown files that give AI agents specialized knowledge... perfect for teams building marketing tools.",
+   "receipt": "Skills are markdown files that give AI agents specialized knowledge ... build a list of prospects to reach out",
+   "errs": [
+    "no '...' in the spoken line (that belongs in the receipt only)",
+    "repeats words an earlier line already said: \"give ai agents specialized\" - say something new"
+   ]
+  },
+  {
+   "slot": "what",
+   "try": 0,
+   "say": "It provides marketing skills for AI agents to handle copy and SEO.",
+   "receipt": "F0: coreyhaines31/marketingskills: Marketing skills for Claude Code and AI agents. CRO, copywriting, SEO",
+   "errs": [
+    "has 12 words, must have 14-22"
+   ]
+  },
+  {
+   "slot": "what",
+   "try": 1,
+   "say": "Marketingskills gives AI agents specialized knowledge for tasks like cold emails and A/B testing.",
+   "receipt": "",
+   "errs": [
+    "repeats words an earlier line already said: \"knowledge for tasks like\" - say something new",
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "what",
+   "try": 2,
+   "say": "Marketingskills is a collection of markdown files that give AI agents specialized knowledge.",
+   "receipt": "Skills are markdown files that give AI agents specialized knowledge",
+   "errs": [
+    "has 13 words, must have 14-22",
+    "repeats words an earlier line already said: \"give ai agents specialized\" - say something new"
+   ]
+  },
+  {
+   "slot": "what",
+   "try": 0,
+   "say": "It installs specialized skills so AI agents can handle B2B cold emails, SEO audits, and growth engineering tasks.",
+   "receipt": "| | cold-email | Write B2B cold emails and follow-up sequences that get replies. ... When the user wants to find, qualify, and build a list of prospects to reach out to — across B2B SaaS, general B2B, or... coreyhaines31/marketingskills: Marketing skills for Claude Code and AI agents. CRO, copywriting, SEO, analytics, and growth engineering.",
+   "errs": []
+  },
+  {
+   "slot": "how",
+   "try": 0,
+   "say": "Skills are markdown files giving AI agents specialized knowledge and workflows for specific tasks.",
+   "receipt": "| Skills | Description |\n| ab-testing | When the user wants to plan, design, or implement an A/B test or experiment, or build a growth experimentation prog|",
+   "errs": [
+    "has 14 words, must have 16-26",
+    "receipt not found word for word in the sources: \"skills description ab-testing when the user wants to plan, design, or implement \" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "how",
+   "try": 1,
+   "say": "Skills are markdown files that give AI agents specialized knowledge and workflows for specific tasks.",
+   "receipt": "Skills are markdown files that give AI agents specialized knowledge and workflows for specific tasks.",
+   "errs": [
+    "has 15 words, must have 16-26",
+    "repeats words an earlier line already said: \"give ai agents specialized\" - say something new"
+   ]
+  },
+  {
+   "slot": "how",
+   "try": 2,
+   "say": "Skills are markdown files that add workflows for tasks like ad campaigns, sales enablement docs, or churn prevention steps.",
+   "receipt": "| Skills | Description |\n|-----|-----|\n| ... \n### What are Skills?\nSkills are markdown files that give AI agents specialized knowledge and workflows for specific tasks.",
+   "errs": [
+    "receipt not found word for word in the sources: \"skills description ----- -----\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "how",
+   "try": 0,
+   "say": "Skills are markdown files installed to give agents specialized workflows that reference each other for shared context.",
+   "receipt": "What are Skills?\nSkills are markdown files that give AI agents specialized knowledge and workflows for specific tasks.\n### How Skills Work Together\nSkills reference each other and build on shared context.",
+   "errs": []
+  },
+  {
+   "slot": "how",
+   "try": 0,
+   "say": "Skills are markdown files giving agents specialized workflows to handle specific tasks like planning experiments.",
+   "receipt": "What are Skills? | Skills are markdown files that give AI agents specialized knowledge and workflows for specific tasks.",
+   "errs": [
+    "has 15 words, must have 16-26"
+   ]
+  },
+  {
+   "slot": "how",
+   "try": 1,
+   "say": "Skills act as text instructions that teach AI how to perform distinct marketing jobs.",
+   "receipt": "| Skills are markdown files that give AI agents specialized knowledge and workflows for specific tasks.",
+   "errs": [
+    "has 14 words, must have 16-26"
+   ]
+  },
+  {
+   "slot": "how",
+   "try": 2,
+   "say": "Skills are markdown files giving agents specialized knowledge for specific tasks like copywriting or analytics.",
+   "receipt": "| Skills | Description |\n| ab-testing | When the user wants to plan, design, or implement an A/B test or experiment...",
+   "errs": [
+    "has 15 words, must have 16-26",
+    "receipt not found word for word in the sources: \"skills description ab-testing when the user wants to plan, design, or implement \" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "how2",
+   "try": 0,
+   "say": "Ask for a cold email sequence and it writes replies to get responses.",
+   "receipt": "| | cold-email | Write B2B cold emails and follow-up sequences that get replies.",
+   "errs": [
+    "has 13 words, must have 16-26"
+   ]
+  },
+  {
+   "slot": "how2",
+   "try": 1,
+   "say": "Ask your agent to write B2B cold emails that get replies.",
+   "receipt": "| | cold-email | Write B2B cold emails and follow-up sequences that get replies.",
+   "errs": [
+    "has 11 words, must have 16-26"
+   ]
+  },
+  {
+   "slot": "how2",
+   "try": 2,
+   "say": "Try asking the agent to optimize a landing page for conversions using the cro skill.",
+   "receipt": "\"Help me optimize this landing page for conversions\" → Uses cro skill",
+   "errs": [
+    "has 15 words, must have 16-26"
+   ]
+  },
+  {
+   "slot": "how2",
+   "try": 0,
+   "say": "Give an agent a task like optimizing content for AI search engines, and it uses skills to build on shared context.",
+   "receipt": "",
+   "errs": [
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "how2",
+   "try": 1,
+   "say": "Ask your agent to optimize content for AI search engines.",
+   "receipt": "When the user wants to optimize content for AI search engines, get cited by LLMs, or appear in AI-generated answers",
+   "errs": [
+    "has 10 words, must have 16-26"
+   ]
+  },
+  {
+   "slot": "how2",
+   "try": 2,
+   "say": "Ask an agent to write B2B cold emails that get replies.",
+   "receipt": "| | cold-email | Write B2B cold emails and follow-up sequences that get replies.",
+   "errs": [
+    "has 11 words, must have 16-26"
+   ]
+  },
+  {
+   "slot": "how2",
+   "try": 0,
+   "say": "Just ask 'optimize this landing page for conversions' to trigger conversion skills.",
+   "receipt": "\"Help me optimize this landing page for conversions\" → Uses cro skill",
+   "errs": [
+    "has 12 words, must have 16-26"
+   ]
+  },
+  {
+   "slot": "how2",
+   "try": 1,
+   "say": "Say optimize this landing page for conversions or call slash CRO.",
+   "receipt": "\"Help me optimize this landing page for conversions\" → Uses cro skill",
+   "errs": [
+    "has 11 words, must have 16-26"
+   ]
+  },
+  {
+   "slot": "how2",
+   "try": 2,
+   "say": "Type 'optimize this landing page' to trigger the cro skill.",
+   "receipt": "\"Help me optimize this landing page for conversions\" → Uses cro skill",
+   "errs": [
+    "has 10 words, must have 16-26"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 0,
+   "say": "v2.0 consolidates page-cro and form-cro into one single cro skill.",
+   "receipt": "v2.0 renames 17 skills and consolidates `page-cro` + `form-cro` into a single `cro` skill.",
+   "errs": [
+    "has 10 words, must have 16-26"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 1,
+   "say": "This repo renamed the old folder names to new ones like analytics for tracking.",
+   "receipt": "| `analytics-tracking` | `analytics` |",
+   "errs": [
+    "has 14 words, must have 16-26",
+    "must contain a number from the facts",
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 2,
+   "say": "The repository renamed folders like analytics-tracking to just analytics.",
+   "receipt": "| `analytics-tracking` | `analytics` |",
+   "errs": [
+    "has 9 words, must have 16-26",
+    "must contain a number from the facts",
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 0,
+   "say": "The repo includes a skill for B2B cold emails and follow-up sequences that get replies from prospects.",
+   "receipt": "",
+   "errs": [
+    "never ask to follow",
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 1,
+   "say": "Use SkillKit to install skills across multiple AI agents like Claude Code, Cursor, Copilot.",
+   "receipt": "F4: Clone your fork into your projects ### Option 7: SkillKit (Multi-Agent) Use SkillKit to install skills across multiple AI agents (Claude Code, Cursor, Copilot, etc): ## Upgrading",
+   "errs": [
+    "has 14 words, must have 16-26",
+    "must contain a number from the facts",
+    "receipt not found word for word in the sources: \"f4: clone your fork into your projects option 7: skillkit (multi-agent) use skil\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 2,
+   "say": "SkillKit installs skills across multiple AI agents like Claude Code, Cursor, Copilot.",
+   "receipt": "| | cold-email | Write B2B cold emails and follow-up sequences that get replies.",
+   "errs": [
+    "has 12 words, must have 16-26",
+    "must contain a number from the facts"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 0,
+   "say": "It consolidates page and form skills into one single file.",
+   "receipt": "| Old | New |\n|-----|-----|\n| `page-cro` | `cro` |",
+   "errs": [
+    "has 10 words, must have 16-26",
+    "must contain a number from the facts",
+    "receipt not found word for word in the sources: \"old new ----- ----- page-cro cro\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 1,
+   "say": "The update combines old skills like ab-test-setup into the single folder named ab-testing.",
+   "receipt": "| `ab-test-setup` | `ab-testing`|",
+   "errs": [
+    "has 13 words, must have 16-26",
+    "must contain a number from the facts",
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 2,
+   "say": "v2.0 renames seventeen skills like ab-test-setup to new names such as ab-testing.",
+   "receipt": "Upgrading v1.x to v2.0 renames 17 skills ... `ab-test-setup` | `ab-testing`",
+   "errs": [
+    "has 12 words, must have 16-26",
+    "write every number in digits exactly as in the facts, never in words",
+    "receipt not found word for word in the sources: \"upgrading v1.x to v2.0 renames 17 skills\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 0,
+   "say": "It also includes 17 renamed skills and maps old folders to new names exactly.",
+   "receipt": "| Old | New |\n|-----|-----|\n...`page-cro` + `form-cro` -> ... one single cro skill.",
+   "errs": [
+    "receipt not found word for word in the sources: \"page-cro + form-cro -\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 1,
+   "say": "v2.0 renames 17 skills ... page-cro",
+   "receipt": "... v2.0 renames 17 skills ...",
+   "errs": [
+    "has 6 words, must have 14-24",
+    "repeats a number already said: 2.0",
+    "no '...' in the spoken line (that belongs in the receipt only)",
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 2,
+   "say": "The license is MIT, so you can use these skills however you want.",
+   "receipt": "### License\nMIT - Use these however you want.",
+   "errs": [
+    "has 13 words, must have 14-24",
+    "must contain a number from the facts"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 0,
+   "say": "It tracks 140 SaaS marketing ideas and manages churn prevention flows.",
+   "receipt": "| `marketing-ideas` - 140 SaaS marketing ideas | ... | `churn-prevention` - Cancel flows, save offers, dunning, payment recovery ||",
+   "errs": [
+    "has 11 words, must have 14-24"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 1,
+   "say": "The repo lists 17 renamed skills for upgrading.",
+   "receipt": "v2.0 renames 17 skills and consolidates `page-cro` + `form-cro` into a single `cro` skill.",
+   "errs": [
+    "has 8 words, must have 14-24"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 2,
+   "say": "Upgrading renames seventeen distinct skill folders to new names.",
+   "receipt": "v2.0 renames 17 skills ... consolidate page-cro + form-cro into a single cro skill.",
+   "errs": [
+    "has 9 words, must have 14-24",
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words",
+    "receipt not found word for word in the sources: \"consolidate page-cro + form-cro into a single cro skill.\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 0,
+   "say": "It upgrades alongside old folders without breaking anything.",
+   "receipt": "If you installed the v1.x skills, you'll have stale old-name folders in your install directory after upgrading — the new skills install alongside the old ones",
+   "errs": [
+    "has 8 words, must have 14-24",
+    "must contain a number from the facts"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 1,
+   "say": "Upgrading keeps stale v1.x folders alongside new skills.",
+   "receipt": "If you installed the v1.x skills, you'll have **stale old-name folders** in your install directory after upgrading — the new skills install alongside the old ones,",
+   "errs": [
+    "has 8 words, must have 14-24"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 2,
+   "say": "Upgrading installs new versions without deleting old ones.",
+   "receipt": "the new skills install alongside the old ones so youll see both side by side",
+   "errs": [
+    "has 8 words, must have 14-24",
+    "must contain a number from the facts",
+    "receipt not found word for word in the sources: \"the new skills install alongside the old ones so youll see both side by side\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "detail",
+   "try": 0,
+   "say": "It sets up analytics tracking and manages a full lead lifecycle for sales teams.",
+   "receipt": "| `analytics` | When the user wants to set up, improve, or audit analytics tracking ...| `revops` - Lead lifecycle",
+   "errs": []
+  },
+  {
+   "slot": "detail",
+   "try": 0,
+   "say": "It handles B2B prospecting to find and qualify leads for your outreach lists.",
+   "receipt": "| | prospecting | When the user wants to find, qualify, and build a list of prospects to reach out to — across B2B SaaS, general B2B, or...",
+   "errs": [
+    "has 13 words, must have 14-24"
+   ]
+  },
+  {
+   "slot": "detail",
+   "try": 1,
+   "say": "You can also use the prospector skill to build B2B prospecting lists across SaaS or general business.",
+   "receipt": "| | prospecting | When the user wants to find, qualify, and build a list of prospects to reach out to — across B2B SaaS, general B2B, or...",
+   "errs": []
+  },
+  {
+   "slot": "detail",
+   "try": 0,
+   "say": "It helps plan A/B tests and sets up analytics tracking for your site.",
+   "receipt": "| ab-testing | When the user wants to plan, design, or implement an A/B test or experiment...",
+   "errs": [
+    "has 13 words, must have 14-24"
+   ]
+  },
+  {
+   "slot": "detail",
+   "try": 1,
+   "say": "Use SkillKit to install skills across multiple AI agents like Claude Code.",
+   "receipt": "| Option 7: SkillKit (Multi-Agent) Use SkillKit to install skills across multiple AI agents (Claude Code, Cursor, Copilot, etc.): |",
+   "errs": [
+    "has 12 words, must have 14-24"
+   ]
+  },
+  {
+   "slot": "detail",
+   "try": 2,
+   "say": "Option seven lets you use a tool called SkillKit to install skills across multiple AI agents.",
+   "receipt": "| Option 7: SkillKit (Multi-Agent) Use SkillKit to install skills across multiple AI agents (Claude Code, Cursor, Copilot, etc.):",
+   "errs": [
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "detail2",
+   "try": 0,
+   "say": "You can install via CLI, clone a fork to customize it, or use SkillKit for multiple agents.",
+   "receipt": "| Option 1: CLI Install (Recommended) ... | Option 6: Fork and Customize ... ### Option 7: SkillKit (Multi-Agent)|",
+   "errs": []
+  },
+  {
+   "slot": "detail2",
+   "try": 0,
+   "say": "You can install these skills directly via CLI or fork them to customize for your projects.",
+   "receipt": "Option 1: CLI Install (Recommended) Use npx skills to install skills directly... Option 6: Fork and Customize",
+   "errs": []
+  },
+  {
+   "slot": "detail2",
+   "try": 0,
+   "say": "Option seven lets you install these skills across multiple AI agents like Cursor and Copilot.",
+   "receipt": "| Option 7: SkillKit (Multi-Agent) Use SkillKit to install skills across multiple AI agents (Claude Code, Cursor, Copilot, etc.):",
+   "errs": [
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "detail2",
+   "try": 1,
+   "say": "SkillKit installs them on many platforms including Claude Code.",
+   "receipt": "| coreyhaines31/marketingskills | ... Use SkillKit to install skills across multiple AI agents (Claude Code, Cursor, Copilot",
+   "errs": [
+    "has 9 words, must have 12-22"
+   ]
+  },
+  {
+   "slot": "detail2",
+   "try": 2,
+   "say": "Use npx to install skills across multiple agents like Cursor or Copilot.",
+   "receipt": "# Install all skills\nnpx skillkit install coreyhaines31/marketingskills\n# Install specific skills",
+   "errs": []
+  },
+  {
+   "slot": "trust",
+   "try": 0,
+   "say": "Corey Haines built this under an MIT license for use.",
+   "receipt": "The library is free and MIT-licensed.",
+   "errs": [
+    "has 10 words, must have 12-20"
+   ]
+  },
+  {
+   "slot": "trust",
+   "try": 1,
+   "say": "Corey Haines made it free with the MIT licence.",
+   "receipt": "The library is free and MIT-licensed.",
+   "errs": [
+    "has 9 words, must have 12-20"
+   ]
+  },
+  {
+   "slot": "trust",
+   "try": 2,
+   "say": "Corey Haines built this as an MIT license project that GitHub users starred over fifty-three thousand times.",
+   "receipt": "| | cold-email | Write B2B cold emails and follow-up sequences that get replies.\nFACTS:\ncoreyhaines31/marketingskills: Marketing skills for Claude Code and AI agents. CRO, copywriting, SEO, analytics, and growth engineering.",
+   "errs": [
+    "write every number in digits exactly as in the facts, never in words",
+    "receipt not found word for word in the sources: \"cold-email write b2b cold emails and follow-up sequences that get replies. facts\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "trust",
+   "try": 0,
+   "say": "Corey Haines MIT-licensed it, and users trust these skills after over fifty-three thousand stars.",
+   "receipt": "coreyhaines31/marketingskills ... free and MIT-licensed. F0: coreyhaines31/marketingskills ... GitHub stars",
+   "errs": [
+    "write every number in digits exactly as in the facts, never in words",
+    "receipt not found word for word in the sources: \"free and mit-licensed. f0: coreyhaines31/marketingskills\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "trust",
+   "try": 1,
+   "say": "Corey Haines made this MIT library, trusted by users with fifty-three thousand stars.",
+   "receipt": "The library is free and MIT-licensed... coreyhaines31/marketingskills: Marketing skills for Claude Code and AI agents. ... F0: coreyhaines31/marketingskills: Marketing skills for Claude Code and AI agents. CRO, copywriting, SEO, analytics, and growth engineering.\nF1: 53,319 GitHub stars",
+   "errs": [
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "trust",
+   "try": 2,
+   "say": "Corey Haines built this free MIT repo; GitHub users gave it 53,319 stars.",
+   "receipt": "| | cold-email | Write B2B cold emails and follow-up sequences that get replies.\nF0: coreyhaines31/marketingskills: Marketing skills for Claude Code and AI agents. CRO, copywriting, SEO, analytics, and growth engineering.\nFACTS:\nF1: 53,319 GitHub stars\nThe library is free and MIT-licensed.",
+   "errs": [
+    "repeats a number already said: 53319",
+    "receipt not found word for word in the sources: \"cold-email write b2b cold emails and follow-up sequences that get replies. f0: c\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "trust",
+   "try": 0,
+   "say": "It is MIT licensed and built for AI agents with over fifty-three thousand stars.",
+   "receipt": "The library is free and MIT-licensed... 53,319 GitHub stars",
+   "errs": [
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "trust",
+   "try": 1,
+   "say": "The license is MIT and creators use this repo across many projects.",
+   "receipt": "### License\nMIT - Use these however you want.",
+   "errs": []
+  },
+  {
+   "slot": "start",
+   "try": 0,
+   "say": "Name npx skills add coreyhaines31/marketingskills to install all marketing tasks.",
+   "receipt": "# Install all skills\nnpx skills add coreyhaines31/marketingskills",
+   "errs": [
+    "has 10 words, must have 12-20"
+   ]
+  },
+  {
+   "slot": "start",
+   "try": 1,
+   "say": "Run this command in your terminal.",
+   "receipt": "# Install all skills\nnpx skills add coreyhaines31/marketingskills",
+   "errs": [
+    "has 6 words, must have 12-20"
+   ]
+  },
+  {
+   "slot": "start",
+   "try": 2,
+   "say": "Install all skills by running npx skills add coreyhaines31/marketingskills.",
+   "receipt": "# Install all skills\nnpx skills add coreyhaines31/marketingskills",
+   "errs": [
+    "has 9 words, must have 12-20"
+   ]
+  },
+  {
+   "slot": "start",
+   "try": 0,
+   "say": "Install with npx skills add coreyhaines31/marketingskills.",
+   "receipt": "# Install all skills\nnpx skills add coreyhaines31/marketingskills",
+   "errs": [
+    "has 6 words, must have 12-20"
+   ]
+  },
+  {
+   "slot": "start",
+   "try": 1,
+   "say": "Clone the repo or run this command to install all marketing skills.",
+   "receipt": "git clone https://github.com/coreyhaines31/marketingskills.git ... npx skills add coreyhaines31/marketingskills",
+   "errs": []
+  },
+  {
+   "slot": "start",
+   "try": 0,
+   "say": "Run npx skills add coreyhaines31/marketingskills to install all capabilities.",
+   "receipt": "# Install all skills\nnpx skills add coreyhaines31/marketingskills",
+   "errs": [
+    "has 9 words, must have 12-20"
+   ]
+  },
+  {
+   "slot": "start",
+   "try": 1,
+   "say": "Run the command npx skills add coreyhaines31/marketingskills.",
+   "receipt": "# Install all skills\nnpx skills add coreyhaines31/marketingskills",
+   "errs": [
+    "has 7 words, must have 12-20"
+   ]
+  },
+  {
+   "slot": "start",
+   "try": 2,
+   "say": "First run this install command to get all marketing skills.",
+   "receipt": "# Install all skills\nnpx skills add coreyhaines31/marketingskills",
+   "errs": [
+    "has 10 words, must have 12-20"
+   ]
+  },
+  {
+   "slot": "share",
+   "try": 0,
+   "say": "Send this to someone who needs AI marketing skills.",
+   "receipt": "coreyhaines31/marketingskills: Marketing skills for Claude Code and AI agents.",
+   "errs": [
+    "has 9 words, must have 10-16"
+   ]
+  },
+  {
+   "slot": "share",
+   "try": 1,
+   "say": "Save this for your next B2B email campaign.",
+   "receipt": "| cold-email | Write B2B cold emails and follow-up sequences that get replies.",
+   "errs": [
+    "has 8 words, must have 10-16"
+   ]
+  },
+  {
+   "slot": "share",
+   "try": 2,
+   "say": "Send this to someone who needs cold emails.",
+   "receipt": "| | cold-email | Write B2B cold emails and follow-up sequences that get replies.",
+   "errs": [
+    "has 8 words, must have 10-16"
+   ]
+  },
+  {
+   "slot": "share",
+   "try": 0,
+   "say": "Share this with a team building marketing skills for AI agents.",
+   "receipt": "A collection of AI agent skills focused on marketing tasks",
+   "errs": [
+    "must start with 'Send this to someone who' or 'Save this for'"
+   ]
+  },
+  {
+   "slot": "share",
+   "try": 1,
+   "say": "Send this to someone needing cold email help ... prospecting",
+   "receipt": "| | cold-email | Write B2B cold emails and follow-up sequences that get replies.",
+   "errs": [
+    "no '...' in the spoken line (that belongs in the receipt only)"
+   ]
+  },
+  {
+   "slot": "share",
+   "try": 2,
+   "say": "Save this for your next AI agent upgrade.",
+   "receipt": "Use SkillKit to install skills across multiple AI agents",
+   "errs": [
+    "has 8 words, must have 10-16"
+   ]
+  },
+  {
+   "slot": "share",
+   "try": 0,
+   "say": "Save this for anyone building AI marketing agents.",
+   "receipt": "A collection of AI agent skills focused on marketing tasks.",
+   "errs": [
+    "has 8 words, must have 10-16"
+   ]
+  },
+  {
+   "slot": "share",
+   "try": 1,
+   "say": "Send this to someone using Claude Code or Cursor.",
+   "receipt": "Use SkillKit to install skills across multiple AI agents (Claude Code, Cursor...",
+   "errs": [
+    "has 9 words, must have 10-16"
+   ]
+  },
+  {
+   "slot": "share",
+   "try": 2,
+   "say": "Save this for when your agent needs SEO help.",
+   "receipt": "When the user wants to optimize content for AI search engines ... or appear in AI-generated answers.",
+   "errs": [
+    "has 9 words, must have 10-16"
+   ]
+  },
+  {
+   "slot": "end",
+   "try": 0,
+   "say": "Get specialized marketing skills for any AI agent today.",
+   "receipt": "Skills are markdown files that give AI agents specialized knowledge and workflows for specific tasks.",
+   "errs": []
+  },
+  {
+   "slot": "end",
+   "try": 0,
+   "say": "Market skills are here for every agent.",
+   "receipt": "",
+   "errs": []
+  },
+  {
+   "slot": "end",
+   "try": 0,
+   "say": "Try marketingskills today.",
+   "receipt": "`marketingskills` - A collection of AI agent skills focused on marketing tasks.",
+   "errs": [
+    "has 3 words, must have 6-12"
+   ]
+  },
+  {
+   "slot": "end",
+   "try": 1,
+   "say": "Try GitHub repo coreyhaines31/marketingskills now.",
+   "receipt": "coreyhaines31/marketingskills",
+   "errs": [
+    "has 5 words, must have 6-12"
+   ]
+  },
+  {
+   "slot": "end",
+   "try": 2,
+   "say": "Get specialized marketing skills for your AI agents today.",
+   "receipt": "Skills are markdown files that give AI agents specialized knowledge and workflows for specific tasks.",
+   "errs": []
+  }
+ ]
+}

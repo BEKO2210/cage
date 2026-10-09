@@ -1,0 +1,18 @@
+{
+ "lines": [
+  "This tiny engine beats Qwen3.8-Flash-Next.",
+  "id",
+  "mid1",
+  "say",
+  "Run a 125-billion-parameter AI model.",
+  "shots",
+  "id",
+  "mid2",
+  "say",
+  "It writes answers at 94 tokens s on an RTX 3090.",
+  "shots",
+  "pages"
+ ],
+ "words": 30,
+ "log": []
+}

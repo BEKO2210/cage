@@ -1,0 +1,17 @@
+{
+ "lines": [
+  "This tiny engine beats an LLM. And it's 11× faster.",
+  "Zürich to London on Google Flights. In just 7.1 seconds.",
+  "Wait for useful state only. Capped at a hundred milliseconds.",
+  "Median task time dropped by twenty-five percent. Protocol calls fell from one thousand to a hundred.",
+  "One request per decision cycle. Operation and target share the state.",
+  "Atomic DOM snapshots with freshness guards. No site-specific scripts needed.",
+  "Small enough to read. One agent file handles the complete loop.",
+  "Tests run offline with no external dependencies. Just clone, sync, and go.",
+  "Give it one goal in natural language. Jev picks the operation automatically.",
+  "Dynamic, indexed action space for any web page. Built on Python and MIT licence.",
+  "Send this to someone who builds agents. Save this for your next project."
+ ],
+ "words": 129,
+ "log": []
+}

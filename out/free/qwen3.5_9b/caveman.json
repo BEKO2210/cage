@@ -1,0 +1,12 @@
+{
+ "lines": [
+  "This tiny engine beats an 8B-parameter LLM. And it's **11×** faster.",
+  "It cuts input tokens by 33.2%. Eight models agree on five datasets. Adobe Research proved it.",
+  "CSVs shrink from twenty-eight thousand to **three hundred** tokens. Logs drop ninety-nine point one percent small. No quality loss ever.",
+  "JetBrains tested eighty-six coding tasks. One line per phase, quiet tool runs. Payload stays verbatim.",
+  "Install via npx skills add JuliusBrussee caveman. It works in Claude Code and Gemini CLI too.",
+  "Send this to someone who writes code daily. Save for your next agent build."
+ ],
+ "words": 92,
+ "log": []
+}

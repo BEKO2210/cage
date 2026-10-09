@@ -1,0 +1,12 @@
+{
+ "lines": [
+  "This single engine beats an 8B-parameter LLM. And it's 11× faster.",
+  "  Turn any idea into an interactive diagram. Works with Cursor, Claude Code, and Codex.",
+  "  The Proof Lab contains all 11 checked-in scenarios. And it's #1 on GitHub Trending weekly.",
+  "  Use Archify to draw: Browser -> API -> Redis cache. Then query PostgreSQL and fill the cache.",
+  "  Understand a real repository with source-backed maps. The agent chooses hierarchy, spacing, and routes.",
+  "  Send this to someone who needs clear system architecture."
+ ],
+ "words": 80,
+ "log": []
+}

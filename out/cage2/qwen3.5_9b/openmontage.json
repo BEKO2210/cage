@@ -1,0 +1,953 @@
+{
+ "lines": [
+  "OpenMontage has 63,470 GitHub stars.",
+  "OpenMontage turns your AI assistant into a full video production studio with 12 pipelines.",
+  "You tell your AI what to make, then an agent reads the pipeline manifest.",
+  "Say 'Make a 60-second Adam-Curtis-style archival collage about 1950s consumer optimism.' The agent creates that specific video.",
+  "Every tool selection runs through a 7-dimension scoring engine.",
+  "Quality gates enforce your sign-off on script, assets, and the final publish.",
+  "Add API keys for 20+ video providers or use free tools like NASA footage.",
+  "It uses the GNU AGPLv3 license.",
+  "Start with git clone OpenMontage, then run make setup.",
+  "Send this to someone building their first video project today.",
+  "Close with a short punchline that names OpenMontage."
+ ],
+ "words": 118,
+ "log": [
+  {
+   "slot": "hook",
+   "try": 0,
+   "say": "OpenMontage has 63,470 GitHub stars.",
+   "receipt": "F1: 63,470 GitHub stars, main language Python",
+   "errs": [
+    "has 5 words, must have 12-20"
+   ]
+  },
+  {
+   "slot": "hook",
+   "try": 1,
+   "say": "OpenMontage holds sixty-three thousand four hundred seventy stars.",
+   "receipt": "63,470 GitHub stars",
+   "errs": [
+    "has 8 words, must have 12-20",
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words",
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "hook",
+   "try": 2,
+   "say": "Sixty-three thousand four hundred seventy GitHub stars measure its popularity.",
+   "receipt": "F1: 63,470 GitHub stars",
+   "errs": [
+    "has 10 words, must have 12-20",
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words",
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "hook",
+   "try": 0,
+   "say": "OpenMontage has sixty-three thousand four hundred seventy GitHub stars.",
+   "receipt": "F1: 63,470 GitHub stars,",
+   "errs": [
+    "has 9 words, must have 12-20",
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words",
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "hook",
+   "try": 1,
+   "say": "OpenMontage has 63470 GitHub stars.",
+   "receipt": "",
+   "errs": [
+    "has 5 words, must have 12-20",
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "hook",
+   "try": 2,
+   "say": "OpenMontage reached sixty-three thousand four hundred seventy GitHub stars.",
+   "receipt": "F1: 63,470 GitHub stars,",
+   "errs": [
+    "has 9 words, must have 12-20",
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words",
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "hook",
+   "try": 0,
+   "say": "OpenMontage has 63,470 GitHub stars.",
+   "receipt": "F1: 63,470 GitHub stars, main language Python",
+   "errs": [
+    "has 5 words, must have 12-20"
+   ]
+  },
+  {
+   "slot": "hook",
+   "try": 1,
+   "say": "OpenMontage holds sixty-three thousand four hundred seventy GitHub stars.",
+   "receipt": "F1: 63,470 GitHub stars",
+   "errs": [
+    "has 9 words, must have 12-20",
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words",
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "hook",
+   "try": 2,
+   "say": "GitHub stars count is sixty-three thousand four hundred seventy.",
+   "receipt": "F1: 63,470 GitHub stars",
+   "errs": [
+    "has 9 words, must have 12-20",
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words",
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "problem",
+   "try": 0,
+   "say": "Most AI video tools give you a single clip from a prompt.",
+   "receipt": "Most AI video tools give you a single clip from a prompt.",
+   "errs": [
+    "has 12 words, must have 14-24",
+    "no superlatives unless the facts say exactly that"
+   ]
+  },
+  {
+   "slot": "problem",
+   "try": 1,
+   "say": "Most AI video tools give you only a single clip.",
+   "receipt": "Most AI video tools give you a single clip from a prompt.",
+   "errs": [
+    "has 10 words, must have 14-24",
+    "no superlatives unless the facts say exactly that"
+   ]
+  },
+  {
+   "slot": "problem",
+   "try": 2,
+   "say": "Most AI video makers stop at one short clip.",
+   "receipt": "Most AI video tools give you a single clip from a prompt.",
+   "errs": [
+    "has 9 words, must have 14-24",
+    "no superlatives unless the facts say exactly that"
+   ]
+  },
+  {
+   "slot": "problem",
+   "try": 0,
+   "say": "Most AI video tools give you a single clip from a prompt, but OpenMontage uses an agent-first architecture.",
+   "receipt": "README (for meaning, not for numbers): ### Why OpenMontage? Most AI video tools give you a single clip from a prompt. How It Works OpenMontage uses an **agent-first architecture**.",
+   "errs": [
+    "no superlatives unless the facts say exactly that",
+    "receipt not found word for word in the sources: \"readme (for meaning, not for numbers): why openmontage? most ai video tools give\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "problem",
+   "try": 1,
+   "say": "Most AI video tools give you a single clip from a prompt.",
+   "receipt": "| Why OpenMontage? Most AI video tools give you a single clip from a prompt.",
+   "errs": [
+    "has 12 words, must have 14-24",
+    "no superlatives unless the facts say exactly that"
+   ]
+  },
+  {
+   "slot": "problem",
+   "try": 2,
+   "say": "Most AI video tools give you just one clip from your prompt.",
+   "receipt": "Most AI video tools give you a single clip from a prompt.",
+   "errs": [
+    "has 12 words, must have 14-24",
+    "no superlatives unless the facts say exactly that"
+   ]
+  },
+  {
+   "slot": "problem",
+   "try": 0,
+   "say": "Most tools give you one clip, but this gives you a full studio.",
+   "receipt": "Most AI video tools give you a single clip from a prompt.",
+   "errs": [
+    "has 13 words, must have 14-24",
+    "no superlatives unless the facts say exactly that"
+   ]
+  },
+  {
+   "slot": "problem",
+   "try": 1,
+   "say": "Most AI tools give you only one clip.",
+   "receipt": "Why OpenMontage? Most AI video tools give you a single clip from a prompt.",
+   "errs": [
+    "has 8 words, must have 14-24",
+    "no superlatives unless the facts say exactly that"
+   ]
+  },
+  {
+   "slot": "problem",
+   "try": 2,
+   "say": "Most video tools return a single generated clip from your prompt.",
+   "receipt": "Most AI video tools give you a single clip from a prompt.",
+   "errs": [
+    "has 11 words, must have 14-24",
+    "no superlatives unless the facts say exactly that"
+   ]
+  },
+  {
+   "slot": "problem",
+   "dropped": true
+  },
+  {
+   "slot": "what",
+   "try": 0,
+   "say": "OpenMontage is an open-source video production system for AI coding assistants...",
+   "receipt": "World's first open-source, agentic video production system.",
+   "errs": [
+    "has 11 words, must have 14-22",
+    "no '...' in the spoken line (that belongs in the receipt only)"
+   ]
+  },
+  {
+   "slot": "what",
+   "try": 1,
+   "say": "OpenMontage is an open-source video production system for AI coding assistants.",
+   "receipt": "\"World's first open-source, agentic video production system\" ... \"Turn your AI coding assistant into a full video production studio\"",
+   "errs": [
+    "has 11 words, must have 14-22",
+    "receipt not found word for word in the sources: \"\"world's first open-source, agentic video production system\"\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "what",
+   "try": 2,
+   "say": "Turn your AI coding assistant into a full video production studio.",
+   "receipt": "Turn your AI coding assistant into a full video production studio.",
+   "errs": [
+    "has 11 words, must have 14-22"
+   ]
+  },
+  {
+   "slot": "what",
+   "try": 0,
+   "say": "This is an open-source video studio for AI coding assistants to make real footage videos.",
+   "receipt": "",
+   "errs": [
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "what",
+   "try": 1,
+   "say": "OpenMontage turns your AI assistant into a full video production studio with 12 pipelines.",
+   "receipt": "Turn your AI coding assistant into a full video production studio... 12 production pipelines",
+   "errs": []
+  },
+  {
+   "slot": "what",
+   "try": 0,
+   "say": "OpenMontage is an open-source video studio for AI coding assistants to make real footage content.",
+   "receipt": "World's first open-source, agentic video production system. ... Turn your AI coding assistant into a full video production studio.",
+   "errs": []
+  },
+  {
+   "slot": "how",
+   "try": 0,
+   "say": "It uses an agent-first architecture where every tool selection runs through a scoring engine.",
+   "receipt": "OpenMontage is built for agentic operation... Every tool selection (video generation, image generation, TTS, music) runs through a 7-dimension scoring engine",
+   "errs": [
+    "has 14 words, must have 16-26",
+    "receipt not found word for word in the sources: \"openmontage is built for agentic operation\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "how",
+   "try": 1,
+   "say": "It uses an agent-first architecture where every tool selection runs through a scoring engine.",
+   "receipt": "This repo is built for agentic operation.\nEvery tool selection (video generation, image generation, TTS, music) runs through a 7-dimension scoring engine: task fit (30%), output quality (20%)",
+   "errs": [
+    "has 14 words, must have 16-26",
+    "receipt not found word for word in the sources: \"this repo is built for agentic operation. every tool selection (video generation\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "how",
+   "try": 2,
+   "say": "It uses an agent-first architecture.",
+   "receipt": "OpenMontage uses an **agent-first architecture**.",
+   "errs": [
+    "has 5 words, must have 16-26"
+   ]
+  },
+  {
+   "slot": "how",
+   "try": 0,
+   "say": "It uses an agent-first architecture that reads a pipeline manifest to orchestrate stages like research, script, and edit.",
+   "receipt": "OpenMontage The first open-source, agentic video production system.\nYou: \"Make an explainer video about how black holes form\"\n |\nv\nAgent reads pipeline manifest (YAML) -- stages, tools, review criteria, success gates",
+   "errs": [
+    "receipt not found word for word in the sources: \"openmontage the first open-source, agentic video production system. you: \"make a\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "how",
+   "try": 1,
+   "say": "You tell your AI assistant what to make, then an agent reads the pipeline manifest to orchestrate research, proposal, script, scene plan, assets, edit, compose.",
+   "receipt": "Agent reads pipeline manifest (YAML) -- stages, tools, review criteria, success gates\nresearch -> proposal -> script -> scene_plan -> assets -> edit -> compose",
+   "errs": [
+    "receipt not found word for word in the sources: \"agent reads pipeline manifest (yaml) -- stages, tools, review criteria, success \" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "how",
+   "try": 2,
+   "say": "You tell your AI what to make, then an agent reads the pipeline manifest.",
+   "receipt": "agent reads pipeline manifest (YAML)",
+   "errs": [
+    "has 14 words, must have 16-26"
+   ]
+  },
+  {
+   "slot": "how",
+   "try": 0,
+   "say": "It uses an agent-first architecture that reads pipeline manifests to pick tools based on task fit and output quality scores.",
+   "receipt": "OpenMontage uses an **agent-first architecture**. Agent reads pipeline manifest (YAML) -- stages, tools, review criteria, success gates. Every tool selection (video generation, image generation, TTS, music) runs through a 7-dimension scoring engine: task fit (30%), output quality (20%)",
+   "errs": [
+    "receipt not found word for word in the sources: \"openmontage uses an agent-first architecture . agent reads pipeline manifest (ya\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "how",
+   "try": 1,
+   "say": "An AI assistant executes pipelines by reading manifests to select tools based on task fit.",
+   "receipt": "Agent reads pipeline manifest (YAML) -- stages, tools, review criteria",
+   "errs": [
+    "has 15 words, must have 16-26"
+   ]
+  },
+  {
+   "slot": "how",
+   "try": 2,
+   "say": "Your agent reads a pipeline manifest to pick the right tool for your specific task.",
+   "receipt": "Agent reads pipeline manifest (YAML) -- stages, tools, review criteria, success gates",
+   "errs": [
+    "has 15 words, must have 16-26"
+   ]
+  },
+  {
+   "slot": "how2",
+   "try": 0,
+   "say": "Say 'Make a 60-second Adam-Curtis-style archival collage about 1950s consumer optimism.' The agent creates that specific video.",
+   "receipt": "Create a 60-second Adam-Curtis-style archival collage about 1950s consumer optimism.",
+   "errs": []
+  },
+  {
+   "slot": "how2",
+   "try": 0,
+   "say": "Give a YouTube short you love, and it makes something like that about quantum computing.",
+   "receipt": "\"Here's a YouTube Short I love. Make me something like this, but about quantum computing.\"",
+   "errs": [
+    "has 15 words, must have 16-26"
+   ]
+  },
+  {
+   "slot": "how2",
+   "try": 1,
+   "say": "Give me a reference video I love.",
+   "receipt": "\"Here's a YouTube Short I love.\"",
+   "errs": [
+    "has 7 words, must have 16-26",
+    "receipt not found word for word in the sources: \"\"here's a youtube short i love.\"\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "how2",
+   "try": 2,
+   "say": "Start from a video you already love by saying here's a YouTube Short I love, then make me something like this.",
+   "receipt": "\"Here's a YouTube Short I love\"",
+   "errs": [
+    "receipt not found word for word in the sources: \"\"here's a youtube short i love\"\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "how2",
+   "try": 0,
+   "say": "Say \"Make a 45-second explainer about why the sky is blue\" and get that video.",
+   "receipt": "\"Make a 45-second animated explainer about how neural networks learn\"",
+   "errs": [
+    "has 15 words, must have 16-26",
+    "receipt not found word for word in the sources: \"\"make a 45-second animated explainer about how neural networks learn\"\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "how2",
+   "try": 1,
+   "say": "Say make a 90-second documentary montage about what a city feels like at 4am",
+   "receipt": "\"Make a 90-second documentary montage about what a city feels like at 4am\"",
+   "errs": [
+    "has 14 words, must have 16-26",
+    "receipt not found word for word in the sources: \"\"make a 90-second documentary montage about what a city feels like at 4am\"\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "how2",
+   "try": 2,
+   "say": "Try this prompt, make a ninety second documentary montage about what a city feels like at four am.",
+   "receipt": "> Make a 90-second documentary montage about what a city feels like at 4am.",
+   "errs": [
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 0,
+   "say": "It scores every tool choice on task fit and output quality before generating.",
+   "receipt": "Every tool selection (video generation, image generation, TTS, music) runs through a 7-dimension scoring engine: task fit (30%), output quality (20%)",
+   "errs": [
+    "has 13 words, must have 16-26",
+    "must contain a number from the facts"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 1,
+   "say": "Every video generation tool scores on seven dimensions including task fit at thirty percent.",
+   "receipt": "Scored Provider Selection Every tool selection (video generation, image generation, TTS, music) runs through a 7-dimension scoring engine: task fit (30%)...",
+   "errs": [
+    "has 14 words, must have 16-26",
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 2,
+   "say": "Every tool selection runs through a seven-dimension scoring engine with task fit at thirty percent.",
+   "receipt": "Scored Provider Selection Every tool selection (video generation, image generation, TTS, music) runs through a 7-dimension scoring engine: task fit (30%), output quality (20%),",
+   "errs": [
+    "has 15 words, must have 16-26",
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 0,
+   "say": "It uses a seven-dimension scoring engine for every tool selection. See docs/PROVIDERS.md.",
+   "receipt": "Every tool selection (video generation, image generation, TTS, music) runs through a 7-dimension scoring engine: task fit (30%), output quality (20%) ... **Full setup guide with pricing and free tiers:** `docs/PROVIDERS.md`",
+   "errs": [
+    "has 12 words, must have 16-26",
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 1,
+   "say": "Every tool selection runs through a seven-dimension scoring engine.",
+   "receipt": "Every tool selection (video generation, image generation, TTS, music) runs through a 7-dimension scoring engine: task fit (30%), output quality (20%)",
+   "errs": [
+    "has 9 words, must have 16-26",
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 2,
+   "say": "The scoring engine checks task fit at thirty percent and output quality at twenty percent.",
+   "receipt": "Every tool selection (video generation, image generation, TTS, music) runs through a 7-dimension scoring engine: task fit (30%), output quality (20%)...",
+   "errs": [
+    "has 15 words, must have 16-26",
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 0,
+   "say": "It scores every tool on seven dimensions to fit the task and quality.",
+   "receipt": "Every tool selection (video generation, image generation, TTS, music) runs through a 7-dimension scoring engine: task fit (30%), output quality (20%,",
+   "errs": [
+    "has 13 words, must have 16-26",
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words",
+    "receipt not found word for word in the sources: \"every tool selection (video generation, image generation, tts, music) runs throu\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 1,
+   "say": "Every tool scores on task fit at thirty percent.",
+   "receipt": "\"task fit (30%)\"",
+   "errs": [
+    "has 9 words, must have 16-26",
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words",
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 2,
+   "say": "Every tool selection scores on task fit at thirty percent.",
+   "receipt": "",
+   "errs": [
+    "has 10 words, must have 16-26",
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words",
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "proof",
+   "dropped": true
+  },
+  {
+   "slot": "proof2",
+   "try": 0,
+   "say": "Real footage comes from free archives like NASA and Archive.org.",
+   "receipt": "| **Open footage** | Archive.org + NASA + Wikimedia Commons | Free/open archival footage, educational media, and documentary textu",
+   "errs": [
+    "has 10 words, must have 14-24",
+    "must contain a number from the facts"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 1,
+   "say": "Real footage uses NASA ... or Pexels stock libraries.",
+   "receipt": "| **Open footage** | Archive.org + NASA + Wikimedia Commons | Free/open archival footage, educational media",
+   "errs": [
+    "has 9 words, must have 14-24",
+    "must contain a number from the facts",
+    "no '...' in the spoken line (that belongs in the receipt only)"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 2,
+   "say": "With over two thousand video generation providers available to choose from for any project.",
+   "receipt": "Video Generation — 20+ providers | Provider | Type | Notes",
+   "errs": [
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 0,
+   "say": "It runs an engine scoring every tool choice on seven dimensions for quality and fit.",
+   "receipt": "Every tool selection (video generation, image generation, TTS, music) runs through a 7-dimension scoring engine: task fit (30%), output quality (20%)",
+   "errs": [
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 1,
+   "say": "Every selection runs through a 7-dimension scoring engine. It uses over two thousand production-knowledge files.",
+   "receipt": "...runs through a 7-dimension... 100+ tools, 700+ agent skill and production-knowledge files.",
+   "errs": [
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 2,
+   "say": "Every tool selection runs through a 7-dimension scoring engine.",
+   "receipt": "Scored Provider Selection Every tool selection (video generation, image generation, TTS, music) runs through a 7-dimension scoring engine",
+   "errs": [
+    "has 9 words, must have 14-24"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 0,
+   "say": "It uses a seven-dimension scoring engine with fifty-two percent task fit weight.",
+   "receipt": "Every tool selection (video generation, image generation, TTS, music) runs through a 7-dimension scoring engine: task fit (30%), output quality (20%)",
+   "errs": [
+    "has 12 words, must have 14-24",
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 1,
+   "say": "Every tool selection runs through a seven-dimension scoring engine with task fit at thirty percent weight.",
+   "receipt": "task fit (30%), output quality (20%)...",
+   "errs": [
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 2,
+   "say": "Every tool selection runs through a seven-dimension scoring engine. Task fit gets thirty percent of the score.",
+   "receipt": "task fit (30%)",
+   "errs": [
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words",
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "detail",
+   "try": 0,
+   "say": "It enforces human approval at every stage before you publish.",
+   "receipt": "- **Human approval gates are enforced, not suggested** — proposal, script, scene plan, generated assets, and publish all pause for your sign-off.",
+   "errs": [
+    "has 10 words, must have 14-24"
+   ]
+  },
+  {
+   "slot": "detail",
+   "try": 1,
+   "say": "Quality gates enforce your sign-off on script, assets, and the final publish.",
+   "receipt": "- **Human approval gates are enforced, not suggested** — proposal, script, scene plan, generated assets, and publish all pause for your sign-off.",
+   "errs": [
+    "has 12 words, must have 14-24"
+   ]
+  },
+  {
+   "slot": "detail",
+   "try": 2,
+   "say": "Human approval gates pause for your sign-off before publishing.",
+   "receipt": "- **Human approval gates are enforced, not suggested** — proposal, script, scene plan, generated assets, and publish all pause for your sign-off.",
+   "errs": [
+    "has 9 words, must have 14-24"
+   ]
+  },
+  {
+   "slot": "detail",
+   "try": 0,
+   "say": "It includes real archival footage from NASA and free stock images for zero cost.",
+   "receipt": "| **Open footage** | Archive.org + NASA + Wikimedia Commons | Free/open archival footage, educational media, and documentary textu ... Extra stock: Pexels + Unsplash + Pixabay | Free stock footage/images (developer keys are free to get)",
+   "errs": [
+    "receipt not found word for word in the sources: \"extra stock: pexels + unsplash + pixabay free stock footage/images (developer ke\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "detail",
+   "try": 1,
+   "say": "You get real archival media from Archive.org, NASA, and Wikimedia Commons.",
+   "receipt": "| Open footage | Archive.org + NASA + Wikimedia Commons | Free/open archival footage",
+   "errs": [
+    "has 11 words, must have 14-24"
+   ]
+  },
+  {
+   "slot": "detail",
+   "try": 2,
+   "say": "You can make a documentary montage about what a city feels like at four in the morning using free real footage.",
+   "receipt": "Make a 90-second documentary montage about what a city feels like at 4am.",
+   "errs": [
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "detail",
+   "try": 0,
+   "say": "You start with footage from free archives like NASA or Archive.org.",
+   "receipt": "| **Open footage** | Archive.org + NASA + Wikimedia Commons | Free/open archival footage, educational media, and documentary textu",
+   "errs": [
+    "has 11 words, must have 14-24"
+   ]
+  },
+  {
+   "slot": "detail",
+   "try": 1,
+   "say": "OpenMontage uses real archival footage from sources like NASA.",
+   "receipt": "\"Use real footage only\" ... \"Archive.org + NASA",
+   "errs": [
+    "has 9 words, must have 14-24",
+    "receipt not found word for word in the sources: \"\"use real footage only\"\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "detail",
+   "try": 2,
+   "say": "It uses NASA archival footage without narration or music.",
+   "receipt": "\"Use real footage only, no narration\"",
+   "errs": [
+    "has 9 words, must have 14-24",
+    "receipt not found word for word in the sources: \"\"use real footage only, no narration\"\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "detail2",
+   "try": 0,
+   "say": "Add API keys for GPU video, or use free tools like Piper TTS and NASA footage.",
+   "receipt": "| Capability | Free Tool | What It Does |\n| **Narration** | Piper TTS | Free offline text-to-speech — real human-sounding narration|\n| **Open footage** | Archive.org + NASA + Wikimedia Commons | Free/open archival footage, educational media, and documentary textu",
+   "errs": []
+  },
+  {
+   "slot": "detail2",
+   "try": 0,
+   "say": "It uses Python and FFmpeg with an optional GPU setup for faster generation.",
+   "receipt": "**Python** — python.org - **FFmpeg** ... Have a GPU? ...",
+   "errs": [
+    "receipt not found word for word in the sources: \"python — python.org - ffmpeg\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "detail2",
+   "try": 1,
+   "say": "Prerequisites include Python 3.10 plus FFmpeg.",
+   "receipt": "- **Python 3.10+** — python.org - **FFmpeg**",
+   "errs": [
+    "has 6 words, must have 12-22"
+   ]
+  },
+  {
+   "slot": "detail2",
+   "try": 2,
+   "say": "Prerequisites are Python 3.10, Node.js 18, and FFmpeg.",
+   "receipt": "- **Python 3.10+** — python.org - **Node.js 18+** — nodejs.org - **FFmpeg**...",
+   "errs": [
+    "has 8 words, must have 12-22",
+    "receipt not found word for word in the sources: \"- python 3.10+ — python.org - node.js 18+ — nodejs.org - ffmpeg\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "detail2",
+   "try": 0,
+   "say": "Add API keys for 20+ video providers or use free tools like NASA footage.",
+   "receipt": "Video Generation — 20+ providers | ... Archive.org + NASA + Wikimedia Commons",
+   "errs": []
+  },
+  {
+   "slot": "trust",
+   "try": 0,
+   "say": "GNU AGPLv3 license, built for Claude Code and Cursor.",
+   "receipt": "**License**\nGNU AGPLv3 --- **Agent Compatibility**\nOpenMontage works with any AI coding assistant that can read files and execute Python.\n| Platform | Config File |\n| **Claude Code** | `CLAUDE.md` |\n| **Cursor** | `CURSOR.md` + `.cursor/rules/`",
+   "errs": [
+    "has 9 words, must have 12-20",
+    "receipt not found word for word in the sources: \"license gnu agplv3 --- agent compatibility openmontage works with any ai coding \" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "trust",
+   "try": 1,
+   "say": "It uses the GNU AGPLv3 license.",
+   "receipt": "--- **OpenMontage** — Production-grade video with real quality enforcement, orchestrated by your AI assistant.",
+   "errs": [
+    "has 6 words, must have 12-20"
+   ]
+  },
+  {
+   "slot": "trust",
+   "try": 2,
+   "say": "calesthio made it under GNU AGPLv3 with over sixty three thousand four hundred seventy stars.",
+   "receipt": "F0: calesthio/OpenMontage ... 1,950 consumer optimism F2: Create a 60-second Adam-Curtis-style archival collage about 1950s consumer optimism.",
+   "errs": [
+    "write every number in digits exactly as in the facts, never in words",
+    "receipt not found word for word in the sources: \"1,950 consumer optimism f2: create a 60-second adam-curtis-style archival collag\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "trust",
+   "try": 0,
+   "say": "GNU AGPLv3 licensed, built for any AI coding assistant.",
+   "receipt": "License GNU AGPLv3 Agent Compatibility OpenMontage works with any AI coding assistant that can read files and execute Python.",
+   "errs": [
+    "has 9 words, must have 12-20",
+    "receipt not found word for word in the sources: \"license gnu agplv3 agent compatibility openmontage works with any ai coding assi\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "trust",
+   "try": 1,
+   "say": "OpenMontage is GNU AGPLv3 licensed.",
+   "receipt": "GNU AGPLv3 --- **OpenMontage** — Production-grade video with real quality enforcement, orchestrated by your AI assistant.",
+   "errs": [
+    "has 5 words, must have 12-20"
+   ]
+  },
+  {
+   "slot": "trust",
+   "try": 2,
+   "say": "Built by calesthio under the open-source license with over sixty-three thousand stars.",
+   "receipt": "F0: ... World's first open-source ... F1: 63,470 GitHub stars ...",
+   "errs": [
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "trust",
+   "try": 0,
+   "say": "GNU AGPLv3 licensed, built for agentic operation.",
+   "receipt": "License\nGNU AGPLv3 --- OpenMontage — Production-grade video with real quality enforcement, orchestrated by your AI assistant.\nThis repo is built for agentic operation.",
+   "errs": [
+    "has 7 words, must have 12-20",
+    "receipt not found word for word in the sources: \"license gnu agplv3 --- openmontage — production-grade video with real quality en\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "trust",
+   "try": 1,
+   "say": "GNU AGPLv3 licensed, built by calesthio.",
+   "receipt": "License\nGNU AGPLv3 --- OpenMontage — Production-grade video with real quality enforcement",
+   "errs": [
+    "has 6 words, must have 12-20"
+   ]
+  },
+  {
+   "slot": "trust",
+   "try": 2,
+   "say": "GNU AGPLv3 licensed, created by calesthio.",
+   "receipt": "License GNU AGPLv3 --- OpenMontage — Production-grade video with real quality enforcement, orchestrated by your AI assistant.",
+   "errs": [
+    "has 6 words, must have 12-20"
+   ]
+  },
+  {
+   "slot": "start",
+   "try": 0,
+   "say": "Start with git clone OpenMontage, then run make setup.",
+   "receipt": "git clone https://github.com/calesthio/OpenMontage.git\ncd OpenMontage\nmake setup",
+   "errs": [
+    "has 9 words, must have 12-20"
+   ]
+  },
+  {
+   "slot": "start",
+   "try": 1,
+   "say": "Open the project in your AI coding assistant.",
+   "receipt": "Or if you want the real-footage path:",
+   "errs": [
+    "has 8 words, must have 12-20"
+   ]
+  },
+  {
+   "slot": "start",
+   "try": 2,
+   "say": "OpenMontage is installed with git clone then make setup to start.",
+   "receipt": "```git clone https://github.com/calesthio/OpenMontage.git\ncd OpenMontage\nmake setup```",
+   "errs": [
+    "has 11 words, must have 12-20"
+   ]
+  },
+  {
+   "slot": "start",
+   "try": 0,
+   "say": "Open it in your AI assistant then run make setup to start.",
+   "receipt": "",
+   "errs": [
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "start",
+   "try": 1,
+   "say": "Open this repo, add keys if you have them, or use free tools like NASA footage.",
+   "receipt": "\"git clone https://github.com/calesthio/OpenMontage.git\" ... \"Add API Keys (optional — more keys = more tools)\" ... \"You don't need paid API keys to make real videos.\" ... | **Open footage** | Archive.org + NASA + Wikimedia Commons | Free/open archival footage, educational media, and documentary textu",
+   "errs": [
+    "repeats words an earlier line already said: \"free tools like nasa\" - say something new",
+    "receipt not found word for word in the sources: \"\"git clone https://github.com/calesthio/openmontage.git\"\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "start",
+   "try": 2,
+   "say": "Git clone calesthio/OpenMontage then run make setup.",
+   "receipt": "`git clone https://github.com/calesthio/OpenMontage.git`\n`cd OpenMontage`\n`make setup`",
+   "errs": [
+    "has 7 words, must have 12-20"
+   ]
+  },
+  {
+   "slot": "start",
+   "try": 0,
+   "say": "Start with git clone OpenMontage, then make setup.",
+   "receipt": "\"git clone https://github.com/calesthio/OpenMontage.git\ncd OpenMontage\nmake setup\"",
+   "errs": [
+    "has 8 words, must have 12-20",
+    "receipt not found word for word in the sources: \"\"git clone https://github.com/calesthio/openmontage.git cd openmontage make setu\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "start",
+   "try": 1,
+   "say": "Start with git clone OpenMontage, then run make setup.",
+   "receipt": "\"git clone https://github.com/calesthio/OpenMontage.git\ncd OpenMontage\nmake setup\"",
+   "errs": [
+    "has 9 words, must have 12-20",
+    "receipt not found word for word in the sources: \"\"git clone https://github.com/calesthio/openmontage.git cd openmontage make setu\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "start",
+   "try": 2,
+   "say": "Run git clone OpenMontage, then run make setup.",
+   "receipt": "\"git clone https://github.com/calesthio/OpenMontage.git\ncd OpenMontage\nmake setup\"",
+   "errs": [
+    "has 8 words, must have 12-20",
+    "receipt not found word for word in the sources: \"\"git clone https://github.com/calesthio/openmontage.git cd openmontage make setu\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "share",
+   "try": 0,
+   "say": "Send this to someone building their first video project today.",
+   "receipt": "",
+   "errs": []
+  },
+  {
+   "slot": "share",
+   "try": 0,
+   "say": "Save this for making a cinematic trailer with zero paid keys.",
+   "receipt": "| **Cinematic** | Trailer, teaser, and mood-driven edits | Brand films, teasers, promotional content|",
+   "errs": []
+  },
+  {
+   "slot": "share",
+   "try": 0,
+   "say": "Send this to someone who needs open-source agentic video production.",
+   "receipt": "World's first open-source, agentic video production system.",
+   "errs": []
+  },
+  {
+   "slot": "end",
+   "try": 0,
+   "say": "Close with a short punchline that names OpenMontage.",
+   "receipt": "",
+   "errs": []
+  },
+  {
+   "slot": "end",
+   "try": 0,
+   "say": "OpenMontage is an agentic video system built on GNU AGPLv3.",
+   "receipt": "calesthio/OpenMontage: World's first open-source, agentic video production system.\n... \n### License\nGNU AGPLv3 --- **OpenMontage** — Production-grade video with real quality enforcement",
+   "errs": []
+  },
+  {
+   "slot": "end",
+   "try": 0,
+   "say": "OpenMontage is open-source and agentic.",
+   "receipt": "calesthio/OpenMontage: World's first open-source, agentic video production system.",
+   "errs": [
+    "has 5 words, must have 6-12"
+   ]
+  },
+  {
+   "slot": "end",
+   "try": 1,
+   "say": "The first open source video agent.",
+   "receipt": "calesthio/OpenMontage: World's first open-source, agentic video production system.",
+   "errs": []
+  }
+ ]
+}

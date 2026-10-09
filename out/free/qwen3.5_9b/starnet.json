@@ -1,0 +1,16 @@
+{
+ "lines": [
+  "This local engine beats an 8B-parameter LLM. And it's real work, not a chatbot.",
+  "It runs a crew of agents on your desktop. No cloud bill, just local power.",
+  "Paste an OpenRouter key or run Ollama locally. Bring your own models, keep data private.",
+  "Use proven recipes to launch multi-step tasks. Grant skills and set cron schedules.",
+  "One thousand eight hundred stars. Over one hundred ninety forks and MIT licence.",
+  "Clone the repo, install dependencies, run the sidecar. Your agents start immediately.",
+  "Pull a model like Qwen, pick Ollama as the provider. Build locally with npm commands.",
+  "Run the test suite before merging any code. Security scans ensure no secrets leak.",
+  "Send this to someone who builds local AI tools. Save it for your next project.",
+  "StarNet. androoAGI."
+ ],
+ "words": 128,
+ "log": []
+}

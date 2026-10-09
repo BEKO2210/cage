@@ -1,0 +1,16 @@
+{
+ "lines": [
+  "This tiny engine beats an 8B-parameter LLM. And it's 11× faster.",
+  "It gives AI agents specialized marketing skills via markdown files.",
+  "With 53.3k stars, it powers CRO, SEO, and growth engineering for Claude Code.",
+  "Skills reference each other to build shared context automatically.",
+  "Install via CLI with npx skills add coreyhaines31 marketingskills.",
+  "Categories include Conversion Optimization, Content & Copy, and Paid Distribution.",
+  "Upgrading from v1.x renames 17 skills automatically for you.",
+  "Ask your agent: Help me optimize this landing page for conversions. It uses cro instantly.",
+  "Or invoke directly with slash commands like  cro or  seo-audit in the terminal.",
+  "This library consolidates legacy folders and migrates your context file seamlessly."
+ ],
+ "words": 110,
+ "log": []
+}

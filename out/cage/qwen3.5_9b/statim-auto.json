@@ -1,0 +1,543 @@
+{
+ "lines": [
+  "Stop using a heavy Python stack for fast decisions when you can run native code locally.",
+  "Statim is a native C++ engine for instant decision models, designed to replace Python stacks with lightweight local software.",
+  "You send text or a state to the single binary; it returns structured answers instantly without any Python setup.",
+  "Send this JSON ticket to the server and receive instant billing choices with urgent severity ratings.",
+  "On a Ryzen chip with 8 threads, Statim takes 4399 milliseconds for long sequences while ONNX Runtime needs 11421.",
+  "The binary weighs 5.5 MB while memory use stays around 650 megabytes.",
+  "Apache licensed code built by BEKO2210 has one GitHub star but passes strict security tests for robustness.",
+  "Run this curl command to download the binary and model files directly from GitHub.",
+  "Save this for when you need instant local decisions without Python.",
+  "Run Statim for fast native decisions."
+ ],
+ "words": 149,
+ "log": [
+  {
+   "slot": "hook",
+   "try": 0,
+   "say": "On an RTX 3070, Statim makes sixty-eight decisions per second versus six for other models.",
+   "errs": [
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "hook",
+   "try": 1,
+   "say": "On an RTX 3070, Statim hits sixty-eight decisions per second versus six for other models.",
+   "errs": [
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "hook",
+   "try": 2,
+   "say": "On an RTX 3070, Statim hits sixty-eight decisions per second versus six for other models.",
+   "errs": [
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "hook",
+   "try": 0,
+   "say": "On an RTX 3070 GPU, Statim makes sixty-eight decisions per second.",
+   "errs": [
+    "has 11 words, must have 12-20",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "hook",
+   "try": 1,
+   "say": "On an RTX 3070 GPU, Statim makes sixty-eight decisions per second.",
+   "errs": [
+    "has 11 words, must have 12-20",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "hook",
+   "try": 2,
+   "say": "On an RTX 3070 GPU, Statim makes sixty-eight decisions per second.",
+   "errs": [
+    "has 11 words, must have 12-20",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "hook",
+   "try": 0,
+   "say": "On an RTX 3070, Statim makes sixty-eight decisions per second versus six for others.",
+   "errs": [
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "hook",
+   "try": 1,
+   "say": "On a GPU, Statim delivers 68 decisions each second while Qwen3-8B achieves about six.",
+   "errs": [
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "hook",
+   "try": 2,
+   "say": "On an RTX 3070 GPU Statim reaches sixty-eight decisions per second.",
+   "errs": [
+    "has 11 words, must have 12-20",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "hook",
+   "dropped": true
+  },
+  {
+   "slot": "problem",
+   "try": 0,
+   "say": "Stop managing Python environments and heavy model files when you just need fast decisions.",
+   "errs": []
+  },
+  {
+   "slot": "problem",
+   "try": 0,
+   "say": "Stop wrestling with slow Python stacks and heavy models that block your CPU.",
+   "errs": [
+    "has 13 words, must have 14-24"
+   ]
+  },
+  {
+   "slot": "problem",
+   "try": 1,
+   "say": "Stop using a heavy Python stack for fast decisions when you can run native code locally.",
+   "errs": []
+  },
+  {
+   "slot": "problem",
+   "try": 0,
+   "say": "Stop wrestling with heavy Python stacks and slow cold starts.",
+   "errs": [
+    "has 10 words, must have 14-24"
+   ]
+  },
+  {
+   "slot": "problem",
+   "try": 1,
+   "say": "Stop wrestling with heavy Python stacks and agonizingly slow cold starts.",
+   "errs": [
+    "has 11 words, must have 14-24"
+   ]
+  },
+  {
+   "slot": "problem",
+   "try": 2,
+   "say": "Stop wrestling with heavy Python stacks and painfully slow system start times.",
+   "errs": [
+    "has 12 words, must have 14-24"
+   ]
+  },
+  {
+   "slot": "what",
+   "try": 0,
+   "say": "Statim is a native C++ engine for System-One decision models that runs without Python.",
+   "errs": []
+  },
+  {
+   "slot": "what",
+   "try": 0,
+   "say": "Statim is a native C++ engine for instant decision models, designed to replace Python stacks with lightweight local software.",
+   "errs": []
+  },
+  {
+   "slot": "what",
+   "try": 0,
+   "say": "Statim is a native C++ engine for instant System-One decisions, designed to replace heavy Python stacks with fast local code.",
+   "errs": []
+  },
+  {
+   "slot": "how",
+   "try": 0,
+   "say": "It loads a small binary and model file instead of heavy libraries, then runs decisions directly on your CPU with bit-exact precision.",
+   "errs": []
+  },
+  {
+   "slot": "how",
+   "try": 0,
+   "say": "You send text or a state to the single binary; it returns structured answers instantly without any Python setup.",
+   "errs": []
+  },
+  {
+   "slot": "how",
+   "try": 0,
+   "say": "It loads a tiny binary and GGUF file that decide in milliseconds using native CPU or GPU, skipping heavy frameworks entirely.",
+   "errs": []
+  },
+  {
+   "slot": "how2",
+   "try": 0,
+   "say": "Send a JSON ticket and get structured billing or urgency scores instantly.",
+   "errs": [
+    "has 12 words, must have 16-26"
+   ]
+  },
+  {
+   "slot": "how2",
+   "try": 1,
+   "say": "Send this JSON ticket to the server and receive instant billing choices with urgent severity ratings.",
+   "errs": []
+  },
+  {
+   "slot": "how2",
+   "try": 0,
+   "say": "Type a question about billing or urgency into the endpoint and get instant probabilities back in structured text.",
+   "errs": []
+  },
+  {
+   "slot": "how2",
+   "try": 0,
+   "say": "Type a question like billing versus technical support and receive immediate probabilities for each choice.",
+   "errs": [
+    "has 15 words, must have 16-26"
+   ]
+  },
+  {
+   "slot": "how2",
+   "try": 1,
+   "say": "Send a JSON state about urgency or refunds to get structured answers instantly.",
+   "errs": [
+    "has 13 words, must have 16-26"
+   ]
+  },
+  {
+   "slot": "how2",
+   "try": 2,
+   "say": "Send text like department billing or refund requests back as a JSON object with probabilities.",
+   "errs": [
+    "has 15 words, must have 16-26"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 0,
+   "say": "Compare CPU latency on a Ryzen chip; Statim finishes in 4,399 milliseconds for long sequences while ONNX Runtime needs eleven thousand four twenty-one.",
+   "errs": [
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 1,
+   "say": "On a Ryzen chip with 8 threads, Statim takes 4399 milliseconds for long sequences while ONNX Runtime needs 11421.",
+   "errs": []
+  },
+  {
+   "slot": "proof",
+   "try": 0,
+   "say": "On an RTX 3070 GPU batch of sixteen, Statim reaches sixty-eight decisions per second while Qwen three B only manages about six.",
+   "errs": [
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 1,
+   "say": "On an RTX 3070 batch of sixteen, Statim reaches sixty-eight decisions per second while Qwen three B only manages about six.",
+   "errs": [
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 2,
+   "say": "On an RTX 3070 batch of sixteen, Statim reaches 68 decisions per second while Qwen3-8B only manages about 6.",
+   "errs": [
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 0,
+   "say": "On an RTX 3070, Statim reaches sixty-eight decisions per second compared to about six for a standard zero-shot model.",
+   "errs": [
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 1,
+   "say": "On an RTX 3070 GPU, Statim reaches sixty-eight decisions per second versus about six for a standard zero-shot model.",
+   "errs": [
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 2,
+   "say": "On an RTX 3070 GPU, Statim reaches sixty-eight decisions per second versus about six for a standard zero-shot model.",
+   "errs": [
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 0,
+   "say": "On an RTX 3070 GPU it reaches sixty-eight decisions per second while Qwen three takes about six.",
+   "errs": [
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 1,
+   "say": "On an RTX 3070 GPU Statim reaches sixty-eight decisions per second while Qwen three takes about six.",
+   "errs": [
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 2,
+   "say": "An RTX 3070 GPU runs Statim at sixty-eight decisions per second compared to Qwen's six.",
+   "errs": [
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 0,
+   "say": "On GPU hardware, Statim reaches sixty-eight decisions per second while other models reach only about six.",
+   "errs": [
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 1,
+   "say": "On an RTX 3070 GPU, Statim reaches sixty-eight decisions per second compared to six for Qwen3-8B.",
+   "errs": [
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 2,
+   "say": "On an RTX 3070 GPU, Statim reaches sixty-eight decisions per second while Qwen3-8B manages approximately six.",
+   "errs": [
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 0,
+   "say": "On an RTX card, it hits sixty-eight decisions per second versus six for others. The binary weighs only five point five megabytes.",
+   "errs": [
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 1,
+   "say": "On an RTX 3070 GPU, Statim reaches sixty-eight decisions per second against roughly six for other models.",
+   "errs": [
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 2,
+   "say": "On an RTX 3070 GPU, Statim reaches sixty-eight decisions per second while others reach roughly six.",
+   "errs": [
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "dropped": true
+  },
+  {
+   "slot": "detail",
+   "try": 0,
+   "say": "",
+   "errs": [
+    "has 0 words, must have 14-24"
+   ]
+  },
+  {
+   "slot": "detail",
+   "try": 1,
+   "say": "The engine loads just five point five megabytes plus a model file to run on Linux without any Python dependencies.",
+   "errs": [
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "detail",
+   "try": 2,
+   "say": "The binary weighs 5.5 MB while memory use stays around 650 megabytes.",
+   "errs": [
+    "has 12 words, must have 14-24"
+   ]
+  },
+  {
+   "slot": "detail",
+   "try": 0,
+   "say": "",
+   "errs": [
+    "has 0 words, must have 14-24"
+   ]
+  },
+  {
+   "slot": "detail",
+   "try": 1,
+   "say": "Statim runs a single five-point-five-megabyte binary with no Python dependencies for faster local decisions.",
+   "errs": [
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "detail",
+   "try": 2,
+   "say": "Statim uses only a single five-point-five-megabyte binary file with no Python dependencies for faster local decisions.",
+   "errs": [
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "detail",
+   "try": 0,
+   "say": "The multilingual model reaches sixty-eight decisions per second on an RTX three-zero-seven GPU.",
+   "errs": [
+    "has 13 words, must have 14-24",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "detail",
+   "try": 1,
+   "say": "Statim reaches sixty-eight decisions per second on an RTX three-zero-seven GPU while keeping memory usage low.",
+   "errs": [
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "detail",
+   "try": 2,
+   "say": "Statim delivers six eight decisions each second using a Vulkan GPU.\nIt loads only five point five megabytes into memory to start.",
+   "errs": [
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "trust",
+   "try": 0,
+   "say": "The Apache-licensed project comes from BEKO2210 with zero GitHub stars yet.",
+   "errs": [
+    "has 11 words, must have 12-20",
+    "not in the sources: The Apache-licensed project comes from BEKO2210 with zero GitHub stars yet."
+   ]
+  },
+  {
+   "slot": "trust",
+   "try": 1,
+   "say": "Apache licensed by BEKO2210, tested on public benchmarks.",
+   "errs": [
+    "has 8 words, must have 12-20"
+   ]
+  },
+  {
+   "slot": "trust",
+   "try": 2,
+   "say": "Apache licensed under BEKO2210 with zero GitHub stars but verified robustness.",
+   "errs": [
+    "has 11 words, must have 12-20"
+   ]
+  },
+  {
+   "slot": "trust",
+   "try": 0,
+   "say": "Apache licensed by Lev's team with zero stars yet used for security tests.",
+   "errs": []
+  },
+  {
+   "slot": "trust",
+   "try": 0,
+   "say": "Apache licensed code built by BEKO2210 has one GitHub star but passes strict security tests for robustness.",
+   "errs": []
+  },
+  {
+   "slot": "start",
+   "try": 0,
+   "say": "Download the Linux binary and load a model to begin serving decisions locally.",
+   "errs": []
+  },
+  {
+   "slot": "start",
+   "try": 0,
+   "say": "Run this curl command to download the binary and model files directly from GitHub.",
+   "errs": []
+  },
+  {
+   "slot": "start",
+   "try": 0,
+   "say": "Download the release binary and model files from GitHub releases.",
+   "errs": [
+    "has 10 words, must have 12-20"
+   ]
+  },
+  {
+   "slot": "start",
+   "try": 1,
+   "say": "Download the engine and multilingual model files directly from GitHub releases.",
+   "errs": [
+    "has 11 words, must have 12-20"
+   ]
+  },
+  {
+   "slot": "start",
+   "try": 2,
+   "say": "Download the two release binaries for your CPU or GPU to begin using Statim locally.",
+   "errs": [
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "share",
+   "try": 0,
+   "say": "Save this for when you need instant local decisions without Python.",
+   "errs": []
+  },
+  {
+   "slot": "share",
+   "try": 0,
+   "say": "Save this for when you need a fast local decision engine without Python.",
+   "errs": []
+  },
+  {
+   "slot": "share",
+   "try": 0,
+   "say": "Save this for when you need fast decisions without Python.",
+   "errs": []
+  },
+  {
+   "slot": "end",
+   "try": 0,
+   "say": "Statim decides in native code without Python.",
+   "errs": []
+  },
+  {
+   "slot": "end",
+   "try": 0,
+   "say": "Statim is the native C++ engine for fast local decisions.",
+   "errs": []
+  },
+  {
+   "slot": "end",
+   "try": 0,
+   "say": "Run Statim for fast native decisions.",
+   "errs": []
+  }
+ ]
+}

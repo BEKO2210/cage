@@ -1,0 +1,772 @@
+{
+ "lines": [
+  "This hub has 1080 GitHub stars.",
+  "Your local agents are smaller than cloud ones, so expect slower work on long tasks.",
+  "Starnet is a living pixel-art station for real AI agents that do actual work.",
+  "The front end talks to a local runtime via localhost events. An explicit leash limits all away actions before they happen.",
+  "Paste an OpenRouter key or sign in with Anthropic, OpenAI, Google accounts to wire agents to Telegram, Discord, Slack.",
+  "An 8B model needs about 10 G for context, but you can run free with Ollama.",
+  "The frontend is vanilla JavaScript and runs on Node 22 which matches CI.",
+  "You can import an agent's full persona, instructions, memory, and other data directly from OpenClaw or Hermes.",
+  "Download Windows exe, macOS dmg files or run from source with Git.",
+  "StarNet is MIT licensed and open source, trusted to run your crew locally.",
+  "Install Node and run desktop build or pull a local model to start.",
+  "Save this for a crew member who needs to work locally.",
+  "Start your own AI crew with Starnet."
+ ],
+ "words": 177,
+ "log": [
+  {
+   "slot": "hook",
+   "try": 0,
+   "say": "This local agent hub has one thousand eighty GitHub stars and runs in JavaScript.",
+   "receipt": "1,080 GitHub stars, main language JavaScript",
+   "errs": [
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "hook",
+   "try": 1,
+   "say": "This hub has 1080 GitHub stars.",
+   "receipt": "F1: 1,080 GitHub stars, main language JavaScript",
+   "errs": [
+    "has 6 words, must have 12-20"
+   ]
+  },
+  {
+   "slot": "hook",
+   "try": 2,
+   "say": "This station has exactly 1 thousand eighty GitHub stars measuring community support.",
+   "receipt": "F1: 1,080 GitHub stars",
+   "errs": [
+    "write every number in digits exactly as in the facts, never in words",
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "hook",
+   "try": 0,
+   "say": "androoAGI/starnet has one thousand eighty GitHub stars.",
+   "receipt": "1,080 GitHub stars",
+   "errs": [
+    "has 7 words, must have 12-20",
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words",
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "hook",
+   "try": 1,
+   "say": "This repo has 1,080 GitHub stars ... F1: 1,080 GitHub stars",
+   "receipt": "F1: 1,080 GitHub stars, main language JavaScript",
+   "errs": [
+    "has 11 words, must have 12-20",
+    "no '...' in the spoken line (that belongs in the receipt only)"
+   ]
+  },
+  {
+   "slot": "hook",
+   "try": 2,
+   "say": "This repo holds over a thousand GitHub stars for local AI agents.",
+   "receipt": "F1: 1,080 GitHub stars",
+   "errs": [
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words",
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "hook",
+   "try": 0,
+   "say": "One thousand and eighty people starred this local-first AI crew project on GitHub.",
+   "receipt": "1,080 GitHub stars",
+   "errs": [
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words",
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "hook",
+   "try": 1,
+   "say": "One thousand eighty GitHub stars exist for this JavaScript local crew.",
+   "receipt": "1,080 GitHub stars, main language JavaScript",
+   "errs": [
+    "has 11 words, must have 12-20",
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "hook",
+   "try": 2,
+   "say": "One thousand eighty GitHub stars mark this JavaScript local crew.",
+   "receipt": "1,080 GitHub stars, main language JavaScript",
+   "errs": [
+    "has 10 words, must have 12-20",
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "problem",
+   "try": 0,
+   "say": "Your local agents are smaller than cloud ones, so expect slower work on long tasks.",
+   "receipt": "Honest caveat: local models are smaller than the cloud ones, so expect slower and rougher work on long tasks,",
+   "errs": []
+  },
+  {
+   "slot": "problem",
+   "try": 0,
+   "say": "Stop guessing with chatbots; starnet runs a crew that actually works.",
+   "receipt": "A living pixel-art station where real AI agents do real work.",
+   "errs": [
+    "has 11 words, must have 14-24"
+   ]
+  },
+  {
+   "slot": "problem",
+   "try": 1,
+   "say": "Stop guessing with chatbots because StarNet runs a real crew of agents.",
+   "receipt": "**A living pixel-art station where real AI agents do real work.** **| A crew, not a chatbot | Create agents with distinct classes, personas, and loadloads. Run several at once — each gets its own**",
+   "errs": [
+    "has 12 words, must have 14-24",
+    "receipt not found word for word in the sources: \"a living pixel-art station where real ai agents do real work. a crew, not a chat\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "problem",
+   "try": 2,
+   "say": "Stop guessing with chatbots because StarNet runs a real crew of agents.",
+   "receipt": "",
+   "errs": [
+    "has 12 words, must have 14-24",
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "problem",
+   "try": 0,
+   "say": "Your agents stop guessing and ask before acting to avoid costly mistakes.",
+   "receipt": "Asks before it guesses Task Briefs turn ambiguity into one concrete question with options",
+   "errs": [
+    "has 12 words, must have 14-24"
+   ]
+  },
+  {
+   "slot": "problem",
+   "try": 1,
+   "say": "Agents skip guesses by asking concrete questions first... Asks before it guesses from the README.",
+   "receipt": "**Asks before it guesses** | Task Briefs turn ambiguity into one concrete question with options — over any connected channel — i",
+   "errs": [
+    "no '...' in the spoken line (that belongs in the receipt only)"
+   ]
+  },
+  {
+   "slot": "problem",
+   "try": 2,
+   "say": "Agents clarify tasks with specific questions before acting.",
+   "receipt": "**Asks before it guesses** | Task Briefs turn ambiguity into one concrete question",
+   "errs": [
+    "has 8 words, must have 14-24"
+   ]
+  },
+  {
+   "slot": "what",
+   "try": 0,
+   "say": "Starnet is a living pixel-art station for real AI agents that do actual work.",
+   "receipt": "A living pixel-art station where real AI agents do real work.",
+   "errs": []
+  },
+  {
+   "slot": "what",
+   "try": 0,
+   "say": "This is a living pixel-art station for real AI agents doing local work.",
+   "receipt": "A living pixel-art station where real AI agents do real work.",
+   "errs": [
+    "has 13 words, must have 14-22"
+   ]
+  },
+  {
+   "slot": "what",
+   "try": 1,
+   "say": "StarNet is a crew of distinct agents that do actual tasks on your desktop.",
+   "receipt": "**A living pixel-art station where real AI agents do real work.** ... **Create agents with distinct classes, personas**.",
+   "errs": [
+    "receipt not found word for word in the sources: \"create agents with distinct classes, personas .\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "what",
+   "try": 2,
+   "say": "Create agents with distinct classes and run several at once.",
+   "receipt": "| **A crew, not a chatbot** | Create agents with distinct classes, personas, and loadouts.",
+   "errs": [
+    "has 10 words, must have 14-22"
+   ]
+  },
+  {
+   "slot": "what",
+   "try": 0,
+   "say": "It is a living pixel-art station where real AI agents do actual work for local users.",
+   "receipt": "A living pixel-art station where real AI agents do real work.",
+   "errs": []
+  },
+  {
+   "slot": "how",
+   "try": 0,
+   "say": "It runs a local Node sidecar that streams model calls through an adjustable leash.",
+   "receipt": "Model calls stream through the local Node sidecar ... explicit, adjustable leash",
+   "errs": [
+    "has 14 words, must have 16-26"
+   ]
+  },
+  {
+   "slot": "how",
+   "try": 1,
+   "say": "The front end talks to a local runtime via localhost events. An explicit leash limits all away actions before they happen.",
+   "receipt": "the frontend consumes real sidecar events over localhost HTTP/NDJSON ... Leave the station running and agents keep working inside an explicit, adjustable leash — every away-action is",
+   "errs": []
+  },
+  {
+   "slot": "how",
+   "try": 0,
+   "say": "It runs a local Node sidecar that streams model calls and lets you import existing agents from disk.",
+   "receipt": "The frontend consumes real sidecar events over localhost HTTP/NDJSON and SSE. StarNet can import an existing agent: point it at your on-disk OpenClaw or Hermes home",
+   "errs": [
+    "receipt not found word for word in the sources: \"the frontend consumes real sidecar events over localhost http/ndjson and sse. st\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "how",
+   "try": 1,
+   "say": "The local Node sidecar streams model calls through explicit leashes before taking any away action.",
+   "receipt": "Model calls stream through the local Node sidecar ... Leave the station running and agents keep working inside an explicit, adjustable leash — every away-action is",
+   "errs": [
+    "has 15 words, must have 16-26"
+   ]
+  },
+  {
+   "slot": "how",
+   "try": 2,
+   "say": "The local node runs on your machine to stream model calls through an explicit leash before taking any away action.",
+   "receipt": "\"Leave the station running and agents keep working inside an explicit, adjustable leash — every away-action is\"",
+   "errs": [
+    "receipt not found word for word in the sources: \"\"leave the station running and agents keep working inside an explicit, adjustabl\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "how",
+   "try": 0,
+   "say": "It runs a local Node sidecar that streams model calls directly without needing your API key.",
+   "receipt": "Model calls stream through the local Node sidecar.",
+   "errs": []
+  },
+  {
+   "slot": "how2",
+   "try": 0,
+   "say": "Paste an OpenRouter key to talk via Telegram or Discord.",
+   "receipt": "| Message it from anywhere | Wire agents to Telegram, Discord, Slack, Signal, or Matrix and talk to your station away from the",
+   "errs": [
+    "has 10 words, must have 16-26"
+   ]
+  },
+  {
+   "slot": "how2",
+   "try": 1,
+   "say": "Paste a local model like Qwen3:8b with Ollama. The brain screen starts the crew immediately.",
+   "receipt": "ollama pull qwen3:8b",
+   "errs": [
+    "has 15 words, must have 16-26",
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "how2",
+   "try": 2,
+   "say": "Pull an Ollama model like qwen3:8b to run locally without any key.",
+   "receipt": "ollama pull qwen3:8b, pick **OLLAMA** as the provider — on the first-run brain screen,",
+   "errs": [
+    "has 12 words, must have 16-26",
+    "receipt not found word for word in the sources: \"ollama pull qwen3:8b, pick ollama as the provider — on the first-run brain scree\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "how2",
+   "try": 0,
+   "say": "Paste an OpenRouter key or sign in with Anthropic, OpenAI, Google accounts to wire agents to Telegram, Discord, Slack.",
+   "receipt": "| **Bring your own models** | Paste an OpenRouter key, or sign in with supported provider accounts (Anthropic, OpenAI, Google) — k",
+   "errs": []
+  },
+  {
+   "slot": "how2",
+   "try": 0,
+   "say": "Paste an OpenRouter key, or pull a local model like qwen3:8b to run your crew without bills.",
+   "receipt": "Paste an OpenRouter key, or sign in with supported provider accounts (Anthropic, OpenAI, Google) — k",
+   "errs": []
+  },
+  {
+   "slot": "proof",
+   "try": 0,
+   "say": "An 8B model needs about 10 G for context, but you can run free with Ollama.",
+   "receipt": "an 8B model takes about 10 G ... ollama pull qwen3:8b",
+   "errs": []
+  },
+  {
+   "slot": "proof",
+   "try": 0,
+   "say": "Run Qwen3:8b locally and expect an eight-billion parameter model that needs about ten gigabytes of space.",
+   "receipt": "`ollama pull qwen3:8b` ... `an 8B model takes about 10 G`",
+   "errs": [
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 1,
+   "say": "Run Qwen3:8b locally on an eight-billion parameter model requiring about ten gigabytes of space.",
+   "receipt": "ollama pull qwen3:8b ... 8B model takes about 10 G",
+   "errs": [
+    "has 14 words, must have 16-26",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 2,
+   "say": "Pull qwen3:8b on Ollama for an eight-billion parameter model needing about ten gigabytes of space.",
+   "receipt": "`ollama pull qwen3:8b` ... 8B model takes about 10 G",
+   "errs": [
+    "has 15 words, must have 16-26",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 0,
+   "say": "Run a test suite to validate performance and world logic before merging any code.",
+   "receipt": "npm run qa:ready # required merge gate",
+   "errs": [
+    "has 14 words, must have 16-26",
+    "must contain a number from the facts",
+    "receipt not found word for word in the sources: \"npm run qa:ready required merge gate\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 1,
+   "say": "Run npm test to validate world logic before merging.",
+   "receipt": "Validation + world + fast + HTTP suites",
+   "errs": [
+    "has 9 words, must have 16-26",
+    "must contain a number from the facts"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 2,
+   "say": "Run npm run qa:ready for the release aggregate proof.",
+   "receipt": "The release aggregate is `npm run qa:ready`.",
+   "errs": [
+    "has 9 words, must have 16-26",
+    "must contain a number from the facts"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 0,
+   "say": "Build installers locally with npm, or import existing agents from your on-disk home.",
+   "receipt": "`npm run desktop:build   # build installers locally` ... StarNet can import an existing agent: point it at your on-disk OpenClaw or Hermes home",
+   "errs": [
+    "has 13 words, must have 14-24",
+    "must contain a number from the facts"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 1,
+   "say": "Run npm run desktop:build to create installers locally.",
+   "receipt": "npm run desktop:build   # build installers locally",
+   "errs": [
+    "has 8 words, must have 14-24",
+    "must contain a number from the facts"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 2,
+   "say": "The release aggregate is npm run qa ready for validation gates.",
+   "receipt": "The release aggregate is `npm run qa:ready`.",
+   "errs": [
+    "has 11 words, must have 14-24",
+    "must contain a number from the facts"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 0,
+   "say": "The frontend is vanilla JavaScript and runs on Node 22 which matches CI.",
+   "receipt": "| Platform | Asset |\n| **Windows** (10/11, 64-bit) | `StarNet__x64-setup.exe` \n... Requirements: Node.js 18+ (Node.js 22 matches CI), Git.",
+   "errs": [
+    "has 13 words, must have 14-24"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 1,
+   "say": "The release gate uses npm run test fast.",
+   "receipt": "npm run test:fast          # required merge gate",
+   "errs": [
+    "has 8 words, must have 14-24",
+    "must contain a number from the facts"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 2,
+   "say": "The build includes Rust code inside Tauri.",
+   "receipt": "| src-tauri/ | Rust/Tauri desktop shell and bundled runtime.",
+   "errs": [
+    "has 7 words, must have 14-24",
+    "must contain a number from the facts"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 0,
+   "say": "The build requires Node 22 to match CI, then run npm test fast.",
+   "receipt": "Requirements: Node.js 18+ (Node.js 22 matches CI), Git. ... npm run test:fast          # required merge gate",
+   "errs": [
+    "has 13 words, must have 14-24"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 1,
+   "say": "The repo runs free with Ollama after pulling qwen3:8b.",
+   "receipt": "ollama pull qwen3:8b",
+   "errs": [
+    "has 9 words, must have 14-24",
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 2,
+   "say": "Run free with Ollama after pulling qwen3:8b.",
+   "receipt": "ollama pull qwen3:8b",
+   "errs": [
+    "has 7 words, must have 14-24",
+    "repeats words an earlier line already said: \"run free with ollama\" - say something new",
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "detail",
+   "try": 0,
+   "say": "It imports existing agents with persona and memory from OpenClaw or Hermes.",
+   "receipt": "StarNet can import an existing agent: point it at your on-disk OpenClaw or Hermes home and it mints a StarNet agent from the persona, instructions, memory,",
+   "errs": [
+    "has 12 words, must have 14-24"
+   ]
+  },
+  {
+   "slot": "detail",
+   "try": 1,
+   "say": "You can import an agent's full persona, instructions, memory, and other data directly from OpenClaw or Hermes.",
+   "receipt": "StarNet can import an existing agent: point it at your on-disk OpenClaw or Hermes home and it mints a StarNet agent from the persona, instructions, memory,",
+   "errs": []
+  },
+  {
+   "slot": "detail",
+   "try": 0,
+   "say": "You can import existing agents from OpenClaw or Hermes to mint new ones with full memory.",
+   "receipt": "StarNet can import an existing agent: point it at your on-disk OpenClaw or Hermes home and it mints a StarNet agent from the persona, instructions, memory,",
+   "errs": []
+  },
+  {
+   "slot": "detail",
+   "try": 0,
+   "say": "It imports existing agents to keep their memory and instructions.",
+   "receipt": "StarNet can import an existing agent... mints a StarNet agent from the persona, instructions, memory,",
+   "errs": [
+    "has 10 words, must have 14-24"
+   ]
+  },
+  {
+   "slot": "detail",
+   "try": 1,
+   "say": "StarNet can import your on-disk OpenClaw or Hermes home files.",
+   "receipt": "StarNet can import an existing agent: point it at your on-disk OpenClaw or Hermes",
+   "errs": [
+    "has 10 words, must have 14-24"
+   ]
+  },
+  {
+   "slot": "detail",
+   "try": 2,
+   "say": "You grant reusable skills to agents for multi-step recipes.",
+   "receipt": "| **Recipes, skills, schedules** | Launch proven multi-step recipes, grant reusable skills, and put work on cron schedules with vi",
+   "errs": [
+    "has 9 words, must have 14-24"
+   ]
+  },
+  {
+   "slot": "detail2",
+   "try": 0,
+   "say": "Install Git and Node 18 or newer, then build for Windows, macOS Intel, or Apple Silicon.",
+   "receipt": "Requires: Node.js 18+ (Node.js 22 matches CI), Git... Desktop builds are published on the StarNet releases page.\n| Platform | Asset |\n| **Windows** (10/11, 64-bit) | `StarNet__x64-setup.exe` |\n| **macOS — Apple Silicon** (M1–M4) | `StarNet__aarch64.dmg` |\n| **macOS — Intel** | `StarNet__x64.dmg`",
+   "errs": [
+    "receipt not found word for word in the sources: \"requires: node.js 18+ (node.js 22 matches ci), git\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "detail2",
+   "try": 1,
+   "say": "Requirements are Git, Node 18 or newer, plus Windows or macOS builds available.",
+   "receipt": "Git clone ... Requirements: Node.js 18+ (Node.js 22 matches CI), Git} | Platform | Asset |\n| **Windows** (10/11, 64-bit) | `StarNet__x64-setup.exe` |\n| **macOS — Apple Silicon** (M1–M4) | `StarNet__aarch64.dmg` |\n| **macOS — Intel** | `StarNet__x64.dmg`}",
+   "errs": [
+    "receipt not found word for word in the sources: \"requirements: node.js 18+ (node.js 22 matches ci), git} platform asset windows (\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "detail2",
+   "try": 2,
+   "say": "Install Git, Node with version eighteen or newer, then pick Windows or macOS builds.",
+   "receipt": "Requirements: Node.js 18+ (Node.js 22 matches CI), Git... | Platform | Asset |\n| **Windows** (10/11, 64-bit) | `StarNet__x64-setup.exe` |\n| **macOS — Apple Silicon** (M1–M4) | `StarNet__aarch64.dmg` |\n| **macOS — Intel** | `StarNet__x64.dmg`}",
+   "errs": [
+    "write every number in digits exactly as in the facts, never in words",
+    "receipt not found word for word in the sources: \"platform asset windows (10/11, 64-bit) starnet x64-setup.exe macos — apple silic\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "detail2",
+   "try": 0,
+   "say": "Download Windows exe, macOS dmg files or run from source with Git.",
+   "receipt": "Desktop builds are published on the StarNet releases page.",
+   "errs": []
+  },
+  {
+   "slot": "detail2",
+   "try": 0,
+   "say": "Windows, Intel Macs, and Apple Silicon M1 through M4 can run it.",
+   "receipt": "**Windows** (10/11, 64-bit) | `StarNet__x64-setup.exe` **macOS — Intel**| $\\backslash$ `StarNet__x64.dmg`| **macOS — Apple Silicon** (M1–M4)| $\\backslash$ `StarNet__aarch64.dmg`}",
+   "errs": [
+    "receipt not found word for word in the sources: \"windows (10/11, 64-bit) starnet x64-setup.exe macos — intel $ backslash$ starnet\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "detail2",
+   "try": 1,
+   "say": "Windows plus Intel or Apple Silicon Macs get the StarNet installer.",
+   "receipt": "| **Windows** (10/11, 64-bit) | `StarNet__x64-setup.exe` |\n| **macOS — Apple Silicon** (M1–M4) | `StarNet__aarch64.dmg` |\n| **macOS — Intel** | `StarNet__x64.dmg`",
+   "errs": [
+    "has 11 words, must have 12-22"
+   ]
+  },
+  {
+   "slot": "detail2",
+   "try": 2,
+   "say": "Windows gets an exe for ten eleven systems while macOS users download a dmg file.",
+   "receipt": "| Platform | Asset |\n| **Windows** (10/11, 64-bit) | `StarNet__x64-setup.exe` |\n| **macOS — Apple Silicon** (M1–M4) | `StarNet__aarch64.dmg` |",
+   "errs": [
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "trust",
+   "try": 0,
+   "say": "It's MIT licensed and built for local work.",
+   "receipt": "StarNet is open source under the MIT License.",
+   "errs": [
+    "has 8 words, must have 12-20"
+   ]
+  },
+  {
+   "slot": "trust",
+   "try": 1,
+   "say": "androoAGI made this under the MIT License.",
+   "receipt": "License StarNet is open source under the MIT License.",
+   "errs": [
+    "has 7 words, must have 12-20"
+   ]
+  },
+  {
+   "slot": "trust",
+   "try": 2,
+   "say": "androoAGI built StarNet as open source under the MIT License.",
+   "receipt": "License\nStarNet is open source under the MIT License.",
+   "errs": [
+    "has 10 words, must have 12-20"
+   ]
+  },
+  {
+   "slot": "trust",
+   "try": 0,
+   "say": "Starnet runs under MIT license, made by androoAGI.",
+   "receipt": "License\nStarNet is open source under the MIT License.",
+   "errs": [
+    "has 8 words, must have 12-20"
+   ]
+  },
+  {
+   "slot": "trust",
+   "try": 1,
+   "say": "Starnet is open source with the MIT License from creator androoAGI.",
+   "receipt": "License StarNet is open source under the MIT License.",
+   "errs": [
+    "has 11 words, must have 12-20"
+   ]
+  },
+  {
+   "slot": "trust",
+   "try": 2,
+   "say": "StarNet uses the MIT license from author androoAGI.",
+   "receipt": "License\nStarNet is open source under the MIT License.",
+   "errs": [
+    "has 8 words, must have 12-20"
+   ]
+  },
+  {
+   "slot": "trust",
+   "try": 0,
+   "say": "StarNet is MIT licensed and open source, trusted to run your crew locally.",
+   "receipt": "License\nStarNet is open source under the MIT License.",
+   "errs": []
+  },
+  {
+   "slot": "start",
+   "try": 0,
+   "say": "Install Node and run desktop build or pull a local model to start.",
+   "receipt": "Requirements: Node.js 18+ ... npm run desktop:build",
+   "errs": []
+  },
+  {
+   "slot": "start",
+   "try": 0,
+   "say": "Run npm ci then npm run desktop:dev to start.",
+   "receipt": "",
+   "errs": [
+    "has 9 words, must have 12-20",
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "start",
+   "try": 1,
+   "say": "Clone the repo with git clone https://github.com/androoAGI/starnet.git then run node sidecar/index.js.",
+   "receipt": "git clone https://github.com/androoAGI/starnet.git\ncd starnet\nnode sidecar/index.js",
+   "errs": [
+    "has 11 words, must have 12-20"
+   ]
+  },
+  {
+   "slot": "start",
+   "try": 2,
+   "say": "Run npm ci to install dependencies, or use the Windows setup file.",
+   "receipt": "`npm ci` ... `StarNet__x64-setup.exe` ...",
+   "errs": [
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "start",
+   "try": 0,
+   "say": "Clone starnet with Git, then run sidecar/index.js via Node.",
+   "receipt": "git clone https://github.com/androoAGI/starnet.git\ncd starnet\nnode sidecar/index.js",
+   "errs": [
+    "has 9 words, must have 12-20"
+   ]
+  },
+  {
+   "slot": "start",
+   "try": 1,
+   "say": "Run git clone the repo or pull Ollama qwen3 model.",
+   "receipt": "...git clone https://github.com/androoAGI/starnet.git... ollama pull qwen3:8b...",
+   "errs": [
+    "has 10 words, must have 12-20"
+   ]
+  },
+  {
+   "slot": "start",
+   "try": 2,
+   "say": "Run npm ci then run desktop build to get your local install ready.",
+   "receipt": "npm ci\nnpm run desktop:build",
+   "errs": [
+    "receipt not found word for word in the sources: \"npm ci npm run desktop:build\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "share",
+   "try": 0,
+   "say": "Save this for a crew member who needs to work locally.",
+   "receipt": "A living pixel-art station where real AI agents do real work.",
+   "errs": []
+  },
+  {
+   "slot": "share",
+   "try": 0,
+   "say": "Save this for when you want a local crew working on real tasks...",
+   "receipt": "A living pixel-art station where real AI agents do real work.",
+   "errs": [
+    "no '...' in the spoken line (that belongs in the receipt only)"
+   ]
+  },
+  {
+   "slot": "share",
+   "try": 1,
+   "say": "Send this to someone who wants their own AI agents running locally.",
+   "receipt": "bring your own key, watch your crew actually run",
+   "errs": []
+  },
+  {
+   "slot": "share",
+   "try": 0,
+   "say": "Save this for when you need to run agents locally without a bill.",
+   "receipt": "local-first desktop agent harness - bring your own key, watch your crew actually run.",
+   "errs": []
+  },
+  {
+   "slot": "end",
+   "try": 0,
+   "say": "Stop guessing and start working with real agents.",
+   "receipt": "A living pixel-art station where real AI agents do real work.",
+   "errs": []
+  },
+  {
+   "slot": "end",
+   "try": 0,
+   "say": "It is Starnet.",
+   "receipt": "A living pixel-art station where real AI agents do real work.",
+   "errs": [
+    "has 3 words, must have 6-12"
+   ]
+  },
+  {
+   "slot": "end",
+   "try": 1,
+   "say": "Welcome to StarNet.",
+   "receipt": "Starnet is a living pixel-art station where real AI agents do real work.",
+   "errs": [
+    "has 3 words, must have 6-12"
+   ]
+  },
+  {
+   "slot": "end",
+   "try": 2,
+   "say": "Start your own AI crew with Starnet.",
+   "receipt": "**A living pixel-art station where real AI agents do real work.**",
+   "errs": []
+  },
+  {
+   "slot": "end",
+   "try": 0,
+   "say": "Bring your own key and watch a real crew run.",
+   "receipt": "bring your own key, watch your crew actually run.",
+   "errs": []
+  }
+ ]
+}

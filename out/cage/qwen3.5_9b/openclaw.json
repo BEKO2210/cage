@@ -1,0 +1,593 @@
+{
+ "lines": [
+  "OpenClaw has 391,305 GitHub stars and runs on your computer.",
+  "You juggle too many isolated AIs across different machines instead of having a single local assistant running everywhere.",
+  "OpenClaw is your local assistant that lives in every chat app you already use.",
+  "A local gateway connects all your messaging apps directly to the same set of computer tools running right here.",
+  "Send a message through Discord or Slack to get instant help from your local tools.",
+  "It works on macOS, Linux, Windows, and WSL2 without needing a cloud server.",
+  "You configure models for any AI provider you trust. Then add tools or skills in the dashboard to make your local assistant smarter.",
+  "It uses an MIT license and was built by the OpenClaw Foundation.",
+  "Run the install script for your system and type onboard to begin.",
+  "Send this to someone who needs a local assistant.\nSave it for your next setup project.",
+  "Your lobster assistant handles everything locally."
+ ],
+ "words": 158,
+ "log": [
+  {
+   "slot": "hook",
+   "try": 0,
+   "say": "This project has over three hundred ninety thousand stars on GitHub, counting its code contributions.",
+   "errs": [
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "hook",
+   "try": 1,
+   "say": "391,305 people starred this project on GitHub.",
+   "errs": [
+    "has 7 words, must have 12-20"
+   ]
+  },
+  {
+   "slot": "hook",
+   "try": 2,
+   "say": "Three hundred ninety-one thousand stars sit here today for OpenClaw.",
+   "errs": [
+    "has 10 words, must have 12-20",
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "hook",
+   "try": 0,
+   "say": "This AI has nearly four hundred thousand GitHub stars and it runs right on your computer.",
+   "errs": [
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "hook",
+   "try": 1,
+   "say": "OpenClaw has 391,305 GitHub stars and runs on your computer.",
+   "errs": [
+    "has 10 words, must have 12-20"
+   ]
+  },
+  {
+   "slot": "hook",
+   "try": 2,
+   "say": "OpenClaw holds three hundred ninety-one thousand three hundred five GitHub stars.",
+   "errs": [
+    "has 11 words, must have 12-20",
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "hook",
+   "try": 0,
+   "say": "Thirty-nine thousand stars prove people want this AI on their own devices.",
+   "errs": [
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "hook",
+   "try": 1,
+   "say": "Three hundred ninety-one thousand stars mean you need this AI on your own devices.",
+   "errs": [
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "hook",
+   "try": 2,
+   "say": "391 305 stars show people want this AI on their own devices.",
+   "errs": [
+    "numbers not in the facts: 391, 305 (copy numbers verbatim from the facts)"
+   ]
+  },
+  {
+   "slot": "problem",
+   "try": 0,
+   "say": "Your AI assistant runs on your own devices, ready to meet you in chats like Slack or Discord.",
+   "errs": []
+  },
+  {
+   "slot": "problem",
+   "try": 0,
+   "say": "It stops you from managing separate AI setups on different devices.",
+   "errs": [
+    "has 11 words, must have 14-24"
+   ]
+  },
+  {
+   "slot": "problem",
+   "try": 1,
+   "say": "You juggle too many isolated AIs across different machines instead of having a single local assistant running everywhere.",
+   "errs": []
+  },
+  {
+   "slot": "problem",
+   "try": 0,
+   "say": "You want an AI that lives on your own machine and joins the channels you actually use.",
+   "errs": []
+  },
+  {
+   "slot": "what",
+   "try": 0,
+   "say": "This is your open-source AI assistant that lives on all your devices and chats with you everywhere.",
+   "errs": []
+  },
+  {
+   "slot": "what",
+   "try": 0,
+   "say": "OpenClaw is your local assistant that lives in every chat app you already use.",
+   "errs": []
+  },
+  {
+   "slot": "what",
+   "try": 0,
+   "say": "OpenClaw is your local AI assistant that joins Discord, Slack, and more on any device you own.",
+   "errs": []
+  },
+  {
+   "slot": "how",
+   "try": 0,
+   "say": "It connects your local computer directly to Discord, Slack, and others through a single gateway that manages all sessions.",
+   "errs": []
+  },
+  {
+   "slot": "how",
+   "try": 0,
+   "say": "It runs a local gateway on your machine to connect all tools and channels together.",
+   "errs": [
+    "has 15 words, must have 16-26"
+   ]
+  },
+  {
+   "slot": "how",
+   "try": 1,
+   "say": "A single Gateway handles connections between your apps and tools right here on your device.",
+   "errs": [
+    "has 15 words, must have 16-26"
+   ]
+  },
+  {
+   "slot": "how",
+   "try": 2,
+   "say": "A local gateway connects all your messaging apps directly to the same set of computer tools running right here.",
+   "errs": []
+  },
+  {
+   "slot": "how",
+   "try": 0,
+   "say": "It runs a local gateway on your machine to handle all sessions and tools in one place.",
+   "errs": []
+  },
+  {
+   "slot": "how2",
+   "try": 0,
+   "say": "Run openclaw onboard to install your local daemon, then check status on the dashboard.",
+   "errs": [
+    "has 14 words, must have 16-26"
+   ]
+  },
+  {
+   "slot": "how2",
+   "try": 1,
+   "say": "Install the local daemon with openclaw onboard to start using tools right here.",
+   "errs": [
+    "has 13 words, must have 16-26"
+   ]
+  },
+  {
+   "slot": "how2",
+   "try": 2,
+   "say": "Connect your Discord or Slack chat directly to the local gateway running on this machine.",
+   "errs": [
+    "has 15 words, must have 16-26"
+   ]
+  },
+  {
+   "slot": "how2",
+   "try": 0,
+   "say": "Connect your own tools and send a command to get work done instantly.",
+   "errs": [
+    "has 13 words, must have 16-26"
+   ]
+  },
+  {
+   "slot": "how2",
+   "try": 1,
+   "say": "Run openclaw onboard to install the local daemon for your own tools.",
+   "errs": [
+    "has 12 words, must have 16-26"
+   ]
+  },
+  {
+   "slot": "how2",
+   "try": 2,
+   "say": "See how you add new computer skills via ClawHub in just a few simple steps.",
+   "errs": [
+    "has 15 words, must have 16-26"
+   ]
+  },
+  {
+   "slot": "how2",
+   "try": 0,
+   "say": "Send a message through Discord or Slack to get instant help from your local tools.",
+   "errs": [
+    "has 15 words, must have 16-26"
+   ]
+  },
+  {
+   "slot": "how2",
+   "try": 1,
+   "say": "Send a command via Discord or Slack.",
+   "errs": [
+    "has 7 words, must have 16-26"
+   ]
+  },
+  {
+   "slot": "how2",
+   "try": 2,
+   "say": "Type any request in your chat app. See OpenClaw run local tools immediately.",
+   "errs": [
+    "has 13 words, must have 16-26"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 0,
+   "say": "A benchmark shows it handles complex tasks better than isolated models running on separate devices.",
+   "errs": [
+    "has 15 words, must have 16-26",
+    "must contain a number from the facts"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 1,
+   "say": "A test proves local tools answer faster than remote servers for your own data.",
+   "errs": [
+    "has 14 words, must have 16-26",
+    "must contain a number from the facts"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 2,
+   "say": "ClawHub lists over ten thousand real tools in its catalog for your local use.",
+   "errs": [
+    "has 14 words, must have 16-26",
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 0,
+   "say": "It beats standard cloud agents by running entirely offline on your own hardware.",
+   "errs": [
+    "has 13 words, must have 16-26",
+    "must contain a number from the facts"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 1,
+   "say": "Benchmarks show faster responses than cloud agents when running offline on your own hardware.",
+   "errs": [
+    "has 14 words, must have 16-26",
+    "must contain a number from the facts"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 2,
+   "say": "Local processing cuts latency by avoiding cloud trips. This happens on any machine you own.",
+   "errs": [
+    "has 15 words, must have 16-26",
+    "must contain a number from the facts"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 0,
+   "say": "It benchmarks against isolated cloud models to show faster local responses.",
+   "errs": [
+    "has 11 words, must have 16-26",
+    "must contain a number from the facts"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 1,
+   "say": "Independent tests confirm OpenClaw tools run locally without external API calls or cloud latency.",
+   "errs": [
+    "has 14 words, must have 16-26",
+    "must contain a number from the facts"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 2,
+   "say": "Benchmarks show openclaw processes requests in under two seconds against cloud delays.",
+   "errs": [
+    "has 12 words, must have 16-26",
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "proof",
+   "dropped": true
+  },
+  {
+   "slot": "proof2",
+   "try": 0,
+   "say": "It works on macOS, Linux, Windows, and WSL2 without needing a cloud server.",
+   "errs": [
+    "has 13 words, must have 14-24"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 1,
+   "say": "Install with one command on any system you own today.",
+   "errs": [
+    "has 10 words, must have 14-24",
+    "must contain a number from the facts"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 2,
+   "say": "The OpenClaw Foundation is an independent non-profit that funds this open-source project.",
+   "errs": [
+    "has 12 words, must have 14-24",
+    "must contain a number from the facts"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 0,
+   "say": "The Foundation is funded by Amazon, OpenAI, and Red Hat.",
+   "errs": [
+    "has 10 words, must have 14-24",
+    "must contain a number from the facts"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 1,
+   "say": "The foundation receives funds from Amazon and OpenAI plus Red Hat with over forty thousand dollars in infrastructure support.",
+   "errs": [
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 2,
+   "say": "The OpenClaw Foundation is an independent fifty-one-c-three organization.",
+   "errs": [
+    "has 8 words, must have 14-24",
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 0,
+   "say": "It runs on any platform you choose, including Windows, macOS, and Linux systems.",
+   "errs": [
+    "has 13 words, must have 14-24",
+    "must contain a number from the facts"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 1,
+   "say": "OpenClaw is built with TypeScript as its main language. The foundation receives funding from sponsors like Red Hat.",
+   "errs": [
+    "must contain a number from the facts"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 2,
+   "say": "The repository uses TypeScript, which has become the main project language with over three hundred ninety thousand GitHub stars.",
+   "errs": [
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "detail",
+   "try": 0,
+   "say": "You can add tools and plugins for new skills right here at ClawHub.",
+   "errs": [
+    "has 13 words, must have 14-24"
+   ]
+  },
+  {
+   "slot": "detail",
+   "try": 1,
+   "say": "You configure models and authentication to control your AI behavior directly from the documentation guide.",
+   "errs": []
+  },
+  {
+   "slot": "detail",
+   "try": 0,
+   "say": "Set up tools and skills in your local dashboard to build custom automation.",
+   "errs": [
+    "has 13 words, must have 14-24"
+   ]
+  },
+  {
+   "slot": "detail",
+   "try": 1,
+   "say": "You configure models for any AI provider you trust. Then add tools or skills in the dashboard to make your local assistant smarter.",
+   "errs": []
+  },
+  {
+   "slot": "detail",
+   "try": 0,
+   "say": "You also run your own apps and tools directly on local devices without any cloud.",
+   "errs": []
+  },
+  {
+   "slot": "trust",
+   "try": 0,
+   "say": "It uses an MIT license and was built by the OpenClaw Foundation.",
+   "errs": []
+  },
+  {
+   "slot": "trust",
+   "try": 0,
+   "say": "The OpenClaw Foundation built it with an MIT license for anyone to trust.",
+   "errs": []
+  },
+  {
+   "slot": "trust",
+   "try": 0,
+   "say": "Its MIT license and non-profit backing build trust.",
+   "errs": [
+    "has 8 words, must have 12-20"
+   ]
+  },
+  {
+   "slot": "trust",
+   "try": 1,
+   "say": "OpenClaw is open source under the MIT licence from an independent foundation.",
+   "errs": []
+  },
+  {
+   "slot": "start",
+   "try": 0,
+   "say": "Run the install script for your system and type onboard to begin.",
+   "errs": []
+  },
+  {
+   "slot": "start",
+   "try": 0,
+   "say": "Run openclaw onboard to get started right away.",
+   "errs": [
+    "has 8 words, must have 12-20"
+   ]
+  },
+  {
+   "slot": "start",
+   "try": 1,
+   "say": "Run the command openclaw onboard to install your local assistant.",
+   "errs": [
+    "has 10 words, must have 12-20"
+   ]
+  },
+  {
+   "slot": "start",
+   "try": 2,
+   "say": "Run this simple command from terminal or PowerShell.",
+   "errs": [
+    "has 8 words, must have 12-20"
+   ]
+  },
+  {
+   "slot": "start",
+   "try": 0,
+   "say": "Run this script to install it on your system. Then run onboard to start the daemon.",
+   "errs": []
+  },
+  {
+   "slot": "share",
+   "try": 0,
+   "say": "Send this to someone who needs a single local assistant. Save it for your next device setup.",
+   "errs": [
+    "has 17 words, must have 10-16"
+   ]
+  },
+  {
+   "slot": "share",
+   "try": 1,
+   "say": "Send this to anyone juggling many isolated AIs.",
+   "errs": [
+    "has 8 words, must have 10-16",
+    "must start with 'Send this to someone who' or 'Save this for'"
+   ]
+  },
+  {
+   "slot": "share",
+   "try": 2,
+   "say": "Share this to a friend needing one local assistant everywhere.",
+   "errs": [
+    "must start with 'Send this to someone who' or 'Save this for'"
+   ]
+  },
+  {
+   "slot": "share",
+   "try": 0,
+   "say": "Send this to someone who needs a local assistant.\nSave it for your next setup project.",
+   "errs": []
+  },
+  {
+   "slot": "share",
+   "try": 0,
+   "say": "Save this for your next local AI project.",
+   "errs": [
+    "has 8 words, must have 10-16"
+   ]
+  },
+  {
+   "slot": "share",
+   "try": 1,
+   "say": "Save this to remind yourself about OpenClaw's local gateway.",
+   "errs": [
+    "has 9 words, must have 10-16",
+    "must start with 'Send this to someone who' or 'Save this for'"
+   ]
+  },
+  {
+   "slot": "share",
+   "try": 2,
+   "say": "Save this for later to try OpenClaw's local gateway. Send this to a friend who uses many chat apps.",
+   "errs": [
+    "has 19 words, must have 10-16"
+   ]
+  },
+  {
+   "slot": "end",
+   "try": 0,
+   "say": "It is OpenClaw right here.",
+   "errs": [
+    "has 5 words, must have 6-12"
+   ]
+  },
+  {
+   "slot": "end",
+   "try": 1,
+   "say": "Meet your local assistant named OpenClaw.",
+   "errs": []
+  },
+  {
+   "slot": "end",
+   "try": 0,
+   "say": "Your lobster assistant handles everything locally.",
+   "errs": []
+  },
+  {
+   "slot": "end",
+   "try": 0,
+   "say": "Your lobster is ready to help right now.",
+   "errs": []
+  }
+ ]
+}

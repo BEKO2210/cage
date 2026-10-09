@@ -1,0 +1,803 @@
+{
+ "lines": [
+  "14,646 stars verify this Rust Photoshop clone has 307 of 309 PSD test files rendered exactly by saving.",
+  "PhotoCraft is an open-source Photoshop rebuilt from scratch to handle real PSD files without compromise.",
+  "PhotoCraft is a pure Rust image editor for real PSD files, offering layers, masks, type tools and symmetric format support.",
+  "Every menu action pulls from a single list containing 500 plus commands.",
+  "Open wave.psd with photocraft-cli to sharpen or add curves using commands like filter.sharpen.smartSharpen.",
+  "Large blurs run on all cores, finishing a 3.6 MP radius-180 Gaussian in under one second.",
+  "Tested on 170 mixed PSD files plus our own corpus with more than 1,700 tests to verify faithful round trips.",
+  "Supports 8 to 32 bits per channel for RGB, Grayscale, CMYK and Lab documents.",
+  "Use craft-fonts for Japanese text, or get it automatically in desktop builds.",
+  "Storytold built PhotoCraft, dual-licensed MIT or Apache to stand with VectorCraft and FilmCraft.",
+  "Clone the repo and run cargo release to start editing PSD files.",
+  "Save this for someone who needs a pure Rust Photoshop that saves PSDs properly.",
+  "Get PhotoCraft from GitHub to edit PSDs."
+ ],
+ "words": 186,
+ "log": [
+  {
+   "slot": "hook",
+   "try": 0,
+   "say": "Thirteen thousand stars prove its popularity for editing real PSD files.",
+   "receipt": "14,646 GitHub stars ... tested against a corpus of real-world files.",
+   "errs": [
+    "has 11 words, must have 12-20",
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "hook",
+   "try": 1,
+   "say": "Fourteen thousand six hundred forty-six GitHub stars show its popularity.",
+   "receipt": "14,646 GitHub stars",
+   "errs": [
+    "has 10 words, must have 12-20",
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words",
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "hook",
+   "try": 2,
+   "say": "Fourteen thousand six hundred forty-six GitHub stars measure its popularity.",
+   "receipt": "F1: 14,646 GitHub stars",
+   "errs": [
+    "has 10 words, must have 12-20",
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words",
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "hook",
+   "try": 0,
+   "say": "307 out of 309 test files roundtrip perfectly... that is a high fidelity match.",
+   "receipt": "Re-saving keeps the render of 307 of the 309 psd-tools test files.",
+   "errs": [
+    "no '...' in the spoken line (that belongs in the receipt only)"
+   ]
+  },
+  {
+   "slot": "hook",
+   "try": 1,
+   "say": "14,646 people starred this Rust Photoshop clone...",
+   "receipt": "F1: 14,646 GitHub stars, main language Rust",
+   "errs": [
+    "has 7 words, must have 12-20",
+    "no '...' in the spoken line (that belongs in the receipt only)"
+   ]
+  },
+  {
+   "slot": "hook",
+   "try": 2,
+   "say": "Thirty-seven of three hundred ninety PSD tests render exactly like Photoshop... using Rust.",
+   "receipt": "Re-saving keeps the render of 307 of the 309 psd-tools test files.",
+   "errs": [
+    "must contain a number from the facts",
+    "no '...' in the spoken line (that belongs in the receipt only)",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "hook",
+   "try": 0,
+   "say": "14,646 stars verify this Rust Photoshop clone has 307 of 309 PSD test files rendered exactly by saving.",
+   "receipt": "F1: 14,646 GitHub stars ... F2: Re-saving keeps the render of 307 of the 309 psd-tools test files.",
+   "errs": []
+  },
+  {
+   "slot": "problem",
+   "try": 0,
+   "say": "Developers face complex legacy code when trying to build image editors from scratch.",
+   "receipt": "PhotoCraft Image editing; an open-source, clean-room reimplementation of Adobe Photoshop, rebuilt in pure Rust.",
+   "errs": [
+    "has 13 words, must have 14-24"
+   ]
+  },
+  {
+   "slot": "problem",
+   "try": 1,
+   "say": "Building an editor requires writing a parser or relying on closed legacy code.",
+   "receipt": "PhotoCraft's PSD support is a standalone crate written from Adobe's public specification ...",
+   "errs": [
+    "has 13 words, must have 14-24"
+   ]
+  },
+  {
+   "slot": "problem",
+   "try": 2,
+   "say": "Developers face painful legacy parsers that break open source image editing.",
+   "receipt": "an open-source, clean-room reimplementation of Adobe Photoshop, rebuilt in pure Rust.",
+   "errs": [
+    "has 11 words, must have 14-24"
+   ]
+  },
+  {
+   "slot": "problem",
+   "try": 0,
+   "say": "Developers struggle because existing tools lack a clean-room reimplementation built in pure Rust.",
+   "receipt": "",
+   "errs": [
+    "has 13 words, must have 14-24",
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "problem",
+   "try": 1,
+   "say": "PhotoCraft solves this pain by being a clean-room reimplementation built in pure Rust.",
+   "receipt": "An open-source, clean-room reimplementation of Adobe Photoshop in pure Rust",
+   "errs": [
+    "has 13 words, must have 14-24"
+   ]
+  },
+  {
+   "slot": "problem",
+   "try": 2,
+   "say": "PhotoCraft is an open-source Photoshop rebuilt from scratch to handle real PSD files without compromise.",
+   "receipt": "An open-source, clean-room reimplementation of Adobe Photoshop in pure Rust ... PhotoCraft's PSD support is a standalone crate written from Adobe's public specification and tested against a corpus of real-world files.",
+   "errs": []
+  },
+  {
+   "slot": "problem",
+   "try": 0,
+   "say": "Developers need a pure Rust editor with layers, masks and type that handles real PSD files without compromise.",
+   "receipt": "PhotoCraft Image editing; an open-source, clean-room reimplementation of Adobe Photoshop, rebuilt in pure Rust... Layers, done properly Groups, clipping masks, pixel and vector masks ... fill layers (solid, gradient and pattern), adjustment layers ...",
+   "errs": []
+  },
+  {
+   "slot": "what",
+   "try": 0,
+   "say": "PhotoCraft is a pure Rust editor for real PSD files, built from scratch to handle layers and masks without compromise.",
+   "receipt": "An open-source, clean-room reimplementation of Adobe Photoshop in pure Rust ... Every menu item, tool and dialog runs a command from one registry ...",
+   "errs": [
+    "repeats words an earlier line already said: \"from scratch to handle\" - say something new"
+   ]
+  },
+  {
+   "slot": "what",
+   "try": 1,
+   "say": "PhotoCraft is a pure Rust image editor for real PSD files, offering layers, masks, type tools and symmetric format support.",
+   "receipt": "An open-source, clean-room reimplementation of Adobe Photoshop in pure Rust ... Layers, done properly Groups, clipping masks, pixel and vector masks ... 🗂️ Formats PSD and PSB",
+   "errs": []
+  },
+  {
+   "slot": "what",
+   "try": 0,
+   "say": "This open-source editor runs every tool from a single registry for automation agents and handles any color depth or format.",
+   "receipt": "Built for agents Every menu item, tool and dialog runs a command from one registry of 500+ commands... Any colour, any depth RGB, Grayscale, CMYK and Lab documents at 8, 16 and 32 bits per channel. ... Formats PSD and PSB, plus PNG, JPEG, TIFF, WebP, GIF, BMP, TGA, ICO, QOI, PNM, OpenEXR, Radiance HDR and AVIF",
+   "errs": []
+  },
+  {
+   "slot": "what",
+   "try": 0,
+   "say": "PhotoCraft is a pure Rust image editor built for agents to handle real PSD files with full layer support and many output formats.",
+   "receipt": "An open-source, clean-room reimplementation of Adobe Photoshop in pure Rust ... Layers, done properly Groups, clipping masks, pixel and vector masks ... Formats PSD and PSB",
+   "errs": [
+    "has 23 words, must have 14-22",
+    "repeats words an earlier line already said: \"handle real psd files\" - say something new"
+   ]
+  },
+  {
+   "slot": "what",
+   "try": 1,
+   "say": "PhotoCraft is a pure Rust image editor that lets agents run over five hundred commands to edit photos with layers.",
+   "receipt": "Every menu item, tool and dialog runs a command from one registry of 500+ commands.",
+   "errs": [
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "what",
+   "try": 2,
+   "say": "PhotoCraft is an open-source Photoshop clone written entirely in Rust for anyone who needs faithful PSD round trips.",
+   "receipt": "storytold/photocraft: An open-source, clean-room reimplementation of Adobe Photoshop in pure Rust",
+   "errs": [
+    "repeats words an earlier line already said: \"an open source photoshop\" - say something new"
+   ]
+  },
+  {
+   "slot": "how",
+   "try": 0,
+   "say": "Every menu item runs a command from one registry of 500+ commands, with layering enforced at build time across 24 crates.",
+   "receipt": "Built for agents Every menu item, tool and dialog runs a command from one registry of 500+ commands. Layering is enforced at build time across 24 crates.",
+   "errs": [
+    "receipt not found word for word in the sources: \"built for agents every menu item, tool and dialog runs a command from one regist\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "how",
+   "try": 1,
+   "say": "Built for agents, every menu item is a single registry command.",
+   "receipt": "Every menu item ... runs a command from one registry",
+   "errs": [
+    "has 11 words, must have 16-26"
+   ]
+  },
+  {
+   "slot": "how",
+   "try": 2,
+   "say": "Every tool runs as a distinct command from a unified registry of over five hundred options.",
+   "receipt": "## Built for agents Every menu item, tool and dialog runs a command from one registry of 500+ commands.",
+   "errs": [
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "how",
+   "try": 0,
+   "say": "Every menu item and tool runs a command from one registry of over five hundred commands.",
+   "receipt": "## Built for agents Every menu item, tool and dialog runs a command from one registry of 500+ commands.",
+   "errs": [
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "how",
+   "try": 1,
+   "say": "Every menu action pulls from a single list containing 500 plus commands.",
+   "receipt": "## Built for agents Every menu item, tool and dialog runs a command from one registry of 500+ commands.",
+   "errs": [
+    "has 12 words, must have 16-26"
+   ]
+  },
+  {
+   "slot": "how",
+   "try": 2,
+   "say": "Every tool runs as a command pulled directly from the same registry of over five hundred available actions.",
+   "receipt": "## Built for agents Every menu item, tool and dialog runs a command from one registry of 500+ commands.",
+   "errs": [
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "how",
+   "try": 0,
+   "say": "It uses a command registry with over five hundred items and runs tests across more than one thousand seven hundred cases.",
+   "receipt": "Built for agents Every menu item, tool and dialog runs a command from one registry of 500+ commands. - **Tested:** more than 1,700 tests",
+   "errs": [
+    "write every number in digits exactly as in the facts, never in words",
+    "receipt not found word for word in the sources: \"built for agents every menu item, tool and dialog runs a command from one regist\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "how",
+   "try": 1,
+   "say": "It uses a single registry of five hundred plus commands to drive every action.",
+   "receipt": "Every menu item, tool and dialog runs a command from one registry of 500+ commands.",
+   "errs": [
+    "has 14 words, must have 16-26",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "how",
+   "try": 2,
+   "say": "Every menu item runs a command from one registry of five hundred plus commands.",
+   "receipt": "Built for agents Every menu item, tool and dialog runs a command from one registry of 500+ commands.",
+   "errs": [
+    "has 14 words, must have 16-26",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "how2",
+   "try": 0,
+   "say": "Run a smart sharpen command on an image file, then save it to see the result.",
+   "receipt": "--cmd filter.sharpen.smartSharpen",
+   "errs": [
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "how2",
+   "try": 1,
+   "say": "Open wave.psd with a filter sharpen command set amount eighty.",
+   "receipt": "--cmd filter.sharpen.smartSharpen     --params '{",
+   "errs": [
+    "has 10 words, must have 16-26",
+    "write every number in digits exactly as in the facts, never in words",
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "how2",
+   "try": 2,
+   "say": "Run photocraft-cli on wave.psd to apply a filter sharpen command with an amount of eighty.",
+   "receipt": "photocraft-cli run wave.psd \\ --cmd filter.sharpen.smartSharpen     --params '{\"amount\":80}'",
+   "errs": [
+    "has 15 words, must have 16-26",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "how2",
+   "try": 0,
+   "say": "Run PhotoCraft on wave PSD to sharpen it or add curves, then save and verify your work.",
+   "receipt": "### (intro)\\nPhotoCraft Image editing; an open-source, clean-room reimplementation of Adobe Photoshop, rebuilt in pure Rust. ... \\ncargo run --release -p photocraft -- image.psd   # the desktop app",
+   "errs": [
+    "receipt not found word for word in the sources: \"(intro) nphotocraft image editing; an open-source, clean-room reimplementation o\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "how2",
+   "try": 1,
+   "say": "Open wave.psd with photocraft-cli to sharpen or add curves using commands like filter.sharpen.smartSharpen.",
+   "receipt": "photocraft-cli run wave.psd \\  --cmd filter.sharpen.smartSharpen",
+   "errs": [
+    "has 13 words, must have 16-26"
+   ]
+  },
+  {
+   "slot": "how2",
+   "try": 2,
+   "say": "Run the CLI on an image to apply a specific command or adjust curves directly.",
+   "receipt": "--cmd filter.sharpen.smartSharpen     --params '{",
+   "errs": [
+    "has 15 words, must have 16-26",
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "how2",
+   "try": 0,
+   "say": "Open a document and apply a smart sharpen filter to see the engine process real PSD commands.",
+   "receipt": "--cmd filter.sharpen.smartSharpen",
+   "errs": [
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "how2",
+   "try": 1,
+   "say": "Run photocraft-cli on wave.psd with command sharpensmartSharpen amount 80 to see real PSD commands processed.",
+   "receipt": "# Headless: open, edit, save\nphotocraft-cli run wave.psd \\\n  --cmd filter.sharpen.smartSharpen     --params '{\"amount\":80}' \\/\\\"}",
+   "errs": [
+    "has 15 words, must have 16-26",
+    "receipt not found word for word in the sources: \"headless: open, edit, save photocraft-cli run wave.psd --cmd filter.sharpen.smar\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "how2",
+   "try": 2,
+   "say": "You can use photocraft-cli to run a command like filter.sharpen.smartSharpen on an image file.",
+   "receipt": "# Headless: open, edit, save\nphotocraft-cli run wave.psd \\\n  --cmd filter.sharpen.smartSharpen     --params \"{'amount\":80}'\\",
+   "errs": [
+    "has 14 words, must have 16-26",
+    "receipt not found word for word in the sources: \"headless: open, edit, save photocraft-cli run wave.psd --cmd filter.sharpen.smar\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 0,
+   "say": "Large blurs run across all cores; a radius-180 Gaussian on 3.6 MP takes under a second.",
+   "receipt": "F5: Large-radius blurs use running-sum box passes across all cores: a radius-180 Gaussian on 3.6 MP takes under a second.",
+   "errs": []
+  },
+  {
+   "slot": "proof",
+   "try": 0,
+   "say": "Large blurs run across all cores, rendering an eighteen-zero radius Gaussian on three point six megapixels in under one second.",
+   "receipt": "F5: Large-radius blurs use running-sum box passes across all cores: a radius-180 Gaussian on 3.6 MP takes under a second.",
+   "errs": [
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 1,
+   "say": "Large blurs use all cores to render an eighteen-zero radius Gaussian on three point six megapixels under a second.",
+   "receipt": "F5: Large-radius blurs use running-sum box passes across all cores: a radius-180 Gaussian on 3.6 MP takes under a second.",
+   "errs": [
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 2,
+   "say": "Large blurs use all cores to render an eighteen-zero radius Gaussian on three point six megapixels under a second.",
+   "receipt": "F5: Large-radius blurs use running-sum box passes across all cores: a radius-180 Gaussian on 3.6 MP takes under a second.",
+   "errs": [
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 0,
+   "say": "Large blurs run on all cores, finishing a 3.6 MP radius-180 Gaussian in under one second.",
+   "receipt": "F5: Large-radius blurs use running-sum box passes across all cores: a radius-180 Gaussian on 3.6 MP takes under a second.",
+   "errs": []
+  },
+  {
+   "slot": "proof2",
+   "try": 0,
+   "say": "Groups and live smart objects work properly, plus it handles CMYK documents at eight bits per channel.",
+   "receipt": "🗃️ Layers, done properly Groups, clipping masks, pixel and vector masks, fill layers (solid, gradient and pattern), adjustment layers, live smart objects with smart filters and los ... 🎨 Any colour, any depth RGB, Grayscale, CMYK and Lab documents at 8",
+   "errs": [
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 1,
+   "say": "Fourteen thousand six hundred forty-six GitHub stars verify our open-source Rust Photoshop handles CMYK documents at eight bits per channel.",
+   "receipt": "14,646 GitHub stars ... 8 bits",
+   "errs": [
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words",
+    "receipt not found word for word in the sources: \"8 bits\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 2,
+   "say": "Our engine keeps render of three zero seven test files when re-saving.",
+   "receipt": "Re-saving keeps the render of 307 of the 309 psd-tools test files.",
+   "errs": [
+    "has 12 words, must have 14-24",
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 0,
+   "say": "Groups, clipping masks and smart objects work properly too.",
+   "receipt": "pixel and vector masks, fill layers (solid, gradient and pattern), adjustment layers, live smart objects with smart filters",
+   "errs": [
+    "has 9 words, must have 14-24",
+    "must contain a number from the facts"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 1,
+   "say": "The app handles RGB CMYK Lab at eight sixteen thirty two bits per channel plus shapes match Photoshop pixels.",
+   "receipt": "RGB, Grayscale, CMYK and Lab documents at 8, 16 and 32 bits per channel. ... 116 of 116 shape layers in our PSD corpus match Photoshop's pixels.",
+   "errs": [
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 2,
+   "say": "One hundred six percent of shape layers match Photoshop pixels.",
+   "receipt": "116 of 116 shape layers in our PSD corpus match Photoshop's pixels.",
+   "errs": [
+    "has 10 words, must have 14-24",
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 0,
+   "say": "It also supports CMYK and Lab at eight, sixteen or thirty-two bits per channel.",
+   "receipt": "RGB, Grayscale, CMYK and Lab documents at 8, 16 and 32 bits per channel.",
+   "errs": [
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 1,
+   "say": "Tested on 170 mixed PSD files plus our own corpus with more than 1,700 tests to verify faithful round trips.",
+   "receipt": "F13: - **Tested:** more than 1,700 tests, including PSD round trips...",
+   "errs": []
+  },
+  {
+   "slot": "detail",
+   "try": 0,
+   "say": "It supports 8 through 32 bit channels for RGB, Grayscale and CMYK documents.",
+   "receipt": "F8: 🎨 Any colour, any depth RGB, Grayscale, CMYK and Lab documents at 8, 16 and 32 bits per channel.",
+   "errs": [
+    "has 13 words, must have 14-24"
+   ]
+  },
+  {
+   "slot": "detail",
+   "try": 1,
+   "say": "Photoshop supports eight through thirty-two bits per channel in RGB, Grayscale, CMYK, and Lab documents.",
+   "receipt": "RGB, Grayscale, CMYK and Lab documents at 8, 16 and 32 bits per channel.",
+   "errs": [
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "detail",
+   "try": 2,
+   "say": "Supports 8 to 32 bits per channel for RGB, Grayscale, CMYK and Lab documents.",
+   "receipt": "RGB, Grayscale, CMYK and Lab documents at 8, 16 and 32 bits per channel.",
+   "errs": []
+  },
+  {
+   "slot": "detail",
+   "try": 0,
+   "say": "It supports 8,16 and 32 bits per channel for RGB Grayscale CMYK Lab documents.",
+   "receipt": "RGB, Grayscale, CMYK and Lab documents at 8, 16 and 32 bits per channel.",
+   "errs": [
+    "numbers not in the facts: 816 (copy numbers verbatim from the facts)"
+   ]
+  },
+  {
+   "slot": "detail",
+   "try": 1,
+   "say": "You can create files with eight, sixteen or thirty-two bits per channel for RGB Grayscale CMYK Lab documents.",
+   "receipt": "RGB, Grayscale, CMYK and Lab documents at 8, 16 and 32 bits per channel.",
+   "errs": [
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "detail",
+   "try": 2,
+   "say": "PhotoCraft supports files with 8, 16 or 32 bits per channel for RGB Grayscale CMYK Lab documents.",
+   "receipt": "RGB, Grayscale, CMYK and Lab documents at 8, 16 and 32 bits per channel.",
+   "errs": []
+  },
+  {
+   "slot": "detail",
+   "try": 0,
+   "say": "It reads and writes PSD, PNG, JPEG, TIFF WebP GIF BMP TGA ICO QOI PNM OpenEXR Radiance HDR AVIF HEIC photos symmetrically at 8 bits.",
+   "receipt": "PSD and PSB, plus PNG, JPEG, TIFF, WebP, GIF, BMP, TGA, ICO, QOI, PNM, OpenEXR, Radiance HDR and AVIF, with symmetric read and write at 8",
+   "errs": [
+    "has 25 words, must have 14-24"
+   ]
+  },
+  {
+   "slot": "detail",
+   "try": 1,
+   "say": "PhotoCraft handles RGB Grayscale CMYK Lab documents in eight sixteen or thirty-two bits per channel.",
+   "receipt": "F8: 🎨 Any colour, any depth RGB, Grayscale, CMYK and Lab documents at 8, 16 and 32 bits per channel.",
+   "errs": [
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "detail",
+   "try": 2,
+   "say": "PhotoCraft supports RGB Grayscale CMYK and Lab at 8 16 and 32 bits per channel.",
+   "receipt": "RGB, Grayscale, CMYK and Lab documents at 8, 16 and 32 bits per channel",
+   "errs": []
+  },
+  {
+   "slot": "detail2",
+   "try": 0,
+   "say": "Japanese fonts come with desktop builds or install craft-fonts separately.",
+   "receipt": "desktop release builds always include it... Japanese fonts for the UI and Type tool come from craft-fonts, an optional build input (desktop release builds always include it)",
+   "errs": [
+    "has 10 words, must have 12-22"
+   ]
+  },
+  {
+   "slot": "detail2",
+   "try": 1,
+   "say": "Desktop releases include Japanese fonts by default; download craft-fonts for other setups.",
+   "receipt": "Japanese fonts come from craft-fonts an optional build input (desktop release builds always include it).",
+   "errs": [
+    "receipt not found word for word in the sources: \"japanese fonts come from craft-fonts an optional build input (desktop release bu\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "detail2",
+   "try": 2,
+   "say": "Japanese Type tool fonts use craft-fonts, included on desktop builds.",
+   "receipt": "Japanese fonts for the UI and Type tool come from craft-fonts, an optional build input (desktop release builds always include it).",
+   "errs": [
+    "has 10 words, must have 12-22"
+   ]
+  },
+  {
+   "slot": "detail2",
+   "try": 0,
+   "say": "Build with craft-fonts for Japanese type, then run cargo build on Linux or macOS.",
+   "receipt": "Japanese fonts for the UI and Type tool come from craft-fonts ... desktop release builds always include it",
+   "errs": []
+  },
+  {
+   "slot": "detail2",
+   "try": 0,
+   "say": "Use craft-fonts for Japanese text, or get it automatically in desktop builds.",
+   "receipt": "Japanese fonts for the UI and Type tool come from craft-fonts, an optional build input (desktop release builds always include it).",
+   "errs": []
+  },
+  {
+   "slot": "trust",
+   "try": 0,
+   "say": "Licensed under MIT, built for agents and tested against public corpora.",
+   "receipt": "PhotoCraft is dual-licensed under MIT or Apache-2.0 ... PhotoCraft is one of the Crafting Apps: free, open-source creative tools from the ArtCraft team ...",
+   "errs": [
+    "has 11 words, must have 12-20",
+    "receipt not found word for word in the sources: \"photocraft is one of the crafting apps: free, open-source creative tools from th\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "trust",
+   "try": 1,
+   "say": "The ArtCraft team built this dual-licensed app used by testing agents.",
+   "receipt": "... PhotoCraft is one of the **Crafting Apps**: free, open-source creative tools from the ArtCraft team...",
+   "errs": [
+    "has 11 words, must have 12-20"
+   ]
+  },
+  {
+   "slot": "trust",
+   "try": 2,
+   "say": "The MIT licensed project from storytold includes the psd-tools corpus for verification.",
+   "receipt": "License and credits PhotoCraft is dual-licensed under MIT or Apache-2.0, at your option... Test corpora our own Photoshop-authored oracle PSDs in photocraft-corpus plus the psd-tools",
+   "errs": [
+    "receipt not found word for word in the sources: \"test corpora our own photoshop-authored oracle psds in photocraft-corpus plus th\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "trust",
+   "try": 0,
+   "say": "Dual-licensed MIT or Apache, built by storytold team and tested with psd-tools.",
+   "receipt": "storytold/photocraft ... dual-licensed under MIT or Apache-2.0 ... maintained in the PhotoCraft documentation book (security architecture) plus our own Photoshop-authored oracle PSDs in photocraft-corpus plus the psd-tools",
+   "errs": [
+    "receipt not found word for word in the sources: \"maintained in the photocraft documentation book (security architecture) plus our\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "trust",
+   "try": 1,
+   "say": "Licensed MIT or Apache, security docs cover threat modeling ... psd-tools sets.",
+   "receipt": "... maintained in the PhotoCraft documentation book ... pinned and shared with psd-tools",
+   "errs": [
+    "no '...' in the spoken line (that belongs in the receipt only)",
+    "receipt not found word for word in the sources: \"pinned and shared with psd-tools\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "trust",
+   "try": 2,
+   "say": "Dual-licensed MIT or Apache, tested by ArtCraft team ...",
+   "receipt": "PhotoCraft is dual-licensed under MIT or Apache-2.0 ...",
+   "errs": [
+    "has 9 words, must have 12-20",
+    "no '...' in the spoken line (that belongs in the receipt only)"
+   ]
+  },
+  {
+   "slot": "trust",
+   "try": 0,
+   "say": "Storytold built PhotoCraft, dual-licensed MIT or Apache to stand with VectorCraft and FilmCraft.",
+   "receipt": "PhotoCraft is one of the **Crafting Apps**: free, open-source creative tools from the ArtCraft team... each written from scratch in Rust",
+   "errs": []
+  },
+  {
+   "slot": "start",
+   "try": 0,
+   "say": "Clone the repo and run cargo release to start editing PSD files.",
+   "receipt": "git clone https://github.com/storytold/photocraft\ncd photocraft\ncargo run --release -p photocraft -- image.psd   # the desktop app",
+   "errs": []
+  },
+  {
+   "slot": "start",
+   "try": 0,
+   "say": "Copy this repo, run cargo in release mode to start editing PSD files.",
+   "receipt": "git clone https://github.com/storytold/photocraft\ncd photocraft\ncargo run --release -p photocraft -- image.psd   # the desktop app",
+   "errs": []
+  },
+  {
+   "slot": "start",
+   "try": 0,
+   "say": "Install with cargo run to open a PSD file or test all 1,700 tests in our suite.",
+   "receipt": "# Get started\ngit clone https://github.com/storytold/photocraft\ncd photocraft\ncargo run --release -p photocraft -- image.psd   # the desktop app\ncargo test --workspace                           # the test suite",
+   "errs": [
+    "repeats a number already said: 1700",
+    "receipt not found word for word in the sources: \"get started git clone https://github.com/storytold/photocraft cd photocraft carg\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "start",
+   "try": 1,
+   "say": "Clone the repo, enter the folder, then run cargo run to open your PSD file.",
+   "receipt": "git clone https://github.com/storytold/photocraft\ncd photocraft\ncargo run --release -p photocraft",
+   "errs": []
+  },
+  {
+   "slot": "share",
+   "try": 0,
+   "say": "Save this for a friend who needs to edit real PSD files without losing your work.",
+   "receipt": "PhotoCraft is an open-source Photoshop rebuilt from scratch to handle real PSD files",
+   "errs": [
+    "repeats words an earlier line already said: \"real psd files without\" - say something new"
+   ]
+  },
+  {
+   "slot": "share",
+   "try": 1,
+   "say": "Send this to someone who needs layers, masks, type tools ... plus symmetric read write support for many formats.",
+   "receipt": "Features: Every screenshot here is the real app at work on public-domain art... Layers, done properly Groups, clipping masks, pixel and vector masks... Formats PSD and PSB, plus PNG, JPEG...",
+   "errs": [
+    "has 19 words, must have 10-16",
+    "no '...' in the spoken line (that belongs in the receipt only)",
+    "repeats words an earlier line already said: \"layers masks type tools\" - say something new"
+   ]
+  },
+  {
+   "slot": "share",
+   "try": 2,
+   "say": "Share this with a friend who needs PSD round trips for 34 selection, brush, crop, eyedropper ... plus CMYK or Lab color.",
+   "receipt": "Everything in the box 🧰 34 tools Move · Rectangular and Elliptical Marquee · Lasso · Polygonal Lasso · Magic Wand · Quick Selection · Object Selection · Crop · Eyedropper · Brus. Supports RGB, Grayscale, CMYK and Lab documents.",
+   "errs": [
+    "has 22 words, must have 10-16",
+    "must start with 'Send this to someone who' or 'Save this for'",
+    "no '...' in the spoken line (that belongs in the receipt only)"
+   ]
+  },
+  {
+   "slot": "share",
+   "try": 0,
+   "say": "Save this for someone who needs to edit real PSDs without compromise, using a pure Rust editor built from scratch.",
+   "receipt": "PhotoCraft Image editing; an open-source, clean-room reimplementation of Adobe Photoshop, rebuilt in pure Rust.",
+   "errs": [
+    "has 20 words, must have 10-16"
+   ]
+  },
+  {
+   "slot": "share",
+   "try": 1,
+   "say": "Send this to someone who needs an open-source Photoshop that handles real PSDs without compromise.",
+   "receipt": "An open-source, clean-room reimplementation of Adobe Photoshop in pure Rust.",
+   "errs": [
+    "repeats words an earlier line already said: \"an open source photoshop\" - say something new"
+   ]
+  },
+  {
+   "slot": "share",
+   "try": 2,
+   "say": "Send this to someone who wants layers, masks, symmetric formats plus Japanese fonts.",
+   "receipt": "PhotoCraft is a pure Rust image editor for real PSD files, offering layers, masks, type tools and symmetric format support.",
+   "errs": []
+  },
+  {
+   "slot": "share",
+   "try": 0,
+   "say": "Save this for someone who needs a pure Rust Photoshop that saves PSDs properly.",
+   "receipt": "storytold/photocraft: An open-source, clean-room reimplementation of Adobe Photoshop in pure Rust | 16 adjustment layers ... apply directly to pixels",
+   "errs": []
+  },
+  {
+   "slot": "end",
+   "try": 0,
+   "say": "Open source, pure Rust Photoshop clone from storytold.",
+   "receipt": "An open-source, clean-room reimplementation of Adobe Photoshop in pure Rust; github.com/storytold/photocraft",
+   "errs": []
+  },
+  {
+   "slot": "end",
+   "try": 0,
+   "say": "PhotoCraft is a Rust Photoshop clone from storytold.",
+   "receipt": "storytold/photocraft: An open-source, clean-room reimplementation of Adobe Photoshop in pure Rust",
+   "errs": []
+  },
+  {
+   "slot": "end",
+   "try": 0,
+   "say": "PhotoCraft is a pure Rust editor for real PSD files you can save properly.",
+   "receipt": "An open-source, clean-room reimplementation of Adobe Photoshop in pure Rust\nPSD and PSB formats symmetric read and write at 8, 16 and 32 bits",
+   "errs": [
+    "has 14 words, must have 6-12",
+    "repeats words an earlier line already said: \"editor for real psd\" - say something new"
+   ]
+  },
+  {
+   "slot": "end",
+   "try": 1,
+   "say": "Get PhotoCraft from GitHub to edit PSDs.",
+   "receipt": "*GitHub*",
+   "errs": []
+  }
+ ]
+}

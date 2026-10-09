@@ -1,0 +1,883 @@
+{
+ "lines": [
+  "Stop writing code you will never write, because Ponytail makes agents use existing features before creating anything new.",
+  "Ponytail makes your agent act like the laziest senior dev to reuse what exists.",
+  "Before writing a line, the agent confirms if standard libraries or native platform features already handle that task.",
+  "Ask for a date picker, then Ponytail returns it using native input without writing extra code.",
+  "Real sessions on a FastAPI repo proved 54% less code, -20% cost, and -27% time compared to no-skill baseline.",
+  "Ponytail found zero bugs and zero CVEs to keep uptime at 100%.",
+  "/ponytail-debt gathers deferred shortcuts into a ledger so later tasks do not become never.",
+  "/ponytail needs a skill-capable host like Claude Code, and installing it is one simple command.",
+  "Dietrich Gebert built this MIT-licensed tool with over 155947 GitHub stars that users trust.",
+  "Install the plugin using that command line, then run slash ponytail full.",
+  "Send this to someone who writes code they won't use.",
+  "Ponytail is the code you never write."
+ ],
+ "words": 169,
+ "log": [
+  {
+   "slot": "hook",
+   "try": 0,
+   "say": "Ponytail uses 54% less code than writing it yourself.",
+   "receipt": "vs no-skill baseline | LOC |\n| **ponytail** | **-54%**",
+   "errs": [
+    "has 9 words, must have 12-20",
+    "receipt not found word for word in the sources: \"vs no-skill baseline loc ponytail -54%\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "hook",
+   "try": 1,
+   "say": "Ponytail saves fifty-four percent of your lines of code.",
+   "receipt": "| **ponytail** | **-54%**|",
+   "errs": [
+    "has 9 words, must have 12-20",
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words",
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "hook",
+   "try": 2,
+   "say": "Ponytail reduced lines of code by fifty-four percent.",
+   "receipt": "| vs no-skill baseline | LOC | tokens | cost | time | safe |\n| **ponytail** | **-54%** | ...",
+   "errs": [
+    "has 8 words, must have 12-20",
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "hook",
+   "try": 0,
+   "say": "Ponytail saves 20% cost on real projects... compared to a no-skill baseline.",
+   "receipt": "vs no-skill baseline | LOC | tokens | cost | time | safe |\n| **ponytail** | **-54%** | **-22%** | **-20%** | **-27%** | **100%**|",
+   "errs": [
+    "no '...' in the spoken line (that belongs in the receipt only)"
+   ]
+  },
+  {
+   "slot": "hook",
+   "try": 1,
+   "say": "Ponytail saves 20 percent cost on real projects... compared to a no-skill baseline.",
+   "receipt": "~20% cheaper ... | vs no-skill baseline | LOC | tokens | cost | time | safe |\n| **ponytail** | **-54%** | **-22%** | **-20%** | **-27%** | **100%** |",
+   "errs": [
+    "no '...' in the spoken line (that belongs in the receipt only)"
+   ]
+  },
+  {
+   "slot": "hook",
+   "try": 2,
+   "say": "Ponytail costs twenty percent less with zero bugs since forever.",
+   "receipt": "~20% cheaper ... 155,947 GitHub stars",
+   "errs": [
+    "has 10 words, must have 12-20",
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "hook",
+   "try": 0,
+   "say": "Ponytail cuts 54% from code lines... Receipt: vs no-skill baseline | LOC | tokens | cost | time | safe | **ponytail** | **-54%**",
+   "receipt": "vs no-skill baseline | LOC | tokens | cost | time | safe |\n| **ponytail** | **-54%**",
+   "errs": [
+    "has 24 words, must have 12-20",
+    "no '...' in the spoken line (that belongs in the receipt only)"
+   ]
+  },
+  {
+   "slot": "hook",
+   "try": 1,
+   "say": "Ponytail saves fifty-four percent of your lines of code.",
+   "receipt": "vs no-skill baseline | LOC | tokens | cost | time | safe |\n| **ponytail** | **-54%**",
+   "errs": [
+    "has 9 words, must have 12-20",
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "hook",
+   "try": 2,
+   "say": "Ponytail saves fifty-four percent of lines of code.",
+   "receipt": "| **ponytail** | **-54%** |",
+   "errs": [
+    "has 8 words, must have 12-20",
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words",
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "hook",
+   "dropped": true
+  },
+  {
+   "slot": "problem",
+   "try": 0,
+   "say": "Stop writing code you will never write, because Ponytail makes agents use existing features before creating anything new.",
+   "receipt": "The best code is the code you never wrote ... Before writing code, the agent stops at the first rung that holds: The ladder runs *after* it understands the problem",
+   "errs": []
+  },
+  {
+   "slot": "problem",
+   "try": 0,
+   "say": "Stop writing code you'll never use again.",
+   "receipt": "The best code is the code you never wrote.",
+   "errs": [
+    "has 7 words, must have 14-24"
+   ]
+  },
+  {
+   "slot": "problem",
+   "try": 1,
+   "say": "Stop coding features no one wants by asking if the problem needs a solution at all.",
+   "receipt": "The ladder runs *after* it understands the problem, not instead of it: it reads the code the",
+   "errs": []
+  },
+  {
+   "slot": "problem",
+   "try": 0,
+   "say": "You write too much code for tasks you should never do.",
+   "receipt": "The best code is the code you never wrote.",
+   "errs": [
+    "has 11 words, must have 14-24"
+   ]
+  },
+  {
+   "slot": "problem",
+   "try": 1,
+   "say": "You build complex systems when a single file suffices.",
+   "receipt": "-54%",
+   "errs": [
+    "has 9 words, must have 14-24",
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "problem",
+   "try": 2,
+   "say": "Developers write complex systems when a single file suffices because Ponytail makes AI agents lazy like seniors.",
+   "receipt": "The best code is the code you never wrote.",
+   "errs": []
+  },
+  {
+   "slot": "what",
+   "try": 0,
+   "say": "Ponytail is a tool for AI agents to reuse existing features before creating new code you will never write.",
+   "receipt": "The best code is the code you never wrote.",
+   "errs": [
+    "repeats words an earlier line already said: \"code you will never\" - say something new"
+   ]
+  },
+  {
+   "slot": "what",
+   "try": 1,
+   "say": "Ponytail tells AI agents to reuse what exists instead of writing unused code.",
+   "receipt": "The best code is the code you never wrote.",
+   "errs": [
+    "has 13 words, must have 14-22"
+   ]
+  },
+  {
+   "slot": "what",
+   "try": 2,
+   "say": "Ponytail makes your agent act like the laziest senior dev to reuse what exists.",
+   "receipt": "Makes your AI agent think like the laziest senior dev in the room.",
+   "errs": []
+  },
+  {
+   "slot": "what",
+   "try": 0,
+   "say": "Ponytail is for AI agents, teaching them to be lazy and reuse existing tools instead of inventing new ones.",
+   "receipt": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
+   "errs": []
+  },
+  {
+   "slot": "what",
+   "try": 0,
+   "say": "Ponytail turns any AI agent into a senior dev who only uses existing code features.",
+   "receipt": "Makes your AI agent think like the laziest senior dev in the room.",
+   "errs": []
+  },
+  {
+   "slot": "how",
+   "try": 0,
+   "say": "It stops at existing features first, skipping new code to reuse what is already there.",
+   "receipt": "| Does this need to exist? → no: skip it (YAGNI) | Already in this codebase? → reuse it, don't rewrite | Stdlib does it? → use it | Native platform feature? → use it",
+   "errs": [
+    "has 15 words, must have 16-26",
+    "receipt not found word for word in the sources: \"does this need to exist? → no: skip it (yagni) already in this codebase? → reuse\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "how",
+   "try": 1,
+   "say": "Before writing, the agent stops at the first rung that holds:",
+   "receipt": "1. Does this need to exist?   → no: skip it (YAGNI)",
+   "errs": [
+    "has 11 words, must have 16-26"
+   ]
+  },
+  {
+   "slot": "how",
+   "try": 2,
+   "say": "The agent checks if existing features solve the problem before writing new code.",
+   "receipt": "Before writing code, the agent stops at the first rung that holds: The ladder runs *after* it understands the problem, not instead of it: it reads the code the",
+   "errs": [
+    "has 13 words, must have 16-26"
+   ]
+  },
+  {
+   "slot": "how",
+   "try": 0,
+   "say": "Before writing code, it checks for existing features and skips creating anything new.",
+   "receipt": "1. Does this need to exist?   → no: skip it (YAGNI)",
+   "errs": [
+    "has 13 words, must have 16-26"
+   ]
+  },
+  {
+   "slot": "how",
+   "try": 1,
+   "say": "Before writing a line, the agent confirms if standard libraries or native platform features already handle that task.",
+   "receipt": "...The ladder runs *after* it understands the problem...",
+   "errs": []
+  },
+  {
+   "slot": "how",
+   "try": 0,
+   "say": "Before writing code, the agent stops at the first rung that holds.",
+   "receipt": "",
+   "errs": [
+    "has 12 words, must have 16-26",
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "how",
+   "try": 1,
+   "say": "The agent checks if a feature exists before writing any new code.",
+   "receipt": "Before writing code, the agent stops at the first rung that holds: The ladder runs *after* it understands the problem, not instead of it: it reads the code the",
+   "errs": [
+    "has 12 words, must have 16-26"
+   ]
+  },
+  {
+   "slot": "how",
+   "try": 2,
+   "say": "Before coding, the agent stops at the first rung that holds; The ladder runs after it understands the problem.",
+   "receipt": "| **ponytail** | **-54%** | **-22%** | **-20%** | **-27%** | **100%**| Before writing code, the agent stops at the first rung that holds: The ladder runs *after* it understands the problem",
+   "errs": [
+    "receipt not found word for word in the sources: \"ponytail -54% -22% -20% -27% 100% before writing code, the agent stops at the fi\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "how2",
+   "try": 0,
+   "say": "Input a date picker request, and see how Ponytail returns just that simple input tag without creating any extra code.",
+   "receipt": "<input type=\"date\"> -54%",
+   "errs": [
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "how2",
+   "try": 1,
+   "say": "Ask for a date picker command to get this exact HTML result.",
+   "receipt": "<input type=\"date\">",
+   "errs": [
+    "has 12 words, must have 16-26",
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "how2",
+   "try": 2,
+   "say": "Ask for a date picker command to get this exact HTML input tag result.",
+   "receipt": "You ask for a date picker.\n<input type=\"date\">\n```",
+   "errs": [
+    "has 14 words, must have 16-26"
+   ]
+  },
+  {
+   "slot": "how2",
+   "try": 0,
+   "say": "Ask for a date picker and get one without writing extra code, using this exact input example from the documentation.",
+   "receipt": "<input type=\"date\">\n```",
+   "errs": [
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "how2",
+   "try": 1,
+   "say": "Input an empty box to request a date picker.",
+   "receipt": "<input type=\"date\">",
+   "errs": [
+    "has 9 words, must have 16-26",
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "how2",
+   "try": 2,
+   "say": "You ask for a date picker with an input tag type set to date.",
+   "receipt": "<input type=\"date\">\n```",
+   "errs": [
+    "has 14 words, must have 16-26",
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "how2",
+   "try": 0,
+   "say": "Ask for a date picker, then Ponytail returns it using native input without writing extra code.",
+   "receipt": "<input type=\"date\"> ... 100% safe Real Claude Code sessions editing a real FastAPI + React repo",
+   "errs": []
+  },
+  {
+   "slot": "proof",
+   "try": 0,
+   "say": "A real agent benchmark showed Ponytail used 54% less lines of code while cutting cost by 20% and time by 27%. This proved the skill makes agents lazy enough to reuse existing features safely.",
+   "receipt": "**ponytail** | **-54%** | **-22%** | **-20%** | **-27%** | **100%**",
+   "errs": [
+    "has 34 words, must have 16-26"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 1,
+   "say": "A benchmark against a no-skill baseline showed Ponytail used -54% less code while cutting cost by -20%. This proves the agent reuses existing features safely.",
+   "receipt": "| **ponytail** | **-54%** | ... | **-20%** |",
+   "errs": [
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 2,
+   "say": "Real sessions on a FastAPI repo proved 54% less code, -20% cost, and -27% time compared to no-skill baseline.",
+   "receipt": "| vs no-skill baseline | LOC | tokens | cost | time | safe |\n| **ponytail** | **-54%** | **-22%** | **-20%** | **-27%** | **100%**|",
+   "errs": []
+  },
+  {
+   "slot": "proof",
+   "try": 0,
+   "say": "Benchmark data shows Ponytail uses 54% less code, costs 20% less, and runs 27% faster than a skillless baseline.",
+   "receipt": "| vs no-skill baseline | LOC | tokens | cost | time |\n| **ponytail** | **-54%** | **-22%** | **-20%** | **-27%** |",
+   "errs": [
+    "receipt not found word for word in the sources: \"vs no-skill baseline loc tokens cost time ponytail -54% -22% -20% -27%\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 1,
+   "say": "Benchmark data shows Ponytail uses 54% less code, costs 20% less, and runs 27% faster than a skillless baseline.",
+   "receipt": "| vs no-skill baseline | LOC | tokens | cost | time | safe |\n| **ponytail** | **-54%** | **-22%** | **-20%** | **-27%** | **100%**",
+   "errs": []
+  },
+  {
+   "slot": "proof",
+   "try": 0,
+   "say": "In a real FastAPI test, Ponytail delivered forty-seven percent fewer lines of code and twenty-two percent less cost than the baseline.",
+   "receipt": "| vs no-skill baseline | LOC | tokens | cost | time | safe |\n| **ponytail** | **-54%** | **-22%** | **-20%** | **-27%** | **100%**|",
+   "errs": [
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 1,
+   "say": "Ponytail reduced lines of code by fifty-four percent while cutting cost by twenty percent.",
+   "receipt": "**ponytail** | **-54%** ... **-20%\"",
+   "errs": [
+    "has 14 words, must have 16-26",
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words",
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 2,
+   "say": "A real agent benchmark showed ponytail reduced lines of code by fifty-four percent compared to a no-skill baseline.",
+   "receipt": "| vs no-skill baseline | LOC |\n| **ponytail** | **-54%**|",
+   "errs": [
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words",
+    "receipt not found word for word in the sources: \"vs no-skill baseline loc ponytail -54%\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 0,
+   "say": "It also reduced token use by 22% and kept safety at one hundred percent.",
+   "receipt": "| vs no-skill baseline | LOC | tokens | cost | time | safe |\n| **ponytail** | **-54%** | **-22%** | **-20%** | **-27%** | **100%**|",
+   "errs": [
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 1,
+   "say": "The benchmark recorded -54% fewer lines of code.",
+   "receipt": "| **ponytail** | **-54%**",
+   "errs": [
+    "has 8 words, must have 14-24",
+    "repeats a number already said: 54",
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 2,
+   "say": "The agent stopped writing code by reusing existing platform features, resulting in -20% cost.",
+   "receipt": "~155947 GitHub stars, main language JavaScript | ~54% less code (up to 94%) &middot; ~20% cheaper &middot; ~27% faster ...",
+   "errs": [
+    "repeats a number already said: 20",
+    "receipt not found word for word in the sources: \"~155947 github stars, main language javascript ~54% less code (up to 94%) &middo\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 0,
+   "say": "Ponytail also uses 22% fewer tokens for one completion. It keeps systems safe with zero bugs and ten percent uptime.",
+   "receipt": "tokens | cost | time | safe \n| **-22%** | **-20%** | **-27%** | **100%**",
+   "errs": [
+    "write every number in digits exactly as in the facts, never in words",
+    "receipt not found word for word in the sources: \"tokens cost time safe -22% -20% -27% 100%\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 1,
+   "say": "Ponytail reduced token usage by twenty-two percent on single completions.",
+   "receipt": "| **ponytail** | **-54%** | **-22%** |",
+   "errs": [
+    "has 10 words, must have 14-24",
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words",
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 2,
+   "say": "Ponytail cut twenty-two percent of tokens while keeping safety at a full hundred.",
+   "receipt": "-22% | 100%",
+   "errs": [
+    "has 13 words, must have 14-24",
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words",
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 0,
+   "say": "Ponytail found zero bugs and zero CVEs to keep uptime at 100%.",
+   "receipt": "Zero bugs, zero CVEs, 100% uptime since forever.",
+   "errs": [
+    "has 12 words, must have 14-24"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 1,
+   "say": "Zero bugs mean zero CVEs for a perfect safety record.",
+   "receipt": "Zero bugs, zero CVEs, 100% uptime since forever.",
+   "errs": [
+    "has 10 words, must have 14-24",
+    "must contain a number from the facts"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 2,
+   "say": "Ponytail keeps uptime at 100% forever.",
+   "receipt": "Zero bugs, zero CVEs, 100% uptime since forever.",
+   "errs": [
+    "has 6 words, must have 14-24"
+   ]
+  },
+  {
+   "slot": "detail",
+   "try": 0,
+   "say": "Before coding, it checks for existing solutions and skips features that are already in your codebase.",
+   "receipt": "| ---|--:| | **ponytail** | **-54%**",
+   "errs": [
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "detail",
+   "try": 1,
+   "say": "/ponytail-debt gathers deferred shortcuts into a ledger so later tasks do not become never.",
+   "receipt": "`/ponytail-debt` | Harvest the `ponytail:` shortcuts you've deferred into a ledger, so \"later\" doesn't become \"never\".",
+   "errs": []
+  },
+  {
+   "slot": "detail",
+   "try": 0,
+   "say": "It audits whole repos to harvest deferred shortcuts into a ledger so later never becomes.",
+   "receipt": "/ponytail-debt | Harvest the `ponytail:` shortcuts you've deferred into a ledger, so \"later\" doesn't become \"never\":",
+   "errs": [
+    "receipt not found word for word in the sources: \"/ponytail-debt harvest the ponytail: shortcuts you've deferred into a ledger, so\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "detail",
+   "try": 1,
+   "say": "Run /ponytail-audit to audit the whole repo for over-engineering.",
+   "receipt": "/ponytail-audit Audit the whole repo for over-engineering",
+   "errs": [
+    "has 9 words, must have 14-24"
+   ]
+  },
+  {
+   "slot": "detail",
+   "try": 2,
+   "say": "Run slash ponytail dash debt to harvest shortcuts you deferred into a ledger so later does not become never.",
+   "receipt": "/ponytail-debt | Harvest the `ponytail:` shortcuts you've deferred into a ledger, so 'later' doesn't become 'never'",
+   "errs": [
+    "receipt not found word for word in the sources: \"/ponytail-debt harvest the ponytail: shortcuts you've deferred into a ledger, so\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "detail",
+   "try": 0,
+   "say": "/ponytail-review returns a delete-list showing which new features were over-engineered instead of reused.",
+   "receipt": "| Command | What it does |\n| `/ponytail-review` | Review the current diff for over-engineering, hands back a delete-list.",
+   "errs": [
+    "has 13 words, must have 14-24",
+    "receipt not found word for word in the sources: \"command what it does /ponytail-review review the current diff for over-engineeri\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "detail",
+   "try": 1,
+   "say": "/ponytail-audit checks your entire repo not just diffs to find everywhere you can reuse existing code instead of adding new files.",
+   "receipt": "| /ponytail-audit | Audit the whole repo for over-engineering, not just the diff.|",
+   "errs": []
+  },
+  {
+   "slot": "detail2",
+   "try": 0,
+   "say": "Install via plugin marketplace to start now.",
+   "receipt": "/plugin install ponytail@ponytail",
+   "errs": [
+    "has 7 words, must have 12-22",
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "detail2",
+   "try": 1,
+   "say": "Install ponytail@ponytail to set intensity before running.",
+   "receipt": "/plugin marketplace add DietrichGebert/ponytail ... /plugin install ponytail@ponytail",
+   "errs": [
+    "has 7 words, must have 12-22"
+   ]
+  },
+  {
+   "slot": "detail2",
+   "try": 2,
+   "say": "Install the plugin with a simple command on your host of choice.",
+   "receipt": "/plugin marketplace add DietrichGebert/ponytail",
+   "errs": [
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "detail2",
+   "try": 0,
+   "say": "/ponytail needs a skill-capable host like Claude Code, and installing it is one simple command.",
+   "receipt": "Commands need a skill-capable host (Claude Code ... plugin install ponytail@ponytail",
+   "errs": []
+  },
+  {
+   "slot": "detail2",
+   "try": 0,
+   "say": "Install via plugin marketplace to enable skills for agents like Claude Code or Codex.",
+   "receipt": "/plugin marketplace add DietrichGebert/ponytail",
+   "errs": [
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "detail2",
+   "try": 1,
+   "say": "Install ponytail as a plugin, then audit your repo with /ponytail-audit to find over-engineering.",
+   "receipt": "/plugin marketplace add DietrichGebert/ponytail ... /ponytail-debt",
+   "errs": []
+  },
+  {
+   "slot": "trust",
+   "try": 0,
+   "say": "DietrichGebert built it with MIT license and 155,947 GitHub stars.",
+   "receipt": "MIT.\nF0: DietrichGebert/ponytail\nF1: 155,947 GitHub stars",
+   "errs": [
+    "has 10 words, must have 12-20",
+    "receipt not found word for word in the sources: \"mit. f0: dietrichgebert/ponytail f1: 155,947 github stars\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "trust",
+   "try": 1,
+   "say": "DietrichGebert built the MIT licensed project with 155,947 GitHub stars.",
+   "receipt": "MIT. ... DietrichGebert/ponytail: Makes your AI agent think like the laziest senior dev in the room.",
+   "errs": [
+    "has 10 words, must have 12-20"
+   ]
+  },
+  {
+   "slot": "trust",
+   "try": 2,
+   "say": "DietrichGebert built the MIT licensed project with 155947 GitHub stars.",
+   "receipt": "F1: 155,947 GitHub stars, main language JavaScript\nLICENSE (for meaning, not for numbers): ... \n### License\nMIT.",
+   "errs": [
+    "has 10 words, must have 12-20",
+    "receipt not found word for word in the sources: \"f1: 155,947 github stars, main language javascript license (for meaning, not for\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "trust",
+   "try": 0,
+   "say": "Dietrich Gebert built this for MIT-licensed AI agents with 155,947 stars.",
+   "receipt": "F0: DietrichGebert/ponytail ... F1: 155,947 GitHub stars",
+   "errs": [
+    "has 11 words, must have 12-20"
+   ]
+  },
+  {
+   "slot": "trust",
+   "try": 1,
+   "say": "Dietrich Gebert built the MIT-licensed tool with over 155 thousand GitHub stars that users trust.",
+   "receipt": "MIT ... DietrichGebert/ponytail: Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
+   "errs": [
+    "numbers not in the facts: 155 (copy numbers verbatim from the facts)",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "trust",
+   "try": 2,
+   "say": "Dietrich Gebert built this MIT-licensed tool with over 155947 GitHub stars that users trust.",
+   "receipt": "F0: DietrichGebert/ponytail ... F2: ~54% less code (up to 94%) &middot; ~20% cheaper &middot; ~27% faster &middot; 100% safe Real Claude Code sessions editing a real FastAPI + React repo",
+   "errs": []
+  },
+  {
+   "slot": "trust",
+   "try": 0,
+   "say": "Created by DietrichGebert, it has over 155 thousand stars and users trust its MIT license.",
+   "receipt": "F0: DietrichGebert/ponytail: Makes your AI agent think like the laziest senior dev in the room.",
+   "errs": [
+    "numbers not in the facts: 155 (copy numbers verbatim from the facts)",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "trust",
+   "try": 1,
+   "say": "Created by DietrichGebert with over 155947 stars under an MIT license.",
+   "receipt": "F0: DietrichGebert/ponytail ... F2: ~54% less code (up to 94%) &middot; ~20% cheaper &middot; ~27% faster &middot; 100% safe Real Claude Code sessions editing a real FastAPI + React repo, the same agent with and with",
+   "errs": [
+    "has 11 words, must have 12-20"
+   ]
+  },
+  {
+   "slot": "trust",
+   "try": 2,
+   "say": "Dietrich Gebert built this project with over 155947 stars under an MIT license.",
+   "receipt": "MIT ... DietrichGebert/ponytail: Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
+   "errs": []
+  },
+  {
+   "slot": "start",
+   "try": 0,
+   "say": "Run this command to install, then ask for a date picker and see Ponytail return it using native input.",
+   "receipt": "/plugin marketplace add DietrichGebert/ponytail ... <input type=\"date\">\n```",
+   "errs": [
+    "repeats words an earlier line already said: \"ask for a date\" - say something new"
+   ]
+  },
+  {
+   "slot": "start",
+   "try": 1,
+   "say": "Run this install command, then call /ponytail to stop writing code you never wrote.",
+   "receipt": "/plugin marketplace add DietrichGebert/ponytail ... Makes your AI agent think like the laziest senior dev in the room.",
+   "errs": [
+    "repeats words an earlier line already said: \"stop writing code you\" - say something new"
+   ]
+  },
+  {
+   "slot": "start",
+   "try": 2,
+   "say": "/plugin install ponytail@ponytail opens the hooks folder for your agent to reuse existing features.",
+   "receipt": "```/plugin marketplace add DietrichGebert/ponytail\n/plugin install ponytail@ponytail\ntimeli: trust its two lifecycle hooks",
+   "errs": [
+    "receipt not found word for word in the sources: \"/plugin marketplace add dietrichgebert/ponytail /plugin install ponytail@ponytai\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "start",
+   "try": 0,
+   "say": "Run this command to install, then name a feature you want Ponytail to reuse in your next edit.",
+   "receipt": "/plugin marketplace add DietrichGebert/ponytail",
+   "errs": [
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "start",
+   "try": 1,
+   "say": "/plugin marketplace add DietrichGebert/ponytail, then ask for a date picker to see native input without extra code.",
+   "receipt": "One prompt: `skills/ponytail/SKILL.md`. <input type=\"date\">",
+   "errs": [
+    "repeats words an earlier line already said: \"ask for a date\" - say something new",
+    "receipt not found word for word in the sources: \"one prompt: skills/ponytail/skill.md . <input type=\"date\"\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "start",
+   "try": 2,
+   "say": "/plugin install ponytail@ponytail sets up your agent to reuse existing features before creating new code.",
+   "receipt": "`/plugin install ponytail@ponytail` ... Before writing a line, the agent confirms if standard libraries or native platform features already handle that task.",
+   "errs": [
+    "repeats words an earlier line already said: \"existing features before creating\" - say something new",
+    "receipt not found word for word in the sources: \"before writing a line, the agent confirms if standard libraries or native platfo\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "start",
+   "try": 0,
+   "say": "Install with this command then type slash ponytail to start.",
+   "receipt": "/plugin marketplace add DietrichGebert/ponytail ... /ponytail [lite | full | ultra | off]",
+   "errs": [
+    "has 10 words, must have 12-20"
+   ]
+  },
+  {
+   "slot": "start",
+   "try": 1,
+   "say": "Install the plugin using that command line, then run slash ponytail full.",
+   "receipt": "/plugin marketplace add DietrichGebert/ponytail ... /ponytail [lite | full | ultra | off]",
+   "errs": []
+  },
+  {
+   "slot": "share",
+   "try": 0,
+   "say": "Send this to someone who builds full stacks, then use /ponytail-debt to harvest deferred shortcuts into a ledger.",
+   "receipt": "/ponytail-debt | Harvest the `ponytail:` shortcuts you've deferred into a ledger",
+   "errs": [
+    "has 18 words, must have 10-16",
+    "repeats words an earlier line already said: \"deferred shortcuts into a\" - say something new"
+   ]
+  },
+  {
+   "slot": "share",
+   "try": 1,
+   "say": "Send this to someone who writes code they won't use.",
+   "receipt": "The best code is the code you never wrote.",
+   "errs": []
+  },
+  {
+   "slot": "share",
+   "try": 0,
+   "say": "Send this to someone who writes too much code, because Ponytail proves 80-94% less lines are created.",
+   "receipt": "This showed **80-94%** less code.",
+   "errs": [
+    "has 17 words, must have 10-16"
+   ]
+  },
+  {
+   "slot": "share",
+   "try": 1,
+   "say": "Send this to someone who writes too much code; Ponytail creates far fewer lines.",
+   "receipt": "Ponytail makes your AI agent think like the laziest senior dev in the room.",
+   "errs": []
+  },
+  {
+   "slot": "share",
+   "try": 0,
+   "say": "Send this to someone who writes too much code, because Ponytail proves it reduces lines by fifty-four percent ... and cuts costs by twenty percent.",
+   "receipt": "-54% | -20%",
+   "errs": [
+    "has 25 words, must have 10-16",
+    "no '...' in the spoken line (that belongs in the receipt only)",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "share",
+   "try": 1,
+   "say": "Send this to someone who writes too much code, because Ponytail reduces lines by -54%.",
+   "receipt": "**ponytail** | **-54%**",
+   "errs": [
+    "repeats a number already said: 54"
+   ]
+  },
+  {
+   "slot": "share",
+   "try": 2,
+   "say": "Save this for your team that reuses existing features before writing new ones.",
+   "receipt": "Before writing code, the agent confirms if standard libraries or native platform features already handle that task.",
+   "errs": []
+  },
+  {
+   "slot": "end",
+   "try": 0,
+   "say": "Stop writing code you will never write, because this tool makes agents use what already exists.",
+   "receipt": "The best code is the code you never wrote.",
+   "errs": [
+    "has 16 words, must have 6-12",
+    "repeats words an earlier line already said: \"code you will never\" - say something new"
+   ]
+  },
+  {
+   "slot": "end",
+   "try": 1,
+   "say": "Ponytail lets your agent skip building anything unnecessary.",
+   "receipt": "The best code is the code you never wrote.",
+   "errs": []
+  },
+  {
+   "slot": "end",
+   "try": 0,
+   "say": "Ponytail is the code you never write.",
+   "receipt": "The best code is the code you never wrote.",
+   "errs": []
+  },
+  {
+   "slot": "end",
+   "try": 0,
+   "say": "Use Ponytail to stop writing code you never will.",
+   "receipt": "The best code is the code you never wrote.",
+   "errs": [
+    "repeats words an earlier line already said: \"stop writing code you\" - say something new"
+   ]
+  },
+  {
+   "slot": "end",
+   "try": 1,
+   "say": "Ponytail uses existing features before creating anything.",
+   "receipt": "Before writing a line, the agent confirms if standard libraries or native platform features already handle that task.",
+   "errs": [
+    "repeats words an earlier line already said: \"existing features before creating\" - say something new"
+   ]
+  },
+  {
+   "slot": "end",
+   "try": 2,
+   "say": "Ponytail is the best code you never wrote.",
+   "receipt": "The best code is the code you never wrote.",
+   "errs": [
+    "no superlatives unless the facts say exactly that"
+   ]
+  }
+ ]
+}

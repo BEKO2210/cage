@@ -1,0 +1,381 @@
+{
+ "lines": [
+  "Statim reaches 68 decisions per second on one RTX 3070. That's 11.6 milliseconds per decision.",
+  "Statim solves slow, complex decision models. Developers face delays with Python and ONNX Runtime.",
+  "Statim is a native C++20 engine for System-1 decision models. It's for developers needing fast, reliable results without Python.",
+  "Statim uses a single binary and .gguf file for speed. It runs Laya checkpoints directly without Python or ORT overhead.",
+  "A user asks about a ticket's urgency. Statim returns a score of 1.585, labeled as 'soon' in the response.",
+  "Statim outperforms ORT on short inputs, hitting 257 ms vs 266 ms per state.",
+  "Statim handles 1,024 tokens in 4,399 ms. ORT takes 11,421 ms for the same task.",
+  "Statim runs any Laya checkpoint. It handles 3,880 items in S1Bench with 0.638 macro accuracy.",
+  "With 1 GitHub star, Statim is open-source and Apache-2.0 licensed. It’s trusted by developers needing fast, reliable results.",
+  "How to start: Download the engine and model with these commands. Verify and extract the files first.",
+  "Save this for someone stuck with Python delays. Share if they need fast decisions.",
+  "Statim cuts Python delays. Try it now."
+ ],
+ "words": 187,
+ "log": [
+  {
+   "slot": "hook",
+   "try": 0,
+   "say": "Statim reaches 68 decisions per second on one RTX 3070. That's 11.6 milliseconds per decision.",
+   "errs": []
+  },
+  {
+   "slot": "hook",
+   "try": 0,
+   "say": "Statim decides 68 queries per second on one RTX 3070. That's 11.6 milliseconds per decision.",
+   "errs": []
+  },
+  {
+   "slot": "hook",
+   "try": 0,
+   "say": "Statim runs 68 decisions per second on one RTX 3070. That's 11.6 ms per decision.",
+   "errs": []
+  },
+  {
+   "slot": "problem",
+   "try": 0,
+   "say": "Statim solves slow, complex decision-making in text. Developers face delays with Python and PyTorch dependencies.",
+   "errs": []
+  },
+  {
+   "slot": "problem",
+   "try": 0,
+   "say": "Statim solves slow, complex decision models. Developers face delays with Python and ONNX Runtime.",
+   "errs": []
+  },
+  {
+   "slot": "problem",
+   "try": 0,
+   "say": "Statim solves slow, complex decision models. Developers face delays with Python-based systems.",
+   "errs": []
+  },
+  {
+   "slot": "what",
+   "try": 0,
+   "say": "Statim is a fast, native C++20 engine for System-1 decision models. It’s built for developers needing speed and accuracy without Python.",
+   "errs": [
+    "has 21 words, must have 12-20"
+   ]
+  },
+  {
+   "slot": "what",
+   "try": 1,
+   "say": "Statim is a fast C++20 engine for System-1 decision models. It’s for developers needing speed without Python.",
+   "errs": []
+  },
+  {
+   "slot": "what",
+   "try": 0,
+   "say": "Statim is a fast C++20 engine for decision models. It's for developers needing speed without Python dependencies.",
+   "errs": []
+  },
+  {
+   "slot": "what",
+   "try": 0,
+   "say": "Statim is a native C++20 engine for System-1 decision models. It's for developers needing fast, reliable results without Python.",
+   "errs": []
+  },
+  {
+   "slot": "how",
+   "try": 0,
+   "say": "Statim uses a single binary and .gguf file for speed. It runs Laya checkpoints directly without Python or ORT overhead.",
+   "errs": []
+  },
+  {
+   "slot": "how",
+   "try": 0,
+   "say": "Statim uses a single binary and .gguf file for speed. It runs Laya checkpoints directly without Python.",
+   "errs": []
+  },
+  {
+   "slot": "how",
+   "try": 0,
+   "say": "Statim uses a single binary and .gguf file for speed. It runs Laya checkpoints directly without Python, making it faster and lighter.",
+   "errs": []
+  },
+  {
+   "slot": "how2",
+   "try": 0,
+   "say": "A user asks about a ticket's urgency. Statim returns a score of 1.585, labeled as 'soon'.",
+   "errs": []
+  },
+  {
+   "slot": "how2",
+   "try": 0,
+   "say": "A user asks about a ticket's urgency. Statim returns a score of 1.585, labeled as 'soon' in the response.",
+   "errs": []
+  },
+  {
+   "slot": "how2",
+   "try": 0,
+   "say": "A user asks about a ticket's urgency. Statim returns a score of 1.585, labeled as 'soon' in the response.",
+   "errs": []
+  },
+  {
+   "slot": "proof",
+   "try": 0,
+   "say": "Statim achieves 68 decisions/s on RTX 3070. ONNX Runtime only reaches 6 decisions/s on same hardware.",
+   "errs": [
+    "repeats a number already said: 68, 3070"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 1,
+   "say": "Statim reaches 68 decisions/s on RTX 3070. ONNX Runtime only reaches 6 decisions/s on same hardware.",
+   "errs": [
+    "repeats a number already said: 68, 3070"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 2,
+   "say": "Statim reaches 68 decisions/s on RTX 3070. ONNX Runtime only reaches 6 decisions/s on same hardware.",
+   "errs": [
+    "repeats a number already said: 68, 3070"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 0,
+   "say": "Statim outperforms ORT on short inputs, hitting 257 ms vs 266 ms per state.",
+   "errs": []
+  },
+  {
+   "slot": "proof",
+   "try": 0,
+   "say": "Statim outperforms ORT on short inputs, hitting 257 ms vs 266 ms per state.",
+   "errs": []
+  },
+  {
+   "slot": "proof2",
+   "try": 0,
+   "say": "Statim handles 1,024 tokens in 4,399 ms. ONNX Runtime takes 11,421 ms for the same task.",
+   "errs": []
+  },
+  {
+   "slot": "proof2",
+   "try": 0,
+   "say": "Statim handles 1,024 tokens in 4,399 ms. ORT takes 11,421 ms for the same task.",
+   "errs": []
+  },
+  {
+   "slot": "proof2",
+   "try": 0,
+   "say": "Statim handles 3,880 items in S1Bench with 0.638 macro accuracy. It outperforms Laya's base model by 0.068.",
+   "errs": [
+    "numbers not in the facts: 0.068 (copy numbers verbatim from the facts)"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 1,
+   "say": "Statim runs 3,880 items in S1Bench with 0.638 macro accuracy. It outperforms Laya's base model by 0.068.",
+   "errs": [
+    "numbers not in the facts: 0.068 (copy numbers verbatim from the facts)"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 2,
+   "say": "Statim handles 3,880 items in S1Bench with 0.638 macro accuracy. It outperforms Laya's base model by 0.068.",
+   "errs": [
+    "numbers not in the facts: 0.068 (copy numbers verbatim from the facts)"
+   ]
+  },
+  {
+   "slot": "detail",
+   "try": 0,
+   "say": "Statim runs any Laya checkpoint. It handles 3,880 items in S1Bench with 0.638 macro accuracy.",
+   "errs": []
+  },
+  {
+   "slot": "detail",
+   "try": 0,
+   "say": "Statim handles 3,906 cases and 140k fuzz strings with exact token matching. It’s 10x faster than Python-based solutions.",
+   "errs": [
+    "spoken words only: no code marks, no 15k-style shortcuts (say the full number from the facts)"
+   ]
+  },
+  {
+   "slot": "detail",
+   "try": 1,
+   "say": "Statim matches 3,906 cases and 140k fuzz strings exactly. It's 10x faster than Python-based solutions.",
+   "errs": [
+    "spoken words only: no code marks, no 15k-style shortcuts (say the full number from the facts)"
+   ]
+  },
+  {
+   "slot": "detail",
+   "try": 2,
+   "say": "Statim handles 3,906 cases and 140k fuzz strings exactly. It's 10x faster than Python-based solutions.",
+   "errs": [
+    "spoken words only: no code marks, no 15k-style shortcuts (say the full number from the facts)"
+   ]
+  },
+  {
+   "slot": "detail",
+   "try": 0,
+   "say": "Statim handles 3,906 cases and 140k fuzz strings with identical tokenizer. It's 10x faster than Python-based alternatives.",
+   "errs": [
+    "spoken words only: no code marks, no 15k-style shortcuts (say the full number from the facts)"
+   ]
+  },
+  {
+   "slot": "detail",
+   "try": 1,
+   "say": "Statim handles 3,906 cases and 140k fuzz strings with identical tokenizer. It's 10x faster than Python-based alternatives.",
+   "errs": [
+    "spoken words only: no code marks, no 15k-style shortcuts (say the full number from the facts)"
+   ]
+  },
+  {
+   "slot": "detail",
+   "try": 2,
+   "say": "Statim handles 3,906 cases and 140k fuzz strings with identical tokenizer. It's 10x faster than Python-based alternatives.",
+   "errs": [
+    "spoken words only: no code marks, no 15k-style shortcuts (say the full number from the facts)"
+   ]
+  },
+  {
+   "slot": "trust",
+   "try": 0,
+   "say": "With 1 GitHub star, Statim is open-source and Apache-2.0 licensed. It’s trusted by developers needing fast, reliable results.",
+   "errs": []
+  },
+  {
+   "slot": "trust",
+   "try": 0,
+   "say": "Statim has 1 GitHub star and is open-source under Apache-2.0. It’s used by developers needing fast, reliable decision models without Python.",
+   "errs": [
+    "has 21 words, must have 10-18"
+   ]
+  },
+  {
+   "slot": "trust",
+   "try": 1,
+   "say": "Statim has 1 GitHub star and is open-source. Developers use it for fast, reliable decision models without Python.",
+   "errs": []
+  },
+  {
+   "slot": "trust",
+   "try": 0,
+   "say": "Statim has 1 GitHub star and uses Apache-2.0 license. It’s built by developers for developers needing fast, reliable decision models.",
+   "errs": [
+    "has 20 words, must have 10-18"
+   ]
+  },
+  {
+   "slot": "trust",
+   "try": 1,
+   "say": "Statim has 1 GitHub star. It’s built by developers for fast, reliable decision models.",
+   "errs": []
+  },
+  {
+   "slot": "start",
+   "try": 0,
+   "say": "How to start: Download the engine and model with these curl commands. Verify and extract the files first.",
+   "errs": []
+  },
+  {
+   "slot": "start",
+   "try": 0,
+   "say": "How to start: Download the engine and model with these commands. Verify and extract the files first.",
+   "errs": []
+  },
+  {
+   "slot": "start",
+   "try": 0,
+   "say": "How to start: download the engine and model with these commands. Verify and extract the files first.",
+   "errs": []
+  },
+  {
+   "slot": "share",
+   "try": 0,
+   "say": "Save this for someone needing fast, reliable decision models. Share it if they’re stuck with Python delays.",
+   "errs": [
+    "has 17 words, must have 8-14"
+   ]
+  },
+  {
+   "slot": "share",
+   "try": 1,
+   "say": "Save this for someone stuck with Python delays. Share it if they need fast results.",
+   "errs": [
+    "has 15 words, must have 8-14"
+   ]
+  },
+  {
+   "slot": "share",
+   "try": 2,
+   "say": "Save this for someone stuck with Python delays. Share if they need fast results.",
+   "errs": []
+  },
+  {
+   "slot": "share",
+   "try": 0,
+   "say": "Save this for a developer needing fast, reliable decision models. Share it with someone who wants speed without Python.",
+   "errs": [
+    "has 19 words, must have 8-14"
+   ]
+  },
+  {
+   "slot": "share",
+   "try": 1,
+   "say": "Save this for a developer needing fast, reliable models. Share it with someone who wants speed without Python.",
+   "errs": [
+    "has 18 words, must have 8-14"
+   ]
+  },
+  {
+   "slot": "share",
+   "try": 2,
+   "say": "Save this for a developer needing fast models. Share it with someone who wants speed without Python.",
+   "errs": [
+    "has 17 words, must have 8-14"
+   ]
+  },
+  {
+   "slot": "share",
+   "try": 0,
+   "say": "Save this for someone needing fast, reliable decision models. Share it if they’re stuck with Python delays.",
+   "errs": [
+    "has 17 words, must have 8-14"
+   ]
+  },
+  {
+   "slot": "share",
+   "try": 1,
+   "say": "Save this for someone stuck with Python delays. Share it if they need fast decisions.",
+   "errs": [
+    "has 15 words, must have 8-14"
+   ]
+  },
+  {
+   "slot": "share",
+   "try": 2,
+   "say": "Save this for someone stuck with Python delays. Share if they need fast decisions.",
+   "errs": []
+  },
+  {
+   "slot": "end",
+   "try": 0,
+   "say": "Statim handles 10x faster. Try it now.",
+   "errs": []
+  },
+  {
+   "slot": "end",
+   "try": 0,
+   "say": "Statim runs Laya checkpoints. Try it today.",
+   "errs": []
+  },
+  {
+   "slot": "end",
+   "try": 0,
+   "say": "Statim cuts Python delays. Try it now.",
+   "errs": []
+  }
+ ]
+}

@@ -1,0 +1,11 @@
+{
+ "lines": [
+  "This tiny engine beats an 8B-parameter LLM. And it's 11× faster.",
+  "OpenMontage is the world's first open-source, agentic video production system. It turns your AI coding assistant into a full studio.",
+  "Starting from a reference video you love is often faster than starting blank. The agent analyzes pacing and hook style automatically.",
+  "OpenMontage uses an **agent-first architecture** with 100+ registered production tools. Every major choice runs through a strict scoring engine for quality and cost.",
+  "You don't need paid API keys to make real videos with offline narration. Human approval gates are enforced at every stage to ensure safety."
+ ],
+ "words": 99,
+ "log": []
+}

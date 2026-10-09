@@ -1,0 +1,916 @@
+{
+ "lines": [
+  "Strata reads your prompt at 2650 tokens per second.",
+  "It lets you run a 125-billion-parameter AI model on your own gaming PC with NVIDIA or AMD graphics cards.",
+  "Strata is an open-source app for gaming PC users that runs this AI model locally on your hardware.",
+  "Strata reads part of the model from storage, so a smaller card can run larger versions.",
+  "Open http://127.0.0.1:8080 in the browser to see a coding agent write the pagoda garden.",
+  "It reaches 91% of the full model's SWE-bench Verified score and fits in 32 GB of RAM.",
+  "You can also use Strata with French, German, Japanese, Portuguese, Simplified Chinese, or Spanish.",
+  "The Qwen team made this open-source app, and it has 16905 GitHub stars.",
+  "Git clone this repo or run the installer to set it up.",
+  "Save this for anyone wanting a local AI on their own gaming PC.",
+  "Run Qwen on your own PC with Strata."
+ ],
+ "words": 153,
+ "log": [
+  {
+   "slot": "hook",
+   "try": 0,
+   "say": "Strata runs a 125-billion-parameter AI model on any gaming PC with twelve GB of graphics memory.",
+   "receipt": "Run a 125-billion-parameter AI model on your own gaming PC NVIDIA or AMD graphics card (12 GB or more)",
+   "errs": [
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "hook",
+   "try": 1,
+   "say": "Strata runs a 125-billion-parameter model on gaming PCs with twelve GB of graphics memory.",
+   "receipt": "Run a 125-billion-parameter AI model ... NVIDIA or AMD graphics card (12 GB or more)",
+   "errs": [
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "hook",
+   "try": 2,
+   "say": "Strata loads a 125 billion parameter AI onto your own PC.",
+   "receipt": "Run a 125-billion-parameter AI model on your own gaming PC",
+   "errs": [
+    "has 11 words, must have 12-20",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "hook",
+   "try": 0,
+   "say": "This AI writes 94 tokens per second on a gaming PC.",
+   "receipt": "| Size | Writes answers |\n| **Q2_0** | 94 tokens/s",
+   "errs": [
+    "has 11 words, must have 12-20",
+    "receipt not found word for word in the sources: \"size writes answers q2 0 94 tokens/s\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "hook",
+   "try": 1,
+   "say": "This AI writes 94 tokens per second on a gaming PC.",
+   "receipt": "| **Q2_0** | 94 tokens/s",
+   "errs": [
+    "has 11 words, must have 12-20",
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "hook",
+   "try": 2,
+   "say": "This AI writes 94 tokens per second while starting.",
+   "receipt": "| **Q2_0** | 94 tokens/s | 2,650 tokens/s|",
+   "errs": [
+    "has 9 words, must have 12-20"
+   ]
+  },
+  {
+   "slot": "hook",
+   "try": 0,
+   "say": "This AI runs on a gaming PC and writes 94 tokens per second.",
+   "receipt": "Q2_0 | 94 tokens/s",
+   "errs": [
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "hook",
+   "try": 1,
+   "say": "Strata reads your prompt at two thousand six hundred fifty tokens per second.",
+   "receipt": "| **Q2_0** | 94 tokens/s | 2,650 tokens/s|",
+   "errs": [
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "hook",
+   "try": 2,
+   "say": "Strata reads your prompt at 2650 tokens per second.",
+   "receipt": "| **Q2_0** | 94 tokens/s | 2,650 tokens/s",
+   "errs": [
+    "has 9 words, must have 12-20"
+   ]
+  },
+  {
+   "slot": "problem",
+   "try": 0,
+   "say": "It lets you run a 125-billion-parameter AI model on your own gaming PC with NVIDIA or AMD graphics cards.",
+   "receipt": "Run a 125-billion-parameter AI model on your own gaming PC NVIDIA or AMD graphics card",
+   "errs": []
+  },
+  {
+   "slot": "problem",
+   "try": 0,
+   "say": "Developers feel blocked when AI tools need expensive servers instead of their own PCs.",
+   "receipt": "",
+   "errs": [
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "problem",
+   "try": 1,
+   "say": "Developers face a problem where powerful coding assistants only run on far-away expensive servers instead of their own machines.",
+   "receipt": "Models like this one usually run on servers with hundreds of gigabytes of graphics memory.",
+   "errs": [
+    "marketing filler word: powerful"
+   ]
+  },
+  {
+   "slot": "problem",
+   "try": 2,
+   "say": "Developers struggle because advanced AI tools require distant, costly cloud services rather than running locally.",
+   "receipt": "Do you use an AI coding assistant (Claude Code, Cursor, Codex, GitHub Copilot, ...)? Models like this one usually run on servers with hundreds of gigabytes of graphics memory.",
+   "errs": [
+    "receipt not found word for word in the sources: \")? models like this one usually run on servers with hundreds of gigabytes of gra\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "problem",
+   "try": 0,
+   "say": "Developers pay for expensive cloud AI tools they can't control.",
+   "receipt": "Do you use an AI coding assistant (Claude Code, Cursor, Codex, GitHub Copilot, ...)",
+   "errs": [
+    "has 10 words, must have 14-24"
+   ]
+  },
+  {
+   "slot": "problem",
+   "try": 1,
+   "say": "Developers waste money on costly cloud services instead of running powerful models locally.",
+   "receipt": "Models like this one usually run on servers with hundreds of gigabytes of graphics memory.",
+   "errs": [
+    "has 13 words, must have 14-24",
+    "marketing filler word: powerful"
+   ]
+  },
+  {
+   "slot": "problem",
+   "try": 2,
+   "say": "Developers pay for expensive cloud servers to run AI instead of using their own PC.",
+   "receipt": "Do you use an AI coding assistant (Claude Code, Cursor, Codex, GitHub Copilot, ...)? | Models like this one usually run on servers with hundreds of gigabytes of graphics memory.",
+   "errs": [
+    "receipt not found word for word in the sources: \")? models like this one usually run on servers with hundreds of gigabytes of gra\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "what",
+   "try": 0,
+   "say": "Strata runs a powerful local AI on consumer gaming PCs with NVIDIA or AMD graphics cards for developers.",
+   "receipt": "Run a 125-billion-parameter AI model on your own gaming PC NVIDIA or AMD graphics car ... The installer sets up everything else. | Graphics card | NVIDIA GeForce RTX 20, 30, 40 or 50 series, or AMD Radeon RX",
+   "errs": [
+    "marketing filler word: powerful",
+    "repeats words an earlier line already said: \"nvidia or amd graphics\" - say something new"
+   ]
+  },
+  {
+   "slot": "what",
+   "try": 1,
+   "say": "Strata is a local inference engine that runs AI on any consumer hardware.",
+   "receipt": "F0: Niko1221/Strata: Qwen3.8-Flash-Next on any consumer hardware",
+   "errs": [
+    "has 13 words, must have 14-22"
+   ]
+  },
+  {
+   "slot": "what",
+   "try": 2,
+   "say": "Strata lets you run advanced models like Qwen directly on your own computer using NVIDIA or AMD graphics cards.",
+   "receipt": "Run a 125-billion-parameter AI model on your own gaming PC NVIDIA or AMD graphics card",
+   "errs": [
+    "repeats words an earlier line already said: \"nvidia or amd graphics\" - say something new"
+   ]
+  },
+  {
+   "slot": "what",
+   "try": 0,
+   "say": "Strata is an open-source app for gaming PC users that runs this AI model locally on your hardware.",
+   "receipt": "Run a 125-billion-parameter AI model on your own gaming PC NVIDIA or AMD graphics card ... Strata is free and open source",
+   "errs": []
+  },
+  {
+   "slot": "what",
+   "try": 0,
+   "say": "Strata is an engine for local AI inference on consumer hardware.",
+   "receipt": "\"Strata inference engine\" ... \"on localhost\"",
+   "errs": [
+    "has 11 words, must have 14-22",
+    "receipt not found word for word in the sources: \"\"strata inference engine\"\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "what",
+   "try": 1,
+   "say": "Strata is an open source inference engine that runs large AI models on your own computer.",
+   "receipt": "\"Strata inference engine, OpenAI/Anthropic API on localhost\"",
+   "errs": [
+    "receipt not found word for word in the sources: \"\"strata inference engine, openai/anthropic api on localhost\"\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "what",
+   "try": 2,
+   "say": "Strata puts OpenAI or Anthropic APIs right here on your local computer.",
+   "receipt": "OpenAI/Anthropic API on localhost",
+   "errs": [
+    "has 12 words, must have 14-22",
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "how",
+   "try": 0,
+   "say": "It loads most model data from your SSD while it answers questions to save graphics memory.",
+   "receipt": "But Strata reads most of it from the SSD while it answers, so it writes only 7-8.5 tokens/s on a 64 GB PC.",
+   "errs": [
+    "no superlatives unless the facts say exactly that"
+   ]
+  },
+  {
+   "slot": "how",
+   "try": 1,
+   "say": "Strata reads part of the model from storage, so a smaller card can run larger versions.",
+   "receipt": "| | **RAM** | 32 GB or more. Your RAM decides which model fits.",
+   "errs": []
+  },
+  {
+   "slot": "how",
+   "try": 0,
+   "say": "Strata loads 35-55 GB into RAM and locks part for your graphics card.",
+   "receipt": "| | **RAM** | Take | Why | | --- | --- | --- | | **48 GB** | **IQ2_XS",
+   "errs": [
+    "has 13 words, must have 16-26",
+    "receipt not found word for word in the sources: \"ram take why --- --- --- 48 gb iq2 xs\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "how",
+   "try": 1,
+   "say": "It loads model parts into RAM and locks space for your graphics card.",
+   "receipt": "Strata loads 35-55 GB into your RAM and locks part of it for the graphics card.",
+   "errs": [
+    "has 13 words, must have 16-26"
+   ]
+  },
+  {
+   "slot": "how",
+   "try": 2,
+   "say": "Strata loads specific data from the SSD directly to memory while you type.",
+   "receipt": "| Your RAM | Take | Why |\n| **32 GB** | **Coder** | it fits 32 GB, and it is made for code (with a 24 GB card, Q2_0 and IQ2_XS run too) | ... With less than ~80 GB of RAM, Strata reads part of it from the SSD while it answers ...",
+   "errs": [
+    "has 13 words, must have 16-26"
+   ]
+  },
+  {
+   "slot": "how",
+   "try": 0,
+   "say": "Strata loads most model data onto your system's hard drive so it answers while using less graphics memory.",
+   "receipt": "| | **Disk** | About 80 GB free. ... Strata reads part of it from the SSD while it answers, so it is slower there (an NVMe SSD helps). But Strata reads most of it from the SSD while it answers...",
+   "errs": [
+    "no superlatives unless the facts say exactly that",
+    "receipt not found word for word in the sources: \"strata reads part of it from the ssd while it answers, so it is slower there (an\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "how",
+   "try": 1,
+   "say": "Strata loads some model data onto your hard drive to answer questions using less graphics memory.",
+   "receipt": "[F17] But Strata reads most of it from the SSD while it answers, so it writes only 7-8.5 tokens/s on a 64 GB PC.",
+   "errs": [
+    "receipt not found word for word in the sources: \"f17 but strata reads most of it from the ssd while it answers, so it writes only\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "how",
+   "try": 2,
+   "say": "Strata copies model data to your hard drive so you can answer questions using less graphics memory ... Strata reads most of it from the SSD while it answers, so it writes only",
+   "receipt": "But Strata reads part of it from the SSD while it answers, so it is slower there (an NVMe SSD helps). But Strata reads most of it from the SSD while it answers, so it writes only",
+   "errs": [
+    "has 33 words, must have 16-26",
+    "no superlatives unless the facts say exactly that",
+    "no '...' in the spoken line (that belongs in the receipt only)",
+    "receipt not found word for word in the sources: \"but strata reads part of it from the ssd while it answers, so it is slower there\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "how2",
+   "try": 0,
+   "say": "It will answer you in about seven to eight point five tokens per second on a sixty-four gigabyte PC.",
+   "receipt": "writes only 7-8.5 tokens/s on a 64 GB PC.",
+   "errs": [
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "how2",
+   "try": 1,
+   "say": "Try asking for code fixes while it writes seven to eight point five tokens per second on a sixty-four gigabyte PC.",
+   "receipt": "| **IQ3_S** | 53 tokens/s ... an NVMe SSD helps ... Strata reads most of it from the SSD while it answers, so it writes only 7-8.5 tokens/s",
+   "errs": [
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "how2",
+   "try": 2,
+   "say": "See code fixes while Strata writes 7-8.5 tokens per second on a sixty-four gigabyte PC.",
+   "receipt": "Writes answers | ... IQ2_XS | 79 tokens/s... Reads your prompt | ... Q2_0 | 2,650 tokens/s (implied slower for smaller models or disk-read scenarios)... With less than ~80 GB of RAM, Strata reads part of it from the SSD while it answers, so it is slower there... writes only 7-8.5 tokens/s on a 64 GB PC.",
+   "errs": [
+    "has 15 words, must have 16-26",
+    "write every number in digits exactly as in the facts, never in words",
+    "receipt not found word for word in the sources: \"q2 0 2,650 tokens/s (implied slower for smaller models or disk-read scenarios)\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "how2",
+   "try": 0,
+   "say": "Try asking it to code a pagoda garden in the browser at localhost port eight zero eight o.",
+   "receipt": "- In the browser:** open `http://127.0.0.1:8080`.",
+   "errs": [
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "how2",
+   "try": 1,
+   "say": "See an agent build a pagoda garden.",
+   "receipt": "The Strata app's Monitor (left) while a coding agent writes the pagoda garden from the video (right)",
+   "errs": [
+    "has 7 words, must have 16-26"
+   ]
+  },
+  {
+   "slot": "how2",
+   "try": 2,
+   "say": "Open the browser at localhost dot eight zero eight zero to watch your AI code agent build a pagoda garden.",
+   "receipt": "The Strata app's Monitor (left) while a coding agent writes the pagoda garden from the video (right)",
+   "errs": [
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "how2",
+   "try": 0,
+   "say": "Watch a coding agent build a pagoda garden in the browser at 127 point zero dot zero dot one colon eight hundred and eighty.",
+   "receipt": "`- In the browser:** open `http://127.0.0.1:8080` ... while a coding agent writes the pagoda garden from the video (right)`",
+   "errs": [
+    "numbers not in the facts: 127 (copy numbers verbatim from the facts)",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "how2",
+   "try": 1,
+   "say": "Try this demo at http://127.0.0.1:8080 to see a coding agent work.",
+   "receipt": "> **While the model starts, your PC can be slow or stop responding for 1-3 minutes** (longest the first time). | Your RAM | Take | Why | ... open `http://127.0.0.1:8080`.",
+   "errs": [
+    "has 11 words, must have 16-26",
+    "receipt not found word for word in the sources: \"while the model starts, your pc can be slow or stop responding for 1-3 minutes (\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "how2",
+   "try": 2,
+   "say": "Open http://127.0.0.1:8080 in the browser to see a coding agent write the pagoda garden.",
+   "receipt": "**In the browser:** open `http://127.0.0.1:8080`.",
+   "errs": [
+    "has 14 words, must have 16-26"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 0,
+   "say": "It reaches 91% of the full model's SWE-bench Verified score and fits in 32 GB of RAM.",
+   "receipt": "It reaches 91% of the full model's SWE-bench Verified score (measured by its authors) and fits 32 GB of RAM.",
+   "errs": []
+  },
+  {
+   "slot": "proof",
+   "try": 0,
+   "say": "Qwen3.8-Flash-Next reaches 91% of its full score on SWE-bench Verified while fitting in 32 GB RAM.",
+   "receipt": "It reaches 91% of the full model's SWE-bench Verified score (measured by its authors) and fits 32 GB of RAM.",
+   "errs": []
+  },
+  {
+   "slot": "proof",
+   "try": 0,
+   "say": "We measured this on two ordinary gaming PCs to prove it reaches ninety-one percent of the full model's verified score.",
+   "receipt": "It reaches 91% of the full model's SWE-bench Verified score",
+   "errs": [
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 1,
+   "say": "The project has sixteen thousand nine hundred zero five GitHub stars.",
+   "receipt": "F1: 16,905 GitHub stars",
+   "errs": [
+    "has 11 words, must have 16-26",
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words",
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 2,
+   "say": "Qwen3.8-Flash-Next reaches ninety-one percent of its full model score on SWE-bench Verified.",
+   "receipt": "It reaches 91% of the full model's SWE-bench Verified score (measured by its authors) and fits 32 GB of RAM.",
+   "errs": [
+    "has 12 words, must have 16-26",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 0,
+   "say": "A 94 GB download loads most data from SSD, and a Q2_0 size fits on a 16 GB card.",
+   "receipt": "| Size | Writes answers | Reads your prompt |\n| **Q2_0** | 94 tokens/s | 2,650 tokens/s | ... about 80 GB free. Use an SSD if you can: the first start is much faster.",
+   "errs": [
+    "no superlatives unless the facts say exactly that"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 1,
+   "say": "A model takes about ninety-four gigabytes to download, then runs mostly from your hard drive.",
+   "receipt": "| **Disk** | About 80 GB free... A card with more VRAM is faster: an RTX 3090 (24 GB) should write about 100-140 tokens per second. ... Strata loads 35-55 GB into your RAM and locks part of it for the graphics card.",
+   "errs": [
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 2,
+   "say": "The model downloads at ninety-four gigabytes but mostly reads from your SSD.",
+   "receipt": "| | **Disk** | About 80 GB free.\n| ... |\n\n> While the model starts, your PC can be slow or stop responding for 1-3 minutes (longest the first time).\n\nA 94 GB download.",
+   "errs": [
+    "has 12 words, must have 14-24",
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words",
+    "receipt not found word for word in the sources: \"while the model starts, your pc can be slow or stop responding for 1-3 minutes (\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 0,
+   "say": "A 24 gigabyte card runs Q2_0, and an RTX 3090 writes about one hundred tokens per second.",
+   "receipt": "| **Q2_0** | 94 tokens/s ... An NVIDIA GeForce RTX 30 series (F6) ... an RTX 3090 (24 GB) should write about 100-140 tokens per second.",
+   "errs": [
+    "write every number in digits exactly as in the facts, never in words",
+    "receipt not found word for word in the sources: \"an nvidia geforce rtx 30 series (f6)\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 1,
+   "say": "An RTX 5070 writes answers at sixty tokens per second, while an RTX 3090 reaches a hundred to fourteen.",
+   "receipt": "F3: 60 tokens per second is faster than you can read.\nF5: A card with more VRAM is faster: an RTX 3090 (24 GB) should write about 100-140 tokens per second.",
+   "errs": [
+    "write every number in digits exactly as in the facts, never in words",
+    "receipt not found word for word in the sources: \"f3: 60 tokens per second is faster than you can read. f5: a card with more vram \" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 2,
+   "say": "An RTX 3090 writes about one hundred to one forty tokens, while an NVMe SSD helps start faster.",
+   "receipt": "an RTX 3090 (24 GB) should write about 100-140 tokens per second. Use an SSD if you can: the first start is much faster.",
+   "errs": [
+    "write every number in digits exactly as in the facts, never in words",
+    "receipt not found word for word in the sources: \"an rtx 3090 (24 gb) should write about 100-140 tokens per second. use an ssd if \" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 0,
+   "say": "It downloads a ninety-four gigabyte file before it starts.",
+   "receipt": "| | **RAM** | About 80 GB free.",
+   "errs": [
+    "has 9 words, must have 14-24",
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words",
+    "receipt not found word for word in the sources: \"ram about 80 gb free.\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 1,
+   "say": "Then download a ninety-four gigabyte file before starting.",
+   "receipt": "| | **Disk** | About 80 GB free.\n| --- | --- | --- |\n\n16,905 GitHub stars",
+   "errs": [
+    "has 8 words, must have 14-24",
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words",
+    "receipt not found word for word in the sources: \"disk about 80 gb free. --- --- --- 16,905 github stars\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 2,
+   "say": "An RTX 3090 card writes answers at one hundred to fourteen zero tokens per second.",
+   "receipt": "... an NVIDIA GeForce RTX ... RTX 3090 (24 GB) should write about 100-140 tokens per second.",
+   "errs": [
+    "write every number in digits exactly as in the facts, never in words",
+    "receipt not found word for word in the sources: \"an nvidia geforce rtx\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "dropped": true
+  },
+  {
+   "slot": "detail",
+   "try": 0,
+   "say": "It supports English, Chinese, Japanese, German, French, Spanish and Portuguese.",
+   "receipt": "Strata **English** · 简体中文 · 日本語 · Deutsch · Français · Español · Português",
+   "errs": [
+    "has 10 words, must have 14-24"
+   ]
+  },
+  {
+   "slot": "detail",
+   "try": 1,
+   "say": "Strata works in many languages like English or Spanish.",
+   "receipt": "F0: Niko1221/Strata: Qwen3.8-Flash-Next on any consumer hardware: one-click install for Windows / Linux. Strata inference engine, OpenAI/Anthropic API on localhost, optional image input.",
+   "errs": [
+    "has 9 words, must have 14-24"
+   ]
+  },
+  {
+   "slot": "detail",
+   "try": 2,
+   "say": "You can also use Strata with French, German, Japanese, Portuguese, Simplified Chinese, or Spanish.",
+   "receipt": "**English** · **简体中文** · **日本語** · **Deutsch** · **Français** · **Español** · **Português** Run a 125-billion-parameter AI model on your own gaming PC NVIDIA or AMD graphics card (12 GB or more)",
+   "errs": []
+  },
+  {
+   "slot": "detail",
+   "try": 0,
+   "say": "The installer automatically configures everything for you on Windows or Linux.",
+   "receipt": "| System | Windows 10 / 11 or Linux, and a current graphics driver from NVIDIA or AMD. | The installer sets up everything else.",
+   "errs": [
+    "has 11 words, must have 14-24",
+    "receipt not found word for word in the sources: \"system windows 10 / 11 or linux, and a current graphics driver from nvidia or am\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "detail",
+   "try": 1,
+   "say": "The installer sets up everything else on Windows 10 or Linux with NVIDIA or AMD drivers.",
+   "receipt": "| **System** | Windows 10 / 11 or Linux, and a current graphics driver from NVIDIA or AMD.",
+   "errs": [
+    "repeats words an earlier line already said: \"with nvidia or amd\" - say something new"
+   ]
+  },
+  {
+   "slot": "detail",
+   "try": 2,
+   "say": "Install the open-source app on Windows 10, 11, or Linux to run Qwen3.8-Flash-Next.",
+   "receipt": "Qwen team - Strata is free and open source ... Windows 10 / 11 or Linux ... Qwen3.8-Flash-Next by the Qwen team.",
+   "errs": [
+    "has 13 words, must have 14-24",
+    "receipt not found word for word in the sources: \"qwen team - strata is free and open source\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "detail",
+   "try": 0,
+   "say": "It supports English, Chinese, Japanese and more languages.",
+   "receipt": "Strata **English** · 简体中文 · 日本語 · Deutsch · Français · Español · Português",
+   "errs": [
+    "has 8 words, must have 14-24"
+   ]
+  },
+  {
+   "slot": "detail",
+   "try": 1,
+   "say": "Run a coding assistant on your own PC using OpenAI or Anthropic APIs locally with optional image input.",
+   "receipt": "OpenAI/Anthropic API on localhost, optional image input.",
+   "errs": []
+  },
+  {
+   "slot": "detail2",
+   "try": 0,
+   "say": "You need an NVIDIA RTX series or AMD RX card with at least twelve gigabytes of video memory.",
+   "receipt": "| **Graphics card** | **NVIDIA GeForce RTX 20, 30, 40 or 50 series**, or **AMD Radeon RX ...",
+   "errs": [
+    "write every number in digits exactly as in the facts, never in words",
+    "receipt not found word for word in the sources: \"graphics card nvidia geforce rtx 20, 30, 40 or 50 series , or amd radeon rx\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "detail2",
+   "try": 1,
+   "say": "You need an NVIDIA GeForce RTX twenty through fifty series card with at least twelve GB of VRAM.",
+   "receipt": "| **RAM** | 32 GB or more.\n| **Graphics card** | **NVIDIA** GeForce RTX 20, 30, 40 or 50 series",
+   "errs": [
+    "write every number in digits exactly as in the facts, never in words",
+    "receipt not found word for word in the sources: \"ram 32 gb or more. graphics card nvidia geforce rtx 20, 30, 40 or 50 series\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "detail2",
+   "try": 2,
+   "say": "You need a NVIDIA GeForce RTX twenty through fifty series or AMD Radeon RX seven thousand nine hundred zero XT card.",
+   "receipt": "**Graphics** | **NVIDIA** GeForce RTX 20, 30, 40 or 50 series, or **AMD** Radeon RX ...",
+   "errs": [
+    "write every number in digits exactly as in the facts, never in words",
+    "receipt not found word for word in the sources: \"graphics nvidia geforce rtx 20, 30, 40 or 50 series, or amd radeon rx\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "detail2",
+   "try": 0,
+   "say": "It needs twelve gigabytes of graphics memory and thirty-two gigs of system RAM.",
+   "receipt": "F7: It needs **12 GB of VRAM or more**. F8: | | **RAM** | 32 GB or more.",
+   "errs": [
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "detail2",
+   "try": 1,
+   "say": "You need a NVIDIA RTX 20 through 50 series or AMD RX 7900 XT card with twelve gigabytes of VRAM.",
+   "receipt": "| **Graphics card** | **NVIDIA** GeForce RTX 20, 30, 40 or 50 series, or **AMD** Radeon RX 7900 XT / XTX, RX 7800 XT / 7700 XT, RX 9060 XT, RX | ... It needs **12 GB of VRAM or more**.",
+   "errs": [
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "detail2",
+   "try": 2,
+   "say": "You need an NVIDIA RTX 20 through 50 series or AMD RX 7900 XT card with twelve gigabytes of VRAM.",
+   "receipt": "| **Graphics card** | **NVIDIA** GeForce RTX 20, 30, 40 or 50 series, or **AMD** Radeon RX 7900 XT / XTX, RX 7800 XT / 7700 XT, RX 9060 XT, RX",
+   "errs": [
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "detail2",
+   "try": 0,
+   "say": "It needs an NVIDIA or AMD graphics card with at least twelve gigabytes of video memory and thirty-two gigabytes of system RAM.",
+   "receipt": "| **Graphics card** | **NVIDIA** GeForce RTX 20, 30, 40 or 50 series, or **AMD** Radeon RX ...",
+   "errs": [
+    "repeats words an earlier line already said: \"nvidia or amd graphics\" - say something new",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "detail2",
+   "try": 1,
+   "say": "Windows Linux systems require thirty-two gigabytes of memory to run any size.",
+   "receipt": "| **RAM** | 32 GB or more.",
+   "errs": [
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "detail2",
+   "try": 2,
+   "say": "You need a graphics card with twelve GB or more VRAM.",
+   "receipt": "**Graphics card** | **NVIDIA** GeForce RTX 20, 30, 40 or 50 series... It needs **12 GB of VRAM or more**.",
+   "errs": [
+    "has 11 words, must have 12-22",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "detail2",
+   "dropped": true
+  },
+  {
+   "slot": "trust",
+   "try": 0,
+   "say": "The Qwen team made Strata, and 16905 stars show many users trust it.",
+   "receipt": "The model is Qwen3.8-Flash-Next by the Qwen team.\nF1: 16,905 GitHub stars",
+   "errs": [
+    "receipt not found word for word in the sources: \"the model is qwen3.8-flash-next by the qwen team. f1: 16,905 github stars\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "trust",
+   "try": 1,
+   "say": "The Qwen team made Strata, and 16,905 GitHub stars show many users trust it.",
+   "receipt": "> **Q2_0** ... The model is qwen3.8-flash-next by the qwen team. f1: 16,905 github stars",
+   "errs": [
+    "receipt not found word for word in the sources: \"the model is qwen3.8-flash-next by the qwen team. f1: 16,905 github stars\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "trust",
+   "try": 2,
+   "say": "Open source credits go to Niko1221/Strata with over sixteen thousand GitHub stars.",
+   "receipt": "The model is Qwen3.8-Flash-Next by the Qwen team... 16,905 GitHub stars",
+   "errs": [
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "trust",
+   "try": 0,
+   "say": "The Qwen team made this open-source app, and it has 16905 GitHub stars.",
+   "receipt": "Strata is free and open source... Niko1221/Strata: Qwen3.8-Flash-Next on any consumer hardware ... 16,905 GitHub stars",
+   "errs": []
+  },
+  {
+   "slot": "trust",
+   "try": 0,
+   "say": "Qwen team made it, GitHub has over sixteen thousand stars.",
+   "receipt": "The model is Qwen3.8-Flash-Next by the Qwen team... F1: 16,905 GitHub stars",
+   "errs": [
+    "has 10 words, must have 12-20",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "trust",
+   "try": 1,
+   "say": "The Qwen team made this project on GitHub with sixteen thousand stars.",
+   "receipt": "F1: 16,905 GitHub stars ... Credits and license The model is Qwen3.8-Flash-Next by the Qwen team.",
+   "errs": [
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "trust",
+   "try": 2,
+   "say": "The Qwen team built Strata for free under an open-source license. It has fifteen-thousand GitHub stars.",
+   "receipt": "['Strata is free and open source.', 'Niko1221/Strata: 16,905 GitHub stars', 'model is Qwen3.8-Flash-Next by the Qwen team.']",
+   "errs": [
+    "write every number in digits exactly as in the facts, never in words",
+    "receipt not found word for word in the sources: \"'strata is free and open source.', 'niko1221/strata: 16,905 github stars', 'mode\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "start",
+   "try": 0,
+   "say": "Git clone this repo or run the installer to set it up.",
+   "receipt": "Download Strata and unzip it (or `git clone` it).",
+   "errs": []
+  },
+  {
+   "slot": "start",
+   "try": 0,
+   "say": "Open http://127.0.0.1:8080 in your browser to see a coding agent write code.",
+   "receipt": "> **While the model starts, your PC can be slow or stop responding for 1-3 minutes** (longest the first time).",
+   "errs": [
+    "repeats a number already said: 127.0, 0.1, 8080",
+    "repeats words an earlier line already said: \"0 0 1 8080\" - say something new"
+   ]
+  },
+  {
+   "slot": "start",
+   "try": 1,
+   "say": "Download the repo to unzip or clone Strata onto your computer.",
+   "receipt": "Let your AI set it up Download Strata and unzip it (or `git clone` it).",
+   "errs": [
+    "has 11 words, must have 12-20",
+    "receipt not found word for word in the sources: \"let your ai set it up download strata and unzip it (or git clone it).\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "start",
+   "try": 2,
+   "say": "Let your AI set it up, then download Strata to unzip or git clone it.",
+   "receipt": "let your ai set it up Download Strata and unzip it (or `git clone` it).",
+   "errs": [
+    "receipt not found word for word in the sources: \"let your ai set it up download strata and unzip it (or git clone it).\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "start",
+   "try": 0,
+   "say": "Download and unzip Strata, then run the AI setup script.",
+   "receipt": "Or do it yourself\\n Download Strata and unzip it ... Set up Strata on this PC for me",
+   "errs": [
+    "has 10 words, must have 12-20",
+    "receipt not found word for word in the sources: \"or do it yourself n download strata and unzip it\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "start",
+   "try": 1,
+   "say": "Or do it yourself, then set up Strata on this PC using the docs.",
+   "receipt": "| **48 GB** | **IQ2_XS (or Q2_0, the fastest)** | the larger sizes do not fit",
+   "errs": []
+  },
+  {
+   "slot": "share",
+   "try": 0,
+   "say": "Save this for anyone wanting a local AI on their own gaming PC.",
+   "receipt": "Run a 125-billion-parameter AI model on your own gaming PC NVIDIA or AMD graphics card... Strata is free and open source.",
+   "errs": []
+  },
+  {
+   "slot": "share",
+   "try": 0,
+   "say": "Save this for a gaming PC with an NVIDIA or AMD card...",
+   "receipt": "Run a 125-billion-parameter AI model on your own gaming PC NVIDIA or AMD graphics car... GeForce RTX 20, 30, 40 or 50 series, or Radeon RX",
+   "errs": [
+    "no '...' in the spoken line (that belongs in the receipt only)"
+   ]
+  },
+  {
+   "slot": "share",
+   "try": 1,
+   "say": "Send this to someone who has 64 GB of RAM.",
+   "receipt": "| **64 GB** | runs every size.",
+   "errs": []
+  },
+  {
+   "slot": "share",
+   "try": 0,
+   "say": "Save this for a friend with 32 GB RAM or more...",
+   "receipt": "64 GB runs every size.",
+   "errs": [
+    "repeats a number already said: 32",
+    "no '...' in the spoken line (that belongs in the receipt only)"
+   ]
+  },
+  {
+   "slot": "share",
+   "try": 1,
+   "say": "Send this to someone with an NVIDIA graphics card.",
+   "receipt": "**Graphics card** | **NVIDIA** GeForce RTX 20, 30, 40 or 50 series, or **AMD** Radeon RX 7900 XT / XTX, RX 7800 XT / 7700 XT, RX 9060 XT, RX",
+   "errs": [
+    "has 9 words, must have 10-16"
+   ]
+  },
+  {
+   "slot": "share",
+   "try": 2,
+   "say": "Save this for a friend who needs local AI on their gaming PC.",
+   "receipt": "Run a 125-billion-parameter AI model on your own gaming PC",
+   "errs": []
+  },
+  {
+   "slot": "end",
+   "try": 0,
+   "say": "This is Strata.",
+   "receipt": "Strata inference engine, OpenAI/Anthropic API on localhost, optional image input.",
+   "errs": [
+    "has 3 words, must have 6-12"
+   ]
+  },
+  {
+   "slot": "end",
+   "try": 1,
+   "say": "Run Qwen on your gaming PC with Strata.",
+   "receipt": "Strata inference engine, OpenAI/Anthropic API on localhost ... Run a 125-billion-parameter AI model on your own gaming PC NVIDIA or AMD graphics card (12 GB or more) · Credits and license: The model is Qwen3.8-Flash-Next by the Qwen team.",
+   "errs": []
+  },
+  {
+   "slot": "end",
+   "try": 0,
+   "say": "The Qwen team made it open source.",
+   "receipt": "Credits and license The model is Qwen3.8-Flash-Next by the Qwen team.",
+   "errs": [
+    "repeats words an earlier line already said: \"the qwen team made\" - say something new"
+   ]
+  },
+  {
+   "slot": "end",
+   "try": 1,
+   "say": "Run Strata locally now.",
+   "receipt": "Strata inference engine, OpenAI/Anthropic API on localhost",
+   "errs": [
+    "has 4 words, must have 6-12"
+   ]
+  },
+  {
+   "slot": "end",
+   "try": 2,
+   "say": "Run this local AI app called Strata.",
+   "receipt": "**Strata**",
+   "errs": []
+  },
+  {
+   "slot": "end",
+   "try": 0,
+   "say": "Get Strata today.",
+   "receipt": "Strata",
+   "errs": [
+    "has 3 words, must have 6-12"
+   ]
+  },
+  {
+   "slot": "end",
+   "try": 1,
+   "say": "Run Qwen on your own PC with Strata.",
+   "receipt": "Strata inference engine, OpenAI/Anthropic API on localhost",
+   "errs": []
+  }
+ ]
+}

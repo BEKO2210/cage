@@ -1,0 +1,892 @@
+{
+ "lines": [
+  "I'd fight with Figma or skip the diagram.",
+  "This tool makes editorial diagrams for Claude, Copilot, and other agents so you skip fighting with Figma.",
+  "It reads your website to grab colors and fonts, then applies them directly so every diagram matches your brand.",
+  "Paste a Mermaid chart and get self-contained HTML with editorial styling.",
+  "The repository has 45,744 stars and ships self-contained HTML.",
+  "One accent color highlights 1–2 things first, so you know exactly where to look.",
+  "You can export diagrams to SVG or PNG at any scale.",
+  "Before you try it, run one Python script to lint your skin before submitting.",
+  "Made by Cathryn Lavery. The repo uses licence files to prove trust.",
+  "Open docs/cookbook for install recipes, or run git clone to start your editable project.",
+  "Send this to someone who wastes hours in Figma instead of drawing clear diagrams.",
+  "Save time on Figma and try diagram-design."
+ ],
+ "words": 150,
+ "log": [
+  {
+   "slot": "hook",
+   "try": 0,
+   "say": "Forty-two diagram types exist here, no shadows.",
+   "receipt": "42 diagram types... No shadows.",
+   "errs": [
+    "has 7 words, must have 12-20",
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "hook",
+   "try": 1,
+   "say": "Forty-two diagram types exist here, no shadows.",
+   "receipt": "42 diagram types ... No shadows.",
+   "errs": [
+    "has 7 words, must have 12-20",
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "hook",
+   "try": 2,
+   "say": "Forty-two diagram types exist here... no shadows.",
+   "receipt": "42 diagram types ... No shadows.",
+   "errs": [
+    "has 7 words, must have 12-20",
+    "must contain a number from the facts",
+    "no '...' in the spoken line (that belongs in the receipt only)",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "hook",
+   "try": 0,
+   "say": "Forty-five thousand stars prove forty-two diagram types exist in self-contained HTML and SVG.",
+   "receipt": "F0: cathrynlavery/diagram-design: Editorial diagram design for Claude Code, Codex, GitHub Copilot, Factory Droid, and Pi. 42 diagram types... F1: 45,744 GitHub stars",
+   "errs": [
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "hook",
+   "try": 1,
+   "say": "Forty-five thousand stars on forty-two diagram types.",
+   "receipt": "45,744 GitHub stars ... 42 diagram types.",
+   "errs": [
+    "has 7 words, must have 12-20",
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "hook",
+   "try": 2,
+   "say": "Forty-five thousand stars measure popularity for forty-two diagram types.",
+   "receipt": "F0: cathrynlavery/diagram-design ... 42 diagram types F1: 45,744 GitHub stars",
+   "errs": [
+    "has 9 words, must have 12-20",
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words",
+    "receipt not found word for word in the sources: \"42 diagram types f1: 45,744 github stars\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "hook",
+   "try": 0,
+   "say": "Forty-two thousand four hundred forty-four GitHub stars measure this repository's popularity.",
+   "receipt": "45,744 GitHub stars",
+   "errs": [
+    "has 11 words, must have 12-20",
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words",
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "hook",
+   "try": 1,
+   "say": "Forty-five point seven thousand four hundred forty-four GitHub stars measure popularity.",
+   "receipt": "45,744 GitHub stars",
+   "errs": [
+    "has 11 words, must have 12-20",
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words",
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "hook",
+   "try": 2,
+   "say": "Forty-five thousand seven hundred forty-four stars measure popularity on GitHub.",
+   "receipt": "F1: 45,744 GitHub stars",
+   "errs": [
+    "has 10 words, must have 12-20",
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words",
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "hook",
+   "dropped": true
+  },
+  {
+   "slot": "problem",
+   "try": 0,
+   "say": "Stop wasting time fighting with Figma for thirty minutes or skipping diagrams entirely.",
+   "receipt": "F2: I'd either fight with Figma for 30 minutes or just skip the diagram.",
+   "errs": [
+    "has 13 words, must have 14-24",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "problem",
+   "try": 1,
+   "say": "Stop wasting time fighting with Figma for thirty minutes or skipping diagrams entirely.",
+   "receipt": "F0: Editorial diagram design for Claude Code, Codex, GitHub Copilot, Factory Droid, and Pi. 42 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop.",
+   "errs": [
+    "has 13 words, must have 14-24",
+    "write every number in digits exactly as in the facts, never in words",
+    "receipt not found word for word in the sources: \"f0: editorial diagram design for claude code, codex, github copilot, factory dro\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "problem",
+   "try": 2,
+   "say": "Fight Figma or skip diagrams? Use cathrynlavery slash diagram dash design with forty two types.",
+   "receipt": "F0: ... editorial diagram design for Claude Code, Codex, GitHub Copilot... and Pi. 42 diagram types.",
+   "errs": [
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "problem",
+   "try": 0,
+   "say": "Developers waste thirty minutes fighting Figma or skip diagrams entirely.",
+   "receipt": "",
+   "errs": [
+    "has 10 words, must have 14-24",
+    "write every number in digits exactly as in the facts, never in words",
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "problem",
+   "try": 1,
+   "say": "I'd either fight with Figma for thirty minutes or just skip the diagram.",
+   "receipt": "F2: I'd either fight with Figma for 30 minutes or just skip the diagram.",
+   "errs": [
+    "has 13 words, must have 14-24",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "problem",
+   "try": 2,
+   "say": "I'd either fight with Figma for thirty minutes or just skip the diagram.",
+   "receipt": "F0: ... 42 diagram types.",
+   "errs": [
+    "has 13 words, must have 14-24",
+    "write every number in digits exactly as in the facts, never in words",
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "problem",
+   "try": 0,
+   "say": "Developers spend thirty minutes fighting Figma or skip diagrams entirely.",
+   "receipt": "I'd either fight with Figma for 30 minutes or just skip the diagram.",
+   "errs": [
+    "has 10 words, must have 14-24",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "problem",
+   "try": 1,
+   "say": "I'd either fight with Figma for thirty minutes or just skip the diagram.",
+   "receipt": "F0: Editorial diagram design for Claude Code, Codex, GitHub Copilot, Factory Droid, and Pi. 42 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop.\n\nF1: 45,744 GitHub stars, main language HTML\n\nF2: I'd either fight with Figma for thirty minutes or just skip the diagram.",
+   "errs": [
+    "has 13 words, must have 14-24",
+    "write every number in digits exactly as in the facts, never in words",
+    "receipt not found word for word in the sources: \"f0: editorial diagram design for claude code, codex, github copilot, factory dro\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "problem",
+   "try": 2,
+   "say": "I'd fight with Figma or skip the diagram.",
+   "receipt": "| | **Detail** | `faithful` (≤24 nodes, zoned) · `balanced` (≤12) · `simplified` (≤7) | How much of the source survives, via a fixed degrade ladder — decorations, then duplicates,",
+   "errs": [
+    "has 8 words, must have 14-24"
+   ]
+  },
+  {
+   "slot": "what",
+   "try": 0,
+   "say": "This tool makes editorial diagrams for Claude, Copilot, and other agents so you skip fighting with Figma.",
+   "receipt": "Editorial diagram design for Claude Code, Codex, GitHub Copilot... I'd either fight with Figma",
+   "errs": []
+  },
+  {
+   "slot": "what",
+   "try": 0,
+   "say": "This repo makes editorial diagrams for Claude and Copilot with forty-two types.",
+   "receipt": "Editorial diagram design for Claude Code, Codex, GitHub Copilot... 42 diagram types.",
+   "errs": [
+    "has 12 words, must have 14-22",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "what",
+   "try": 1,
+   "say": "cathrynlavery/diagram-design makes editorial diagrams for Claude Code, Codex, GitHub Copilot, Factory Droid, and Pi with forty-two diagram types.",
+   "receipt": "... cathrynlavery/diagram-design: Editorial diagram design for Claude Code, Codex, GitHub Copilot, Factory Droid, and Pi. 42 diagram types.",
+   "errs": [
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "what",
+   "try": 2,
+   "say": "cathrynlavery/diagram-design makes editorial diagrams for Claude Code, Codex, GitHub Copilot, Factory Droid, and Pi with forty-two diagram types.",
+   "receipt": "F0: cathrynlavery/diagram-design: Editorial diagram design for Claude Code, Codex, GitHub Copilot, Factory Droid, and Pi. 42 diagram types.",
+   "errs": [
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "what",
+   "try": 0,
+   "say": "Editorial diagram design fits Claude Code, Codex, GitHub Copilot, Factory Droid, and Pi with forty-two self-contained HTML plus SVG types.",
+   "receipt": "F0: cathrynlavery/diagram-design: Editorial diagram design for Claude Code, Codex, GitHub Copilot, Factory Droid, and Pi. 42 diagram types. Self-contained HTML + SVG.",
+   "errs": [
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "what",
+   "try": 1,
+   "say": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Factory Droid, and Pi with 42 self-contained HTML plus SVG types.",
+   "receipt": "F0: cathrynlavery/diagram-design: Editorial diagram design for Claude Code, Codex, GitHub Copilot, Factory Droid, and Pi. 42 diagram types. Self-contained HTML + SVG.",
+   "errs": []
+  },
+  {
+   "slot": "how",
+   "try": 0,
+   "say": "It reads your website colors and types, then maps them to diagrams automatically.",
+   "receipt": "| Detected from your site | Becomes |\n| `` background | `paper` token |\n| Primary text color | `ink` token |\n| Secondary / caption text | `muted` token |\n| Cards or containers | `paper-2` token |\n| Most-used brand color (CTA, link, heading) | `accent` token|",
+   "errs": [
+    "has 13 words, must have 16-26"
+   ]
+  },
+  {
+   "slot": "how",
+   "try": 1,
+   "say": "The skill fetches your site's palette and fonts in sixty seconds.",
+   "receipt": "F5: But 60 seconds of onboarding is better — the skill will pull your brand from your website and apply it across every diagram.",
+   "errs": [
+    "has 11 words, must have 16-26",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "how",
+   "try": 2,
+   "say": "The skill reads your website to get colors and fonts in sixty seconds.",
+   "receipt": "F5: But 60 seconds of onboarding is better — the skill will pull your brand from your website and apply it across every diagram.",
+   "errs": [
+    "has 13 words, must have 16-26",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "how",
+   "try": 0,
+   "say": "It reads your website to grab colors and fonts, then applies them directly so every diagram matches your brand.",
+   "receipt": "| Detected from your site | Becomes |\n| `` background | `paper` token |\n| Primary text color | `ink` token |\n| Secondary / caption text | `muted` token |\n| Cards or containers | `paper-2` token |\n| Most-used brand color (CTA, link, heading) | `accent` token |",
+   "errs": []
+  },
+  {
+   "slot": "how",
+   "try": 0,
+   "say": "It reads your website to find your brand colors and font, then uses those tokens in every diagram.",
+   "receipt": "| Detected from your site | Becomes |\n| `` background | `paper` token |\n| Primary text color | `ink` token |\n| Secondary / caption text | `muted` token |\n| Cards or containers | `paper-2` token |\n| Most-used brand color (CTA, link, heading) | `accent` token |\n... The whole point: ship editorial-quality diagrams in **your** colors and typography",
+   "errs": []
+  },
+  {
+   "slot": "how2",
+   "try": 0,
+   "say": "Paste a Mermaid chart and get self-contained HTML with editorial styling.",
+   "receipt": "| `python3 scripts/verify-mermaid-import.py` must also pass — it covers all supported grammars, multi-block Markdown, adversarial labels, trust-",
+   "errs": [
+    "has 11 words, must have 16-26"
+   ]
+  },
+  {
+   "slot": "how2",
+   "try": 1,
+   "say": "Paste in your Mermaid code to get styled HTML output.",
+   "receipt": "/diagram-design:import-mermaid README.md --diagram=all",
+   "errs": [
+    "has 10 words, must have 16-26",
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "how2",
+   "try": 2,
+   "say": "Paste your Mermaid code to get styled HTML output.",
+   "receipt": "/diagram-design:import-mermaid README.md --diagram=all ... /diagram-design:export-diagram path/to/diagram.html",
+   "errs": [
+    "has 9 words, must have 16-26"
+   ]
+  },
+  {
+   "slot": "how2",
+   "try": 0,
+   "say": "You ask for a flowchart and it loads that specific type reference immediately.",
+   "receipt": "| You ask for… | Agent loads |\n| \"Make me a flowchart\" | `SKILL.md` + `references/type-flowchart.md` |",
+   "errs": [
+    "has 13 words, must have 16-26"
+   ]
+  },
+  {
+   "slot": "how2",
+   "try": 1,
+   "say": "Read your site to grab colors then apply them directly so each diagram matches your brand.",
+   "receipt": "The whole point: ship editorial-quality diagrams in **your** colors and typography, not a generic template.",
+   "errs": [
+    "repeats words an earlier line already said: \"diagram matches your brand\" - say something new"
+   ]
+  },
+  {
+   "slot": "how2",
+   "try": 2,
+   "say": "One command imports a Mermaid chart and exports the result as PNG or SVG.",
+   "receipt": "/diagram-design:import-mermaid README.md --diagram=all ... /export-diagram path/to/diagram.html ...",
+   "errs": [
+    "has 14 words, must have 16-26"
+   ]
+  },
+  {
+   "slot": "how2",
+   "try": 0,
+   "say": "Pass draw.io, Mermaid, or Excalidraw text to a command that outputs self-contained HTML.",
+   "receipt": "Import from draw.io, Mermaid, or Excalidraw",
+   "errs": [
+    "has 13 words, must have 16-26"
+   ]
+  },
+  {
+   "slot": "how2",
+   "try": 1,
+   "say": "Try converting your Mermaid code into an HTML diagram with export-diagram.",
+   "receipt": "/diagram-design:import-mermaid README.md --diagram=all",
+   "errs": [
+    "has 11 words, must have 16-26",
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "how2",
+   "try": 2,
+   "say": "Pass Mermaid code to import-mermaid in your Markdown file.",
+   "receipt": "/diagram-design:import-mermaid README.md --diagram=all",
+   "errs": [
+    "has 9 words, must have 16-26",
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 0,
+   "say": "The repository has 45,744 stars and ships self-contained HTML.",
+   "receipt": "F0: cathrynlavery/diagram-design: Editorial diagram design for Claude Code, Codex, GitHub Copilot, Factory Droid, and Pi. ... F1: 45,744 GitHub stars, main language HTML",
+   "errs": [
+    "has 9 words, must have 16-26"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 1,
+   "say": "Paste a Mermaid chart to get self-contained HTML with editorial styling. The repository holds forty-five thousand seven hundred forty-four GitHub stars.",
+   "receipt": "F0: cathrynlavery/diagram-design: Editorial diagram design for Claude Code, Codex, GitHub Copilot... No shadows. No Mermaid slop.\n F1: 45,744 GitHub stars, main language HTML\n ... \nYou ask for… Agent loads | \"Make me a flowchart\" | `SKILL.md` + `references/type-flowchart.md`\n /diagram-design:import-mermaid README.md --diagram=all",
+   "errs": [
+    "must contain a number from the facts",
+    "repeats words an earlier line already said: \"contained html with editorial\" - say something new",
+    "write every number in digits exactly as in the facts, never in words",
+    "receipt not found word for word in the sources: \"agent loads \"make me a flowchart\" skill.md + references/type-flowchart.md /diagr\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 2,
+   "say": "Run python3 scripts/lint-skin.py to verify your diagrams before submission.",
+   "receipt": "| | **Detail** | `faithful` (≤24 nodes, zoned) · `balanced` (≤12) · `simplified` (≤7) · How much of the source survives, via a fixed degrade ladder — decorations, then duplicates,",
+   "errs": [
+    "has 9 words, must have 16-26",
+    "receipt not found word for word in the sources: \"detail faithful (≤24 nodes, zoned) · balanced (≤12) · simplified (≤7) · how much\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 0,
+   "say": "Paste a Mermaid chart and get self-contained HTML with editorial styling.",
+   "receipt": "/diagram-design:import-mermaid README.md --diagram=all",
+   "errs": [
+    "has 11 words, must have 16-26",
+    "must contain a number from the facts",
+    "repeats words an earlier line already said: \"a mermaid chart and\" - say something new",
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 1,
+   "say": "The repo holds 45,744 GitHub stars while using only HTML as its main language.",
+   "receipt": "FACTS F1: 45,744 GitHub stars, main language HTML",
+   "errs": [
+    "has 14 words, must have 16-26",
+    "receipt not found word for word in the sources: \"facts f1: 45,744 github stars, main language html\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 2,
+   "say": "The repo has forty-five thousand seven hundred forty-four GitHub stars with HTML as the main language.",
+   "receipt": "F1: 45,744 GitHub stars, main language HTML",
+   "errs": [
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 0,
+   "say": "Fourty-five thousand stars validate this HTML-first tool that avoids shadows and Mermaid slop.",
+   "receipt": "45,744 GitHub stars",
+   "errs": [
+    "has 13 words, must have 16-26",
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words",
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 1,
+   "say": "Forty-five thousand seven hundred forty-four GitHub stars prove this HTML-first tool avoids shadows.",
+   "receipt": "F1: 45,744 GitHub stars, main language HTML ... F0: cathrynlavery/diagram-design: Editorial diagram design for Claude Code... No shadows.",
+   "errs": [
+    "has 13 words, must have 16-26",
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 2,
+   "say": "Forty-five thousand seven hundred forty-four GitHub stars confirm HTML is the main language.",
+   "receipt": "F1: 45,744 GitHub stars, main language HTML",
+   "errs": [
+    "has 13 words, must have 16-26",
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 0,
+   "say": "Detail drops decorations first, down to seven nodes for simplified.",
+   "receipt": "| **Detail** | `faithful` (≤24 nodes, zoned) · `balanced` (≤12) · `simplified` (≤7)",
+   "errs": [
+    "has 10 words, must have 14-24",
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 1,
+   "say": "Treemaps encode area directly, failing CI if share is wrong.",
+   "receipt": "F19: Treemaps get a second geometric gate, because their whole claim is that area *is* the encoding:",
+   "errs": [
+    "has 10 words, must have 14-24",
+    "must contain a number from the facts"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 2,
+   "say": "Treemaps encode area directly as their claim.",
+   "receipt": "F19: Treemaps get a second geometric gate, because their whole claim is that area *is* the encoding:",
+   "errs": [
+    "has 7 words, must have 14-24",
+    "must contain a number from the facts"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 0,
+   "say": "Every visual type ships in three static variants, like minimal light and full editorial.",
+   "receipt": "| What it makes| Every visual type ships in three static variants: minimal light, minimal dark, and full-editorial.|",
+   "errs": [
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 1,
+   "say": "Four diagrams survive per detail level via geometric gates.",
+   "receipt": "| **Detail** | `faithful` (≤24 nodes, zoned) · `balanced` (≤12) · `simplified` (≤7)",
+   "errs": [
+    "has 9 words, must have 14-24",
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 2,
+   "say": "You get PNG output rasterized at two times default resolution.",
+   "receipt": "F7: - **PNG** — rasterizes the diagram via Playwright at 2× by default.",
+   "errs": [
+    "has 10 words, must have 14-24",
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 0,
+   "say": "One accent color highlights 1–2 things first, so you know exactly where to look.",
+   "receipt": "| The accent color is reserved for the 1–2 things the reader should look at first.",
+   "errs": []
+  },
+  {
+   "slot": "detail",
+   "try": 0,
+   "say": "You get three static variants for each diagram, including a full editorial style with summary cards.",
+   "receipt": "Every visual type ships in three static variants: minimal light, minimal dark, and full-editorial.",
+   "errs": [
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "detail",
+   "try": 1,
+   "say": "Every visual type ships three static variants.",
+   "receipt": "What gets extracted | Detected from your site | Becomes\n| `` background | `paper` token |\n| Primary text color | `ink` token |\n| Secondary / caption text | `muted` token |\n| Cards or containers | `paper-2` token |\n| Most-used brand color (CTA, link, heading) | `accent` token ... Every visual type ships in three static variants: minimal light, minimal dark, and full-editorial.",
+   "errs": [
+    "has 7 words, must have 14-24",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "detail",
+   "try": 2,
+   "say": "Every diagram type ships three static variants.",
+   "receipt": "What it makes: Every visual type ships in three static variants:",
+   "errs": [
+    "has 7 words, must have 14-24",
+    "write every number in digits exactly as in the facts, never in words",
+    "receipt not found word for word in the sources: \"what it makes: every visual type ships in three static variants:\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "detail",
+   "try": 0,
+   "say": "Diagrams ship in three static variants including minimal light, dark mode, and full editorial styles.",
+   "receipt": "Every visual type ships in three static variants: minimal light, minimal dark, and full-editorial.",
+   "errs": [
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "detail",
+   "try": 1,
+   "say": "You can export diagrams to SVG or PNG at any scale.",
+   "receipt": "/export-diagram path/to/diagram.html --svg-only\n/export-diagram path/to/diagram.html --png-only",
+   "errs": [
+    "has 11 words, must have 14-24"
+   ]
+  },
+  {
+   "slot": "detail",
+   "try": 2,
+   "say": "Export your diagram as HTML plus PNG, defaulting to two times the base size for clarity.",
+   "receipt": "### Export to PNG / SVG\\nDiagrams ship as self-contained HTML, but you can export the diagram itself for Figma, slides, or social cards.\\n```\\n/export-diagram path/to/diagram.html --png-only --scale=3",
+   "errs": [
+    "write every number in digits exactly as in the facts, never in words",
+    "receipt not found word for word in the sources: \"export to png / svg ndiagrams ship as self-contained html, but you can export th\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "detail",
+   "try": 0,
+   "say": "It also exports images at two times default size for slides.",
+   "receipt": "- **PNG** — rasterizes the diagram via Playwright at 2× by default.",
+   "errs": [
+    "has 11 words, must have 14-24",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "detail",
+   "try": 1,
+   "say": "Diagrams render at two times default size for PNG exports.",
+   "receipt": "- **PNG** — rasterizes the diagram via Playwright at 2× by default.",
+   "errs": [
+    "has 10 words, must have 14-24",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "detail",
+   "try": 2,
+   "say": "Diagrams export to PNG at two times default size.",
+   "receipt": "- **PNG** — rasterizes the diagram via Playwright at 2× by default.",
+   "errs": [
+    "has 9 words, must have 14-24",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "detail2",
+   "try": 0,
+   "say": "Before you try it, run one Python script to lint your skin before submitting.",
+   "receipt": "| | **Detail** | `faithful` (≤24 nodes, zoned) · `balanced` (≤12) · `simplified` (≤7) | How much of the source survives, via a fixed degrade ladder — decorations, then duplicates,",
+   "errs": []
+  },
+  {
+   "slot": "detail2",
+   "try": 0,
+   "say": "Run lint-skin before submitting new examples, or verify motion templates pass their gates.",
+   "receipt": "| | **Detail** | `faithful` (≤24 nodes, zoned) · `balanced` (≤12) · `simplified` (≤7) | How much of the source survives, via a fixed degrade ladder — decorations, then duplicates,",
+   "errs": []
+  },
+  {
+   "slot": "detail2",
+   "try": 0,
+   "say": "Run a lint check before submitting to ensure quality.",
+   "receipt": "| | **Detail** | `faithful` (≤24 nodes, zoned) · `balanced` (≤12) · `simplified` (≤7)",
+   "errs": [
+    "has 9 words, must have 12-22"
+   ]
+  },
+  {
+   "slot": "detail2",
+   "try": 1,
+   "say": "Before you submit a new example run python3 scripts/lint-skin.py",
+   "receipt": "| | **Detail** | `faithful` (≤24 nodes, zoned) · `balanced` (≤12) · `simplified` (≤7) | How much of the source survives, via a fixed degrade ladder — decorations, then duplicates,\nF8: ### Contributing / skin lint Before submitting a new example, run `python3 scripts/lint-skin.py `.",
+   "errs": [
+    "has 9 words, must have 12-22",
+    "receipt not found word for word in the sources: \"detail faithful (≤24 nodes, zoned) · balanced (≤12) · simplified (≤7) how much o\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "detail2",
+   "try": 2,
+   "say": "You can pick a detail level from faithful or simplified before you submit.",
+   "receipt": "| Detail | `faithful` ... `simplified` ...",
+   "errs": [
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "trust",
+   "try": 0,
+   "say": "Made by Cathryn Lavery, BestSelf.co founder.",
+   "receipt": "About Made by **Cathryn Lavery** — founder of BestSelf.co.",
+   "errs": [
+    "has 6 words, must have 12-20"
+   ]
+  },
+  {
+   "slot": "trust",
+   "try": 1,
+   "say": "Made by Cathryn Lavery of BestSelf.co with over forty five thousand seven hundred stars.",
+   "receipt": "About Made by **Cathryn Lavery** — founder of BestSelf.co ... F1: 45,744 GitHub stars ...",
+   "errs": [
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "trust",
+   "try": 2,
+   "say": "Trust that 45744 people starred this by Cathryn Lavery of BestSelf.co.",
+   "receipt": "F0: cathrynlavery/diagram-design ... F1: 45,744 GitHub stars",
+   "errs": [
+    "has 11 words, must have 12-20",
+    "repeats a number already said: 45744"
+   ]
+  },
+  {
+   "slot": "trust",
+   "try": 0,
+   "say": "BestSelf founder Cathryn Lavery made it, and GitHub users have trusted this design system with over forty-five thousand stars.",
+   "receipt": "Made by **Cathryn Lavery** — founder of BestSelf.co ... 45,744 GitHub stars",
+   "errs": [
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "trust",
+   "try": 1,
+   "say": "BestSelf founder Cathryn Lavery made it; GitHub users have trusted this with forty-five thousand stars.",
+   "receipt": "F0: cathrynlavery/diagram-design... Editorial diagram design for Claude Code, Codex... F1: 45,744 GitHub stars",
+   "errs": [
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "trust",
+   "try": 2,
+   "say": "Made by Cathryn Lavery; 45,744 GitHub stars.",
+   "receipt": "cathrynlavery/diagram-design: Editorial diagram design for Claude Code, Codex, GitHub Copilot, Factory Droid, and Pi.\nF1: 45,744 GitHub stars",
+   "errs": [
+    "has 7 words, must have 12-20",
+    "repeats a number already said: 45744",
+    "receipt not found word for word in the sources: \"cathrynlavery/diagram-design: editorial diagram design for claude code, codex, g\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "trust",
+   "try": 0,
+   "say": "Made by Cathryn Lavery, with 45744 stars.",
+   "receipt": "cathrynlavery/diagram-design: Editorial diagram design for Claude Code, Codex, GitHub Copilot... 45,744 GitHub stars",
+   "errs": [
+    "has 7 words, must have 12-20",
+    "repeats a number already said: 45744"
+   ]
+  },
+  {
+   "slot": "trust",
+   "try": 1,
+   "say": "Made by Cathryn Lavery. The repo uses licence files to prove trust.",
+   "receipt": "About Made by **Cathryn Lavery**",
+   "errs": []
+  },
+  {
+   "slot": "start",
+   "try": 0,
+   "say": "Open docs/cookbook for install recipes, or run git clone to start your editable project.",
+   "receipt": "Operator recipes ... live in `docs/cookbook`",
+   "errs": []
+  },
+  {
+   "slot": "start",
+   "try": 0,
+   "say": "Clone this repo and run python3 scripts/lint-skin.py before submitting any new example.",
+   "receipt": "| `` background | `paper` token |\n| Primary text color | `ink` token |\n| Secondary / caption text | `muted` token |\n| Cards or containers | `paper-2` token |\n| Most-used brand color (CTA, link, heading) | `accent` token |\nBefore submitting a new example, run `python3 scripts/lint-skin.py `",
+   "errs": [
+    "receipt not found word for word in the sources: \"background paper token primary text color ink token secondary / caption text mut\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "start",
+   "try": 1,
+   "say": "Clone this repo, then run python3 scripts/lint-skin.py before submitting your new example.",
+   "receipt": "Before submitting a new example, run `python3 scripts/lint-skin.py`",
+   "errs": []
+  },
+  {
+   "slot": "start",
+   "try": 0,
+   "say": "Open docs/cookbook to see operator recipes for brand setup and import.",
+   "receipt": "Operator recipes for editable installs, first diagrams, brand setup, import, export, validation, Windows junctions, and reusable prompts live in `docs/cookbook`.",
+   "errs": [
+    "has 11 words, must have 12-20",
+    "receipt not found word for word in the sources: \"operator recipes for editable installs, first diagrams, brand setup, import, exp\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "start",
+   "try": 1,
+   "say": "Open docs/cookbook to see operator recipes for editable installs and brand setup.",
+   "receipt": "Operator recipes for editable installs, first diagrams, brand setup, import, export, validation, Windows junctions, and reusable prompts live in `docs/cookbook`.",
+   "errs": [
+    "receipt not found word for word in the sources: \"operator recipes for editable installs, first diagrams, brand setup, import, exp\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "start",
+   "try": 2,
+   "say": "Operator recipes live in docs/cookbook.",
+   "receipt": "...live in `docs/cookbook.`",
+   "errs": [
+    "has 5 words, must have 12-20",
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "share",
+   "try": 0,
+   "say": "Save this for when you want to import a diagram without fighting Figma.",
+   "receipt": "I'd either fight with Figma for 30 minutes or just skip the diagram.",
+   "errs": []
+  },
+  {
+   "slot": "share",
+   "try": 0,
+   "say": "Save this for when you need to skip fighting Figma or send it to someone who wants clean diagrams.",
+   "receipt": "\"I'd either fight with Figma for 30 minutes or just skip the diagram.\"",
+   "errs": [
+    "has 19 words, must have 10-16"
+   ]
+  },
+  {
+   "slot": "share",
+   "try": 1,
+   "say": "Send this to your engineer friend so you can skip fighting Figma.",
+   "receipt": "- I'd either fight with Figma for 30 minutes or just skip the diagram.",
+   "errs": [
+    "must start with 'Send this to someone who' or 'Save this for'"
+   ]
+  },
+  {
+   "slot": "share",
+   "try": 2,
+   "say": "Share this link if a diagram saves more time than thirty minutes of arguing in an editor.",
+   "receipt": "| Detail | `faithful` (≤24 nodes, zoned) · `balanced` (≤12) · `simplified` (≤7)",
+   "errs": [
+    "has 17 words, must have 10-16",
+    "must start with 'Send this to someone who' or 'Save this for'",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "share",
+   "try": 0,
+   "say": "Send this to someone who wastes hours in Figma instead of drawing clear diagrams.",
+   "receipt": "| I'd either fight with Figma for 30 minutes or just skip the diagram.",
+   "errs": []
+  },
+  {
+   "slot": "end",
+   "try": 0,
+   "say": "Save time on Figma and try diagram-design.",
+   "receipt": "I'd either fight with Figma for 30 minutes or just skip the diagram.",
+   "errs": []
+  },
+  {
+   "slot": "end",
+   "try": 0,
+   "say": "The repo is diagram-design.",
+   "receipt": "diagram-design:",
+   "errs": [
+    "has 4 words, must have 6-12"
+   ]
+  },
+  {
+   "slot": "end",
+   "try": 1,
+   "say": "diagram design makes editorial SVGs in HTML.",
+   "receipt": "Editorial diagram design for Claude Code... Self-contained HTML + SVG.",
+   "errs": []
+  },
+  {
+   "slot": "end",
+   "try": 0,
+   "say": "See diagram design for editorial diagrams.",
+   "receipt": "**cathrynlavery/diagram-design**: Editorial diagram design ...",
+   "errs": []
+  }
+ ]
+}

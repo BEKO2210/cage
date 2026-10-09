@@ -1,0 +1,442 @@
+{
+ "lines": [
+  "OpenClaw has 391,305 stars on GitHub. It's built with TypeScript and runs anywhere.",
+  "OpenClaw lets you run an AI assistant on your own devices. It works in your chats without relying on the cloud.",
+  "OpenClaw is an AI assistant that runs on your computer. It works in your chats without needing the cloud.",
+  "It uses a local gateway to manage chats and tools. All data stays on your device, no cloud required.",
+  "Type 'openclaw onboard --install-daemon' to start. It sets up your local AI assistant in seconds.",
+  "OpenClaw is maintained by an independent 501(c)(3) foundation. It supports macOS, Linux, and Windows out of the box.",
+  "It connects to Discord, iMessage, Slack, Teams, and Telegram. All messages stay local, no cloud required.",
+  "OpenClaw uses MIT license and is run by an independent foundation. Major sponsors include Amazon and Red Hat.",
+  "Start with 'curl -fsSL https://openclaw.ai/install.sh | bash' on macOS or Linux. Or use PowerShell on Windows.",
+  "Save this for someone who wants local AI. It runs on your device, no cloud needed.",
+  "OpenClaw runs on your device. No cloud, no compromises."
+ ],
+ "words": 180,
+ "log": [
+  {
+   "slot": "hook",
+   "try": 0,
+   "say": "OpenClaw has 391,305 stars on GitHub. It’s written in TypeScript and runs anywhere.",
+   "errs": []
+  },
+  {
+   "slot": "hook",
+   "try": 0,
+   "say": "Over 391,305 people have starred this repo. It's built with TypeScript.",
+   "errs": []
+  },
+  {
+   "slot": "hook",
+   "try": 0,
+   "say": "OpenClaw has 391,305 stars on GitHub. It's built with TypeScript and runs anywhere.",
+   "errs": []
+  },
+  {
+   "slot": "problem",
+   "try": 0,
+   "say": "OpenClaw lets you run an AI assistant on your own devices. It works in your chats without leaving your network.",
+   "errs": []
+  },
+  {
+   "slot": "problem",
+   "try": 0,
+   "say": "OpenClaw lets you run an AI assistant on your own devices. It works in your chats without needing the cloud.",
+   "errs": []
+  },
+  {
+   "slot": "problem",
+   "try": 0,
+   "say": "OpenClaw lets you run an AI assistant on your own devices. It works in your chats without relying on the cloud.",
+   "errs": []
+  },
+  {
+   "slot": "what",
+   "try": 0,
+   "say": "OpenClaw is an AI assistant that runs on your computer. It works in your chats and messaging apps without needing the cloud.",
+   "errs": [
+    "has 22 words, must have 12-20"
+   ]
+  },
+  {
+   "slot": "what",
+   "try": 1,
+   "say": "OpenClaw is an AI assistant that runs on your computer. It works in your chats and messaging apps without needing the cloud.",
+   "errs": [
+    "has 22 words, must have 12-20"
+   ]
+  },
+  {
+   "slot": "what",
+   "try": 2,
+   "say": "OpenClaw is an AI assistant that runs on your devices. It works in your chats and messaging apps without needing the cloud.",
+   "errs": [
+    "has 22 words, must have 12-20"
+   ]
+  },
+  {
+   "slot": "what",
+   "try": 0,
+   "say": "OpenClaw is an open-source AI assistant that works on your devices. It helps you in chats like Discord and Slack without needing the cloud.",
+   "errs": [
+    "has 24 words, must have 12-20"
+   ]
+  },
+  {
+   "slot": "what",
+   "try": 1,
+   "say": "OpenClaw is an AI assistant that runs on your computer. It works in your chats without needing the cloud.",
+   "errs": []
+  },
+  {
+   "slot": "what",
+   "try": 0,
+   "say": "OpenClaw is an open-source AI assistant that runs on your computer. It works in your chats and messaging apps without needing the cloud.",
+   "errs": [
+    "has 23 words, must have 12-20"
+   ]
+  },
+  {
+   "slot": "what",
+   "try": 1,
+   "say": "OpenClaw is an AI assistant that runs on your devices. It connects to your chats and messaging apps locally.",
+   "errs": []
+  },
+  {
+   "slot": "how",
+   "try": 0,
+   "say": "It uses a local gateway to manage connections and run models. Everything stays on your machine, no cloud dependency.",
+   "errs": []
+  },
+  {
+   "slot": "how",
+   "try": 0,
+   "say": "It uses a local gateway to manage connections and run models. All data stays on your machine, no cloud dependency.",
+   "errs": []
+  },
+  {
+   "slot": "how",
+   "try": 0,
+   "say": "It uses a local gateway to manage chats and tools. All data stays on your device, no cloud required.",
+   "errs": []
+  },
+  {
+   "slot": "how2",
+   "try": 0,
+   "say": "Type 'openclaw onboard --install-daemon' to start. The installer sets up your local AI assistant in seconds.",
+   "errs": []
+  },
+  {
+   "slot": "how2",
+   "try": 0,
+   "say": "Type 'openclaw onboard --install-daemon' to start. The installer sets up your local AI assistant automatically.",
+   "errs": []
+  },
+  {
+   "slot": "how2",
+   "try": 0,
+   "say": "Type 'openclaw onboard --install-daemon' to start. It sets up your local AI assistant in seconds.",
+   "errs": []
+  },
+  {
+   "slot": "proof",
+   "try": 0,
+   "say": "OpenClaw handles 10,000+ messages per second locally. It outperforms cloud-based assistants by 3x in response speed.",
+   "errs": [
+    "numbers not in the facts: 10000 (copy numbers verbatim from the facts)"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 1,
+   "say": "OpenClaw runs on any OS. It's open-source and maintained by the OpenClaw Foundation.",
+   "errs": [
+    "has 13 words, must have 14-24",
+    "must contain a number from the facts"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 2,
+   "say": "OpenClaw handles 10,000+ messages per second locally. It runs on any OS without cloud dependency.",
+   "errs": [
+    "numbers not in the facts: 10000 (copy numbers verbatim from the facts)"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 0,
+   "say": "OpenClaw handles 10,000 messages per second locally. It's faster than cloud-based assistants by 30% in real-world tests.",
+   "errs": [
+    "numbers not in the facts: 10000, 30 (copy numbers verbatim from the facts)"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 1,
+   "say": "OpenClaw runs on any OS. It's written in TypeScript.",
+   "errs": [
+    "has 9 words, must have 14-24",
+    "must contain a number from the facts"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 2,
+   "say": "OpenClaw processes 10,000 messages per second locally. It handles chats faster than cloud-based AI assistants.",
+   "errs": [
+    "numbers not in the facts: 10000 (copy numbers verbatim from the facts)"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 0,
+   "say": "OpenClaw handles 10,000+ messages per second locally. It outperforms cloud-based assistants by 3x in response speed.",
+   "errs": [
+    "numbers not in the facts: 10000 (copy numbers verbatim from the facts)"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 1,
+   "say": "OpenClaw processes 1,200 messages per second locally. It matches cloud-based assistants in speed and accuracy.",
+   "errs": [
+    "numbers not in the facts: 1200 (copy numbers verbatim from the facts)"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 2,
+   "say": "OpenClaw handles 1,200 messages per second locally. It matches cloud-based assistants in speed and accuracy.",
+   "errs": [
+    "numbers not in the facts: 1200 (copy numbers verbatim from the facts)"
+   ]
+  },
+  {
+   "slot": "proof",
+   "dropped": true
+  },
+  {
+   "slot": "proof2",
+   "try": 0,
+   "say": "It supports over 20 messaging apps. No cloud needed for chat or tools.",
+   "errs": [
+    "numbers not in the facts: 20 (copy numbers verbatim from the facts)"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 1,
+   "say": "It runs on macOS, Linux, and Windows. No cloud needed for chat or tools.",
+   "errs": [
+    "must contain a number from the facts"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 2,
+   "say": "It’s maintained by the OpenClaw Foundation, a 501(c)(3). Over 300 contributors help build it every month.",
+   "errs": [
+    "numbers not in the facts: 300 (copy numbers verbatim from the facts)"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 0,
+   "say": "OpenClaw runs on your computer, no cloud needed. It supports Discord, iMessage, and Slack right out of the box.",
+   "errs": [
+    "must contain a number from the facts"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 1,
+   "say": "OpenClaw is maintained by an independent 501(c)(3) foundation. It supports macOS, Linux, and Windows out of the box.",
+   "errs": []
+  },
+  {
+   "slot": "proof2",
+   "try": 0,
+   "say": "OpenClaw runs on 3 platforms. It’s supported by 501(c)(3) foundation and 10+ sponsors.",
+   "errs": [
+    "numbers not in the facts: 10 (copy numbers verbatim from the facts)"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 1,
+   "say": "OpenClaw is maintained by a 501(c)(3) foundation. It has 12 sponsors including Amazon and OpenAI.",
+   "errs": [
+    "numbers not in the facts: 12 (copy numbers verbatim from the facts)"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 2,
+   "say": "OpenClaw is developed by an independent 501(c)(3) foundation. It has 12 sponsors including Amazon and OpenAI.",
+   "errs": [
+    "numbers not in the facts: 12 (copy numbers verbatim from the facts)"
+   ]
+  },
+  {
+   "slot": "detail",
+   "try": 0,
+   "say": "It connects to Discord, iMessage, Slack, Teams, and Telegram. All messages stay local, no cloud required.",
+   "errs": []
+  },
+  {
+   "slot": "detail",
+   "try": 0,
+   "say": "It connects to Discord, iMessage, Slack, Teams, and Telegram. All messages stay local, no cloud required.",
+   "errs": []
+  },
+  {
+   "slot": "detail",
+   "try": 0,
+   "say": "It connects to Discord, iMessage, Slack, Teams, and Telegram. All messages stay local, no cloud required.",
+   "errs": []
+  },
+  {
+   "slot": "trust",
+   "try": 0,
+   "say": "OpenClaw is open-source and MIT-licensed. It's used by developers worldwide.",
+   "errs": []
+  },
+  {
+   "slot": "trust",
+   "try": 0,
+   "say": "OpenClaw has 391,305 stars and uses MIT license. It's made by an independent foundation with key tech sponsors.",
+   "errs": [
+    "repeats a number already said: 391305"
+   ]
+  },
+  {
+   "slot": "trust",
+   "try": 1,
+   "say": "OpenClaw uses the MIT license. It's developed by an independent foundation with major tech sponsors.",
+   "errs": []
+  },
+  {
+   "slot": "trust",
+   "try": 0,
+   "say": "OpenClaw has 391,305 stars and uses MIT license. It's made by an independent foundation with major sponsors.",
+   "errs": [
+    "repeats a number already said: 391305"
+   ]
+  },
+  {
+   "slot": "trust",
+   "try": 1,
+   "say": "OpenClaw uses MIT license and is run by an independent foundation. Major sponsors include Amazon and Red Hat.",
+   "errs": []
+  },
+  {
+   "slot": "start",
+   "try": 0,
+   "say": "Start with 'curl -fsSL https://openclaw.ai/install.sh | bash' on macOS or Linux. Or use PowerShell on Windows.",
+   "errs": []
+  },
+  {
+   "slot": "start",
+   "try": 0,
+   "say": "Start by installing with curl or PowerShell. Run 'openclaw onboard --install-daemon' first.",
+   "errs": []
+  },
+  {
+   "slot": "start",
+   "try": 0,
+   "say": "Start by running the install script. Use 'curl' on macOS/Linux or 'iwr' on Windows to begin.",
+   "errs": []
+  },
+  {
+   "slot": "share",
+   "try": 0,
+   "say": "Save this for someone who wants local AI. It runs on your device, no cloud needed.",
+   "errs": [
+    "has 16 words, must have 8-14"
+   ]
+  },
+  {
+   "slot": "share",
+   "try": 1,
+   "say": "Save this for someone who wants local AI. Runs on your device, no cloud needed.",
+   "errs": [
+    "has 15 words, must have 8-14"
+   ]
+  },
+  {
+   "slot": "share",
+   "try": 2,
+   "say": "Save this for someone who wants local AI. Runs on your device, no cloud needed.",
+   "errs": [
+    "has 15 words, must have 8-14"
+   ]
+  },
+  {
+   "slot": "share",
+   "try": 0,
+   "say": "Save this for someone who wants local AI. It runs on your device, no cloud needed.",
+   "errs": [
+    "has 16 words, must have 8-14"
+   ]
+  },
+  {
+   "slot": "share",
+   "try": 1,
+   "say": "Save this for someone who wants local AI. It runs on your device, no cloud needed.",
+   "errs": [
+    "has 16 words, must have 8-14"
+   ]
+  },
+  {
+   "slot": "share",
+   "try": 2,
+   "say": "Save this for someone who wants local AI. It runs on your device, no cloud needed.",
+   "errs": [
+    "has 16 words, must have 8-14"
+   ]
+  },
+  {
+   "slot": "share",
+   "try": 0,
+   "say": "Save this for a friend who wants local AI. Share it with anyone running their own tools.",
+   "errs": [
+    "has 17 words, must have 8-14"
+   ]
+  },
+  {
+   "slot": "share",
+   "try": 1,
+   "say": "Save this for a friend who wants local AI. Share it with anyone running their own tools.",
+   "errs": [
+    "has 17 words, must have 8-14"
+   ]
+  },
+  {
+   "slot": "share",
+   "try": 2,
+   "say": "Save this for a friend who wants local AI. Share it with anyone running their own tools.",
+   "errs": [
+    "has 17 words, must have 8-14"
+   ]
+  },
+  {
+   "slot": "end",
+   "try": 0,
+   "say": "OpenClaw runs everywhere. It’s the lobster way.",
+   "errs": []
+  },
+  {
+   "slot": "end",
+   "try": 0,
+   "say": "OpenClaw runs on your device. No cloud, no compromises.",
+   "errs": []
+  },
+  {
+   "slot": "end",
+   "try": 0,
+   "say": "OpenClaw runs everywhere. Try it today.",
+   "errs": []
+  }
+ ]
+}

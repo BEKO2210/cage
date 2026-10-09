@@ -1,0 +1,929 @@
+{
+ "lines": [
+  "It found a flight in 7 point 1 seconds with all waits included.",
+  "Developers waste time on slow browser loops and heavy protocols.",
+  "Jev Ultrafast is a Python library that lets you build web agents for developers.",
+  "It uses an atomic DOM snapshot and indexed controls to wait for useful states within milliseconds.",
+  "Type a goal to open an article or filter hotels, then see it run instantly.",
+  "Median task time went from 9.450 s → 7.092 s.",
+  "The code is small enough to read, with agent.py holding the complete loop and text-helper handoff.",
+  "It includes a flight search script and renders demos at one times speed.",
+  "Clone the repo on GitHub, run uv sync in your terminal, then make a copy of env.example.",
+  "Send this to someone who needs a faster web agent.",
+  "That speed comes from browser-use slash jev-ultrafast."
+ ],
+ "words": 141,
+ "log": [
+  {
+   "slot": "hook",
+   "try": 0,
+   "say": "Jev Ultrafast booked a flight in seven point one seconds including all waits.",
+   "receipt": "**Zürich → London on Google Flights in 7.1 seconds.** One natural-language goal, actual text generation, and loading waits included.",
+   "errs": [
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "hook",
+   "try": 1,
+   "say": "Zürich to London on Google Flights took 7.1 seconds.",
+   "receipt": "**Zürich → London on Google Flights in 7.1 seconds.** One natural-language goal, actual text generation, and loading waits included.",
+   "errs": [
+    "has 9 words, must have 12-20",
+    "English only, no foreign characters"
+   ]
+  },
+  {
+   "slot": "hook",
+   "try": 2,
+   "say": "Zürich to London flights booked in seven point one seconds.",
+   "receipt": "**Zürich → London on Google Flights in 7.1 seconds.**",
+   "errs": [
+    "has 10 words, must have 12-20",
+    "must contain a number from the facts",
+    "English only, no foreign characters",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "hook",
+   "try": 0,
+   "say": "Google Flights search took 7.1 seconds including all waits.",
+   "receipt": "Zürich → London on Google Flights in 7.1 seconds.",
+   "errs": [
+    "has 9 words, must have 12-20"
+   ]
+  },
+  {
+   "slot": "hook",
+   "try": 1,
+   "say": "Zürich to London on Google Flights happened in 7.1 seconds with typing included.",
+   "receipt": "**Zürich → London on Google Flights in 7.1 seconds.** One natural-language goal, actual text generation, and loading waits included.",
+   "errs": [
+    "English only, no foreign characters"
+   ]
+  },
+  {
+   "slot": "hook",
+   "try": 2,
+   "say": "A natural language goal finished the flight search in seven point zero nine two seconds.",
+   "receipt": "F2: **Zürich → London on Google Flights in 7.1 seconds.** One natural-language goal, actual text generation, and loading waits included.\n\nF8: The same policy opened the requested Wikipedia article in **2.798 s** and passed a local hotel search/filter task in **1.896 s**.",
+   "errs": [
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words",
+    "receipt not found word for word in the sources: \"f2: zürich → london on google flights in 7.1 seconds. one natural-language goal,\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "hook",
+   "try": 0,
+   "say": "It found a flight in 7 point 1 seconds with all waits included.",
+   "receipt": "**Zürich → London on Google Flights in 7.1 seconds.** One natural-language goal, actual text generation, and loading waits included.",
+   "errs": []
+  },
+  {
+   "slot": "problem",
+   "try": 0,
+   "say": "Developers struggle with slow agents making many protocol calls.",
+   "receipt": "Median browser protocol calls went from **1,092 → 101**",
+   "errs": [
+    "has 9 words, must have 14-24"
+   ]
+  },
+  {
+   "slot": "problem",
+   "try": 1,
+   "say": "Today you fight slow agents that make hundreds of unnecessary browser requests to complete a simple task.",
+   "receipt": "Median browser protocol calls went from **1,092 → 101**",
+   "errs": [
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "problem",
+   "try": 2,
+   "say": "Developers face slow agents making many protocol calls.",
+   "receipt": "... median browser protocol calls went from 1092 → 101",
+   "errs": [
+    "has 8 words, must have 14-24",
+    "receipt not found word for word in the sources: \"median browser protocol calls went from 1092 → 101\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "problem",
+   "try": 0,
+   "say": "The pain is slow agents needing many protocol calls to finish simple tasks.",
+   "receipt": "Median browser protocol calls went from 1,092 → 101.",
+   "errs": [
+    "has 13 words, must have 14-24",
+    "receipt not found word for word in the sources: \"median browser protocol calls went from 1,092 → 101.\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "problem",
+   "try": 1,
+   "say": "Agents need many requests to finish tasks.",
+   "receipt": "One request per decision cycle.",
+   "errs": [
+    "has 7 words, must have 14-24"
+   ]
+  },
+  {
+   "slot": "problem",
+   "try": 2,
+   "say": "Developers waste time waiting for slow agents.",
+   "receipt": "- **Median browser protocol calls went from 1,092 → 101**.",
+   "errs": [
+    "has 7 words, must have 14-24",
+    "receipt not found word for word in the sources: \"- median browser protocol calls went from 1,092 → 101 .\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "problem",
+   "try": 0,
+   "say": "Developers waste time on slow browser loops and heavy protocols.",
+   "receipt": "Every observation produces a new element table",
+   "errs": [
+    "has 10 words, must have 14-24"
+   ]
+  },
+  {
+   "slot": "problem",
+   "try": 1,
+   "say": "Modern pages load slowly and block work with many extra requests.",
+   "receipt": "The Browser Use Cloud waitlist is open",
+   "errs": [
+    "has 11 words, must have 14-24"
+   ]
+  },
+  {
+   "slot": "problem",
+   "try": 2,
+   "say": "The problem is slow loading that blocks your tools.",
+   "receipt": "page → element table → operation ... Operation and target heads share the same observed state.",
+   "errs": [
+    "has 9 words, must have 14-24"
+   ]
+  },
+  {
+   "slot": "what",
+   "try": 0,
+   "say": "It is a fast web agent for developers who need simple Python code.",
+   "receipt": "| File | Job |\n| --- | --- |\n| agent.py | The complete loop and text-helper handoff |",
+   "errs": [
+    "has 13 words, must have 14-22"
+   ]
+  },
+  {
+   "slot": "what",
+   "try": 1,
+   "say": "Jev Ultrafast lets you build agents using only the browser-use library.",
+   "receipt": "| agent.py | The complete loop and text-helper handoff |\n| snapshot.js | Atomic DOM snapshot, indexed controls, freshness guard|\n| browser.py | Browser connection, current geometry, execution |\n| model.py | Dynamic operation/target heads and text generation",
+   "errs": [
+    "has 11 words, must have 14-22",
+    "receipt not found word for word in the sources: \"agent.py the complete loop and text-helper handoff snapshot.js atomic dom snapsh\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "what",
+   "try": 2,
+   "say": "Jev Ultrafast is a Python library that lets you build web agents for developers.",
+   "receipt": "| File | Job |\n| agent.py | The complete loop and text-helper handoff |",
+   "errs": []
+  },
+  {
+   "slot": "what",
+   "try": 0,
+   "say": "Jev ultrafast is a fast web agent for developers who want to automate browser tasks efficiently.",
+   "receipt": "| File | Job |\n| agent.py | The complete loop and text-helper handoff|",
+   "errs": []
+  },
+  {
+   "slot": "what",
+   "try": 0,
+   "say": "This library is for developers who need fast browser automation with minimal overhead.",
+   "receipt": "",
+   "errs": [
+    "has 13 words, must have 14-22",
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "what",
+   "try": 1,
+   "say": "Jev Ultrafast is a lightweight Python library for developers needing fast browser automation.",
+   "receipt": "| File | Job |\n| agent.py | The complete loop and text-helper handoff |",
+   "errs": [
+    "has 13 words, must have 14-22"
+   ]
+  },
+  {
+   "slot": "what",
+   "try": 2,
+   "say": "Jev Ultrafast is a small Python tool that helps you make web agents faster.",
+   "receipt": "| File | Job |\\n| agent.py | The complete loop and text-helper handoff |\\n| snapshot.js | Atomic DOM snapshot, indexed controls, freshness guard|",
+   "errs": [
+    "receipt not found word for word in the sources: \"file job n agent.py the complete loop and text-helper handoff n snapshot.js atom\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "how",
+   "try": 0,
+   "say": "It waits for suggestions to appear before clicking, limiting each interaction to just a few animation frames.",
+   "receipt": "- Wait for useful state. After typing into a combobox, wait for visible suggestions\n- Other interactions get at most two animation frames or 50 ms.",
+   "errs": [
+    "receipt not found word for word in the sources: \"- wait for useful state. after typing into a combobox, wait for visible suggesti\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "how",
+   "try": 1,
+   "say": "After you type text, it waits for suggestions to become visible before acting.",
+   "receipt": "- Wait for useful state. After typing into a combobox, wait for visible suggestions",
+   "errs": [
+    "has 13 words, must have 16-26"
+   ]
+  },
+  {
+   "slot": "how",
+   "try": 2,
+   "say": "The system types, then strictly waits two animation frames or fifty milliseconds for suggestions to appear.",
+   "receipt": "- **Wait for useful state.** After typing into a combobox, wait for visible suggestions, capped at 200 ms.\n- Other interactions get at most two animation frames or 50 ms.",
+   "errs": [
+    "write every number in digits exactly as in the facts, never in words",
+    "receipt not found word for word in the sources: \"- wait for useful state. after typing into a combobox, wait for visible suggesti\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "how",
+   "try": 0,
+   "say": "Each decision cycle uses one request where operation and target share the same observed state.",
+   "receipt": "- **One request per decision cycle.** Operation and target heads share the same observed state.",
+   "errs": [
+    "has 15 words, must have 16-26"
+   ]
+  },
+  {
+   "slot": "how",
+   "try": 1,
+   "say": "Each step makes one request where action and target read the same current page view.",
+   "receipt": "- **One request per decision cycle.** Operation and target heads share the same observed state.",
+   "errs": [
+    "has 15 words, must have 16-26"
+   ]
+  },
+  {
+   "slot": "how",
+   "try": 2,
+   "say": "One request per cycle shares state between operation and target heads.",
+   "receipt": "- One request per decision cycle.",
+   "errs": [
+    "has 11 words, must have 16-26"
+   ]
+  },
+  {
+   "slot": "how",
+   "try": 0,
+   "say": "It uses an atomic DOM snapshot and indexed controls to wait for useful states within milliseconds.",
+   "receipt": "snapshot.js | Atomic DOM snapshot, indexed controls ...",
+   "errs": []
+  },
+  {
+   "slot": "how2",
+   "try": 0,
+   "say": "Type a goal to find Gödel's incompleteness theorems on Wikipedia and watch it open in 2 point 798 seconds.",
+   "receipt": "--goal 'Find and open the Wikipedia article about Gödel's incompleteness theorems.'\n... opened the requested Wikipedia article in **2.798 s**",
+   "errs": [
+    "numbers not in the facts: 798 (copy numbers verbatim from the facts)",
+    "English only, no foreign characters"
+   ]
+  },
+  {
+   "slot": "how2",
+   "try": 1,
+   "say": "Type a goal to find Gödel's incompleteness theorems on Wikipedia and watch it open in two point seven nine eight seconds.",
+   "receipt": "--goal 'Find and open the Wikipedia article about Gödel's incompleteness theorems.'\n... opened ... 2.798 s",
+   "errs": [
+    "English only, no foreign characters",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "how2",
+   "try": 2,
+   "say": "Find Gödel's incompleteness on Wikipedia and watch it open in two point seven nine eight seconds.",
+   "receipt": "The same policy opened the requested Wikipedia article in **2.798 s**",
+   "errs": [
+    "English only, no foreign characters",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "how2",
+   "try": 0,
+   "say": "Type a goal to open an article or filter hotels, then see it run instantly.",
+   "receipt": "--goal 'Find and open the Wikipedia article about Gödel's incompleteness theorems.' ... The same policy opened the requested Wikipedia article in **2.798 s**",
+   "errs": [
+    "has 15 words, must have 16-26"
+   ]
+  },
+  {
+   "slot": "how2",
+   "try": 1,
+   "say": "Type a goal like opening Wikipedia about Gödel's theorems or filtering local hotels.",
+   "receipt": "\"uv run --env-file .env python examples/run.py \\  --url https://en.wikipedia.org/wiki/Main_Page \\  --goal 'Find and open the Wikipedia article about Gödel's incompleteness theorems.'\"",
+   "errs": [
+    "has 13 words, must have 16-26",
+    "English only, no foreign characters",
+    "receipt not found word for word in the sources: \"\"uv run --env-file .env python examples/run.py --url https://en.wikipedia.org/wi\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "how2",
+   "try": 2,
+   "say": "Run a script that opens Wikipedia about Gödel's incompleteness theorems in two point seven nine eight seconds.",
+   "receipt": "uv run --env-file .env python examples/run.py \\n  --url https://en.wikipedia.org/wiki/Main_Page \\n  --goal 'Find and open the Wikipedia article about Gödel's incompleteness theorems.'",
+   "errs": [
+    "English only, no foreign characters",
+    "write every number in digits exactly as in the facts, never in words",
+    "receipt not found word for word in the sources: \"uv run --env-file .env python examples/run.py n --url https://en.wikipedia.org/w\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "how2",
+   "try": 0,
+   "say": "Try this Wikipedia goal and see it open in under three seconds.",
+   "receipt": "--goal 'Find and open the Wikipedia article about Gödel's incompleteness theorems.'",
+   "errs": [
+    "has 12 words, must have 16-26",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "how2",
+   "try": 1,
+   "say": "Run this command to find a Wikipedia article about Gödel's incompleteness theorems.",
+   "receipt": "--goal 'Find and open the Wikipedia article about Gödel's incompleteness theorems.'",
+   "errs": [
+    "has 12 words, must have 16-26",
+    "English only, no foreign characters"
+   ]
+  },
+  {
+   "slot": "how2",
+   "try": 2,
+   "say": "Open Wikipedia for Godel or search a local hotel in under three seconds.",
+   "receipt": "uv run --env-file .env python examples/run.py \\  --url https://en.wikipedia.org/wiki/Main_Page \\  --goal 'Find and open the Wikipedia article about Gödel's incompleteness theorems.' ... The same policy opened the requested Wikipedia article in **2.798 s** and passed a local hotel search/filter task in **1.896 s**",
+   "errs": [
+    "has 13 words, must have 16-26",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 0,
+   "say": "Median task time dropped from nine point four five zero to seven point zero nine two seconds, a twenty-five percent reduction.",
+   "receipt": "F7: Median task time went from **9.450 s → 7.092 s**, a **25% reduction**",
+   "errs": [
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 1,
+   "say": "Median task time dropped from 9 point four five zero to seven point zero nine two seconds.",
+   "receipt": "F7: Median task time went from **9.450 s → 7.092 s**",
+   "errs": [
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 2,
+   "say": "Median task time went from 9.450 s → 7.092 s.",
+   "receipt": "**Median task time went from** **9.450 s → 7.092 s**, a **25% reduction**; median browser protocol calls went from **1,092 → 101**.",
+   "errs": [
+    "has 10 words, must have 16-26"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 0,
+   "say": "Median task time dropped from 9 point 450 seconds to 7 point 092, a twenty-five percent reduction.",
+   "receipt": "F7: Median task time went from **9.450 s → 7.092 s**, a **25% reduction**",
+   "errs": [
+    "numbers not in the facts: 450, 092 (copy numbers verbatim from the facts)",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 1,
+   "say": "Median task time went from nine point four five zero seconds to seven point zero nine two.",
+   "receipt": "F7: Median task time went from **9.450 s → 7.092 s**,",
+   "errs": [
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 2,
+   "say": "Median task time dropped to seven point zero nine two seconds with protocol calls reduced to one hundred one.",
+   "receipt": "F7: Median task time went from **9.450 s → 7.092 s**, a **25% reduction**; median browser protocol calls went from **1,092 → 101**.",
+   "errs": [
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 0,
+   "say": "Median task time dropped from 9 point 450 to 7 point 092 seconds, a twenty-five percent reduction.",
+   "receipt": "F7: Median task time went from **9.450 s → 7.092 s**, a **25% reduction**;",
+   "errs": [
+    "numbers not in the facts: 450, 092 (copy numbers verbatim from the facts)",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 1,
+   "say": "Median task time went from nine point four five zero to seven point zero nine two seconds.",
+   "receipt": "**9.450 s → 7.092 s**",
+   "errs": [
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 2,
+   "say": "Median protocol calls dropped from one thousand ninety-two to one hundred one.",
+   "receipt": "F7: Median task time went from **9.450 s → 7.092 s**, a **25% reduction**; median browser protocol calls went from **1,092 → 101**.",
+   "errs": [
+    "has 12 words, must have 16-26",
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 0,
+   "say": "It opened a Wikipedia article in two point seven nine eight seconds.",
+   "receipt": "The same policy opened the requested Wikipedia article in **2.798 s**",
+   "errs": [
+    "has 12 words, must have 14-24",
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 1,
+   "say": "It opened Wikipedia in two point seven nine eight seconds and filtered hotels in one point eight nine six.",
+   "receipt": "The same policy opened the requested Wikipedia article in **2.798 s** and passed a local hotel search/filter task in **1.896 s**.",
+   "errs": [
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 2,
+   "say": "The Wikipedia article opened in 2 .798 seconds.",
+   "receipt": "F8: The same policy opened the requested Wikipedia article in **2.798 s**",
+   "errs": [
+    "has 8 words, must have 14-24",
+    "numbers not in the facts: 798 (copy numbers verbatim from the facts)"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 0,
+   "say": "The same policy opened Wikipedia in 2 point 798 seconds and passed a local hotel search task in 1 point 896 seconds.",
+   "receipt": "F8: The same policy opened the requested Wikipedia article in **2.798 s** and passed a local hotel search/filter task in **1.896 s**.",
+   "errs": [
+    "numbers not in the facts: 798, 896 (copy numbers verbatim from the facts)"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 1,
+   "say": "The same policy opened Wikipedia in 2 point seven nine eight seconds.",
+   "receipt": "F8: The same policy opened the requested Wikipedia article in **2.798 s**",
+   "errs": [
+    "has 12 words, must have 14-24",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 2,
+   "say": "The same policy opened Wikipedia in 2 point seven nine eight seconds.",
+   "receipt": "F8: The same policy opened the requested Wikipedia article in **2.798 s**...",
+   "errs": [
+    "has 12 words, must have 14-24",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 0,
+   "say": "It opened a Wikipedia page in two point seven nine eight seconds.",
+   "receipt": "The same policy opened the requested Wikipedia article in **2.798 s**",
+   "errs": [
+    "has 12 words, must have 14-24",
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 1,
+   "say": "It opened Wikipedia in two point seven nine eight seconds for that exact task.",
+   "receipt": "The same policy opened the requested Wikipedia article in 2.798 s",
+   "errs": [
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 2,
+   "say": "The same policy opened Wikipedia in 2 point seven nine eight seconds.",
+   "receipt": "The same policy opened the requested Wikipedia article in **2.798 s**",
+   "errs": [
+    "has 12 words, must have 14-24",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "dropped": true
+  },
+  {
+   "slot": "detail",
+   "try": 0,
+   "say": "The code is small enough to read, with agent.py holding the complete loop and text-helper handoff.",
+   "receipt": "| File | Job |\n| agent.py | The complete loop and text-helper handoff|",
+   "errs": []
+  },
+  {
+   "slot": "detail",
+   "try": 0,
+   "say": "It captures original browser timestamps and renders that verified run at one times.",
+   "receipt": "`scripts/record_flights.py ` captures original browser timestamps; `scripts/render_demo.py ` renders that verified run at 1×",
+   "errs": [
+    "has 13 words, must have 14-24"
+   ]
+  },
+  {
+   "slot": "detail",
+   "try": 1,
+   "say": "scripts record_flights.py captures original timestamps; scripts render_demo.py renders that verified run at one times.",
+   "receipt": "`scripts/record_flights.py ` captures original browser timestamps; ... `scripts/render_demo.py ` renders that verified run at 1× ...",
+   "errs": []
+  },
+  {
+   "slot": "detail",
+   "try": 0,
+   "say": "Every observation creates a new table listing clickable actions to reach your goal.",
+   "receipt": "[1] button    Change ticket type · Round trip [2] combobox  Where from?        · San Francisco",
+   "errs": [
+    "has 13 words, must have 14-24"
+   ]
+  },
+  {
+   "slot": "detail",
+   "try": 1,
+   "say": "Every decision cycle gets just one request based on the current state.",
+   "receipt": "**One request per decision cycle.** Operation and target heads share the same observed state.",
+   "errs": [
+    "has 12 words, must have 14-24"
+   ]
+  },
+  {
+   "slot": "detail",
+   "try": 2,
+   "say": "The code is small enough to read in agent.py or snapshot.js.",
+   "receipt": "| File | Job |\n| --- | --- |\n| agent.py | The complete loop and text-helper handoff |\n| snapshot.js | Atomic DOM snapshot, indexed controls, freshness guard|",
+   "errs": [
+    "has 11 words, must have 14-24"
+   ]
+  },
+  {
+   "slot": "detail2",
+   "try": 0,
+   "say": "Run local tests offline, and open http://127.0.0.1:8765 to start demo.",
+   "receipt": "Open **http://127.0.0.1:8766** and click **Start demo → Run automatically**.",
+   "errs": [
+    "has 10 words, must have 12-22",
+    "numbers not in the facts: 8765 (copy numbers verbatim from the facts)"
+   ]
+  },
+  {
+   "slot": "detail2",
+   "try": 1,
+   "say": "Open http://127.0.0.1:8766 to run automatically, or use uv sync after cloning.",
+   "receipt": "uv sync\ncp .env.example .env\n... \nhttp://127.0.0.1:8766 ... Start demo → Run automatically.",
+   "errs": [
+    "has 11 words, must have 12-22",
+    "receipt not found word for word in the sources: \"start demo → run automatically.\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "detail2",
+   "try": 2,
+   "say": "Clone the repo, sync with uv, then run your script to build agents.",
+   "receipt": "git clone https://github.com/browser-use/jev-ultrafast.git\ncd jev-ultrafast\nuv sync",
+   "errs": []
+  },
+  {
+   "slot": "detail2",
+   "try": 0,
+   "say": "It includes a flight search script and renders demos at one times speed.",
+   "receipt": "`scripts/record_flights.py ` captures original browser timestamps; `scripts/render_demo.py ` renders that verified run at 1×",
+   "errs": []
+  },
+  {
+   "slot": "detail2",
+   "try": 0,
+   "say": "It works on Linux, macOS, and Windows with offline tests.",
+   "receipt": "- Development Tests are offline.",
+   "errs": [
+    "has 10 words, must have 12-22",
+    "receipt not found word for word in the sources: \"- development tests are offline.\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "detail2",
+   "try": 1,
+   "say": "Tests run offline on Linux, macOS, Windows.",
+   "receipt": "```uv run pytest\nnode --check jev_ultrafast/static/app.js\nnode --check jev_ultrafast/snapshot.js...\n``` Tests are offline.",
+   "errs": [
+    "has 7 words, must have 12-22"
+   ]
+  },
+  {
+   "slot": "detail2",
+   "try": 2,
+   "say": "Setup uses uv sync with a small Python file under twenty lines.",
+   "receipt": "| File | Job |\n| --- | --- |\n| agent.py | The complete loop and text-helper handoff|",
+   "errs": [
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "trust",
+   "try": 0,
+   "say": "Created for GitHub with over 22,000 stars and tested on complex web tasks.",
+   "receipt": "F1: 22,261 GitHub stars ... F8: The same policy opened the requested Wikipedia article in 2.798 s and passed a local hotel search/filter task in 1.896 s.",
+   "errs": [
+    "receipt not found word for word in the sources: \"f8: the same policy opened the requested wikipedia article in 2.798 s and passed\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "trust",
+   "try": 1,
+   "say": "Created by browser-use with over twenty-two thousand GitHub stars.",
+   "receipt": "F1: 22,261 GitHub stars",
+   "errs": [
+    "has 9 words, must have 12-20",
+    "write every number in digits exactly as in the facts, never in words",
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "trust",
+   "try": 2,
+   "say": "Built by browser-use with over twenty-two thousand GitHub stars.",
+   "receipt": "**22,261** GitHub stars",
+   "errs": [
+    "has 9 words, must have 12-20",
+    "write every number in digits exactly as in the facts, never in words",
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "trust",
+   "try": 0,
+   "say": "Built with Python, it has twenty-two thousand two hundred sixty-one stars.",
+   "receipt": "F1: 22,261 GitHub stars, main language Python",
+   "errs": [
+    "has 11 words, must have 12-20",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "trust",
+   "try": 1,
+   "say": "Built by browser-use with twenty-two thousand two hundred sixty-one stars.",
+   "receipt": "FACTS: F1: 22,261 GitHub stars",
+   "errs": [
+    "has 10 words, must have 12-20",
+    "write every number in digits exactly as in the facts, never in words",
+    "receipt not found word for word in the sources: \"facts: f1: 22,261 github stars\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "trust",
+   "try": 2,
+   "say": "Built by browser-use with twenty-two thousand two hundred sixty-one GitHub stars.",
+   "receipt": "FACTS F1: 22,261 GitHub stars",
+   "errs": [
+    "has 11 words, must have 12-20",
+    "write every number in digits exactly as in the facts, never in words",
+    "receipt not found word for word in the sources: \"facts f1: 22,261 github stars\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "trust",
+   "try": 0,
+   "say": "Developers trust it because browser-use built it and twenty-two thousand stars verify its speed.",
+   "receipt": "22,261 GitHub stars",
+   "errs": [
+    "write every number in digits exactly as in the facts, never in words",
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "trust",
+   "try": 1,
+   "say": "browser-use built this repo with twenty-two thousand stars.",
+   "receipt": "22,261 GitHub stars",
+   "errs": [
+    "has 8 words, must have 12-20",
+    "write every number in digits exactly as in the facts, never in words",
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "trust",
+   "try": 2,
+   "say": "Zürich to London flight search runs at 7 point 1 seconds with all waits included.",
+   "receipt": "**Zürich → London on Google Flights in 7.1 seconds.** One natural-language goal, actual text generation, and loading waits included.",
+   "errs": [
+    "English only, no foreign characters",
+    "repeats words an earlier line already said: \"1 seconds with all\" - say something new"
+   ]
+  },
+  {
+   "slot": "trust",
+   "dropped": true
+  },
+  {
+   "slot": "start",
+   "try": 0,
+   "say": "Clone this repository, sync with uv, and copy env.example to start.",
+   "receipt": "git clone https://github.com/browser-use/jev-ultrafast.git\ncd jev-ultrafast\nuv sync\ncp .env.example .env",
+   "errs": [
+    "has 11 words, must have 12-20"
+   ]
+  },
+  {
+   "slot": "start",
+   "try": 1,
+   "say": "Clone the repo on GitHub, run uv sync in your terminal, then make a copy of env.example.",
+   "receipt": "git clone https://github.com/browser-use/jev-ultrafast.git ... cd jev-ultrafast ... cp .env.example .env",
+   "errs": []
+  },
+  {
+   "slot": "start",
+   "try": 0,
+   "say": "Clone and sync with uv, then copy env.example to start.",
+   "receipt": "- git clone https://github.com/browser-use/jev-ultrafast.git\nuv sync\ncp .env.example .env",
+   "errs": [
+    "has 10 words, must have 12-20",
+    "receipt not found word for word in the sources: \"- git clone https://github.com/browser-use/jev-ultrafast.git uv sync cp .env.exa\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "start",
+   "try": 1,
+   "say": "Run these commands to install, then copy your environment file.",
+   "receipt": "- git clone https://github.com/browser-use/jev-ultrafast.git\nuv sync\ncp .env.example .env",
+   "errs": [
+    "has 10 words, must have 12-20",
+    "receipt not found word for word in the sources: \"- git clone https://github.com/browser-use/jev-ultrafast.git uv sync cp .env.exa\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "start",
+   "try": 2,
+   "say": "Git clone the repo, run uv sync to install dependencies.",
+   "receipt": "git clone https://github.com/browser-use/jev-ultrafast.git\nuv sync",
+   "errs": [
+    "has 10 words, must have 12-20",
+    "receipt not found word for word in the sources: \"git clone https://github.com/browser-use/jev-ultrafast.git uv sync\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "start",
+   "try": 0,
+   "say": "Clone from GitHub, sync dependencies, and run a Python script to get started.",
+   "receipt": "| File | Job |\n| agent.py | The complete loop and text-helper handoff |\nsnapshot.js\nbrowser-use/jev-ultrafast",
+   "errs": [
+    "receipt not found word for word in the sources: \"file job agent.py the complete loop and text-helper handoff snapshot.js browser-\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "start",
+   "try": 1,
+   "say": "Open the repo, sync dependencies with uv, then run your Python script.",
+   "receipt": "git clone https://github.com/browser-use/jev-ultrafast.git cd jev-ultrafast uv sync",
+   "errs": []
+  },
+  {
+   "slot": "share",
+   "try": 0,
+   "say": "Send this to someone who needs a faster web agent.",
+   "receipt": "",
+   "errs": []
+  },
+  {
+   "slot": "share",
+   "try": 0,
+   "say": "Save this for when you want to build fast web agents using our library.",
+   "receipt": "Jev Ultrafast is a Python library that lets you build web agents.",
+   "errs": []
+  },
+  {
+   "slot": "share",
+   "try": 0,
+   "say": "Send this to someone who needs fast agents, using agent.py and snapshot.js for atomic DOM snapshots.",
+   "receipt": "agent.py | The complete loop and text-helper handoff \n| snapshot.js | Atomic DOM snapshot, indexed controls, freshness guards",
+   "errs": []
+  },
+  {
+   "slot": "end",
+   "try": 0,
+   "say": "Jev Ultrafast is the fastest web agent.",
+   "receipt": "F0: browser-use/jev-ultrafast: Fastest and cheapest web agent",
+   "errs": [
+    "no superlatives unless the facts say exactly that"
+   ]
+  },
+  {
+   "slot": "end",
+   "try": 1,
+   "say": "browser-use jev-ultrafast.",
+   "receipt": "F0: browser-use/jev-ultrafast",
+   "errs": [
+    "has 2 words, must have 6-12"
+   ]
+  },
+  {
+   "slot": "end",
+   "try": 2,
+   "say": "Jev Ultrafast is the fastest web agent.",
+   "receipt": "**Zürich → London on Google Flights in 7.1 seconds.** One natural-language goal, actual text generation, and loading waits included.",
+   "errs": [
+    "no superlatives unless the facts say exactly that"
+   ]
+  },
+  {
+   "slot": "end",
+   "try": 0,
+   "say": "It is Jev Ultrafast.",
+   "receipt": "Jev Ultrafast ⚡",
+   "errs": [
+    "has 4 words, must have 6-12"
+   ]
+  },
+  {
+   "slot": "end",
+   "try": 1,
+   "say": "That speed comes from browser-use slash jev-ultrafast.",
+   "receipt": "Fastest and cheapest web agent",
+   "errs": []
+  },
+  {
+   "slot": "end",
+   "try": 0,
+   "say": "Try Jev Ultrafast for a faster web agent.",
+   "receipt": "**Jev Ultrafast** | The Browser Use Cloud waitlist is open.",
+   "errs": [
+    "repeats words an earlier line already said: \"a faster web agent\" - say something new"
+   ]
+  },
+  {
+   "slot": "end",
+   "try": 1,
+   "say": "Jev Ultrafast is the fastest and cheapest.",
+   "receipt": "browser-use/jev-ultrafast: Fastest and cheapest web agent",
+   "errs": [
+    "no superlatives unless the facts say exactly that"
+   ]
+  },
+  {
+   "slot": "end",
+   "try": 2,
+   "say": "Jev-Ultrafast builds a web agent for developers.",
+   "receipt": "- **Zürich → London on Google Flights in 7.1 seconds.** One natural-language goal, actual text generation, and loading waits included.",
+   "errs": []
+  }
+ ]
+}

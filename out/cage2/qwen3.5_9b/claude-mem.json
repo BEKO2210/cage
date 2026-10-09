@@ -1,0 +1,933 @@
+{
+ "lines": [
+  "Your agent forgets past sessions, wasting time repeating work instead of building on history.",
+  "Claude-Mem captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions.",
+  "Claude uses MCP tools to search your memory first, then it fetches full details only for the filtered IDs.",
+  "Install with npx claude-mem install for Grok Bot to watch its chat log files since it lacks standard hooks.",
+  "It offers up to 100 more usage time after signing in for free.",
+  "It also supports OpenClaw gateways and sets up dependencies automatically with a single command.",
+  "Alex Newman built it under Apache License 2.0 with 96,979 GitHub stars.",
+  "Save this for a developer facing agent memory limits today.",
+  "Stop wasting tokens on forgotten history with claude-mem."
+ ],
+ "words": 129,
+ "log": [
+  {
+   "slot": "hook",
+   "try": 0,
+   "say": "Ninety-seven thousand stars prove this repo has memory.",
+   "receipt": "**96,979 GitHub stars**",
+   "errs": [
+    "has 8 words, must have 12-20",
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words",
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "hook",
+   "try": 1,
+   "say": "Ninety-six thousand stars show ninety-nine percent of users love this memory plugin.",
+   "receipt": "F1: 96,979 GitHub stars...",
+   "errs": [
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words",
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "hook",
+   "try": 2,
+   "say": "Ninety-six thousand stars prove people love this tool.",
+   "receipt": "**96,979 GitHub** stars",
+   "errs": [
+    "has 8 words, must have 12-20",
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words",
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "hook",
+   "try": 0,
+   "say": "Ninety-six thousand nine hundred seventy-nine GitHub stars show it is popular.",
+   "receipt": "**96,979 GitHub stars**",
+   "errs": [
+    "has 11 words, must have 12-20",
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words",
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "hook",
+   "try": 1,
+   "say": "96,979 GitHub stars show widespread adoption.",
+   "receipt": "FACTS:F1: 96,979 GitHub stars, main language TypeScript",
+   "errs": [
+    "has 6 words, must have 12-20",
+    "receipt not found word for word in the sources: \"facts:f1: 96,979 github stars, main language typescript\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "hook",
+   "try": 2,
+   "say": "Ninety-six thousand nine hundred seventy-nine GitHub stars measure its adoption.",
+   "receipt": "FACTS:F1: 96,979 GitHub stars",
+   "errs": [
+    "has 10 words, must have 12-20",
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words",
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "hook",
+   "try": 0,
+   "say": "This project has 96,979 GitHub stars.",
+   "receipt": "F1: 96,979 GitHub stars",
+   "errs": [
+    "has 6 words, must have 12-20",
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "hook",
+   "try": 1,
+   "say": "This project captures ninety-six thousand nine hundred seventy-nine GitHub stars.",
+   "receipt": "F1: 96,979 GitHub stars",
+   "errs": [
+    "has 10 words, must have 12-20",
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words",
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "hook",
+   "try": 2,
+   "say": "It has ninety-six thousand nine hundred seventy-nine GitHub stars.",
+   "receipt": "FACTS:\nF1: 96,979 GitHub stars",
+   "errs": [
+    "has 9 words, must have 12-20",
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words",
+    "receipt not found word for word in the sources: \"facts: f1: 96,979 github stars\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "hook",
+   "dropped": true
+  },
+  {
+   "slot": "problem",
+   "try": 0,
+   "say": "Your agent forgets everything after a session ends, wasting time re-explaining context.",
+   "receipt": "Captures everything your agent does during sessions",
+   "errs": [
+    "has 12 words, must have 14-24"
+   ]
+  },
+  {
+   "slot": "problem",
+   "try": 1,
+   "say": "Agents lose all progress between sessions, forcing you to repeat explanations repeatedly.",
+   "receipt": "Captures everything your agent does during sessions",
+   "errs": [
+    "has 12 words, must have 14-24"
+   ]
+  },
+  {
+   "slot": "problem",
+   "try": 2,
+   "say": "Agents forget past work, making developers repeat themselves constantly.",
+   "receipt": "Captures everything your agent does during sessions ... injects relevant context back into future sessions.",
+   "errs": [
+    "has 9 words, must have 14-24"
+   ]
+  },
+  {
+   "slot": "problem",
+   "try": 0,
+   "say": "Agents lose past work during sessions, wasting time and context.",
+   "receipt": "Captures everything your agent does during sessions, compresses it with AI...",
+   "errs": [
+    "has 10 words, must have 14-24"
+   ]
+  },
+  {
+   "slot": "problem",
+   "try": 1,
+   "say": "Agents forget their own history between sessions and waste hours redoing work.",
+   "receipt": "Captures everything your agent does during sessions... so you get up to 100% more usage fro",
+   "errs": [
+    "has 12 words, must have 14-24"
+   ]
+  },
+  {
+   "slot": "problem",
+   "try": 2,
+   "say": "Agents lose session memory across restarts, forcing teams to repeat errors.",
+   "receipt": "Captures everything your agent does during sessions... Persistent Context Across Sessions for Every Agent",
+   "errs": [
+    "has 11 words, must have 14-24"
+   ]
+  },
+  {
+   "slot": "problem",
+   "try": 0,
+   "say": "Your agent forgets past sessions, wasting time repeating work instead of building on history.",
+   "receipt": "Captures everything your agent does during sessions... and injects relevant context back into future sessions.",
+   "errs": []
+  },
+  {
+   "slot": "what",
+   "try": 0,
+   "say": "It captures everything an agent does, compresses it with AI, and injects relevant context back into future sessions for all agents.",
+   "receipt": "Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More",
+   "errs": []
+  },
+  {
+   "slot": "what",
+   "try": 0,
+   "say": "Claude-Mem captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions.",
+   "receipt": "Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions.",
+   "errs": []
+  },
+  {
+   "slot": "what",
+   "try": 0,
+   "say": "Claude-mem captures everything an agent does, compresses it with AI to inject context back into future sessions.",
+   "receipt": "Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions.",
+   "errs": []
+  },
+  {
+   "slot": "how",
+   "try": 0,
+   "say": "Claude uses MCP tools to search memory, fetching full details only for filtered IDs.",
+   "receipt": "**`get_observations`** - Fetch full details ONLY for filtered IDs (~500-1,000 tokens/result)",
+   "errs": [
+    "has 14 words, must have 16-26"
+   ]
+  },
+  {
+   "slot": "how",
+   "try": 1,
+   "say": "Claude runs off-plan with a temporary key that unlocks the observer for up to fourteen days.",
+   "receipt": "Signing in provisions a memory key for your account and unlocks the **claude-mem observer**: memory that runs off-plan, free for up to 14 days",
+   "errs": [
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "how",
+   "try": 2,
+   "say": "Signing in provisions a memory key unlocking the claude-mem observer running off-plan free.",
+   "receipt": "F2: Signing in provisions a memory key for your account and unlocks the **claude-mem observer**: memory that runs off-plan, free",
+   "errs": [
+    "has 13 words, must have 16-26"
+   ]
+  },
+  {
+   "slot": "how",
+   "try": 0,
+   "say": "It runs off-plan to capture every action, compresses that data with AI, and injects relevant context back into future sessions.",
+   "receipt": "Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions",
+   "errs": [
+    "repeats words an earlier line already said: \"ai and injects relevant\" - say something new"
+   ]
+  },
+  {
+   "slot": "how",
+   "try": 1,
+   "say": "Claude uses MCP tools to search memory, then fetches full details only for filtered IDs.",
+   "receipt": "**`search`** - Get compact index with IDs (~50-100 tokens/result) 2.\nF4: **`get_observations`** - Fetch full details ONLY for filtered IDs (~500-1,000 tokens/result)**",
+   "errs": [
+    "has 15 words, must have 16-26"
+   ]
+  },
+  {
+   "slot": "how",
+   "try": 2,
+   "say": "Claude uses MCP tools to search your memory first, then it fetches full details only for the filtered IDs.",
+   "receipt": "**MCP Search Tools** Claude-Mem provides intelligent memory search through **4 MCP tools** following a token-efficient **3-layer workflow pattern**: **The 3-Layer Workflow:** ... // Step 1: Search for index ... // Step 2: Review index, identify relevant IDs ...",
+   "errs": []
+  },
+  {
+   "slot": "how",
+   "try": 0,
+   "say": "Claude uses MCP tools to search memory, then fetches full details only for filtered IDs.",
+   "receipt": "MCP Search Tools\nClaude-Mem provides intelligent memory search through **4 MCP tools** following a token-efficient **3-layer workflow pattern**: **The 3-Layer Workflow:**\n1.\n``` \n// Step 2: Review index, identify relevant IDs (e.g., #123, #456)\n...\n```\n\n### How It Works\n**Core Components:** 1.\n### MCP Search Tools",
+   "errs": [
+    "has 15 words, must have 16-26",
+    "receipt not found word for word in the sources: \"mcp search tools claude-mem provides intelligent memory search through 4 mcp too\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "how",
+   "try": 1,
+   "say": "Claude uses MCP tools to search memory, then fetches full details only for filtered IDs.",
+   "receipt": "**`get_observations`** - Fetch full details ONLY for filtered IDs (~500-1,000 tokens/result) **How It Works:** - Claude uses MCP tools to search your memory - Start with `search` t",
+   "errs": [
+    "has 15 words, must have 16-26"
+   ]
+  },
+  {
+   "slot": "how",
+   "try": 2,
+   "say": "Claude runs an observer that compresses session activity with AI to inject context into future sessions.",
+   "receipt": "Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions.",
+   "errs": []
+  },
+  {
+   "slot": "how2",
+   "try": 0,
+   "say": "Run npx claude-mem install --ide grok-bot to watch chat log files for your bot.",
+   "receipt": "Install claude-mem for Grok Bot: Grok Bot has no host hooks, so we watch the chat log files.\nnpx claude-mem install --ide grok-bot",
+   "errs": [
+    "has 14 words, must have 16-26"
+   ]
+  },
+  {
+   "slot": "how2",
+   "try": 1,
+   "say": "Install the plugin with npx claude-mem install --ide grok-bot to watch chat log files for your bot.",
+   "receipt": "npx claude-mem install --ide grok-bot has no host hooks, so we watch the chat log files.",
+   "errs": [
+    "receipt not found word for word in the sources: \"npx claude-mem install --ide grok-bot has no host hooks, so we watch the chat lo\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "how2",
+   "try": 2,
+   "say": "Install with npx claude-mem install for Grok Bot to watch its chat log files since it lacks standard hooks.",
+   "receipt": "Grok Bot has no host hooks, so we watch the chat log files.",
+   "errs": []
+  },
+  {
+   "slot": "how2",
+   "try": 0,
+   "say": "Install for Grok Bot with one command to watch chat logs, or use curl on OpenClaw gateways.",
+   "receipt": "",
+   "errs": [
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "how2",
+   "try": 1,
+   "say": "Run install for Grok Bot with npx claude-mem install --ide grok-bot to watch chat logs, then run curl on OpenClaw gateways.",
+   "receipt": "Install claude-mem for Grok Bot: Grok Bot has no host hooks, so we watch the chat log files.\ncurl -fsSL https://install.cmem.ai/openclaw.sh | bash",
+   "errs": [
+    "receipt not found word for word in the sources: \"install claude-mem for grok bot: grok bot has no host hooks, so we watch the cha\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "how2",
+   "try": 2,
+   "say": "Grok Bot needs chat log watching; run npx claude-mem install --ide grok-bot.",
+   "receipt": "Install claude-mem for Grok Bot: Grok Bot has no host hooks, so we watch the chat log files.\nnpx claude-mem install --ide grok-bot",
+   "errs": [
+    "has 12 words, must have 16-26"
+   ]
+  },
+  {
+   "slot": "how2",
+   "try": 0,
+   "say": "Run this install command for Grok Bot to watch chat log files, then use curl with openclaw.sh to add it as a plugin.",
+   "receipt": "Install claude-mem for Grok Bot: Grok Bot has no host hooks, so we watch the chat log files.\ncurl -fsSL https://install.cmem.ai/openclaw.sh | bash",
+   "errs": [
+    "receipt not found word for word in the sources: \"install claude-mem for grok bot: grok bot has no host hooks, so we watch the cha\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "how2",
+   "try": 1,
+   "say": "Install Grok Bot with npx command to watch chat logs, then add OpenClaw gateway using curl script.",
+   "receipt": "Install claude-mem for Grok Bot: Grok Bot has no host hooks, so we watch the chat log files.\ncurl -fsSL https://install.cmem.ai/openclaw.sh | bash",
+   "errs": [
+    "receipt not found word for word in the sources: \"install claude-mem for grok bot: grok bot has no host hooks, so we watch the cha\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "how2",
+   "try": 2,
+   "say": "Run npx command to install Grok Bot watcher.",
+   "receipt": "Install claude-mem for Grok Bot: Grok Bot has no host hooks, so we watch the chat log files.",
+   "errs": [
+    "has 8 words, must have 16-26"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 0,
+   "say": "It currently has sixty-nine thousand stars on GitHub, proving its usage.",
+   "receipt": "F1: 96,979 GitHub stars",
+   "errs": [
+    "has 11 words, must have 16-26",
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words",
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 1,
+   "say": "It holds ninety-six thousand nine hundred seventy-nine stars on GitHub.",
+   "receipt": "F1: 96,979 GitHub stars",
+   "errs": [
+    "has 10 words, must have 16-26",
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words",
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 2,
+   "say": "The project has ninety-six thousand nine hundred seventy-nine GitHub stars.",
+   "receipt": "F1: 96,979 GitHub stars, main language TypeScript",
+   "errs": [
+    "has 10 words, must have 16-26",
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 0,
+   "say": "Get a compact index with IDs using search, then fetch full details only for filtered results to save tokens.",
+   "receipt": "**`search`** - Get compact index with IDs (~50-100 tokens/result) 2.\n\n**`get_observations`** - Fetch full details ONLY for filtered IDs (~500-1,000 tokens/result)",
+   "errs": [
+    "must contain a number from the facts",
+    "repeats words an earlier line already said: \"full details only for\" - say something new",
+    "receipt not found word for word in the sources: \"search - get compact index with ids (~50-100 tokens/result) 2. get observations \" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 1,
+   "say": "It offers up to 100 more usage time after signing in for free.",
+   "receipt": "free for up to 14 days, so you get up to 100% more usage fro",
+   "errs": [
+    "has 13 words, must have 16-26"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 2,
+   "say": "Signing in provisions a memory key that unlocks the claude-mem observer. Memory runs off-plan for up to fourteen days.",
+   "receipt": "F2: Signing in provisions a memory key for your account and unlocks the **claude-mem observer**: memory that runs off-plan, free for up to 14 days, so you get up to 100% more usage fro",
+   "errs": [
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 0,
+   "say": "With 96,979 GitHub stars and memory running free for up to 14 days, you get up to 100% more usage.",
+   "receipt": "FACTS:F2: Signing in provisions a memory key for your account and unlocks the **claude-mem observer**: memory that runs off-plan, free for up to 14 days, so you get up to 100% more usage fro\nF1: 96,979 GitHub stars",
+   "errs": [
+    "receipt not found word for word in the sources: \"facts:f2: signing in provisions a memory key for your account and unlocks the cl\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 1,
+   "say": "Facts prove this repo has ninety-six thousand nine hundred seventy-nine stars on GitHub, using TypeScript as its main language.",
+   "receipt": "**96,979 GitHub stars**, **main language** TypeScript",
+   "errs": [
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words",
+    "receipt not found word for word in the sources: \"96,979 github stars , main language typescript\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 2,
+   "say": "The repository has ninety-six thousand nine hundred seventy-nine GitHub stars with TypeScript as its primary codebase.",
+   "receipt": "FACTS F1: 96,979 GitHub stars, main language TypeScript",
+   "errs": [
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words",
+    "receipt not found word for word in the sources: \"facts f1: 96,979 github stars, main language typescript\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 0,
+   "say": "It supports Claude Code, OpenClaw, Gemini, and Copilot.",
+   "receipt": "Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot",
+   "errs": [
+    "has 8 words, must have 14-24",
+    "must contain a number from the facts"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 1,
+   "say": "Sign in to unlock free memory for up to fourteen days.",
+   "receipt": "... unlocks ... **claude-mem observer**: memory that runs off-plan, free for up to 14 days ...",
+   "errs": [
+    "has 11 words, must have 14-24",
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 2,
+   "say": "Get an index with fifty to hundred tokens per result.",
+   "receipt": "**`search`** - Get compact index with IDs (~50-100 tokens/result)",
+   "errs": [
+    "has 10 words, must have 14-24",
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 0,
+   "say": "The main file is TypeScript, with nearly 97 thousand stars.",
+   "receipt": "main language TypeScript ... 96,979 GitHub stars",
+   "errs": [
+    "has 10 words, must have 14-24",
+    "numbers not in the facts: 97 (copy numbers verbatim from the facts)",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 1,
+   "say": "TypeScript is used for this repo which has 96,979 stars.",
+   "receipt": "**F1: 96,979 GitHub stars**, main language TypeScript",
+   "errs": [
+    "has 10 words, must have 14-24",
+    "receipt not found word for word in the sources: \"f1: 96,979 github stars , main language typescript\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 2,
+   "say": "The project uses TypeScript.",
+   "receipt": "F1: 96,979 GitHub stars, main language TypeScript",
+   "errs": [
+    "has 4 words, must have 14-24",
+    "must contain a number from the facts"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 0,
+   "say": "It supports Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot and more.",
+   "receipt": "Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More",
+   "errs": [
+    "has 11 words, must have 14-24",
+    "must contain a number from the facts"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 1,
+   "say": "The project holds ninety-six thousand nine hundred seventy-nine GitHub stars.",
+   "receipt": "96,979 GitHub stars",
+   "errs": [
+    "has 10 words, must have 14-24",
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words",
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 2,
+   "say": "It supports over two thousand languages like Chinese and Japanese.",
+   "receipt": "**中文 • 🇹🇼 繁體中文 • 🇯🇵 日本語",
+   "errs": [
+    "has 10 words, must have 14-24",
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "dropped": true
+  },
+  {
+   "slot": "detail",
+   "try": 0,
+   "say": "It also supports OpenClaw gateways and sets up dependencies automatically with a single command.",
+   "receipt": "Install claude-mem as a persistent memory plugin on OpenClaw gateways with a single command: The installer handles dependencies, plugin setup, AI provider confi",
+   "errs": []
+  },
+  {
+   "slot": "detail",
+   "try": 0,
+   "say": "OpenClaw gateways get a persistent memory plugin with one command from curl.",
+   "receipt": "- **OpenClaw Gateway**\nInstall claude-mem as a persistent memory plugin on OpenClaw gateways with a single command:",
+   "errs": [
+    "has 12 words, must have 14-24",
+    "receipt not found word for word in the sources: \"- openclaw gateway install claude-mem as a persistent memory plugin on openclaw \" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "detail",
+   "try": 1,
+   "say": "curl installs this plugin onto OpenClaw gateways with just one command.",
+   "receipt": "- Install claude-mem as a persistent memory plugin on OpenClaw gateways with a single command:",
+   "errs": [
+    "has 11 words, must have 14-24",
+    "receipt not found word for word in the sources: \"- install claude-mem as a persistent memory plugin on openclaw gateways with a s\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "detail",
+   "try": 2,
+   "say": "curl installs this plugin onto OpenClaw gateways with just one command.",
+   "receipt": "- install claude-mem as a persistent memory plugin on openclaw gateways with a single command:",
+   "errs": [
+    "has 11 words, must have 14-24",
+    "receipt not found word for word in the sources: \"- install claude-mem as a persistent memory plugin on openclaw gateways with a s\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "detail",
+   "try": 0,
+   "say": "It also supports installing directly on OpenClaw gateways with a single command.",
+   "receipt": "Install claude-mem as a persistent memory plugin on OpenClaw gateways with a single command: The installer handles dependencies, plugin setup, AI provider confi\n```\ncurl -fsSL https://install.cmem.ai/openclaw.sh | bash\n```",
+   "errs": [
+    "has 12 words, must have 14-24"
+   ]
+  },
+  {
+   "slot": "detail",
+   "try": 1,
+   "say": "You can install it as a plugin for OpenClaw gateways using a single command.",
+   "receipt": "Install claude-mem as a persistent memory plugin on OpenClaw gateways with a single command:",
+   "errs": []
+  },
+  {
+   "slot": "detail2",
+   "try": 0,
+   "say": "It runs on Node.js twenty point zero and higher, supporting Claude Code.",
+   "receipt": "- **Node.js**: 20.0.0 or higher - **Claude Code**: Latest version with plugin support",
+   "errs": [
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "detail2",
+   "try": 1,
+   "say": "Node needs version 20 or higher.",
+   "receipt": "**Node.js**: 20.0.0",
+   "errs": [
+    "has 6 words, must have 12-22",
+    "numbers not in the facts: 20 (copy numbers verbatim from the facts)",
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "detail2",
+   "try": 2,
+   "say": "System needs Node.js version twenty point zero dot zero or higher.",
+   "receipt": "- **Node.js**: 20.0.0 or higher",
+   "errs": [
+    "has 11 words, must have 12-22",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "detail2",
+   "try": 0,
+   "say": "It requires Node.js version 20 or higher and is licensed under Apache License 2.",
+   "receipt": "- **Node.js**: 20.0.0 or higher\n... - Licensed under the Apache License 2.",
+   "errs": [
+    "numbers not in the facts: 20 (copy numbers verbatim from the facts)",
+    "receipt not found word for word in the sources: \"- licensed under the apache license 2.\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "detail2",
+   "try": 1,
+   "say": "It supports Bun, which auto-installs if missing.",
+   "receipt": "Bun JavaScript runtime process manager auto-installed missed",
+   "errs": [
+    "has 7 words, must have 12-22",
+    "receipt not found word for word in the sources: \"bun javascript runtime process manager auto-installed missed\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "detail2",
+   "try": 2,
+   "say": "Node needs version twenty point zero or higher, Bun installs if missing.",
+   "receipt": "- **Node.js**: 20.0.0 or higher ... (Bun): JavaScript runtime and process manager (auto-installed if missi",
+   "errs": [
+    "write every number in digits exactly as in the facts, never in words",
+    "receipt not found word for word in the sources: \"(bun): javascript runtime and process manager (auto-installed if missi\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "detail2",
+   "try": 0,
+   "say": "It requires Node.js 20 or higher and runs on TypeScript.",
+   "receipt": "- **Node.js**: 20.0.0 or higher - main language TypeScript",
+   "errs": [
+    "has 10 words, must have 12-22",
+    "numbers not in the facts: 20 (copy numbers verbatim from the facts)",
+    "receipt not found word for word in the sources: \"- node.js : 20.0.0 or higher - main language typescript\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "detail2",
+   "try": 1,
+   "say": "System requires Node version twenty point zero dot zero or higher.",
+   "receipt": "**Node.js**: 20.0.0",
+   "errs": [
+    "has 11 words, must have 12-22",
+    "write every number in digits exactly as in the facts, never in words",
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "detail2",
+   "try": 2,
+   "say": "System requires Node version twenty point zero dot zero or higher.",
+   "receipt": "- **Node.js**: 20.0.0 or higher",
+   "errs": [
+    "has 11 words, must have 12-22",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "detail2",
+   "dropped": true
+  },
+  {
+   "slot": "trust",
+   "try": 0,
+   "say": "Alex Newman builds it under an Apache License 2.0 with ninety-six-thousand-nine-hundred-seventy-nine stars.",
+   "receipt": "F1: 96,979 GitHub stars ... licensed under the Apache License 2.0.",
+   "errs": [
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "trust",
+   "try": 1,
+   "say": "Alex Newman builds it under an Apache License 2.0 with 96,979 GitHub stars.",
+   "receipt": "**`search`** - Get compact index with IDs (~50-100 tokens/result) ... LICENSE: Claude-Mem is licensed under the Apache License 2.0.",
+   "errs": [
+    "receipt not found word for word in the sources: \"license: claude-mem is licensed under the apache license 2.0.\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "trust",
+   "try": 2,
+   "say": "Alex Newman builds it under an Apache License 2.0 with 96,979 GitHub stars.",
+   "receipt": "**License**: Claude-Mem is licensed under the Apache License 2.0.",
+   "errs": [
+    "receipt not found word for word in the sources: \"license : claude-mem is licensed under the apache license 2.0.\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "trust",
+   "try": 0,
+   "say": "Alex Newman built it under Apache License 2.0 with ninety-six thousand nine hundred seventy-nine GitHub stars.",
+   "receipt": "License\nClaude-Mem is licensed under the Apache License 2.0.\nF1: 96,979 GitHub stars",
+   "errs": [
+    "write every number in digits exactly as in the facts, never in words",
+    "receipt not found word for word in the sources: \"license claude-mem is licensed under the apache license 2.0. f1: 96,979 github s\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "trust",
+   "try": 1,
+   "say": "Alex Newman built it under Apache License 2.0 with 96,979 GitHub stars.",
+   "receipt": "Apache License 2.0 ... 96,979 GitHub stars",
+   "errs": []
+  },
+  {
+   "slot": "trust",
+   "try": 0,
+   "say": "Alex Newman built it under Apache License two point zero, and over ninety-six-thousand stars prove others trust.",
+   "receipt": "**License**: Claude-Mem is licensed under the Apache License 2.0.\n**Who made it**: Creator of Claude-Mem (Alex Newman)\n**Proof**: F1: 96,979 GitHub stars",
+   "errs": [
+    "write every number in digits exactly as in the facts, never in words",
+    "receipt not found word for word in the sources: \"license : claude-mem is licensed under the apache license 2.0. who made it : cre\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "trust",
+   "try": 1,
+   "say": "Alex Newman built this with Apache License two point zero, ninety-six-thousand stars show trust.",
+   "receipt": "Claude-Mem is licensed under the Apache License 2.0 ... main language TypeScript [implied by star count context] - over 96,979 GitHub stars.",
+   "errs": [
+    "write every number in digits exactly as in the facts, never in words",
+    "receipt not found word for word in the sources: \"main language typescript implied by star count context - over 96,979 github star\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "trust",
+   "try": 2,
+   "say": "Alex Newman built this under Apache License two point zero with ninety-six thousand stars.",
+   "receipt": "[FACTS] F0: thedotmack/claude-mem: Persistent Context Across Sessions for Every Agent – Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More",
+   "errs": [
+    "write every number in digits exactly as in the facts, never in words",
+    "receipt not found word for word in the sources: \"facts f0: thedotmack/claude-mem: persistent context across sessions for every ag\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "start",
+   "try": 0,
+   "say": "Run npx claude-mem install for Grok Bot to watch its chat log files since it lacks standard hooks.",
+   "receipt": "Install claude-mem for Grok Bot: Grok Bot has no host hooks, so we watch the chat log files.\n```\nnpx claude-mem install --ide grok-bot\n```",
+   "errs": [
+    "repeats words an earlier line already said: \"bot to watch its\" - say something new"
+   ]
+  },
+  {
+   "slot": "start",
+   "try": 1,
+   "say": "Run npx claude-mem install on your system now.",
+   "receipt": "`npx claude-mem install`",
+   "errs": [
+    "has 8 words, must have 12-20",
+    "repeats words an earlier line already said: \"npx claude mem install\" - say something new",
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "start",
+   "try": 2,
+   "say": "First, run npx claude-mem install to get started.",
+   "receipt": "`npx claude-mem install`",
+   "errs": [
+    "has 8 words, must have 12-20",
+    "repeats words an earlier line already said: \"npx claude mem install\" - say something new",
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "start",
+   "try": 0,
+   "say": "Run npx claude-mem install to get a memory key for your account.",
+   "receipt": "Signing in provisions a memory key for your account and unlocks the **claude-mem observer**: memory that runs off-plan, free for up to 14 days, so you get up to 100% more usage fro",
+   "errs": [
+    "repeats words an earlier line already said: \"npx claude mem install\" - say something new"
+   ]
+  },
+  {
+   "slot": "start",
+   "try": 1,
+   "say": "To start, run the Grok Bot command npx claude-mem install --ide grok-bot to watch its chat logs.",
+   "receipt": "Install claude-mem for Grok Bot: Grok Bot has no host hooks, so we watch the chat log files.\n\n```\nnpx claude-mem install --ide grok-bot\n```",
+   "errs": [
+    "repeats words an earlier line already said: \"bot to watch its\" - say something new"
+   ]
+  },
+  {
+   "slot": "start",
+   "try": 2,
+   "say": "Start by running npx claude-mem install for Grok Bot.",
+   "receipt": "Install claude-mem for Grok Bot: Grok Bot has no host hooks, so we watch the chat log files.\nnpx claude-mem install --ide grok-bot",
+   "errs": [
+    "has 9 words, must have 12-20",
+    "repeats words an earlier line already said: \"claude mem install for\" - say something new"
+   ]
+  },
+  {
+   "slot": "start",
+   "try": 0,
+   "say": "Run npx claude-mem install to set up for Grok Bot or just run it normally.",
+   "receipt": "Install claude-mem for Grok Bot: Grok Bot has no host hooks, so we watch the chat log files.\nnpx claude-mem install --ide grok-bot\nnpx claude-mem install",
+   "errs": [
+    "repeats words an earlier line already said: \"npx claude mem install\" - say something new"
+   ]
+  },
+  {
+   "slot": "start",
+   "try": 1,
+   "say": "Type npx claude-mem install to add the plugin.",
+   "receipt": "`npx claude-mem install`",
+   "errs": [
+    "has 8 words, must have 12-20",
+    "repeats words an earlier line already said: \"npx claude mem install\" - say something new",
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "start",
+   "try": 2,
+   "say": "Start with npx to run the command that installs your memory plugin.",
+   "receipt": "**npx claude-mem install** - Install claude-mem for Grok Bot: Grok Bot has no host hooks, so we watch the chat log files.",
+   "errs": [
+    "receipt not found word for word in the sources: \"npx claude-mem install - install claude-mem for grok bot: grok bot has no host h\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "start",
+   "dropped": true
+  },
+  {
+   "slot": "share",
+   "try": 0,
+   "say": "Save this for a developer facing agent memory limits today.",
+   "receipt": "Captures everything your agent does during sessions, compresses it with AI",
+   "errs": []
+  },
+  {
+   "slot": "share",
+   "try": 0,
+   "say": "Send this to someone who wants their agent to remember past sessions and build on history.",
+   "receipt": "Injects relevant context back into future sessions ... Captures everything your agent does during sessions",
+   "errs": []
+  },
+  {
+   "slot": "share",
+   "try": 0,
+   "say": "Save this for a teammate whose agent needs persistent memory.",
+   "receipt": "Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions.",
+   "errs": []
+  },
+  {
+   "slot": "end",
+   "try": 0,
+   "say": "Stop wasting tokens on forgotten history with claude-mem.",
+   "receipt": "Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions.",
+   "errs": []
+  },
+  {
+   "slot": "end",
+   "try": 0,
+   "say": "Get compact index with IDs.",
+   "receipt": "**`search`** - Get compact index with IDs (~50-100 tokens/result) 2.",
+   "errs": [
+    "has 5 words, must have 6-12"
+   ]
+  },
+  {
+   "slot": "end",
+   "try": 1,
+   "say": "Stop forgetting your history today.",
+   "receipt": "",
+   "errs": [
+    "has 5 words, must have 6-12"
+   ]
+  },
+  {
+   "slot": "end",
+   "try": 2,
+   "say": "Get persistent context across sessions with Claude-Mem.",
+   "receipt": "Persistent Context Across Sessions for Every Agent – Captures everything your agent does during sessions",
+   "errs": []
+  },
+  {
+   "slot": "end",
+   "try": 0,
+   "say": "Stop wasting tokens and use claude-mem.",
+   "receipt": "Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions.",
+   "errs": []
+  }
+ ]
+}

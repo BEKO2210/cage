@@ -87,7 +87,12 @@ SPELLED = re.compile(rf"\b({TENS}([- ]\w+)?|(zero|one|two|three|four|five|six|se
                      r"(hundreds|thousands|millions|billions|dozens|half|twice|double|triple|tenfold))\b", re.I)
 
 
-def check_line(say, slot, ok_nums, used_nums):
+def grams(t, n=4):
+    w = re.findall(r"[a-z0-9']+", t.lower())
+    return {" ".join(w[i:i + n]) for i in range(len(w) - n + 1)}
+
+
+def check_line(say, slot, ok_nums, used_nums, said=""):
     _, _, lo, hi, needs_num = slot
     errs = []
     words = len(say.split())
@@ -112,6 +117,11 @@ def check_line(say, slot, ok_nums, used_nums):
         errs.append("no superlatives unless the facts say exactly that")
     if "`" in say or re.search(r"\d+(\.\d+)?[kKmM]\b", say):
         errs.append("spoken words only: no code marks, no 15k-style shortcuts (say the full number from the facts)")
+    if "..." in say or "…" in say:
+        errs.append("no '...' in the spoken line (that belongs in the receipt only)")
+    again = grams(say) & grams(said)
+    if again:
+        errs.append(f"repeats words an earlier line already said: \"{sorted(again)[0]}\" - say something new")
     if SPELLED.search(say):                                                # "thirty-three point two" slips past the number check
         errs.append("write every number in digits exactly as in the facts, never in words")
     if re.search(r"\bfollow\b", say, re.I):
@@ -137,30 +147,47 @@ LINES SO FAR:
 YOUR LINE "{sid}": {job.format(name=NAME(facts))}
 Write it as TWO short spoken sentences, {lo}-{hi} words together. Do not repeat anything the lines so far already said.
 Numbers already said (never use them again): {', '.join(sorted(used)) or 'none'}
-Answer as JSON: {{"say": "..."}}"""
+Your line needs a receipt: copy, character for character, the sentence or table row from README or FACTS that states
+every claim of your line (several pieces joined by " ... " if needed). Say nothing the receipt does not say.
+Answer as JSON: {{"say": "...", "receipt": "..."}}"""
     if errs:
         p += f"\n\nYour last try was: {prev}\nIt broke these rules: {'; '.join(errs)}. Write it again and fix every one."
     try:
-        return json.loads(llm(p, model, fmt="json")).get("say", "").strip()
+        out = json.loads(llm(p, model, fmt="json"))
+        return str(out.get("say", "")).strip(), str(out.get("receipt", "")).strip()
     except (json.JSONDecodeError, AttributeError):
-        return ""
+        return "", ""
 
 
-def verify(say, facts, sheet, rd, model):
-    """The second bar of the cage: a cold reader (temperature 0) lists every claim the sources do not state."""
-    p = f"""You are a strict fact-checker for a reel about {facts['repo']}. Use ONLY the sources below.
-FACTS:
-{chr(10).join(sheet)}
-README:
-{rd}
+NO_RECEIPT = {"share", "end"}                                               # a call to action and a punchline state no fact
+
+
+def flat(t):
+    return " ".join(re.sub(r"[*`_#|>\\]|\[|\]", " ", t.lower().replace("’", "'").replace("“", '"').replace("”", '"')).split())
+
+
+def check_receipt(receipt, source):
+    """The receipt must really be in the sources: plain string search, no model involved."""
+    pieces = [flat(x) for x in re.split(r"\s*(?:\.\.\.|…)\s*", receipt) if x.strip()]
+    if not pieces or sum(len(x.split()) for x in pieces) < 5:
+        return ["receipt missing: copy the supporting sentence from README or FACTS"]
+    lost = [x for x in pieces if x not in source]
+    return [f"receipt not found word for word in the sources: \"{lost[0][:80]}\" - copy it exactly"] if lost else []
+
+
+def verify(say, receipt, facts, model):
+    """The second bar of the cage: a cold reader (temperature 0) compares the line with its receipt, nothing else."""
+    p = f"""You are a strict fact-checker for a reel about {facts['repo']}.
+RECEIPT (copied from the repo's README): {receipt}
 
 LINE: {say}
 
-Check only concrete claims about the repo: what it does, its features, numbers, who made, uses or tested it, comparisons.
-Such a claim is supported only if the sources state it (same meaning, same numbers, same actor: "X studied it" is not
+Does the LINE claim anything the RECEIPT does not state? Check only concrete claims about the repo: what it does, its features, numbers, who made, uses or tested it, comparisons.
+Such a claim is supported only if the receipt states it (same meaning, same numbers, same actor: "X studied it" is not
 "X uses it"). Every number must stay attached to what the sources attach it to: the same measure, unit, hardware, input
 size and comparison. Two true numbers from different measurements put side by side ("54 ms on GPU vs ORT at 266 ms",
-when 266 ms was a CPU run) are unsupported. Superlatives about the repo ("biggest", "fastest", "game-changing") are unsupported unless stated.
+when 266 ms was a CPU run) are unsupported. Superlatives about the repo ("biggest", "fastest", "game-changing") are unsupported unless stated. Which part does what matters: if the receipt says one component does X, the line
+must not give X to another component.
 Do NOT flag framing that makes no claim about the repo: the problem developers face, an invitation to share or save,
 a punchline, a paraphrase in simpler words.
 Answer as JSON: {{"unsupported": ["<claim> - <why>", ...]}} (an empty list if every claim is supported)"""
@@ -191,19 +218,22 @@ def cage(F, model, tries=3, keep=3):
     digest, facts = (F / "repo/digest.md").read_text(), json.loads((F / "repo/facts.json").read_text())
     sheet, rd = fact_sheet(digest, facts), readme(digest)
     ok_nums = allowed_numbers("\n".join(sheet) + rd, facts)
+    source = flat("\n".join(sheet) + "\n" + rd)
     story, used, log = [], set(), []
     for slot in SLOTS:
         cands, near = [], []
         for _ in range(keep):
             say, errs = "", None
             for t in range(tries):
-                say = ask_line(slot, facts, sheet, rd, story, used, model, errs, say)
-                errs = check_line(say, slot, ok_nums, used)
+                say, receipt = ask_line(slot, facts, sheet, rd, story, used, model, errs, say)
+                errs = check_line(say, slot, ok_nums, used, " ".join(s for _, s in story))
+                if slot[0] not in NO_RECEIPT:
+                    errs += check_receipt(receipt, source)
                 length_only = bool(say) and all(e.startswith("has ") for e in errs)
-                if length_only:
-                    errs += verify(say, facts, sheet, rd, model)
+                if length_only and slot[0] not in NO_RECEIPT:
+                    errs += verify(say, receipt, facts, model)
                     length_only = all(e.startswith("has ") for e in errs)
-                log.append({"slot": slot[0], "try": t, "say": say, "errs": errs})
+                log.append({"slot": slot[0], "try": t, "say": say, "receipt": receipt, "errs": errs})
                 if not errs:
                     cands.append(say)
                     break

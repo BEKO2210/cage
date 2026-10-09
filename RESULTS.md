@@ -43,3 +43,10 @@ Why it failed: "flair" is where a small model invents claims ("the only choice",
 share and end lines, which carry no receipt, and the 9B fact-checker lets meaning-shifting paraphrases through.
 Lesson: style cannot be bolted on after the cage; the receipt must cover every line, including the call to action.
 Kept from this round: the line-count guard now covers every cage arm, and `*` (bold marks) counts as markup.
+
+## cage4 (dev set only, 2026-10-09) – rejected
+Patterns for hook/problem/end on candidates 2-3, receipts for share and end, and up to 2 extra rounds for a slot without
+a candidate. Slots no longer drop (12-13 lines), but cage2 beats cage4 9/12, flagged errors 1.4 (cage2) vs 3.2 (cage4)
+(`results/dev-v4.jsonl`). Lesson: every extra try is another chance for a wrong line to slip past the 9B fact-checker
+(mostly pairing errors: two true numbers joined wrongly, "per model" for "per mode"). The checker is the bottleneck,
+not the writer. Next: cage5 = two independent checks must both pass (receipt check + a number-pairing check).

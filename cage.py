@@ -130,8 +130,19 @@ def check_line(say, slot, ok_nums, used_nums, said=""):
     return errs
 
 
-def ask_line(slot, facts, sheet, rd, story, used, model, errs=None, prev=None):
+# Cage v4: the voice goes into the first draft (rewriting afterwards invented claims, see RESULTS.md), and each of the
+# candidates 2 and 3 of a slot get a pattern, so the picker chooses between real alternatives. Candidate 1 stays plain
+# (a forced "you" voice on every line made lines drop and invented meaning on the dev set).
+PATTERNS = {"hook": ["Contrast: the number against what it replaces (\"X instead of Y\").",
+                     "A short question the viewer cannot ignore, then the number that answers it."],
+            "problem": ["Describe the moment the pain hits a developer.", "Name the workaround people use today."],
+            "end": ["A short punchline that names {name} and echoes the opening line's idea.", "Name {name} and its core idea in a few words."]}
+
+
+def ask_line(slot, facts, sheet, rd, story, used, model, errs=None, prev=None, k=None):
     sid, job, lo, hi, _ = slot
+    if k and sid in PATTERNS:                                                # cage v4
+        job += " Pattern: " + PATTERNS[sid][(k - 1) % 2].format(name=NAME(facts))
     so_far = "\n".join(f"{i}: {s}" for i, s in story) or "(nothing yet)"
     p = f"""You write one spoken line of a 70-second Instagram reel about the GitHub repo {facts['repo']}.
 Spoken, short sentences, plain English, no marketing words. Every number must be copied exactly from FACTS.
@@ -215,7 +226,7 @@ Answer as JSON: {{"best": <index>}}"""
         return cands[0]
 
 
-def cage(F, model, tries=3, keep=3, with_voice=False):
+def cage(F, model, tries=3, keep=3, with_voice=False, v4=False):
     digest, facts = (F / "repo/digest.md").read_text(), json.loads((F / "repo/facts.json").read_text())
     sheet, rd = fact_sheet(digest, facts), readme(digest)
     ok_nums = allowed_numbers("\n".join(sheet) + rd, facts)
@@ -223,15 +234,18 @@ def cage(F, model, tries=3, keep=3, with_voice=False):
     story, used, log, receipts = [], set(), [], {}
     for slot in SLOTS:
         cands, near = [], []
-        for _ in range(keep):
+        no_receipt = set() if v4 else NO_RECEIPT                         # v4: the call to action and the ending carry a receipt too
+        for k in range(keep + (2 * keep if v4 else 0)):                    # v4: a slot without a candidate gets up to 2 more rounds
+            if k >= keep and (cands or near):
+                break
             say, errs = "", None
             for t in range(tries):
-                say, receipt = ask_line(slot, facts, sheet, rd, story, used, model, errs, say)
+                say, receipt = ask_line(slot, facts, sheet, rd, story, used, model, errs, say, k if v4 else None)
                 errs = check_line(say, slot, ok_nums, used, " ".join(s for _, s in story))
-                if slot[0] not in NO_RECEIPT:
+                if slot[0] not in no_receipt:
                     errs += check_receipt(receipt, source)
                 length_only = bool(say) and all(e.startswith("has ") for e in errs)
-                if length_only and slot[0] not in NO_RECEIPT:
+                if length_only and slot[0] not in no_receipt:
                     errs += verify(say, receipt, facts, model)
                     length_only = all(e.startswith("has ") for e in errs)
                 log.append({"slot": slot[0], "try": t, "say": say, "receipt": receipt, "errs": errs})
@@ -335,7 +349,7 @@ def gold(F):
 if __name__ == "__main__":
     F, arm = Path(sys.argv[1]).resolve(), sys.argv[2]
     model = sys.argv[sys.argv.index("--model") + 1] if "--model" in sys.argv else "qwen3:8b"
-    lines, log = gold(F) if arm == "gold" else free(F, model) if arm == "free" else cage(F, model, with_voice=arm == "cage3")
+    lines, log = gold(F) if arm == "gold" else free(F, model) if arm == "free" else cage(F, model, with_voice=arm == "cage3", v4=arm == "cage4")
     if arm.startswith("cage") and len(lines) < 10:                       # was == "cage": let cage2 claude-mem in with 9 lines
         sys.exit(f"cage {F.name}: only {len(lines)} lines passed - not saved as a result")
     out = HERE / "out" / arm / (model.replace(":", "_").replace("/", "_") if arm != "gold" else "gold") / f"{F.name}.json"

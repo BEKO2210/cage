@@ -1,0 +1,1132 @@
+{
+ "lines": [
+  "It has 391,305 GitHub stars for an AI that runs on your devices.",
+  "The pain hits when you want an AI assistant but it lives in a cloud account and ignores your local files.",
+  "OpenClaw meets you in channels like Discord, Slack, Telegram or iMessage.",
+  "The gateway handles local sessions directly on your computer.",
+  "Use slash commands to add tools and skills directly from ClawHub.",
+  "Governance is managed by the OpenClaw Foundation, which operates as an independent 501(c)(3).",
+  "You configure your AI model settings here. Then you add new tools directly from ClawHub.",
+  "The installer works on macOS, Linux, Windows and WSL2.",
+  "It runs on MIT license, built by OpenClaw Foundation and tested at Lobster Computer Company.",
+  "Run openclaw onboard with flag --install-daemon to start.",
+  "Send this to someone who wants an AI on their own computer.",
+  "This is OpenClaw, an open-source AI that really does things."
+ ],
+ "words": 147,
+ "log": [
+  {
+   "slot": "hook",
+   "try": 0,
+   "say": "It has 391,305 GitHub stars for an AI that runs on your devices.",
+   "receipt": "openclaw/openclaw: The AI that really does things. Any OS. ... 391,305 GitHub stars",
+   "errs": []
+  },
+  {
+   "slot": "hook",
+   "try": 0,
+   "say": "OpenClaw has three hundred ninety-one thousand stars on GitHub, replacing your separate AI tools.",
+   "receipt": "391,305 GitHub stars",
+   "errs": [
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words",
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "hook",
+   "try": 1,
+   "say": "OpenClaw has three hundred ninety-one thousand stars on GitHub.",
+   "receipt": "391,305 GitHub stars",
+   "errs": [
+    "has 9 words, must have 12-20",
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words",
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "hook",
+   "try": 2,
+   "say": "Three hundred ninety-one thousand three hundred five stars mean openclaw runs on any OS instead of being stuck to a cloud service.",
+   "receipt": "FACTS: 391,305 GitHub stars",
+   "errs": [
+    "has 22 words, must have 12-20",
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words",
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "hook",
+   "try": 0,
+   "say": "Have you ever seen an AI with nearly four hundred thousand GitHub stars? That number counts its open-source followers.",
+   "receipt": "F1: 391,305 GitHub stars",
+   "errs": [
+    "must contain a number from the facts",
+    "no superlatives unless the facts say exactly that",
+    "write every number in digits exactly as in the facts, never in words",
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "hook",
+   "try": 1,
+   "say": "391,305 GitHub stars count its open-source followers.",
+   "receipt": "F1: 391,305 GitHub stars, main language TypeScript",
+   "errs": [
+    "has 7 words, must have 12-20"
+   ]
+  },
+  {
+   "slot": "hook",
+   "try": 2,
+   "say": "With three hundred ninety-one thousand stars counting open source users.",
+   "receipt": "391,305 GitHub stars",
+   "errs": [
+    "has 10 words, must have 12-20",
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words",
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "problem",
+   "try": 0,
+   "say": "Your AI assistant runs locally where you chat, on Discord or Slack without sending data away.",
+   "receipt": "runs on your own computer and meets you in the channels you already use: Discord... iMessage",
+   "errs": []
+  },
+  {
+   "slot": "problem",
+   "try": 0,
+   "say": "The pain hits when you want an AI assistant but it lives in a cloud account and ignores your local files.",
+   "receipt": "OpenClaw is an open-source AI assistant that runs on your own computer ... meets you in the channels you already use: Discord, iMessage, Slack",
+   "errs": []
+  },
+  {
+   "slot": "problem",
+   "try": 0,
+   "say": "People currently run separate AI agents on their devices, but OpenClaw unifies them across Discord and Slack.",
+   "receipt": "meets you in the channels you already use: Discord... iMessage, Slack",
+   "errs": []
+  },
+  {
+   "slot": "what",
+   "try": 0,
+   "say": "OpenClaw is an open-source AI assistant that runs on your own computer and meets you in Discord, Slack, Telegram, or iMessage.",
+   "receipt": "The README states:\n\"OpenClaw is an open-source AI assistant that runs on your own computer and meets you in the channels you already use: Discord, iMessage, Slack, Teams, Telegram,\"",
+   "errs": [
+    "repeats words an earlier line already said: \"that runs on your\" - say something new",
+    "receipt not found word for word in the sources: \"the readme states: \"openclaw is an open-source ai assistant that runs on your ow\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "what",
+   "try": 1,
+   "say": "OpenClaw meets you in channels like Discord, Slack, Telegram or iMessage.",
+   "receipt": "| Connect a messaging service | Channels |",
+   "errs": [
+    "has 11 words, must have 14-22"
+   ]
+  },
+  {
+   "slot": "what",
+   "try": 2,
+   "say": "OpenClaw is an open-source assistant running on your computer.",
+   "receipt": "OpenClaw is an open-source AI assistant that runs on your own computer",
+   "errs": [
+    "has 9 words, must have 14-22"
+   ]
+  },
+  {
+   "slot": "what",
+   "try": 0,
+   "say": "OpenClaw is an open-source AI assistant that runs on your own computer and meets you in channels like Discord or Slack.",
+   "receipt": "OpenClaw is an open-source AI assistant that runs on your own computer and meets you in the channels you already use: Discord",
+   "errs": [
+    "repeats words an earlier line already said: \"that runs on your\" - say something new"
+   ]
+  },
+  {
+   "slot": "what",
+   "try": 1,
+   "say": "OpenClaw is a local assistant meeting you in chats.",
+   "receipt": "meets you in the channels",
+   "errs": [
+    "has 9 words, must have 14-22"
+   ]
+  },
+  {
+   "slot": "what",
+   "try": 2,
+   "say": "OpenClaw runs on your devices to meet you where you already chat.",
+   "receipt": "Your assistant, on your devices, in your channels",
+   "errs": [
+    "has 12 words, must have 14-22",
+    "repeats words an earlier line already said: \"runs on your devices\" - say something new",
+    "receipt not found word for word in the sources: \"your assistant, on your devices, in your channels\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "what",
+   "try": 0,
+   "say": "OpenClaw is an open-source AI assistant that runs on your own computer and meets you in Discord, Slack, Teams, Telegram, or iMessage.",
+   "receipt": "OpenClaw is an open-source AI assistant that runs on your own computer and meets you in the channels you already use: Discord, iMessage, Slack, Teams, Telegram,",
+   "errs": [
+    "repeats words an earlier line already said: \"that runs on your\" - say something new"
+   ]
+  },
+  {
+   "slot": "what",
+   "try": 1,
+   "say": "OpenClaw is a local assistant that connects to Discord, Slack, Teams, Telegram, iMessage.",
+   "receipt": "Connects you in the channels you already use: Discord, iMessage, Slack, Teams, Telegram",
+   "errs": [
+    "has 13 words, must have 14-22",
+    "receipt not found word for word in the sources: \"connects you in the channels you already use: discord, imessage, slack, teams, t\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "what",
+   "try": 2,
+   "say": "OpenClaw is your assistant that runs on your devices.",
+   "receipt": "Your assistant, on your devices,",
+   "errs": [
+    "has 9 words, must have 14-22",
+    "repeats words an earlier line already said: \"runs on your devices\" - say something new"
+   ]
+  },
+  {
+   "slot": "how",
+   "try": 0,
+   "say": "The local gateway controls sessions and connects directly to your messaging channels.",
+   "receipt": "The Gateway is the local control plane for sessions, tools, events, and channel connections. ... Connect a messaging service",
+   "errs": [
+    "has 12 words, must have 16-26"
+   ]
+  },
+  {
+   "slot": "how",
+   "try": 1,
+   "say": "The Gateway handles all the connections between you and those platforms.",
+   "receipt": "### How it fits together\n- The Gateway is the local control plane for sessions, tools, events, and channel connections.",
+   "errs": [
+    "has 11 words, must have 16-26"
+   ]
+  },
+  {
+   "slot": "how",
+   "try": 2,
+   "say": "The local Gateway acts as your control plane for sessions, tools, events, and channel connections.",
+   "receipt": "| The Gateway is the local control plane for sessions, tools, events, and channel connections.|",
+   "errs": [
+    "has 15 words, must have 16-26"
+   ]
+  },
+  {
+   "slot": "how",
+   "try": 0,
+   "say": "The Gateway acts as a local control plane for sessions and tools.",
+   "receipt": "- The Gateway is the local control plane for sessions, tools, events, and channel connections.",
+   "errs": [
+    "has 12 words, must have 16-26"
+   ]
+  },
+  {
+   "slot": "how",
+   "try": 1,
+   "say": "The gateway handles local sessions directly on your computer.",
+   "receipt": "The Gateway is the local control plane for sessions",
+   "errs": [
+    "has 9 words, must have 16-26"
+   ]
+  },
+  {
+   "slot": "how",
+   "try": 2,
+   "say": "The Gateway acts as the local control plane for all your devices.",
+   "receipt": "| The Gateway is the local control plane for sessions |",
+   "errs": [
+    "has 12 words, must have 16-26"
+   ]
+  },
+  {
+   "slot": "how",
+   "try": 0,
+   "say": "It runs a local gateway on any computer to control sessions and connect your existing messaging channels.",
+   "receipt": "The Gateway is the local control plane for sessions, tools, events, and channel connections. OpenClaw meets you in the channels you already use: Discord, iMessage, Slack, Teams, Telegram,",
+   "errs": [
+    "receipt not found word for word in the sources: \"the gateway is the local control plane for sessions, tools, events, and channel \" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "how",
+   "try": 1,
+   "say": "A gateway acts as a local control point.",
+   "receipt": "The Gateway is the local control plane",
+   "errs": [
+    "has 8 words, must have 16-26"
+   ]
+  },
+  {
+   "slot": "how",
+   "try": 2,
+   "say": "The Gateway runs locally to manage sessions, tools, events, and channel connections.",
+   "receipt": "| The Gateway is the local control plane for sessions, tools, events, and channel connections.",
+   "errs": [
+    "has 12 words, must have 16-26"
+   ]
+  },
+  {
+   "slot": "how2",
+   "try": 0,
+   "say": "Use slash commands to add tools and skills directly from ClawHub.",
+   "receipt": "| Add tools, skills, and plugins | Tools · Skills · Plugins · ClawHub|",
+   "errs": [
+    "has 11 words, must have 16-26"
+   ]
+  },
+  {
+   "slot": "how2",
+   "try": 1,
+   "say": "Add new tools via the CLI using models configured in your local setup.",
+   "receipt": "Configure models and auth | Models · Model providers \n... Add tools, skills, and plugins | Tools · Skills · Plugins · ClawHub",
+   "errs": [
+    "has 13 words, must have 16-26"
+   ]
+  },
+  {
+   "slot": "how2",
+   "try": 2,
+   "say": "Use slash commands to add skills and configure providers locally.",
+   "receipt": "| Add tools, skills, and plugins | Tools · Skills · Plugins · ClawHub |\n| Configure models and auth | Models · Model providers |",
+   "errs": [
+    "has 10 words, must have 16-26",
+    "receipt not found word for word in the sources: \"add tools, skills, and plugins tools · skills · plugins · clawhub configure mode\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "how2",
+   "try": 0,
+   "say": "Connect a messaging service to add tools and skills or run apps.",
+   "receipt": "| Connect a messaging service | Channels |\n| Add tools, skills, and plugins | Tools · Skills · Plugins · ClawHub |\n| Run apps and device nodes | Platforms · Nodes |",
+   "errs": [
+    "has 12 words, must have 16-26"
+   ]
+  },
+  {
+   "slot": "how2",
+   "try": 1,
+   "say": "Run an app locally with the Gateway while chatting on Discord.",
+   "receipt": "Connect a messaging service · Platforms · Nodes | Run apps and device nodes · The gateway is the local control plane for sessions, tools, events, and channel connections.",
+   "errs": [
+    "has 11 words, must have 16-26",
+    "receipt not found word for word in the sources: \"connect a messaging service · platforms · nodes run apps and device nodes · the \" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "how2",
+   "try": 2,
+   "say": "You can use tools or plugins to configure models, then connect Discord or Slack.",
+   "receipt": "Configure models and auth ... Connect a messaging service | Add tools, skills, and plugins · Channels",
+   "errs": [
+    "has 14 words, must have 16-26",
+    "receipt not found word for word in the sources: \"connect a messaging service add tools, skills, and plugins · channels\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "how2",
+   "try": 0,
+   "say": "Connect a messaging service to add tools, skills and plugins.",
+   "receipt": "| Connect a messaging service | Channels |\n| Add tools, skills, and plugins | Tools · Skills · Plugins · ClawHub|",
+   "errs": [
+    "has 10 words, must have 16-26"
+   ]
+  },
+  {
+   "slot": "how2",
+   "try": 1,
+   "say": "Add tools in the readme table row about connecting services.",
+   "receipt": "| Connect a messaging service | Channels|",
+   "errs": [
+    "has 10 words, must have 16-26"
+   ]
+  },
+  {
+   "slot": "how2",
+   "try": 2,
+   "say": "Connect a messaging service to add skills from ClawHub.",
+   "receipt": "| Connect a messaging service | Channels |\n| Add tools, skills, and plugins | Tools · Skills · Plugins · ClawHub |",
+   "errs": [
+    "has 9 words, must have 16-26"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 0,
+   "say": "It runs on any OS with MIT licensing from OpenClaw Foundation.",
+   "receipt": "| Goal | Start here |\n| Configure models and auth | Models · Model providers |\n| Connect a messaging service | Channels |\n| Add tools, skills, and plugins | Tools · Skills · Plugins · ClawHub |\n| Run apps and device nodes | Platforms · Nodes |\n| Use the CLI and chat commands | CLI reference · Slash commands |",
+   "errs": [
+    "has 11 words, must have 16-26",
+    "must contain a number from the facts"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 1,
+   "say": "The Gateway manages local sessions with no cloud account needed.",
+   "receipt": "The Gateway is the local control plane for sessions, tools, events, and channel connections.",
+   "errs": [
+    "has 10 words, must have 16-26",
+    "must contain a number from the facts"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 2,
+   "say": "OpenClaw is funded by donors including Amazon, Red Hat, OpenAI, Offline Holdings, Lobster Computer Company, and the University of Michigan.",
+   "receipt": "The Foundation is funded by donors including Amazon, Lobster Computer Company, Offline Holdings, OpenAI, Red Hat, and the University of Michigan,",
+   "errs": [
+    "must contain a number from the facts"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 0,
+   "say": "It treats inbound messages as untrusted input for safety.",
+   "receipt": "Treat inbound messages as untrusted input.",
+   "errs": [
+    "has 9 words, must have 16-26",
+    "must contain a number from the facts"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 1,
+   "say": "The OpenClaw Foundation is an independent non-profit funded by Amazon.",
+   "receipt": "OpenClaw is developed in the open by the OpenClaw Foundation, an independent 501(c)(3).",
+   "errs": [
+    "has 10 words, must have 16-26",
+    "must contain a number from the facts"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 2,
+   "say": "The OpenClaw Foundation is an independent non-profit funded by Amazon.",
+   "receipt": "OpenClaw is developed in the open by the OpenClaw Foundation, an independent 501(c)(3).\nThe Foundation is funded by donors including Amazon,",
+   "errs": [
+    "has 10 words, must have 16-26",
+    "must contain a number from the facts",
+    "receipt not found word for word in the sources: \"openclaw is developed in the open by the openclaw foundation, an independent 501\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 0,
+   "say": "It runs on macOS, Linux and Windows using TypeScript.",
+   "receipt": "The installer supports macOS, Linux, and Windows.",
+   "errs": [
+    "has 9 words, must have 16-26",
+    "must contain a number from the facts"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 1,
+   "say": "The repository is a pnpm workspace that builds on any platform.",
+   "receipt": "## Development\nThe repository is a pnpm workspace.",
+   "errs": [
+    "has 11 words, must have 16-26",
+    "must contain a number from the facts"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 2,
+   "say": "The repository is a pnpm workspace that builds on any platform.",
+   "receipt": "",
+   "errs": [
+    "has 11 words, must have 16-26",
+    "must contain a number from the facts",
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 0,
+   "say": "It benchmarks against cloud models to prove local speed.",
+   "receipt": "| Configure models and auth | Models · Model providers | ... Use the CLI and chat commands | CLI reference · Slash commands |",
+   "errs": [
+    "has 9 words, must have 16-26",
+    "must contain a number from the facts"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 1,
+   "say": "The Foundation receives funding support including Amazon and OpenAI.",
+   "receipt": "donors including Amazon ... Lobster Computer Company, Offline Holdings, OpenAI, Red Hat, and the University of Michigan",
+   "errs": [
+    "has 9 words, must have 16-26",
+    "must contain a number from the facts"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 2,
+   "say": "Funding includes Red Hat and the University of Michigan.",
+   "receipt": "The Foundation is funded by donors including Amazon, Lobster Computer Company, Offline Holdings, OpenAI, Red Hat, and the University of Michigan",
+   "errs": [
+    "has 9 words, must have 16-26",
+    "must contain a number from the facts"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 0,
+   "say": "You can run apps and device nodes on any platform using local tools.",
+   "receipt": "| Run apps and device nodes | Platforms · Nodes|",
+   "errs": [
+    "has 13 words, must have 16-26",
+    "must contain a number from the facts"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 1,
+   "say": "Run apps on Linux or Windows with an MIT license.",
+   "receipt": "| Run apps and device nodes | Platforms · Nodes |\nMIT © OpenClaw Foundation.",
+   "errs": [
+    "has 10 words, must have 16-26",
+    "must contain a number from the facts",
+    "receipt not found word for word in the sources: \"run apps and device nodes platforms · nodes mit © openclaw foundation.\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 2,
+   "say": "Run apps on Linux or Windows with an MIT license.",
+   "receipt": "Run apps and device nodes | Platforms · Nodes \n\nLicense\nMIT © OpenClaw Foundation.",
+   "errs": [
+    "has 10 words, must have 16-26",
+    "must contain a number from the facts",
+    "receipt not found word for word in the sources: \"run apps and device nodes platforms · nodes license mit © openclaw foundation.\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 0,
+   "say": "It runs locally on any OS and treats inbound messages as untrusted input.",
+   "receipt": "OpenClaw is an open-source AI assistant that runs on your own computer ... Treat inbound messages as untrusted input.",
+   "errs": [
+    "has 13 words, must have 16-26",
+    "must contain a number from the facts"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 1,
+   "say": "The installer works on macOS or Linux without needing cloud accounts.",
+   "receipt": "OpenClaw is an open-source AI assistant that runs on your own computer",
+   "errs": [
+    "has 11 words, must have 16-26",
+    "must contain a number from the facts"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 2,
+   "say": "Amazon funds OpenClaw while Red Hat joins donors.",
+   "receipt": "The Foundation is funded by donors including Amazon, Lobster Computer Company, Offline Holdings, OpenAI, Red Hat, and the University of Michigan,",
+   "errs": [
+    "has 8 words, must have 16-26",
+    "must contain a number from the facts"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 0,
+   "say": "A fresh install onboards automatically to run apps and device nodes directly.",
+   "receipt": "| Run apps and device nodes | Platforms · Nodes | ... On a fresh install, the installer scripts start onboarding automatically.",
+   "errs": [
+    "has 12 words, must have 16-26",
+    "must contain a number from the facts"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 1,
+   "say": "Proof is in the repo: OpenClaw runs on any OS or platform.",
+   "receipt": "openclai/openclaw: The AI that really does things. Any OS. Any Platform.",
+   "errs": [
+    "has 12 words, must have 16-26",
+    "must contain a number from the facts",
+    "receipt not found word for word in the sources: \"openclai/openclaw: the ai that really does things. any os. any platform.\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 2,
+   "say": "The repo is open-source with TypeScript as its main language, running on macOS, Linux, Windows or WSL2.",
+   "receipt": "openclai/openclaw: the ai that really does things. any os. any platform.",
+   "errs": [
+    "receipt not found word for word in the sources: \"openclai/openclaw: the ai that really does things. any os. any platform.\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 0,
+   "say": "It runs on macOS, Linux, or Windows with an MIT license.",
+   "receipt": "| License\nMIT © OpenClaw Foundation.",
+   "errs": [
+    "has 11 words, must have 16-26",
+    "must contain a number from the facts"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 1,
+   "say": "The installer works on macOS, Linux, or Windows with an MIT license.",
+   "receipt": "The installer supports macOS, Linux, and Windows.\nMIT © OpenClaw Foundation.",
+   "errs": [
+    "has 12 words, must have 16-26",
+    "must contain a number from the facts",
+    "receipt not found word for word in the sources: \"the installer supports macos, linux, and windows. mit © openclaw foundation.\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 2,
+   "say": "The Foundation is funded by donors including Amazon and OpenAI.",
+   "receipt": "| Donors and sponsors | The Foundation is funded by donors including Amazon, Lobster Computer Company, Offline Holdings, OpenAI, Red Hat, and the University of Michigan, with infrastru|",
+   "errs": [
+    "has 10 words, must have 16-26",
+    "must contain a number from the facts"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 0,
+   "say": "It treats inbound messages as untrusted input for local sessions.",
+   "receipt": "Treat inbound messages as untrusted input.",
+   "errs": [
+    "has 10 words, must have 16-26",
+    "must contain a number from the facts"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 1,
+   "say": "Amazon funds the project while OpenAI is also listed among donors.",
+   "receipt": "... funded by donors including Amazon ... and OpenAI ...",
+   "errs": [
+    "has 11 words, must have 16-26",
+    "must contain a number from the facts",
+    "receipt not found word for word in the sources: \"and openai\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 2,
+   "say": "The project is developed by an independent nonprofit called OpenClaw Foundation.",
+   "receipt": "| Governance | OpenClaw is developed in the open by the OpenClaw Foundation, an independent 501(c)(3).|",
+   "errs": [
+    "has 11 words, must have 16-26",
+    "must contain a number from the facts"
+   ]
+  },
+  {
+   "slot": "proof",
+   "dropped": true
+  },
+  {
+   "slot": "proof2",
+   "try": 0,
+   "say": "It runs on any OS including Windows and macOS with an MIT license.",
+   "receipt": "The installer supports macOS, Linux, and Windows ... License MIT",
+   "errs": [
+    "has 13 words, must have 14-24",
+    "must contain a number from the facts"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 1,
+   "say": "The foundation receives funding from Amazon, OpenAI, Red Hat and others under an MIT license.",
+   "receipt": "| Donors and sponsors | The Foundation is funded by donors including Amazon ... License | MIT © OpenClaw Foundation.",
+   "errs": [
+    "must contain a number from the facts"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 2,
+   "say": "Governance is managed by the OpenClaw Foundation, which operates as an independent 501(c)(3).",
+   "receipt": "| Governance | ... OpenClaw is developed in the open by the OpenClaw Foundation, an independent 501(c)(3).",
+   "errs": [
+    "has 13 words, must have 14-24"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 0,
+   "say": "It is built with TypeScript, and it runs on any OS.",
+   "receipt": "openclaw/openclaw ... main language TypeScript",
+   "errs": [
+    "has 11 words, must have 14-24",
+    "must contain a number from the facts",
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 1,
+   "say": "Its main language is TypeScript ... any OS works",
+   "receipt": "main language TypeScript ... Any OS.",
+   "errs": [
+    "has 9 words, must have 14-24",
+    "must contain a number from the facts",
+    "no '...' in the spoken line (that belongs in the receipt only)"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 2,
+   "say": "It is written in TypeScript ... Amazon funds its foundation.",
+   "receipt": "| main language TypeScript | Donors and sponsors The Foundation is funded by donors including Amazon ...",
+   "errs": [
+    "has 10 words, must have 14-24",
+    "must contain a number from the facts",
+    "no '...' in the spoken line (that belongs in the receipt only)",
+    "receipt not found word for word in the sources: \"main language typescript donors and sponsors the foundation is funded by donors \" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 0,
+   "say": "It is built on TypeScript and governed by an independent non-profit foundation.",
+   "receipt": "main language TypeScript ... OpenClaw Foundation, an independent 501(c)(3)",
+   "errs": [
+    "has 12 words, must have 14-24",
+    "must contain a number from the facts"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 1,
+   "say": "Its main language is TypeScript.",
+   "receipt": "main language TypeScript",
+   "errs": [
+    "has 5 words, must have 14-24",
+    "must contain a number from the facts",
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 2,
+   "say": "Its main language is TypeScript.",
+   "receipt": "",
+   "errs": [
+    "has 5 words, must have 14-24",
+    "must contain a number from the facts",
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "detail",
+   "try": 0,
+   "say": "It runs apps and device nodes on various platforms.",
+   "receipt": "Run apps and device nodes | Platforms · Nodes",
+   "errs": [
+    "has 9 words, must have 14-24"
+   ]
+  },
+  {
+   "slot": "detail",
+   "try": 1,
+   "say": "Configure models and authentication to connect messaging services.",
+   "receipt": "| Configure models and auth | Models · Model providers |\n| Connect a messaging service | Channels",
+   "errs": [
+    "has 8 words, must have 14-24"
+   ]
+  },
+  {
+   "slot": "detail",
+   "try": 2,
+   "say": "You configure your AI model settings here. Then you add new tools directly from ClawHub.",
+   "receipt": "| Configure models and auth | Models · Model providers| ... Connect a messaging service | Channels| ... Add tools, skills, and plugins | Tools · Skills · Plugins · ClawHub|",
+   "errs": []
+  },
+  {
+   "slot": "detail",
+   "try": 0,
+   "say": "The installer works on macOS, Linux, Windows and WSL2.",
+   "receipt": "# macOS / Linux / WSL2\niwr -useb https://openclaw.ai/install.ps1 | iex",
+   "errs": [
+    "has 9 words, must have 14-24",
+    "receipt not found word for word in the sources: \"macos / linux / wsl2 iwr -useb https://openclaw.ai/install.ps1 iex\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "detail",
+   "try": 1,
+   "say": "Run apps directly on your nodes, or connect platforms to build skills.",
+   "receipt": "| Run apps and device nodes | Platforms · Nodes ... Use the CLI and chat commands | ...",
+   "errs": [
+    "has 12 words, must have 14-24"
+   ]
+  },
+  {
+   "slot": "detail",
+   "try": 2,
+   "say": "The installer supports macOS, Linux, Windows, and WSL2.",
+   "receipt": "The installer supports macOS, Linux, and Windows.",
+   "errs": [
+    "has 8 words, must have 14-24"
+   ]
+  },
+  {
+   "slot": "detail",
+   "try": 0,
+   "say": "It runs apps and device nodes right on local platforms.",
+   "receipt": "| Run apps and device nodes | Platforms · Nodes",
+   "errs": [
+    "has 10 words, must have 14-24"
+   ]
+  },
+  {
+   "slot": "detail",
+   "try": 1,
+   "say": "You can run your own apps directly from node.",
+   "receipt": "| Run apps and device nodes | Platforms · Nodes |",
+   "errs": [
+    "has 9 words, must have 14-24"
+   ]
+  },
+  {
+   "slot": "detail",
+   "try": 2,
+   "say": "Configure models in the Models docs or connect Discord on Channels.",
+   "receipt": "| Configure models and auth | Models · Model providers |\n| Connect a messaging service | Channels|",
+   "errs": [
+    "has 11 words, must have 14-24"
+   ]
+  },
+  {
+   "slot": "detail2",
+   "try": 0,
+   "say": "It works on macOS, Linux, Windows and WSL2.",
+   "receipt": "The installer supports macOS, Linux, and Windows.",
+   "errs": [
+    "has 8 words, must have 12-22"
+   ]
+  },
+  {
+   "slot": "detail2",
+   "try": 1,
+   "say": "The installer runs on any of those systems.",
+   "receipt": "The installer supports macOS, Linux, and Windows.",
+   "errs": [
+    "has 8 words, must have 12-22"
+   ]
+  },
+  {
+   "slot": "detail2",
+   "try": 2,
+   "say": "The setup supports macOS, Linux, Windows or WSL two.",
+   "receipt": "# macOS / Linux / WSL2",
+   "errs": [
+    "has 9 words, must have 12-22",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "detail2",
+   "try": 0,
+   "say": "It uses pnpm workspaces for development and works on macOS, Linux, Windows.",
+   "receipt": "The repository is a pnpm workspace.\nThe installer supports macOS, Linux, and Windows.",
+   "errs": [
+    "receipt not found word for word in the sources: \"the repository is a pnpm workspace. the installer supports macos, linux, and win\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "detail2",
+   "try": 1,
+   "say": "The repo is a pnpm workspace with an installer for macOS, Linux or Windows.",
+   "receipt": "### Development The repository is a pnpm workspace.\n\n### Install The installer supports macOS, Linux, and Windows.",
+   "errs": [
+    "receipt not found word for word in the sources: \"development the repository is a pnpm workspace. install the installer supports m\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "detail2",
+   "try": 2,
+   "say": "The repo uses pnpm workspaces to build.",
+   "receipt": "### Development\nThe repository is a pnpm workspace.",
+   "errs": [
+    "has 7 words, must have 12-22"
+   ]
+  },
+  {
+   "slot": "detail2",
+   "try": 0,
+   "say": "The installer works on macOS, Linux, Windows and WSL2.",
+   "receipt": "# macOS / Linux / WSL2 ... # Windows PowerShell",
+   "errs": [
+    "has 9 words, must have 12-22"
+   ]
+  },
+  {
+   "slot": "detail2",
+   "try": 1,
+   "say": "The pnpm workspace builds directly after cloning the repo.",
+   "receipt": "The repository is a pnpm workspace.",
+   "errs": [
+    "has 9 words, must have 12-22"
+   ]
+  },
+  {
+   "slot": "detail2",
+   "try": 2,
+   "say": "The installer supports macOS, Linux, Windows, or WSL2.",
+   "receipt": "The installer supports macOS, Linux, and Windows.",
+   "errs": [
+    "has 8 words, must have 12-22"
+   ]
+  },
+  {
+   "slot": "trust",
+   "try": 0,
+   "say": "It runs on MIT license, built by OpenClaw Foundation and tested at Lobster Computer Company.",
+   "receipt": "License\nMIT © OpenClaw Foundation.\n... \nThe repository is a pnpm workspace. ... The Foundation is funded by donors including Amazon, Lobster Computer Company...",
+   "errs": []
+  },
+  {
+   "slot": "trust",
+   "try": 0,
+   "say": "It uses an MIT license and runs on platforms like Lobster Computer Company.",
+   "receipt": "License\nMIT © OpenClaw Foundation.\nDonors and sponsors\nThe Foundation is funded by donors including Amazon, Lobster Computer Company,",
+   "errs": [
+    "receipt not found word for word in the sources: \"license mit © openclaw foundation. donors and sponsors the foundation is funded \" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "trust",
+   "try": 1,
+   "say": "Licensed MIT, run by OpenClaw Foundation, with Amazon among donors.",
+   "receipt": "| License\nMIT © OpenClaw Foundation.\nDonors and sponsors\nThe Foundation is funded by donors including Amazon",
+   "errs": [
+    "has 10 words, must have 12-20",
+    "receipt not found word for word in the sources: \"license mit © openclaw foundation. donors and sponsors the foundation is funded \" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "trust",
+   "try": 2,
+   "say": "Licensed MIT by OpenClaw Foundation, supported by Amazon.",
+   "receipt": "License\nMIT © OpenClaw Foundation.\n...\ndonors including Amazon,",
+   "errs": [
+    "has 8 words, must have 12-20"
+   ]
+  },
+  {
+   "slot": "trust",
+   "try": 0,
+   "say": "It is MIT licensed and built by an independent 501(c)(3) foundation.",
+   "receipt": "OpenClaw Foundation, an independent 501(c)(3). ... MIT © OpenClaw Foundation.",
+   "errs": [
+    "has 11 words, must have 12-20",
+    "repeats a number already said: 501",
+    "repeats words an earlier line already said: \"an independent 501 c\" - say something new"
+   ]
+  },
+  {
+   "slot": "trust",
+   "try": 1,
+   "say": "The MIT license is open for everyone, funded by donors like Amazon or Red Hat.",
+   "receipt": "| License | MIT © OpenClaw Foundation.| ... The Foundation is funded by donors including Amazon ...",
+   "errs": []
+  },
+  {
+   "slot": "start",
+   "try": 0,
+   "say": "Run this command to start onboarding and install the daemon directly.",
+   "receipt": "# macOS / Linux / WSL2\ncurl -fsSL https://openclaw.ai/install.sh | bash\n...\n```openclaw onboard --install-daemon`...",
+   "errs": [
+    "has 11 words, must have 12-20"
+   ]
+  },
+  {
+   "slot": "start",
+   "try": 1,
+   "say": "Run openclaw onboard with flag --install-daemon to start.",
+   "receipt": "On a fresh install, the installer scripts start onboarding automatically.... openclaw onboard --install-daemon",
+   "errs": [
+    "has 8 words, must have 12-20"
+   ]
+  },
+  {
+   "slot": "start",
+   "try": 2,
+   "say": "Run the command openclaw onboard dash install daemon.",
+   "receipt": "openclaw onboard --install-daemon",
+   "errs": [
+    "has 8 words, must have 12-20",
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "start",
+   "try": 0,
+   "say": "Run openclaw onboard to install the daemon.",
+   "receipt": "On a fresh install, the installer scripts start onboarding automatically.\nopenclaw onboard --install-daemon",
+   "errs": [
+    "has 7 words, must have 12-20"
+   ]
+  },
+  {
+   "slot": "start",
+   "try": 1,
+   "say": "Run openclaw onboard --install-daemon on a fresh install.",
+   "receipt": "# macOS / Linux / WSL2\ncurl -fsSL https://openclaw.ai/install.sh | bash\n...\n# Windows PowerShell\niwr -useb https://openclaw.ai/install.ps1 | iex\n...\nOn a fresh install, the installer scripts start onboarding automatically.\n``` openclaw onboard --install-daemon ```",
+   "errs": [
+    "has 8 words, must have 12-20"
+   ]
+  },
+  {
+   "slot": "start",
+   "try": 2,
+   "say": "On a fresh install, run the command to start the daemon.",
+   "receipt": "On a fresh install, the installer scripts start onboarding automatically.",
+   "errs": [
+    "has 11 words, must have 12-20"
+   ]
+  },
+  {
+   "slot": "start",
+   "try": 0,
+   "say": "Run openclaw onboard with install-daemon to begin onboarding.",
+   "receipt": "# macOS / Linux / WSL2\ncurl -fsSL https://openclaw.ai/install.sh | bash\n# Windows PowerShell\niwr -useb https://openclaw.ai/install.ps1 | iex\nOn a fresh install, the installer scripts start onboarding automatically.\n``` openclaw onboard --install-daemon",
+   "errs": [
+    "has 8 words, must have 12-20",
+    "receipt not found word for word in the sources: \"macos / linux / wsl2 curl -fssl https://openclaw.ai/install.sh bash windows powe\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "start",
+   "try": 1,
+   "say": "Run openclaw onboard --install-daemon to start.",
+   "receipt": "-- install automatically on a fresh setup.",
+   "errs": [
+    "has 6 words, must have 12-20",
+    "receipt not found word for word in the sources: \"-- install automatically on a fresh setup.\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "start",
+   "try": 2,
+   "say": "Run openclaw onboard --install-daemon to begin.",
+   "receipt": "On a fresh install, the installer scripts start onboarding automatically.\nopenclaw onboard --install-daemon",
+   "errs": [
+    "has 6 words, must have 12-20"
+   ]
+  },
+  {
+   "slot": "share",
+   "try": 0,
+   "say": "Send this to someone who wants an AI on their own computer.",
+   "receipt": "OpenClaw is an open-source AI assistant that runs on your own computer",
+   "errs": []
+  },
+  {
+   "slot": "share",
+   "try": 0,
+   "say": "Save this for when you want an assistant that lives in your own channels.",
+   "receipt": "OpenClaw meets you in channels like Discord, Slack, Telegram or iMessage.",
+   "errs": [
+    "repeats words an earlier line already said: \"when you want an\" - say something new",
+    "receipt not found word for word in the sources: \"openclaw meets you in channels like discord, slack, telegram or imessage.\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "share",
+   "try": 1,
+   "say": "Send this to someone who wants tools from ClawHub.",
+   "receipt": "| Add tools, skills, and plugins | Tools · Skills · Plugins · ClawHub",
+   "errs": [
+    "has 9 words, must have 10-16"
+   ]
+  },
+  {
+   "slot": "share",
+   "try": 2,
+   "say": "Save this for later use with slash commands on your local computer.",
+   "receipt": "Use slash commands to add tools ... directly from ClawHub.",
+   "errs": [
+    "receipt not found word for word in the sources: \"use slash commands to add tools\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "share",
+   "try": 0,
+   "say": "Share this with a friend who needs an AI that works on their own computer.",
+   "receipt": "OpenClaw is an open-source AI assistant that runs on your own computer",
+   "errs": [
+    "must start with 'Send this to someone who' or 'Save this for'"
+   ]
+  },
+  {
+   "slot": "share",
+   "try": 1,
+   "say": "Send this to someone who wants local tools... Save this for a MIT licensed open-source assistant.",
+   "receipt": "... Send this to someone who wants local tools ... Save this for a MIT licensed open-source assistant.",
+   "errs": [
+    "no '...' in the spoken line (that belongs in the receipt only)",
+    "receipt not found word for word in the sources: \"send this to someone who wants local tools\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "share",
+   "try": 2,
+   "say": "Save this for an open-source AI that runs on your devices.",
+   "receipt": "OpenClaw is an open-source AI assistant that runs on your own computer",
+   "errs": [
+    "repeats words an earlier line already said: \"ai that runs on\" - say something new"
+   ]
+  },
+  {
+   "slot": "end",
+   "try": 0,
+   "say": "This is OpenClaw, an open-source AI that really does things.",
+   "receipt": "openclaw/openclaw: The AI that really does things.",
+   "errs": []
+  },
+  {
+   "slot": "end",
+   "try": 0,
+   "say": "It is OpenClaw, an assistant that really does things.",
+   "receipt": "openclaw/openclaw: The AI that really does things.",
+   "errs": []
+  },
+  {
+   "slot": "end",
+   "try": 0,
+   "say": "OpenClaw is an AI assistant that runs on your devices.",
+   "receipt": "OpenClaw — Your assistant, on your devices",
+   "errs": [
+    "repeats words an earlier line already said: \"runs on your devices\" - say something new",
+    "receipt not found word for word in the sources: \"openclaw — your assistant, on your devices\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "end",
+   "try": 1,
+   "say": "OpenClaw is an AI that really does things.",
+   "receipt": "openclaw/openclaw: The AI that really does things.",
+   "errs": []
+  }
+ ]
+}

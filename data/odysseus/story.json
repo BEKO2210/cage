@@ -1,0 +1,15 @@
+{"repo": "https://github.com/odysseus-dev/odysseus", "lines": [
+{"id": "hook", "say": "92.3k stars, for an AI workspace that you host yourself."},
+{"id": "what", "say": "It's called Odysseus. One self-hosted app for chat, agents, research, documents, email, notes and your calendar."},
+{"id": "models", "say": "It runs your local model workflows, and it also works with models you call through an API."},
+{"id": "agents", "say": "The agents get real tools to work with: MCP, files, a shell, skills, and memory."},
+{"id": "image", "say": "The compose files pull the official multi-arch image, published on GitHub's container registry."},
+{"id": "start", "say": "To start, clone the repo and copy the example env file into place."},
+{"id": "run", "say": "Then run docker compose up, and wait until the containers are healthy."},
+{"id": "open", "say": "Open localhost on port 7011, and your workspace is ready."},
+{"id": "pin", "say": "For production, pin the immutable 1.0.2 tag instead of latest."},
+{"id": "security", "say": "It comes with powerful local tools, so keep AUTH_ENABLED set to true on any network-accessible deployment."},
+{"id": "proof", "say": "It already has 1.4k forks, and it's licensed under AGPL 3.0."},
+{"id": "share", "say": "Save this for the day you move your AI tools onto your own hardware."},
+{"id": "end", "say": "Odysseus. Your whole AI workspace, on your own server."}
+]}

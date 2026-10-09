@@ -1,0 +1,53 @@
+{
+ "repo": "https://github.com/bilawalsidhu/gods-eye-view",
+ "lines": [
+  {
+   "id": "hook",
+   "say": "11,000+ live aircraft on one photorealistic 3D globe, running right in your browser."
+  },
+  {
+   "id": "l1",
+   "say": "God's Eye View is a spy satellite simulator, except the data is real."
+  },
+  {
+   "id": "l2",
+   "say": "It pulls flight transponders, ship beacons, and orbital elements into one globe you can explore."
+  },
+  {
+   "id": "l3",
+   "say": "There are twenty layers and map sources, and seventeen of them have a keyless path."
+  },
+  {
+   "id": "l4",
+   "say": "The satellite layer alone holds an 838-object catalog, color-coded by class."
+  },
+  {
+   "id": "l5",
+   "say": "Live feeds arrive every 15–30s, and the globe smoothly interpolates between them."
+  },
+  {
+   "id": "l6",
+   "say": "You can ride inside a tracked flight in cockpit view, or switch the whole scene to night vision."
+  },
+  {
+   "id": "l7",
+   "say": "With an OpenAI key you can talk to it, and voice spending has a $5 hard cap."
+  },
+  {
+   "id": "l8",
+   "say": "It reached #1 on GitHub Trending, and the video series behind it drew 5M+ on YouTube."
+  },
+  {
+   "id": "l9",
+   "say": "To start, clone it with Node.js 24, run npm ci, and open localhost port 4173, with no account needed."
+  },
+  {
+   "id": "l10",
+   "say": "Send this to someone who loves planes, ships, or satellites."
+  },
+  {
+   "id": "end",
+   "say": "That's God's Eye View."
+  }
+ ]
+}

@@ -1,0 +1,42 @@
+{
+ "repo": "t8y2/dbx",
+ "url": "https://github.com/t8y2/dbx",
+ "description": "25 MB lightweight cross-platform database client for 100+ databases, including MySQL, PostgreSQL, SQLite, Redis, MongoDB, DuckDB, SQL Server, and Dameng. Built-in AI, MCP Server, CLI, desktop and Docker. | \u8f7b\u91cf\u7ea7\u8de8\u5e73\u53f0\u6570\u636e\u5e93\u7ba1\u7406\u5de5\u5177\uff0c\u652f\u6301 MySQL\u3001PostgreSQL\u3001SQLite\u3001Redis\u3001MongoDB\u3001\u8fbe\u68a6\u7b49 100+ \u6570\u636e\u5e93\uff0c\u63d0\u4f9b\u684c\u9762\u7aef\u3001Docker\u3001CLI\u3001\u5185\u7f6e AI \u52a9\u624b\u548c MCP\u3002",
+ "stars": 25380,
+ "forks": 2296,
+ "language": "Rust",
+ "languages": {
+  "Rust": 39.6,
+  "TypeScript": 30.0,
+  "Vue": 17.7,
+  "Go": 5.8,
+  "Java": 5.2
+ },
+ "topics": [
+  "ai",
+  "cli",
+  "clickhouse",
+  "database",
+  "database-client",
+  "database-management",
+  "docker",
+  "gui",
+  "mcp",
+  "mongodb",
+  "mysql",
+  "postgresql",
+  "redis",
+  "rust",
+  "sql-server",
+  "sqlite",
+  "tauri",
+  "vue"
+ ],
+ "license": "Apache-2.0",
+ "homepage": "https://dbxio.com",
+ "created": "2026-04-29",
+ "pushed": "2026-10-09",
+ "release": "v0.6.38",
+ "release_date": "2026-10-09",
+ "owner_avatar": "https://avatars.githubusercontent.com/u/77960507?v=4"
+}

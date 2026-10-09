@@ -1,0 +1,53 @@
+{
+ "repo": "https://github.com/t8y2/dbx",
+ "lines": [
+  {
+   "id": "hook",
+   "say": "100+ databases in 25 MB, with no Java JRE to install first."
+  },
+  {
+   "id": "what",
+   "say": "DBX is a lightweight, cross-platform database client built in Rust, with a desktop app, Docker, a CLI and built-in AI."
+  },
+  {
+   "id": "dbs",
+   "say": "It connects to MySQL, PostgreSQL, SQLite, Redis, MongoDB, DuckDB, ClickHouse and SQL Server from one tool."
+  },
+  {
+   "id": "ai",
+   "say": "You describe what you want in plain language, and the AI SQL assistant gives you SQL back."
+  },
+  {
+   "id": "editor",
+   "say": "The query editor runs on CodeMirror 6, with metadata-aware autocomplete and 9 editor themes."
+  },
+  {
+   "id": "grid",
+   "say": "A virtual-scrolled data grid handles large result sets, and you can import CSV or Excel files."
+  },
+  {
+   "id": "mcp",
+   "say": "A separate Rust-powered MCP server lets coding agents like Claude Code and Cursor query your databases through DBX."
+  },
+  {
+   "id": "safety",
+   "say": "Destructive operations need a confirmation, and connection credentials are encrypted."
+  },
+  {
+   "id": "proof",
+   "say": "The repo has 25.4k stars, and DBX is free and open source under Apache-2.0."
+  },
+  {
+   "id": "start",
+   "say": "On a Mac, run brew install --cask dbx, or start the web version with Docker on port 4224."
+  },
+  {
+   "id": "share",
+   "say": "Send this to someone who still runs a separate client for every database."
+  },
+  {
+   "id": "end",
+   "say": "DBX. 100+ databases in 25 MB."
+  }
+ ]
+}

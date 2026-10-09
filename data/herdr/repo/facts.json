@@ -1,0 +1,43 @@
+{
+ "repo": "herdrdev/herdr",
+ "url": "https://github.com/herdrdev/herdr",
+ "description": "the runtime your coding agents live on",
+ "stars": 43073,
+ "forks": 3381,
+ "language": "Rust",
+ "languages": {
+  "Rust": 93.8,
+  "Python": 2.7,
+  "PowerShell": 1.3,
+  "TypeScript": 0.9,
+  "Shell": 0.5
+ },
+ "topics": [
+  "agent",
+  "agent-orchestration",
+  "ai",
+  "ai-agents",
+  "claude-code",
+  "cli",
+  "codex",
+  "coding-agents",
+  "developer-tools",
+  "devtools",
+  "multiplexer",
+  "rust",
+  "terminal",
+  "terminal-multiplexer",
+  "terminal-ui",
+  "tmux",
+  "tui",
+  "workspace-manager"
+ ],
+ "license": "Apache-2.0",
+ "homepage": "https://herdr.dev",
+ "created": "2026-03-27",
+ "pushed": "2026-10-08",
+ "release": "v0.9.3",
+ "release_date": "2026-09-29",
+ "owner_avatar": "https://avatars.githubusercontent.com/u/309108654?v=4",
+ "logo": "repo/logo.png"
+}

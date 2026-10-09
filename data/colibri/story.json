@@ -1,0 +1,53 @@
+{
+ "repo": "https://github.com/JustVugg/colibri",
+ "lines": [
+  {
+   "id": "hook",
+   "say": "A 744B-parameter model, ready in 32s, with only 9.9 GB resident in memory."
+  },
+  {
+   "id": "what",
+   "say": "colibri runs frontier mixture-of-experts models on hardware you already own, in pure C with zero dependencies."
+  },
+  {
+   "id": "idea",
+   "say": "The trick is that a mixture-of-experts model is huge on disk, but small per token."
+  },
+  {
+   "id": "fact",
+   "say": "GLM-5.2 has 744B parameters, but only about 11 GB of them change from one token to the next."
+  },
+  {
+   "id": "how1",
+   "say": "So colibri streams those routed experts from the disk instead of forcing the whole model into fast memory."
+  },
+  {
+   "id": "how2",
+   "say": "Every layer of every token walks the same five steps: route, union, place, overlap, learn."
+  },
+  {
+   "id": "proof1",
+   "say": "On an integrated Radeon 780M, Qwen3.6 decodes 9.9 tok/s with Vulkan, against 6.0 tok/s on the CPU alone."
+  },
+  {
+   "id": "proof2",
+   "say": "On an RTX 3070 with the dense layers in VRAM, it reaches 25.4 to 30.0 tok/s."
+  },
+  {
+   "id": "need",
+   "say": "You need 8 GB of RAM at the very least, and 22 GB free on the disk for the smallest model."
+  },
+  {
+   "id": "start",
+   "say": "Clone the repo, run start-here.sh, answer one question, and Enter takes the recommendation."
+  },
+  {
+   "id": "share",
+   "say": "Save this for the day you want a frontier model without buying new hardware."
+  },
+  {
+   "id": "end",
+   "say": "colibri. Tiny engine, immense model."
+  }
+ ]
+}

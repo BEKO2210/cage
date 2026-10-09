@@ -1,0 +1,14 @@
+{"repo": "https://github.com/MemPalace/mempalace", "lines": [
+{"id": "hook", "say": "96.6% recall on LongMemEval, with zero API calls and no LLM at all."},
+{"id": "what", "say": "This is MemPalace, a free and open-source memory system for AI that runs local first."},
+{"id": "how", "say": "It stores your conversation history as verbatim text, and finds it again with semantic search."},
+{"id": "local", "say": "Nothing leaves your machine unless you opt in. ChromaDB is the default backend, and it needs no configuration."},
+{"id": "hybrid", "say": "The hybrid mode reaches 98.4% on 450 held-out questions that were not seen during tuning."},
+{"id": "rerank", "say": "Add an LLM rerank on top, and recall climbs to 99% or more."},
+{"id": "honest", "say": "The team still refuses to headline 100%, because the last 0.6% came from inspecting specific wrong answers."},
+{"id": "tools", "say": "It also ships 45 MCP tools, a temporal knowledge graph, and its own wing and diary for every agent."},
+{"id": "warning", "say": "One warning from the README: Claude Code sessions expire in 30 days without auto-save hooks wired."},
+{"id": "start", "say": "To start, run uv tool install mempalace, then mempalace init on your project. You need Python 3.9 or newer and about 300 MB of disk."},
+{"id": "share", "say": "Send this to someone whose agent forgets everything between sessions."},
+{"id": "end", "say": "MemPalace. Your AI's memory, kept on your machine."}
+]}

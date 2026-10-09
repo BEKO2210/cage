@@ -1,0 +1,57 @@
+{
+ "repo": "https://github.com/stablyai/orca",
+ "lines": [
+  {
+   "id": "hook",
+   "say": "Fan one prompt across five agents, and let them all work in parallel."
+  },
+  {
+   "id": "what",
+   "say": "This is Orca, an ADE for working with a fleet of parallel agents."
+  },
+  {
+   "id": "subs",
+   "say": "It runs any coding agent with your own subscription."
+  },
+  {
+   "id": "agents",
+   "say": "If an agent runs in a terminal, it runs in Orca, from Claude Code to Codex and Cursor."
+  },
+  {
+   "id": "how",
+   "say": "Each agent gets its own isolated git worktree, so their work never collides."
+  },
+  {
+   "id": "merge",
+   "say": "When they finish, you compare the results and merge the winner."
+  },
+  {
+   "id": "diffs",
+   "say": "You can drop comments on any line of an AI diff and ship them straight back to the agent."
+  },
+  {
+   "id": "design",
+   "say": "Design Mode lets you click any element in a real Chromium window and send its HTML, CSS and a cropped screenshot into the prompt."
+  },
+  {
+   "id": "mobile",
+   "say": "The phone companion tells you when an agent finishes, and you can send follow-ups from anywhere."
+  },
+  {
+   "id": "proof",
+   "say": "The repo has 88367 stars and 5656 forks, and it is free and open source under the MIT License."
+  },
+  {
+   "id": "start",
+   "say": "Download it from onOrca.dev, or install it on a Mac with Homebrew."
+  },
+  {
+   "id": "share",
+   "say": "Send this to someone who still runs one coding agent at a time."
+  },
+  {
+   "id": "end",
+   "say": "That was Orca, by stablyai."
+  }
+ ]
+}

@@ -1,0 +1,57 @@
+{
+ "repo": "https://github.com/Graphify-Labs/graphify",
+ "lines": [
+  {
+   "id": "hook",
+   "say": "0 LLM credits: that is what graphify spends to turn your whole codebase into a knowledge graph."
+  },
+  {
+   "id": "l1",
+   "say": "It is a skill for Claude Code, Cursor, Codex and Gemini CLI that you call by typing slash graphify."
+  },
+  {
+   "id": "l2",
+   "say": "It parses code locally with tree-sitter, resolving calls, imports and inheritance across about 40 languages."
+  },
+  {
+   "id": "l3",
+   "say": "Docs, SQL schemas, configs and PDFs join the same graph, and every edge is explained."
+  },
+  {
+   "id": "l4",
+   "say": "It surfaces god nodes, the most-connected concepts that everything flows through."
+  },
+  {
+   "id": "l5",
+   "say": "Then your assistant queries the graph instead of reading files one by one."
+  },
+  {
+   "id": "l6",
+   "say": "On a cross-tool benchmark it covered 82.0% of key facts, against 70.8% for a grep and read baseline."
+  },
+  {
+   "id": "l7",
+   "say": "On LOCOMO its recall at ten was 0.497, where mem0 scored 0.048."
+  },
+  {
+   "id": "l8",
+   "say": "There is no vector store, and code extraction makes no API calls at all."
+  },
+  {
+   "id": "l9",
+   "say": "To start, install the graphifyy package with uv, run graphify install, then type slash graphify dot."
+  },
+  {
+   "id": "l10",
+   "say": "Install the git hook once, and every commit rebuilds the graph with no API cost."
+  },
+  {
+   "id": "l11",
+   "say": "Send this to someone who is lost in a giant codebase."
+  },
+  {
+   "id": "end",
+   "say": "That's graphify."
+  }
+ ]
+}

@@ -1,0 +1,57 @@
+{
+ "repo": "https://github.com/Egonex-AI/Understand-Anything",
+ "lines": [
+  {
+   "id": "hook",
+   "say": "You just joined a new team, and the codebase is 200,000 lines of code."
+  },
+  {
+   "id": "what",
+   "say": "Understand Anything turns any codebase, knowledge base or docs into an interactive knowledge graph."
+  },
+  {
+   "id": "nodes",
+   "say": "Every file, function and class becomes a node you can click, search and explore."
+  },
+  {
+   "id": "how",
+   "say": "The understand command orchestrates 5 specialized agents in a multi-agent pipeline."
+  },
+  {
+   "id": "hybrid",
+   "say": "Tree-sitter and LLMs split the work, so each one does what it does best."
+  },
+  {
+   "id": "domain",
+   "say": "A domain view maps your code to real business processes, with domains, flows and steps."
+  },
+  {
+   "id": "chat",
+   "say": "You can even ask questions, like how the payment flow works."
+  },
+  {
+   "id": "concepts",
+   "say": "It explains 12 programming patterns, like generics and closures, in context wherever they appear."
+  },
+  {
+   "id": "proof",
+   "say": "The repo has 85754 stars, and it is MIT licensed."
+  },
+  {
+   "id": "start",
+   "say": "In Claude Code, add the plugin from the marketplace, install it, and run the understand command."
+  },
+  {
+   "id": "team",
+   "say": "The graph is just JSON, so commit it once and your teammates skip the pipeline."
+  },
+  {
+   "id": "share",
+   "say": "Send this to someone who just joined a new team."
+  },
+  {
+   "id": "end",
+   "say": "That was Understand Anything, by Egonex-AI."
+  }
+ ]
+}

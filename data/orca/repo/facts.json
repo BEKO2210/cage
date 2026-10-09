@@ -1,0 +1,43 @@
+{
+ "repo": "stablyai/orca",
+ "url": "https://github.com/stablyai/orca",
+ "description": "Orca is the ADE for working with a fleet of parallel agents. Run any coding agent with your own subscription. Available on desktop, mobile and remote runtime.",
+ "stars": 88367,
+ "forks": 5656,
+ "language": "TypeScript",
+ "languages": {
+  "TypeScript": 95.4,
+  "JavaScript": 3.9,
+  "Swift": 0.2,
+  "HCL": 0.1,
+  "CSS": 0.1
+ },
+ "topics": [
+  "ade",
+  "agent-ide",
+  "ai-agents",
+  "claude-code",
+  "cli",
+  "codex",
+  "cursor-agent",
+  "devtools",
+  "ghostty",
+  "ide",
+  "mobile-app",
+  "opencode",
+  "orchestration",
+  "parallel-agents",
+  "pi",
+  "terminal",
+  "worktrees",
+  "yc-backed"
+ ],
+ "license": "MIT",
+ "homepage": "https://onOrca.dev",
+ "created": "2026-03-17",
+ "pushed": "2026-10-09",
+ "release": "v1.4.223",
+ "release_date": "2026-10-08",
+ "owner_avatar": "https://avatars.githubusercontent.com/u/127256420?v=4",
+ "logo": "repo/logo.png"
+}

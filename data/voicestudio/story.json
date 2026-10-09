@@ -1,0 +1,57 @@
+{
+ "repo": "https://github.com/debpalash/VoiceStudio",
+ "lines": [
+  {
+   "id": "hook",
+   "say": "Voice cloning in 646 languages, running fully on your own hardware."
+  },
+  {
+   "id": "what",
+   "say": "VoiceStudio is an open-source, fully local ElevenLabs alternative."
+  },
+  {
+   "id": "clone",
+   "say": "You can clone a voice, or design your own by describing it."
+  },
+  {
+   "id": "dub",
+   "say": "It dubs videos with timed speech, and it turns stories into audiobooks and batch jobs."
+  },
+  {
+   "id": "dictate",
+   "say": "You can dictate with a floating widget, and transcription is built in too."
+  },
+  {
+   "id": "engine",
+   "say": "The default engine is powered by k2-fsa OmniVoice, and you can choose another one."
+  },
+  {
+   "id": "local",
+   "say": "Local workflows run on your hardware, and remote workers are optional."
+  },
+  {
+   "id": "hardware",
+   "say": "It uses CUDA on an NVIDIA GPU and Metal on Apple Silicon, and without a dedicated GPU it still runs on the CPU, just slower."
+  },
+  {
+   "id": "agents",
+   "say": "Coding agents can drive it too, through a local API and MCP."
+  },
+  {
+   "id": "proof",
+   "say": "The repo has 55868 stars and 6265 forks."
+  },
+  {
+   "id": "start",
+   "say": "On macOS or Linux, one curl command installs it, and on Windows a single PowerShell line does the same."
+  },
+  {
+   "id": "share",
+   "say": "Save this for your next dubbing project."
+  },
+  {
+   "id": "end",
+   "say": "That was VoiceStudio, by debpalash."
+  }
+ ]
+}

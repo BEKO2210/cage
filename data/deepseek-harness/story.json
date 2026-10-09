@@ -1,0 +1,57 @@
+{
+ "repo": "https://github.com/deepseek-ai/deepseek-harness",
+ "lines": [
+  {
+   "id": "hook",
+   "say": "246k stars and 29.5k forks, for a project that is still in developer preview."
+  },
+  {
+   "id": "what",
+   "say": "This is DeepSeek Harness, an open-source agent harness developed by DeepSeek AI."
+  },
+  {
+   "id": "lang",
+   "say": "Its command is dsh, and it is written almost entirely in TypeScript, at 96.2 percent."
+  },
+  {
+   "id": "idea",
+   "say": "The design rule is in the title: DeepSeek Harness, Everything is a Plugin."
+  },
+  {
+   "id": "start1",
+   "say": "To run it, install Node.js, then run npx @deepseek-ai/dsh web."
+  },
+  {
+   "id": "start2",
+   "say": "That command starts the Web UI at 127.0.0.1, port 3080, and opens it in your default browser."
+  },
+  {
+   "id": "source",
+   "say": "To run from source, clone the repo, then run pnpm install and pnpm run build."
+  },
+  {
+   "id": "dev",
+   "say": "pnpm run dev:web builds, serves, and rebuilds the client bundles while you develop."
+  },
+  {
+   "id": "agents",
+   "say": "Coding agents get their own instructions too: the repo tells them to follow AGENTS.md."
+  },
+  {
+   "id": "safety",
+   "say": "It is still iterating rapidly, so review the safety notice before you run it."
+  },
+  {
+   "id": "license",
+   "say": "The license is MIT, and feedback and bug reports go through GitHub Discussions."
+  },
+  {
+   "id": "share",
+   "say": "Save this for the next time you want to try an agent harness that you can run locally."
+  },
+  {
+   "id": "end",
+   "say": "DeepSeek Harness. Everything is a plugin."
+  }
+ ]
+}

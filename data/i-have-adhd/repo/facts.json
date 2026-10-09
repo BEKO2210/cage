@@ -1,0 +1,31 @@
+{
+ "repo": "ayghri/i-have-adhd",
+ "url": "https://github.com/ayghri/i-have-adhd",
+ "description": "A skill to stop your coding agent from burying the answer. ADHD-friendly output.",
+ "stars": 56035,
+ "forks": 3195,
+ "language": "Python",
+ "languages": {
+  "Python": 85.0,
+  "TypeScript": 6.8,
+  "JavaScript": 5.9,
+  "Shell": 1.1,
+  "PowerShell": 1.1
+ },
+ "topics": [
+  "adhd",
+  "claude-",
+  "claude-code-plugin",
+  "claude-skills",
+  "developer-tools",
+  "productivity"
+ ],
+ "license": "MIT",
+ "homepage": "",
+ "created": "2026-05-13",
+ "pushed": "2026-10-06",
+ "release": null,
+ "release_date": "",
+ "owner_avatar": "https://avatars.githubusercontent.com/u/32200675?v=4",
+ "logo": "repo/logo.png"
+}

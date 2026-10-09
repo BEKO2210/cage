@@ -1,0 +1,23 @@
+{
+ "repo": "HKUDS/CLI-Anything",
+ "url": "https://github.com/HKUDS/CLI-Anything",
+ "description": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
+ "stars": 51789,
+ "forks": 4714,
+ "language": "Python",
+ "languages": {
+  "Python": 97.0,
+  "C#": 1.6,
+  "Shell": 0.6,
+  "JavaScript": 0.4,
+  "PowerShell": 0.2
+ },
+ "topics": [],
+ "license": "Apache-2.0",
+ "homepage": "https://clianything.cc/",
+ "created": "2026-03-08",
+ "pushed": "2026-09-22",
+ "release": "v0.4.0",
+ "release_date": "2026-06-25",
+ "owner_avatar": "https://avatars.githubusercontent.com/u/118165258?v=4"
+}

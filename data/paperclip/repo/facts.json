@@ -1,0 +1,24 @@
+{
+ "repo": "paperclipai/paperclip",
+ "url": "https://github.com/paperclipai/paperclip",
+ "description": "The open-source app everyone uses to manage agents at work",
+ "stars": 99088,
+ "forks": 16722,
+ "language": "TypeScript",
+ "languages": {
+  "TypeScript": 93.1,
+  "Rust": 2.9,
+  "JavaScript": 2.6,
+  "PLpgSQL": 0.5,
+  "Shell": 0.4
+ },
+ "topics": [],
+ "license": "MIT",
+ "homepage": "https://paperclip.ing",
+ "created": "2026-03-02",
+ "pushed": "2026-10-09",
+ "release": "v2026.1005.0",
+ "release_date": "2026-10-06",
+ "owner_avatar": "https://avatars.githubusercontent.com/u/264498616?v=4",
+ "logo": "repo/logo.png"
+}

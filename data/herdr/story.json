@@ -1,0 +1,57 @@
+{
+ "repo": "https://github.com/herdrdev/herdr",
+ "lines": [
+  {
+   "id": "hook",
+   "say": "43.1k stars, for a tool that lets your coding agents keep working after you walk away."
+  },
+  {
+   "id": "l1",
+   "say": "It is herdr, and it calls itself the runtime your coding agents live on."
+  },
+  {
+   "id": "l2",
+   "say": "You start it where the work lives, run your agents, and split them into panes."
+  },
+  {
+   "id": "l3",
+   "say": "When you leave, ctrl+b q detaches, and herdr keeps the terminals running."
+  },
+  {
+   "id": "l4",
+   "say": "Your work does not stop just because you stepped away."
+  },
+  {
+   "id": "l5",
+   "say": "The docs cover session state, supported agents, connecting machines, and remote use."
+  },
+  {
+   "id": "l6",
+   "say": "It is written in Rust, 93.8% of the code, and released under the Apache License 2.0."
+  },
+  {
+   "id": "l7",
+   "say": "The repo has 3.4k forks, and the latest release is v0.9.3."
+  },
+  {
+   "id": "l8",
+   "say": "To start, pipe the install script from herdr.dev into your shell, then type herdr."
+  },
+  {
+   "id": "l9",
+   "say": "With Homebrew it is just brew install herdr, and Windows gets its own PowerShell installer."
+  },
+  {
+   "id": "l10",
+   "say": "If you prefer building it yourself, clone the repo and run cargo build with the release flag."
+  },
+  {
+   "id": "l11",
+   "say": "Send this to someone who babysits their coding agents all day."
+  },
+  {
+   "id": "end",
+   "say": "That's herdr."
+  }
+ ]
+}

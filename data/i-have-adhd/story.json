@@ -1,0 +1,15 @@
+{"repo": "https://github.com/ayghri/i-have-adhd", "lines": [
+{"id": "hook", "say": "56k stars, for one skill that stops your coding agent from burying the answer."},
+{"id": "what", "say": "It's called i-have-adhd, and it makes your coding assistant give ADHD-friendly answers."},
+{"id": "diagnosis", "say": "And no, you don't need an ADHD diagnosis to use it."},
+{"id": "before", "say": "Before, your agent opens with something like: great question, let me think about this."},
+{"id": "after", "say": "After, the first line is the edit itself: change src/auth.ts at line 42 to update the token validation."},
+{"id": "rules", "say": "The whole skill is just 10 rules, written down in a single file called SKILL.md."},
+{"id": "examples", "say": "Lead with the next action. Number every multi-step task. Cap your lists to 5 items."},
+{"id": "credits", "say": "The rules are loosely based on a book called The Adult ADHD Tool Kit."},
+{"id": "proof", "say": "The repo has already been forked 3.2k times."},
+{"id": "start", "say": "To install it, copy one prompt from the README and paste it into your CLI."},
+{"id": "tune", "say": "Want different rules? Fork the repo, edit SKILL.md, and swap your own copy in."},
+{"id": "share", "say": "Send this to someone whose agent always starts with great question."},
+{"id": "end", "say": "That's i-have-adhd. The answer comes first."}
+]}

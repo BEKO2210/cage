@@ -1,0 +1,23 @@
+{
+ "repo": "odysseus-dev/odysseus",
+ "url": "https://github.com/odysseus-dev/odysseus",
+ "description": "Self-hosted AI workspace. ",
+ "stars": 92344,
+ "forks": 1438,
+ "language": "Python",
+ "languages": {
+  "Python": 64.5,
+  "JavaScript": 28.8,
+  "CSS": 5.2,
+  "HTML": 1.2,
+  "Shell": 0.3
+ },
+ "topics": [],
+ "license": "AGPL-3.0",
+ "homepage": "https://odysseus-dev.github.io/odysseus",
+ "created": "2026-05-31",
+ "pushed": "2026-10-08",
+ "release": null,
+ "release_date": "",
+ "owner_avatar": "https://avatars.githubusercontent.com/u/305418735?v=4"
+}

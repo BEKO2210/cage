@@ -1,0 +1,15 @@
+{"repo": "https://github.com/h4ckf0r0day/obscura", "lines": [
+{"id": "hook", "say": "30 MB of memory. Headless Chrome needs 200 MB or more for the same job."},
+{"id": "what", "say": "This is Obscura, an open-source headless browser for AI agents and web scraping, written in Rust."},
+{"id": "how", "say": "It runs real JavaScript through V8, and it speaks the Chrome DevTools Protocol."},
+{"id": "dropin", "say": "So Puppeteer and Playwright connect to it as a drop-in replacement for headless Chrome."},
+{"id": "proof", "say": "A static HTML page loads in 51 ms. Chrome takes around 500 ms."},
+{"id": "proof2", "say": "Pages with JavaScript, XHR and fetch load in 84 ms, against roughly 800 in Chrome."},
+{"id": "stealth", "say": "Stealth mode randomizes the fingerprint for every session and blocks 3,520 tracker domains."},
+{"id": "cloudflare", "say": "It even inspired the first prototype of Cloudflare Kitesurf, which began by porting Obscura to Workers."},
+{"id": "mcp", "say": "For AI agents, it ships an MCP server with tools to navigate, click, read snapshots and take screenshots."},
+{"id": "start", "say": "To start, grab a single binary from Releases. There is no Chrome, no Node.js, and no dependencies."},
+{"id": "run", "say": "Then run obscura fetch with any URL, or start the CDP server on port 9222."},
+{"id": "share", "say": "Send this to someone whose scraper keeps a full Chrome running."},
+{"id": "end", "say": "Obscura. A whole headless browser in 30 MB."}
+]}

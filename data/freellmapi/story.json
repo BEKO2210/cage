@@ -1,0 +1,57 @@
+{
+ "repo": "https://github.com/tashfeenahmed/freellmapi",
+ "lines": [
+  {
+   "id": "hook",
+   "say": "7.4 billion tokens per month, and every single one of them comes from a free tier."
+  },
+  {
+   "id": "l1",
+   "say": "FreeLLMAPI stacks 34 free LLM providers behind one OpenAI-compatible endpoint."
+  },
+  {
+   "id": "l2",
+   "say": "Every serious AI lab now offers a free tier, but stacking them by hand is painful."
+  },
+  {
+   "id": "l3",
+   "say": "This router picks the highest-priority model with a healthy key that is still under all its rate limits."
+  },
+  {
+   "id": "l4",
+   "say": "If that provider fails, the request moves down the fallback chain to the next free model."
+  },
+  {
+   "id": "l5",
+   "say": "Provider keys stay encrypted, and the whole thing runs locally, single-user by design."
+  },
+  {
+   "id": "l6",
+   "say": "The catalog tracks 474 model families across 635 free provider endpoints."
+  },
+  {
+   "id": "l7",
+   "say": "It idles at about 40 MB of memory and runs anywhere Node 20+ runs, even on a Raspberry Pi."
+  },
+  {
+   "id": "l8",
+   "say": "Claude Code, Codex CLI, Cursor, Aider and many more agents can point straight at it."
+  },
+  {
+   "id": "l9",
+   "say": "To start, run the one-line install script with Docker, open localhost port 3001, and add your keys."
+  },
+  {
+   "id": "l10",
+   "say": "Know the trade-offs: no frontier models, variable latency, and it is meant for personal experimentation only."
+  },
+  {
+   "id": "l11",
+   "say": "Save this for your next side project that needs an LLM but has no budget."
+  },
+  {
+   "id": "end",
+   "say": "That's FreeLLMAPI."
+  }
+ ]
+}

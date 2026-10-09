@@ -1,0 +1,23 @@
+{
+ "repo": "chenglou/pretext",
+ "url": "https://github.com/chenglou/pretext",
+ "description": "Fast, accurate & comprehensive text measurement & layout",
+ "stars": 50736,
+ "forks": 2751,
+ "language": "TypeScript",
+ "languages": {
+  "TypeScript": 67.5,
+  "C": 18.3,
+  "C++": 11.6,
+  "HTML": 2.3,
+  "Swift": 0.3
+ },
+ "topics": [],
+ "license": "NOASSERTION",
+ "homepage": "http://chenglou.me/pretext/",
+ "created": "2026-03-07",
+ "pushed": "2026-10-08",
+ "release": null,
+ "release_date": "",
+ "owner_avatar": "https://avatars.githubusercontent.com/u/1909539?v=4"
+}

@@ -1,0 +1,14 @@
+{"repo": "https://github.com/heygen-com/hyperframes", "lines": [
+{"id": "hook", "say": "59.6k stars, for a framework that turns plain HTML into finished video."},
+{"id": "what", "say": "It's called HyperFrames, and it comes from HeyGen. You write HTML, and it renders video. It was built for agents."},
+{"id": "how", "say": "You define the whole video as an HTML page. Data attributes on each element set when it starts and how long it plays."},
+{"id": "engine", "say": "Under the hood, it drives headless Chrome, captures every frame, encodes the video, and mixes the audio."},
+{"id": "remotion", "say": "Unlike Remotion, there is no build step. Your index.html plays exactly as it is."},
+{"id": "skills", "say": "It ships 21 skills that coding agents load on demand, from product launch videos to captions for a talking head."},
+{"id": "catalog", "say": "A catalog adds ready-made blocks for transitions, overlays, captions and animated charts."},
+{"id": "proof", "say": "It is used in production at HeyGen, with community examples from teams like tldraw and TanStack."},
+{"id": "start", "say": "To start, you need Node.js 22 or newer and FFmpeg. Run npx hyperframes init, then preview, then render to MP4."},
+{"id": "agent", "say": "Or install the plugin in Claude Code, and simply ask your agent for the video you want."},
+{"id": "share", "say": "Send this to someone who still edits every video by hand."},
+{"id": "end", "say": "HyperFrames, by HeyGen. Write HTML, render video."}
+]}

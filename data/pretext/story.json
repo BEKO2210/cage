@@ -1,0 +1,57 @@
+{
+ "repo": "https://github.com/chenglou/pretext",
+ "lines": [
+  {
+   "id": "hook",
+   "say": "This library has 50736 stars, and it measures text without ever touching the DOM."
+  },
+  {
+   "id": "what",
+   "say": "Pretext is a pure JavaScript and TypeScript library for multiline text measurement and layout."
+  },
+  {
+   "id": "uses",
+   "say": "It serves 2 use cases."
+  },
+  {
+   "id": "one",
+   "say": "The first measures a paragraph's height with no DOM layout and no reflow."
+  },
+  {
+   "id": "how",
+   "say": "A call to prepare does the one-time work: it normalizes whitespace, segments the text at its break opportunities and measures the segments with canvas."
+  },
+  {
+   "id": "math",
+   "say": "After that, layout is pure arithmetic, for example at 320 pixels wide with a line height of 20."
+  },
+  {
+   "id": "why",
+   "say": "That height unlocks proper virtualization without guesstimates and caching."
+  },
+  {
+   "id": "two",
+   "say": "The second use case lets you lay out the paragraph lines manually yourself."
+  },
+  {
+   "id": "lines",
+   "say": "layoutWithLines gives you every line at a fixed width, and layoutNextLineRange routes text one row at a time."
+  },
+  {
+   "id": "mixed",
+   "say": "The example string even mixes English, Chinese, Arabic and a rocket emoji."
+  },
+  {
+   "id": "start",
+   "say": "To start, run npm install @chenglou/pretext."
+  },
+  {
+   "id": "share",
+   "say": "Save this for the next time you build a virtualized list."
+  },
+  {
+   "id": "end",
+   "say": "That was Pretext, by chenglou."
+  }
+ ]
+}

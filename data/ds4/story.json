@@ -1,0 +1,53 @@
+{
+ "repo": "https://github.com/antirez/ds4",
+ "lines": [
+  {
+   "id": "hook",
+   "say": "About 126 tokens per second, across 16 sessions, from one local setup of eight L40S cards."
+  },
+  {
+   "id": "l1",
+   "say": "This is ds4, called DwarfStar, a local inference engine for DeepSeek 4 Flash and PRO, written mostly in C."
+  },
+  {
+   "id": "l2",
+   "say": "Its goal is to run a few excellent large language models on hardware that people can actually own."
+  },
+  {
+   "id": "l3",
+   "say": "The primary target is Metal, on Macs with 96 GB or more, and it also builds for CUDA and ROCm."
+  },
+  {
+   "id": "l4",
+   "say": "You choose a build, download a model, and chat with it from a CLI, a server, or a coding agent."
+  },
+  {
+   "id": "l5",
+   "say": "That agent, ds4-agent, runs inference directly, with no separate HTTP server in between."
+  },
+  {
+   "id": "l6",
+   "say": "Sessions are saved to disk, so you can list them, resume one, or strip out the large KV payload."
+  },
+  {
+   "id": "l7",
+   "say": "Two 128 GB Macs connected with RDMA can run 4-bit DeepSeek Flash with tensor parallelism."
+  },
+  {
+   "id": "l8",
+   "say": "And ds4-eval runs embedded capability regression tests against a real model file."
+  },
+  {
+   "id": "l9",
+   "say": "To start, clone the repo, run make on Apple Silicon, and download the ds4f-q2 model."
+  },
+  {
+   "id": "l10",
+   "say": "Send this to someone who has a big Mac and wants to run DeepSeek on their own desk."
+  },
+  {
+   "id": "end",
+   "say": "That's ds4, by antirez."
+  }
+ ]
+}

@@ -1,0 +1,53 @@
+{
+ "repo": "https://github.com/HKUDS/CLI-Anything",
+ "lines": [
+  {
+   "id": "hook",
+   "say": "2,461 tests, a 100% pass rate, and not a single screenshot or mouse click."
+  },
+  {
+   "id": "what",
+   "say": "CLI-Anything turns professional software into command-line tools that AI agents can actually use."
+  },
+  {
+   "id": "problem1",
+   "say": "AI agents are great at reasoning, but terrible at using real professional software."
+  },
+  {
+   "id": "problem2",
+   "say": "Today's fixes are fragile UI automation, limited APIs, or reimplementations that miss 90% of functionality."
+  },
+  {
+   "id": "how1",
+   "say": "You point one Claude Code plugin at a codebase, and a 7-phase pipeline builds the CLI."
+  },
+  {
+   "id": "how2",
+   "say": "It goes from codebase analysis to architecture, implementation, tests and documentation, all the way to PyPI publishing."
+  },
+  {
+   "id": "how3",
+   "say": "Every generated CLI calls the real application, like Blender, LibreOffice or FFmpeg, and returns JSON for the agent."
+  },
+  {
+   "id": "proof1",
+   "say": "It has been battle-tested across 18 major applications, from GIMP to Blender to Draw.io."
+  },
+  {
+   "id": "proof2",
+   "say": "In one demo, an agent draws a full HTTPS handshake diagram from scratch in about 4 minutes."
+  },
+  {
+   "id": "start",
+   "say": "To start, run pip install cli-anything-hub, then browse ready-made CLIs with cli-hub list."
+  },
+  {
+   "id": "share",
+   "say": "Send this to someone whose agent still clicks through screenshots."
+  },
+  {
+   "id": "end",
+   "say": "CLI-Anything. Make any software agent-native."
+  }
+ ]
+}

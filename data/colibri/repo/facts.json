@@ -1,0 +1,24 @@
+{
+ "repo": "JustVugg/colibri",
+ "url": "https://github.com/JustVugg/colibri",
+ "description": "Run frontier MoE models on hardware you already own \u2014 pure C, zero deps, experts streamed from disk. Tiny engine, immense model. \ud83d\udc26",
+ "stars": 40719,
+ "forks": 4472,
+ "language": "C",
+ "languages": {
+  "C": 54.6,
+  "Python": 33.5,
+  "Shell": 3.7,
+  "Cuda": 3.7,
+  "TypeScript": 1.4
+ },
+ "topics": [],
+ "license": "Apache-2.0",
+ "homepage": "https://justvugg.github.io/colibri",
+ "created": "2026-07-01",
+ "pushed": "2026-10-08",
+ "release": "v2.0.0",
+ "release_date": "2026-10-06",
+ "owner_avatar": "https://avatars.githubusercontent.com/u/13022503?v=4",
+ "logo": "repo/logo.png"
+}

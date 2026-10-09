@@ -1,0 +1,33 @@
+{
+ "repo": "h4ckf0r0day/obscura",
+ "url": "https://github.com/h4ckf0r0day/obscura",
+ "description": "The headless browser for AI agents and web scraping",
+ "stars": 28716,
+ "forks": 2133,
+ "language": "Rust",
+ "languages": {
+  "Rust": 95.4,
+  "Python": 3.1,
+  "HTML": 1.2,
+  "JavaScript": 0.1,
+  "Shell": 0.1
+ },
+ "topics": [
+  "antidetect",
+  "antidetect-browser",
+  "browser",
+  "browser-automation",
+  "cdp",
+  "headless",
+  "playwright",
+  "puppeteer",
+  "rust"
+ ],
+ "license": "Apache-2.0",
+ "homepage": "https://obscura.sh",
+ "created": "2026-04-13",
+ "pushed": "2026-10-08",
+ "release": "v0.2.4",
+ "release_date": "2026-10-04",
+ "owner_avatar": "https://avatars.githubusercontent.com/u/271927676?v=4"
+}

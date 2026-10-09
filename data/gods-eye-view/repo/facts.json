@@ -1,0 +1,36 @@
+{
+ "repo": "bilawalsidhu/gods-eye-view",
+ "url": "https://github.com/bilawalsidhu/gods-eye-view",
+ "description": "A spy satellite simulator in your browser, except the data is real. Live open source spatial intelligence on a photorealistic 3D globe.",
+ "stars": 49460,
+ "forks": 10012,
+ "language": "JavaScript",
+ "languages": {
+  "JavaScript": 97.1,
+  "CSS": 2.3,
+  "HTML": 0.5,
+  "Shell": 0.2,
+  "Python": 0.0
+ },
+ "topics": [
+  "3d-globe",
+  "cesium",
+  "flight-tracking",
+  "geospatial",
+  "geospatial-intelligence",
+  "gis",
+  "osint",
+  "photogrammetry",
+  "satellite-tracking",
+  "spatial-intelligence",
+  "webgl",
+  "worldview"
+ ],
+ "license": "NOASSERTION",
+ "homepage": "https://maptheworld.ai/",
+ "created": "2026-06-22",
+ "pushed": "2026-10-08",
+ "release": "v0.2.1",
+ "release_date": "2026-10-03",
+ "owner_avatar": "https://avatars.githubusercontent.com/u/106619546?v=4"
+}

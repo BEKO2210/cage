@@ -1,0 +1,28 @@
+{
+ "repo": "deepseek-ai/deepseek-harness",
+ "url": "https://github.com/deepseek-ai/deepseek-harness",
+ "description": "DeepSeek Harness: Everything is a Plugin.",
+ "stars": 246198,
+ "forks": 29549,
+ "language": "TypeScript",
+ "languages": {
+  "TypeScript": 96.2,
+  "CSS": 1.4,
+  "Python": 1.0,
+  "JavaScript": 0.8,
+  "PowerShell": 0.2
+ },
+ "topics": [
+  "ai-agents",
+  "cordis",
+  "dsh",
+  "dsh-plugin"
+ ],
+ "license": "MIT",
+ "homepage": "https://deepseek.com/harness",
+ "created": "2026-08-13",
+ "pushed": "2026-10-09",
+ "release": null,
+ "release_date": "",
+ "owner_avatar": "https://avatars.githubusercontent.com/u/148330874?v=4"
+}

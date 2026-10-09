@@ -1,0 +1,24 @@
+{
+ "repo": "antirez/ds4",
+ "url": "https://github.com/antirez/ds4",
+ "description": "DeepSeek 4 Flash and PRO local inference engine for Metal, CUDA and ROCm",
+ "stars": 23731,
+ "forks": 2290,
+ "language": "C",
+ "languages": {
+  "C": 46.9,
+  "Cuda": 25.4,
+  "Objective-C": 12.2,
+  "Metal": 7.1,
+  "Python": 5.1
+ },
+ "topics": [],
+ "license": "MIT",
+ "homepage": "",
+ "created": "2026-05-06",
+ "pushed": "2026-10-08",
+ "release": null,
+ "release_date": "",
+ "owner_avatar": "https://avatars.githubusercontent.com/u/65632?v=4",
+ "logo": "repo/logo.png"
+}

@@ -1,0 +1,57 @@
+{
+ "repo": "https://github.com/paperclipai/paperclip",
+ "lines": [
+  {
+   "id": "hook",
+   "say": "You have 20 Claude Code tabs open and can't track which one does what."
+  },
+  {
+   "id": "pain",
+   "say": "And on reboot, you lose everything."
+  },
+  {
+   "id": "what",
+   "say": "Paperclip is open-source orchestration for teams of AI agents."
+  },
+  {
+   "id": "idea",
+   "say": "If OpenClaw is an employee, Paperclip is the company."
+  },
+  {
+   "id": "how",
+   "say": "First you define the goal, then you hire the team: a CEO, a CTO, engineers, designers and marketers."
+  },
+  {
+   "id": "agents",
+   "say": "Any bot from any provider can join, because if it can receive a heartbeat, it's hired."
+  },
+  {
+   "id": "run",
+   "say": "Then you review the strategy, set budgets, hit go and monitor everything from the dashboard."
+  },
+  {
+   "id": "safe",
+   "say": "Atomic task checkout gives every task a single assignee, so competing runs can't claim the same work."
+  },
+  {
+   "id": "proof",
+   "say": "The team has merged over 2,700 pull requests, and the repo has 99088 stars."
+  },
+  {
+   "id": "start",
+   "say": "With Node.js 24.11 or newer installed, run npx paperclipai onboard."
+  },
+  {
+   "id": "local",
+   "say": "It is self-hosted, and no Paperclip account is required."
+  },
+  {
+   "id": "share",
+   "say": "Send this to someone with too many agent tabs open."
+  },
+  {
+   "id": "end",
+   "say": "That was Paperclip, open source under MIT."
+  }
+ ]
+}

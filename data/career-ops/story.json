@@ -1,0 +1,53 @@
+{
+ "repo": "https://github.com/career-ops-hq/career-ops",
+ "lines": [
+  {
+   "id": "hook",
+   "say": "740 listings evaluated, 68 applied, 12 interviews, and 1 offer. That was the author's own job search."
+  },
+  {
+   "id": "what",
+   "say": "career-ops is an open-source AI job search agent that runs locally in the AI coding CLI you already use."
+  },
+  {
+   "id": "how1",
+   "say": "You paste a job, and it first checks that the posting is still live."
+  },
+  {
+   "id": "how2",
+   "say": "Then it scores the job from 1 to 5 against your CV, before you spend an evening applying."
+  },
+  {
+   "id": "how3",
+   "say": "If the job is worth it, it tailors an ATS-friendly resume and a cover letter from your own experience."
+  },
+  {
+   "id": "trust",
+   "say": "It drafts the answer to every field, but it never submits. You review and click Submit yourself."
+  },
+  {
+   "id": "proof1",
+   "say": "The scanner comes with 100+ companies ready to scan and 35+ search queries across major job boards."
+  },
+  {
+   "id": "proof2",
+   "say": "A terminal dashboard tracks your pipeline with 6 filter tabs and 4 sort modes."
+  },
+  {
+   "id": "proof3",
+   "say": "The repo has 73.9k stars, and it is free for candidates, forever."
+  },
+  {
+   "id": "start",
+   "say": "To start, run npx @santifer/career-ops init, then open Claude Code, Codex or OpenCode in the folder."
+  },
+  {
+   "id": "share",
+   "say": "Send this to someone who is sending CVs into silence right now."
+  },
+  {
+   "id": "end",
+   "say": "career-ops. Apply better to fewer."
+  }
+ ]
+}

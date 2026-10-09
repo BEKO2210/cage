@@ -1,0 +1,43 @@
+{"repo": "https://github.com/tt-a1i/archify", "accent": "#f1e05a", "mood": "dark-tech",
+ "keys": ["Archify", "Archify.", "JSON.", "JSON", "HTML", "Redis,", "Claude", "Codex,", "Cursor", "OpenCode.", "MIT"],
+ "lines": [
+  {"id": "hook", "say": "Over 77,000 stars. / Number one / on GitHub Trending.", "shots": [
+   {"page": "name"},
+   {"at": "77,000", "stat": "77.3k", "sub": "GitHub stars · #1 on Trending, weekly"},
+   {"at": "Number", "page": "b073"}]},
+  {"id": "what", "say": "Archify turns any idea, / plan or codebase / into an interactive diagram.", "shots": [
+   {"media": {"id": "m01"}},
+   {"at": "into", "page": "b006"}]},
+  {"id": "demo", "say": "One prompt: / draw the architecture / of this project. / It reads 1,671 files, / validates, renders / and runs a browser check.", "shots": [
+   {"media": {"id": "m02", "from": 0.1, "to": 10}}]},
+  {"id": "flow", "say": "Under the hood, / your words become / typed JSON. / Validators and layout rules / check it, / and only a passing / diagram ships.", "shots": [
+   {"code": "b030"},
+   {"at": "become", "flow": {"input": {"label": "your prompt", "title": ["Diagram a web request"], "body": ["Browser → API → Redis", "cache miss → PostgreSQL"]}, "stream": "become", "pulse": "Validators", "outputs": [{"label": "generate", "type": "agent", "value": "typed JSON", "at": "JSON."}, {"label": "validate", "type": "layout rules", "value": "pass", "at": "check"}, {"label": "deliver", "type": "self-contained", "value": "HTML", "at": "passing"}]}}]},
+  {"id": "show", "say": "Explain an agent workflow. / Follow a cache miss. / Explore service relationships.", "shots": [
+   {"page": "~Explain an agent workflow"},
+   {"at": "cache", "media": {"id": "m05"}}]},
+  {"id": "repo", "say": "Point it at a repo / and ask for / 8 to 12 core components, / one primary path / and trust boundaries. / The result: / a source-backed system map.", "shots": [
+   {"code": "~Analyze this repository", "steps": [{"lines": [1, 1], "at": "Point"}, {"lines": [2, 2], "at": "8"}]},
+   {"at": "result:", "media": {"id": "m07"}}]},
+  {"id": "types", "say": "Five diagram types: / architecture, workflow, / sequence, data flow / and lifecycle.", "shots": [
+   {"page": "b112"},
+   {"at": "workflow,", "media": {"id": "m04"}}]},
+  {"id": "refine", "say": "Then refine it / in chat: / add Redis, / move auth / to the left, / highlight the rollback path.", "shots": [
+   {"page": "~Continue with focused requests"},
+   {"at": "add", "flow": {"input": {"label": "you, in chat", "title": ["add Redis"], "body": ["move auth to the left", "highlight the rollback path"]}, "stream": "Redis,", "pulse": "highlight", "outputs": [{"label": "node", "type": "added", "value": "Redis", "at": "Redis,"}, {"label": "auth", "type": "moved", "value": "left", "at": "left,"}, {"label": "path", "type": "highlighted", "value": "rollback", "at": "rollback"}]}}]},
+  {"id": "explore", "say": "Every diagram is explorable: / focus a node, / trace downstream, / probe a route.", "shots": [
+   {"page": "~Action Control", "rows": [2, 2]},
+   {"at": "trace", "page": "~Action Control", "rows": [3, 3]},
+   {"at": "probe", "page": "~Action Control", "rows": [4, 4]}]},
+  {"id": "output", "say": "Download it. / Open it. / One self-contained HTML file. / Send it to anyone, / no install needed.", "shots": [
+   {"page": "~Download it"},
+   {"at": "Send", "media": {"id": "m08"}}]},
+  {"id": "proof", "say": "And it's checked: / the Proof Lab holds / all 11 scenarios, / their JSON sources / and validation receipts.", "shots": [
+   {"page": "~The Proof Lab"},
+   {"at": "11", "stat": "11", "sub": "checked-in scenarios + receipts"}]},
+  {"id": "install", "say": "It works with / Claude Code, Codex, / Cursor and OpenCode. / One line installs it.", "shots": [
+   {"page": "~Works with Cursor"},
+   {"at": "One", "code": "b025"}]},
+  {"id": "end", "say": "Archify. / Open source, / MIT licensed.", "shots": [
+   {"end": true}]}
+ ]}

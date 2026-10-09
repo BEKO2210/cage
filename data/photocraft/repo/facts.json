@@ -1,0 +1,37 @@
+{
+ "repo": "storytold/photocraft",
+ "url": "https://github.com/storytold/photocraft",
+ "description": "An open-source, clean-room reimplementation of Adobe Photoshop in pure Rust",
+ "stars": 14646,
+ "forks": 1939,
+ "language": "Rust",
+ "languages": {
+  "Rust": 99.1,
+  "WGSL": 0.4,
+  "Shell": 0.3,
+  "PowerShell": 0.1,
+  "HTML": 0.0
+ },
+ "topics": [
+  "adobe",
+  "adobe-photoshop-2026",
+  "adobe-photoshop-2026-ai",
+  "art",
+  "image-editing",
+  "image-editing-software",
+  "image-editor",
+  "images",
+  "photo-editing",
+  "photoshop",
+  "psd",
+  "rust"
+ ],
+ "license": "Apache-2.0",
+ "homepage": "https://getartcraft.com/apps/photocraft",
+ "created": "2026-09-30",
+ "pushed": "2026-10-07",
+ "release": "v0.3.0",
+ "release_date": "2026-10-07",
+ "owner_avatar": "https://avatars.githubusercontent.com/u/76897702?v=4",
+ "logo": "repo/logo.svg"
+}

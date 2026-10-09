@@ -1,2 +1,5 @@
 *.log
 __pycache__/
+graphify-out/cache/
+graphify-out/graph.html
+graphify-out/.graphify_root

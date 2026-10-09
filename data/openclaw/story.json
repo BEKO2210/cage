@@ -1,0 +1,273 @@
+{
+ "repo": "https://github.com/openclaw/openclaw",
+ "accent": "#ff5a3c",
+ "mood": "bright-tech",
+ "keys": [
+  "OpenClaw",
+  "OpenClaw.",
+  "WhatsApp",
+  "Telegram",
+  "Slack",
+  "Discord",
+  "iMessage",
+  "Gateway",
+  "Claude",
+  "Codex",
+  "MIT",
+  "Amazon",
+  "OpenAI",
+  "macOS",
+  "Linux",
+  "Windows"
+ ],
+ "lines": [
+  {
+   "id": "hook",
+   "say": "391,000 stars / in under a year. / This is OpenClaw.",
+   "shots": [
+    {
+     "page": "name"
+    },
+    {
+     "at": "391,000",
+     "stat": "391k",
+     "sub": "GitHub stars · repo created Nov 2025"
+    },
+    {
+     "at": "OpenClaw.",
+     "media": {
+      "id": "m00"
+     }
+    }
+   ]
+  },
+  {
+   "id": "what",
+   "say": "The AI / that really does things, / on your own computer.",
+   "shots": [
+    {
+     "page": "b009"
+    }
+   ]
+  },
+  {
+   "id": "chats",
+   "say": "It meets you / in the chats you use: / WhatsApp, Telegram, Slack, / Discord, iMessage / and over 20 more.",
+   "shots": [
+    {
+     "at": "WhatsApp,",
+     "grid": {
+      "tiles": [
+       [
+        "WhatsApp",
+        1
+       ],
+       [
+        "Telegram",
+        2
+       ],
+       [
+        "Slack",
+        3
+       ],
+       [
+        "Discord",
+        4
+       ],
+       [
+        "iMessage",
+        1
+       ],
+       [
+        "Teams",
+        2
+       ],
+       [
+        "Signal",
+        3
+       ],
+       [
+        "Google Chat",
+        4
+       ],
+       [
+        "20+ more",
+        0
+       ]
+      ],
+      "pulse": "more."
+     }
+    }
+   ]
+  },
+  {
+   "id": "apps",
+   "say": "Plus native apps / for macOS, iOS, Android, / Windows and Linux.",
+   "shots": [
+    {
+     "page": "b009",
+     "part": [
+      0.45,
+      0.85
+     ]
+    }
+   ]
+  },
+  {
+   "id": "own",
+   "say": "Your state, memory / and credentials / live on your hardware.",
+   "shots": [
+    {
+     "page": "b010",
+     "part": [
+      0,
+      0.3
+     ]
+    }
+   ]
+  },
+  {
+   "id": "flow",
+   "say": "Every message flows / into one local Gateway, / the control plane / for sessions, tools / and channels.",
+   "shots": [
+    {
+     "flow": {
+      "input": {
+       "label": "your chats",
+       "title": [
+        "WhatsApp · Telegram",
+        "Slack · Discord"
+       ],
+       "body": [
+        "iMessage · Signal · Teams",
+        "Google Chat · 20+ more"
+       ]
+      },
+      "stream": "flows",
+      "pulse": "Gateway,",
+      "outputs": [
+       {
+        "label": "sessions",
+        "type": "control plane",
+        "value": "local",
+        "at": "sessions,"
+       },
+       {
+        "label": "tools",
+        "type": "control plane",
+        "value": "on host",
+        "at": "tools"
+       },
+       {
+        "label": "channels",
+        "type": "control plane",
+        "value": "20+",
+        "at": "channels."
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "swap",
+   "say": "Claude, Codex / or a local model: / plugins you swap / without changing anything else.",
+   "shots": [
+    {
+     "page": "b010",
+     "part": [
+      0.25,
+      0.6
+     ]
+    }
+   ]
+  },
+  {
+   "id": "safe",
+   "say": "Inbound messages / count as untrusted. / Unknown senders / need your approval first.",
+   "shots": [
+    {
+     "page": "b047"
+    }
+   ]
+  },
+  {
+   "id": "install",
+   "say": "One line installs it / on macOS, Linux / or Windows.",
+   "shots": [
+    {
+     "code": "b016"
+    },
+    {
+     "at": "Windows.",
+     "code": "b019"
+    }
+   ]
+  },
+  {
+   "id": "onboard",
+   "say": "Then onboard: / it checks model access, / creates the workspace / and configures the Gateway.",
+   "shots": [
+    {
+     "code": "b031"
+    },
+    {
+     "at": "checks",
+     "page": "b038",
+     "part": [
+      0,
+      0.36
+     ]
+    }
+   ]
+  },
+  {
+   "id": "people",
+   "say": "Hundreds of contributors / build it in the open, / led by an independent / non-profit foundation.",
+   "shots": [
+    {
+     "page": "b003",
+     "part": [
+      0.59,
+      0.72
+     ]
+    },
+    {
+     "at": "independent",
+     "page": "b064"
+    }
+   ]
+  },
+  {
+   "id": "donors",
+   "say": "Backed by donors / like Amazon, OpenAI / and Red Hat.",
+   "shots": [
+    {
+     "page": "b075"
+    }
+   ]
+  },
+  {
+   "id": "mine",
+   "say": "MIT licensed. / Your assistant, / on your devices.",
+   "shots": [
+    {
+     "page": "b085"
+    },
+    {
+     "at": "Your",
+     "page": "b004"
+    }
+   ]
+  },
+  {
+   "id": "cta",
+   "say": "OpenClaw. / The lobster way.",
+   "shots": [
+    {
+     "end": true
+    }
+   ]
+  }
+ ]
+}

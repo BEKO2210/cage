@@ -1,0 +1,37 @@
+{
+ "repo": "androoAGI/starnet",
+ "url": "https://github.com/androoAGI/starnet",
+ "description": "A living pixel-art station where real AI agents do real work. Local-first desktop agent harness - bring your own key, watch your crew actually run.",
+ "stars": 1080,
+ "forks": 193,
+ "language": "JavaScript",
+ "languages": {
+  "JavaScript": 92.0,
+  "CSS": 5.0,
+  "HTML": 2.0,
+  "Rust": 0.6,
+  "Python": 0.2
+ },
+ "topics": [
+  "agent-harness",
+  "ai",
+  "ai-agents",
+  "byok",
+  "desktop-app",
+  "game-ui",
+  "llm",
+  "local-first",
+  "multi-agent",
+  "openrouter",
+  "pixel-art",
+  "tauri"
+ ],
+ "license": "MIT",
+ "homepage": "https://github.com/androoAGI/starnet-releases/releases/latest",
+ "created": "2026-06-14",
+ "pushed": "2026-10-04",
+ "release": "v0.13.1",
+ "release_date": "2026-10-04",
+ "owner_avatar": "https://avatars.githubusercontent.com/u/224686490?v=4",
+ "logo": "repo/logo.png"
+}

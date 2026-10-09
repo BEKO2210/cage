@@ -1,0 +1,35 @@
+{
+ "repo": "JuliusBrussee/caveman",
+ "url": "https://github.com/JuliusBrussee/caveman",
+ "description": "\ud83e\udea8 why use many token when few token do trick. Viral skill + proxy for coding agents that cuts 65% of tokens by talking like a caveman.",
+ "stars": 110358,
+ "forks": 6386,
+ "language": "Go",
+ "languages": {
+  "Go": 45.5,
+  "JavaScript": 27.0,
+  "TypeScript": 15.2,
+  "Python": 11.3,
+  "Shell": 0.3
+ },
+ "topics": [
+  "ai",
+  "anthropic",
+  "caveman",
+  "claude",
+  "claude-code",
+  "llm",
+  "meme",
+  "prompt-engineering",
+  "skill",
+  "tokens"
+ ],
+ "license": "Apache-2.0",
+ "homepage": "https://docs.caveman.so/docs/quickstart",
+ "created": "2026-04-04",
+ "pushed": "2026-10-07",
+ "release": "v3.1.0",
+ "release_date": "2026-10-04",
+ "owner_avatar": "https://avatars.githubusercontent.com/u/104168679?v=4",
+ "logo": "repo/logo.png"
+}

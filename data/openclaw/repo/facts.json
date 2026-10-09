@@ -1,0 +1,31 @@
+{
+ "repo": "openclaw/openclaw",
+ "url": "https://github.com/openclaw/openclaw",
+ "description": "The AI that really does things. Any OS. Any Platform. The lobster way. \ud83e\udd9e ",
+ "stars": 391305,
+ "forks": 82257,
+ "language": "TypeScript",
+ "languages": {
+  "TypeScript": 90.4,
+  "Swift": 4.2,
+  "Kotlin": 2.1,
+  "JavaScript": 1.4,
+  "Shell": 0.6
+ },
+ "topics": [
+  "ai",
+  "assistant",
+  "crustacean",
+  "molty",
+  "openclaw",
+  "own-your-data",
+  "personal"
+ ],
+ "license": "MIT",
+ "homepage": "https://openclaw.ai",
+ "created": "2025-11-24",
+ "pushed": "2026-10-04",
+ "release": "v2026.9.8",
+ "release_date": "2026-10-03",
+ "owner_avatar": "https://avatars.githubusercontent.com/u/252820863?v=4"
+}

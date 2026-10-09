@@ -1,0 +1,30 @@
+{
+ "repo": "cathrynlavery/diagram-design",
+ "url": "https://github.com/cathrynlavery/diagram-design",
+ "description": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Factory Droid, and Pi. 42 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop.",
+ "stars": 45744,
+ "forks": 2928,
+ "language": "HTML",
+ "languages": {
+  "HTML": 66.4,
+  "Python": 33.5,
+  "Mermaid": 0.0
+ },
+ "topics": [
+  "agent-skills",
+  "claude-code",
+  "codex",
+  "data-visualization",
+  "diagrams",
+  "drawio",
+  "mermaid",
+  "svg"
+ ],
+ "license": "MIT",
+ "homepage": "https://cathrynlavery.github.io/diagram-design/",
+ "created": "2026-04-16",
+ "pushed": "2026-10-08",
+ "release": null,
+ "release_date": "",
+ "owner_avatar": "https://avatars.githubusercontent.com/u/50469282?v=4"
+}

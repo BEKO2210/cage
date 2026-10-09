@@ -1,0 +1,43 @@
+{
+ "repo": "calesthio/OpenMontage",
+ "url": "https://github.com/calesthio/OpenMontage",
+ "description": "World's first open-source, agentic video production system. 12 production pipelines, 100+ tools, 700+ agent skill and production-knowledge files. Turn your AI coding assistant into a full video production studio.",
+ "stars": 63470,
+ "forks": 8080,
+ "language": "Python",
+ "languages": {
+  "Python": 70.1,
+  "HTML": 18.5,
+  "JavaScript": 5.5,
+  "TypeScript": 4.6,
+  "CSS": 0.7
+ },
+ "topics": [
+  "agent",
+  "agentic-ai",
+  "ai",
+  "claude",
+  "copilot",
+  "cursor",
+  "elevenlabs",
+  "ffmpeg",
+  "flux",
+  "image-generation",
+  "open-source",
+  "openai",
+  "python",
+  "remotion",
+  "stable-diffusion",
+  "text-to-speech",
+  "text-to-video",
+  "video-generation",
+  "video-production"
+ ],
+ "license": "AGPL-3.0",
+ "homepage": "https://www.openmontage.video/",
+ "created": "2026-03-29",
+ "pushed": "2026-10-03",
+ "release": null,
+ "release_date": "",
+ "owner_avatar": "https://avatars.githubusercontent.com/u/213189893?v=4"
+}

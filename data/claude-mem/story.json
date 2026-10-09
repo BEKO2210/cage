@@ -1,0 +1,38 @@
+{"repo": "https://github.com/thedotmack/claude-mem", "accent": "#a78bfa", "mood": "dark-tech",
+ "keys": ["claude-mem", "Claude", "Codex", "Gemini", "Copilot", "OpenCode", "SQLite", "Chroma", "Apache"],
+ "lines": [
+  {"id": "hook", "say": "97k stars / for one plugin / that gives Claude Code / a memory.", "shots": [
+    {"page": "name"},
+    {"at": "stars", "page": "star"},
+    {"at": "gives", "page": "b010"}]},
+  {"id": "problem", "say": "Normally, a new session / starts without anything / the last one learned.", "shots": [
+    {"page": "b017"}]},
+  {"id": "what", "say": "claude-mem captures / everything your agent does, / compresses it with AI, / and injects relevant context / into future sessions.", "shots": [
+    {"media": {"id": "m00", "from": 0, "to": 6}},
+    {"at": "injects", "page": "b054"}]},
+  {"id": "hooks", "say": "Five lifecycle hooks / follow every session. / Each tool call becomes / an observation, / summarized and stored / in SQLite and Chroma.", "shots": [
+    {"flow": {"input": {"label": "5 lifecycle hooks", "title": ["your session"], "body": ["SessionStart · UserPromptSubmit", "PostToolUse · Stop · SessionEnd"]}, "stream": "follow", "pulse": "becomes", "outputs": [
+      {"label": "captured", "type": "PostToolUse", "value": "observation", "at": "observation,"},
+      {"label": "AI", "type": "compressed", "value": "semantic summary", "at": "summarized"},
+      {"label": "stored", "type": "SQLite · Chroma", "value": "hybrid search", "at": "SQLite"}]}}]},
+  {"id": "search", "say": "When Claude needs the past, / it searches its memory / in three layers.", "shots": [
+    {"page": "b095"},
+    {"at": "three", "page": "b097"}]},
+  {"id": "layers", "say": "First, a compact index: / 50 to 100 tokens / per result. / Full details come / only for filtered IDs: / 500 to 1,000.", "shots": [
+    {"bars": {"items": [{"label": "search · index", "value": 100, "show": "~50-100", "at": "50"}, {"label": "get_observations", "value": 1000, "show": "~500-1,000", "at": "500"}], "note": "tokens per result · 3-layer workflow", "hot": 0}}]},
+  {"id": "proof", "say": "Filter first, fetch later: / about 10× / fewer tokens.", "shots": [
+    {"code": "b103", "steps": [{"lines": [1, 2], "at": "Filter"}, {"lines": [6, 7], "at": "fetch"}]},
+    {"at": "10×", "page": "b099"}]},
+  {"id": "agents", "say": "Not just Claude Code: / it works with Codex, / Gemini, Copilot, / OpenCode and more.", "shots": [
+    {"grid": {"tiles": [["Claude Code", 1], ["Codex", 2], ["Gemini", 3], ["Copilot", 4], ["OpenCode", 1], ["OpenClaw", 2], ["Hermes", 3], ["T3 Code", 4], ["Antigravity", 1], ["Grok Bot", 2], ["Oh My Pi", 3], ["Claude Desktop", 4]], "pulse": "Codex,"}}]},
+  {"id": "privacy", "say": "Wrap sensitive content / in private tags, / and it stays / out of storage.", "shots": [
+    {"page": "b065"}]},
+  {"id": "install", "say": "One command installs it: / npx claude-mem install. / Or add it / from the plugin marketplace / inside Claude Code.", "shots": [
+    {"code": "b028", "steps": [{"lines": [1, 1], "at": "npx"}]},
+    {"at": "Or", "code": "b051", "steps": [{"lines": [1, 1], "at": "marketplace"}, {"lines": [3, 3], "at": "inside"}]}]},
+  {"id": "cta", "say": "Context that survives / every session. / Send this to someone / who re-explains their project / every morning.", "shots": [
+    {"page": "b010"},
+    {"at": "Send", "media": {"id": "m01"}}]},
+  {"id": "end", "say": "claude-mem. / Apache 2.0, / because agent memory / should be / easy to embed.", "shots": [
+    {"end": true}]}
+ ]}

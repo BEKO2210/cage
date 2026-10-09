@@ -1,0 +1,42 @@
+{"repo": "https://github.com/666ghj/MiroFish", "accent": "#f472b6", "mood": "cinematic",
+ "keys": ["MiroFish", "Shanda", "OASIS", "CAMEL-AI", "Zep", "OpenAI"],
+ "lines": [
+  {"id": "hook", "say": "Feed it the first / 80 chapters / of a Chinese classic, / and it simulates / the lost ending.", "shots": [
+    {"page": "name"},
+    {"at": "80", "stat": "80", "sub": "chapters · Dream of the Red Chamber"},
+    {"at": "lost", "page": "b046"}]},
+  {"id": "what", "say": "MiroFish is / a prediction engine / built on a swarm / of AI agents.", "shots": [
+    {"page": "b007"},
+    {"at": "built", "page": "b020"}]},
+  {"id": "world", "say": "You upload seed material: / breaking news / or a policy draft. / It builds / a parallel digital world / with thousands of agents.", "shots": [
+    {"flow": {"input": {"label": "you upload", "title": ["seed material"], "body": ["breaking news", "policy draft · financial signal"]}, "stream": "builds", "pulse": "parallel", "outputs": [
+      {"label": "graph", "type": "GraphRAG", "value": "digital world", "at": "world"},
+      {"label": "agents", "type": "long-term memory", "value": "thousands", "at": "thousands"}]}}]},
+  {"id": "agents", "say": "Each agent has / its own personality / and long-term memory. / Together, they interact / and evolve.", "shots": [
+    {"page": "b015", "part": [0.4, 0.72]},
+    {"at": "Together,", "media": {"id": "m02"}}]},
+  {"id": "variable", "say": "Then you change / a variable / from a God's-eye view / and watch / where the future goes.", "shots": [
+    {"page": "b015", "part": [0.68, 1]},
+    {"at": "watch", "page": "b051"}]},
+  {"id": "report", "say": "You get / a detailed prediction report, / and you can chat / with any agent.", "shots": [
+    {"page": "b016"},
+    {"at": "chat", "media": {"id": "m05"}}]},
+  {"id": "uses", "say": "Decision makers / test policies / at zero risk. / Or you play out / a novel's ending.", "shots": [
+    {"page": "b021"},
+    {"at": "Or", "page": "b022"}]},
+  {"id": "trust", "say": "76.7k stars, / incubated by Shanda Group, / with simulations / running on OASIS / from CAMEL-AI.", "shots": [
+    {"stat": "76.7k", "sub": "stars · 11.7k forks"},
+    {"at": "incubated", "page": "b112"},
+    {"at": "simulations", "page": "b113"}]},
+  {"id": "keys", "say": "You need an LLM key / in OpenAI format / and a free Zep key.", "shots": [
+    {"code": "b069", "steps": [{"lines": [1, 1], "at": "LLM"}, {"lines": [4, 6], "at": "format"}, {"lines": [8, 10], "at": "Zep"}]}]},
+  {"id": "start", "say": "Two npm commands / start it. / Begin with fewer / than 40 rounds: / consumption is high.", "shots": [
+    {"code": "b075", "steps": [{"lines": [2, 2], "at": "Two"}]},
+    {"at": "start", "code": "b085", "steps": [{"lines": [2, 2], "at": "start"}]},
+    {"at": "Begin", "stat": "< 40", "sub": "rounds first · high consumption"}]},
+  {"id": "cta", "say": "Try the live demo, / then send this / to the friend / who always asks / what if.", "shots": [
+    {"page": "b026"},
+    {"at": "send", "media": {"id": "m03"}}]},
+  {"id": "end", "say": "MiroFish. / Rehearse the future / in a digital sandbox.", "shots": [
+    {"end": true}]}
+ ]}

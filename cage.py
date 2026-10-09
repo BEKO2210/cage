@@ -12,7 +12,7 @@ import sys
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
-GUIDE = Path.home() / "motion-studio/films/_reel/story-guide.md"
+GUIDE = HERE / "data/story-guide.md"
 
 
 def llm(prompt, model, temperature=0.7, fmt=None):

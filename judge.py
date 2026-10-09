@@ -11,7 +11,7 @@ import tempfile
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
-FILMS = Path.home() / "motion-studio/films"
+FILMS = HERE / "data"
 
 
 def codex(p):

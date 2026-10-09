@@ -1,0 +1,48 @@
+{"repo": "https://github.com/tester-army/e2e", "accent": "#3178c6", "mood": "dark-tech",
+ "keys": ["e2e", "Zero"],
+ "lines": [
+  {"id": "hook", "say": "Zero model calls. / That's how this framework / replays what / an AI agent did.",
+   "shots": [
+    {"page": "name"},
+    {"at": "That's", "stat": "0", "sub": "model calls when a step replays"}]},
+  {"id": "what", "say": "It's called e2e, / an end-to-end testing framework / for web / and mobile apps.",
+   "shots": [
+    {"media": {"id": "m00"}},
+    {"at": "for", "page": "b010", "part": [0, 0.5]}]},
+  {"id": "goal", "say": "You write a goal / in natural language, / like: upgrade the workspace / to the Pro plan.",
+   "shots": [
+    {"code": "b011", "steps": [{"lines": [4, 4], "at": "goal"}, {"lines": [7, 7], "at": "like:"}]}]},
+  {"id": "check", "say": "An agent drives / the app to reach it. / Then you check / the result / in plain words / and with a locator.",
+   "shots": [
+    {"page": "b010", "part": [0.5, 1]},
+    {"at": "check", "code": "b011", "steps": [{"lines": [8, 8], "at": "plain"}, {"lines": [10, 10], "at": "locator."}]}]},
+  {"id": "trick", "say": "Here's the trick. / Once a later check / confirms the step, / e2e records / the agent's actions. / The next run / replays them / without the model. / If the app changed, / the agent takes over.",
+   "shots": [
+    {"flow": {"input": {"label": "agent.act", "title": ["upgrade the workspace", "to the Pro plan"], "body": ["confirmed by a later check"]}, "stream": "trick.", "pulse": "confirms",
+     "outputs": [
+      {"label": "this run", "type": "recorded", "value": "agent actions", "at": "records"},
+      {"label": "next run", "type": "replayed", "value": "0 model calls", "at": "replays"},
+      {"label": "changed", "type": "handed off", "value": "agent takes over", "at": "changed,"}]}}]},
+  {"id": "byo", "say": "Tests without agent steps / need no model. / Bring your own subscription, / API key, / or local model.",
+   "shots": [
+    {"page": "b014"},
+    {"at": "Bring", "page": "b014", "part": [0.5, 1]}]},
+  {"id": "engines", "say": "It drives Chromium, / Firefox and WebKit / through Playwright, / plus iOS simulators / and Android emulators.",
+   "shots": [
+    {"grid": {"tiles": [["Chromium", 1], ["Firefox", 1], ["WebKit", 1], ["iOS", 2], ["Android", 2]], "pulse": "Chromium,"}},
+    {"at": "plus", "page": "b026", "rows": [2, 3]}]},
+  {"id": "proof", "say": "3,788 people / have starred it. / It's still on the way / to 1.0.",
+   "shots": [
+    {"stat": "3,788", "sub": "GitHub stars"},
+    {"at": "It's", "page": "b046"}]},
+  {"id": "start", "say": "To start, / run npx e2e init. / It asks / for an engine / and a model provider, / then writes a config / and an example test.",
+   "shots": [
+    {"code": "b018", "steps": [{"lines": [1, 1], "at": "npx"}]},
+    {"at": "asks", "page": "b021"}]},
+  {"id": "examples", "say": "The examples cover / Vite, Next.js, / Expo and SwiftUI, / each with a passing suite.",
+   "shots": [
+    {"grid": {"tiles": [["Vite", 1], ["Next.js", 1], ["Expo", 2], ["SwiftUI", 2]], "pulse": "Vite,"}},
+    {"at": "each", "page": "b022"}]},
+  {"id": "end", "say": "e2e, by TesterArmy. / Open source / under Apache 2.0.",
+   "shots": [{"end": true}]}
+ ]}

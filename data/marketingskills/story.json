@@ -1,0 +1,38 @@
+{"repo": "https://github.com/coreyhaines31/marketingskills", "accent": "#f1e05a", "mood": "bright-tech",
+ "keys": ["markdown", "product-marketing", "cro", "50", "140"],
+ "lines": [
+  {"id": "hook", "say": "53,319 stars / for one idea: / teach your coding agent / marketing.", "shots": [
+    {"page": "name"},
+    {"at": 0.5, "page": "star"},
+    {"at": "teach", "page": "b005"}]},
+  {"id": "what", "say": "It's a collection / of AI agent skills / for marketing tasks. / They run in / Claude Code, Codex, / Cursor and Windsurf.", "shots": [
+    {"page": "b007"},
+    {"at": "Claude", "grid": {"tiles": [["Claude Code", 1], ["Codex", 2], ["Cursor", 3], ["Windsurf", 4], ["Copilot", 1], ["Agent Skills spec", 0]], "pulse": "Claude"}}]},
+  {"id": "skill", "say": "Each skill / is a markdown file / with specialized knowledge / and a workflow / for one task.", "shots": [
+    {"page": "b019"},
+    {"at": "specialized", "page": "b021"}]},
+  {"id": "base", "say": "One skill / is the foundation: / product-marketing. / Every other skill / checks it first / to understand / your product, / audience / and positioning.", "shots": [
+    {"page": "b025"},
+    {"at": "product-marketing.", "code": "b027", "steps": [{"lines": [1, 4], "at": "product-marketing."}, {"lines": [8, 20], "at": "Every"}]}]},
+  {"id": "ask", "say": "Then you just ask: / help me optimize / this landing page / for conversions. / Your agent checks / your product context, / then uses / the cro skill.", "shots": [
+    {"flow": {"input": {"label": "you ask", "title": ["Help me optimize"], "body": ["this landing page", "for conversions"]}, "stream": "help", "pulse": "checks",
+      "outputs": [{"label": "context", "type": "read first", "value": "product-marketing", "at": "context,"}, {"label": "skill", "type": "picked", "value": "cro", "at": "cro"}]}}]},
+  {"id": "route", "say": "Ask for homepage copy, / and it uses copywriting. / Ask for GA4 tracking, / and it uses analytics.", "shots": [
+    {"code": "b116", "steps": [{"lines": [4, 5], "at": "homepage"}, {"lines": [7, 8], "at": "GA4"}]}]},
+  {"id": "library", "say": "There are 50 skills, / from SEO audits / and pricing / to churn prevention / and cold email.", "shots": [
+    {"grid": {"tiles": [["seo-audit", 1], ["ai-seo", 1], ["schema", 1], ["pricing", 2], ["launch", 2], ["offers", 2], ["churn-prevention", 3], ["cro", 3], ["onboarding", 3], ["copywriting", 4], ["emails", 4], ["cold-email", 4]], "pulse": "50",
+      "results": [{"tile": 0, "text": "seo-audit", "at": "SEO"}, {"tile": 3, "text": "pricing", "at": "pricing"}, {"tile": 6, "text": "churn-prevention", "at": "churn"}, {"tile": 11, "text": "cold-email", "at": "cold"}]}}]},
+  {"id": "ideas", "say": "A single skill / holds 140 / SaaS marketing ideas.", "shots": [
+    {"page": "b156"},
+    {"at": "140", "stat": "140", "sub": "skill: marketing-ideas"}]},
+  {"id": "council", "say": "There's even / a marketing council: / a simulated board / of advisors.", "shots": [
+    {"page": "b033", "rows": [27, 27]}]},
+  {"id": "free", "say": "The library is free / and MIT-licensed, / and it's been forked / 7,937 times.", "shots": [
+    {"page": "b015"},
+    {"at": "7,937", "stat": "7,937", "sub": "forks on GitHub"}]},
+  {"id": "install", "say": "Installing takes / one command: / npx skills add / coreyhaines31/marketingskills.", "shots": [
+    {"code": "b041", "steps": [{"lines": [1, 2], "at": "npx"}]}]},
+  {"id": "end", "say": "Built by Corey Haines. / Try it / on your next landing page.", "shots": [
+    {"page": "b008"},
+    {"at": "Try", "end": true}]}
+ ]}

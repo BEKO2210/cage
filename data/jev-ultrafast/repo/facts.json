@@ -1,0 +1,22 @@
+{
+ "repo": "browser-use/jev-ultrafast",
+ "url": "https://github.com/browser-use/jev-ultrafast",
+ "description": "Fastest and cheapest web agent",
+ "stars": 22261,
+ "forks": 1615,
+ "language": "Python",
+ "languages": {
+  "Python": 57.8,
+  "HTML": 18.5,
+  "JavaScript": 13.3,
+  "CSS": 10.4
+ },
+ "topics": [],
+ "license": "MIT",
+ "homepage": "https://browser-use.com",
+ "created": "2026-09-16",
+ "pushed": "2026-09-30",
+ "release": null,
+ "release_date": "",
+ "owner_avatar": "https://avatars.githubusercontent.com/u/192012301?v=4"
+}

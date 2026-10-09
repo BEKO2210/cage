@@ -1,0 +1,46 @@
+{"repo": "https://github.com/calesthio/OpenMontage", "accent": "#d14a28", "mood": "cinematic",
+ "keys": ["OpenMontage", "$1.33", "700+", "$10", "orchestrator"],
+ "lines": [
+  {"id": "hook", "say": "It cost $1.33 / to make this / 60-second Pixar-style short.", "shots": [
+    {"page": "name"},
+    {"at": "$1.33", "stat": "$1.33", "sub": "THE LAST BANANA · total cost"},
+    {"at": "this", "media": {"id": "m02", "from": 0, "to": 3}}]},
+  {"id": "what", "say": "Behind it is OpenMontage, / an open-source repo / with over 63,000 stars.", "shots": [
+    {"page": "header"},
+    {"at": "63,000", "page": "star"}]},
+  {"id": "how", "say": "You describe the video. / There's no orchestrator code: / your coding agent / runs the production, / from research and script / to the final edit.", "shots": [
+    {"flow": {"input": {"label": "your prompt", "title": ["Make an explainer video"], "body": ["about how black holes form"]}, "stream": "describe", "pulse": "agent",
+      "outputs": [{"label": "stage 1", "type": "director skill", "value": "research", "at": "research"},
+                  {"label": "stage 3", "type": "director skill", "value": "script", "at": "script"},
+                  {"label": "stage 6", "type": "director skill", "value": "edit", "at": "edit."}]}}]},
+  {"id": "scale", "say": "Your agent gets / 12 pipelines, / 100+ tools, / and 700+ skill files / that teach it / the craft.", "shots": [
+    {"page": "b172", "part": [0, 0.4]},
+    {"at": "700+", "stat": "700+", "sub": "agent skill & knowledge files"}]},
+  {"id": "score", "say": "Every provider choice / is scored / on seven dimensions: / task fit first, / then quality, control / and reliability.", "shots": [
+    {"page": "b172", "part": [0.675, 0.753]},
+    {"at": "task", "bars": {"items": [{"label": "task fit", "value": 30, "show": "30%", "at": "task"},
+                        {"label": "output quality", "value": 20, "show": "20%", "at": "quality,"},
+                        {"label": "control", "value": 15, "show": "15%", "at": "control"},
+                        {"label": "reliability", "value": 15, "show": "15%", "at": "reliability."}],
+              "note": "+ cost 10% · latency 5% · continuity 5%", "hot": 0}}]},
+  {"id": "review", "say": "Before you see anything, / it reviews / its own render. / If the review fails, / you never see / the video.", "shots": [
+    {"code": "b178", "steps": [{"lines": [28, 28], "at": "reviews"}, {"lines": [31, 31], "at": "fails,"}]}]},
+  {"id": "gates", "say": "You stay in control. / Script, scenes and assets / all wait / for your sign-off / on a live storyboard.", "shots": [
+    {"page": "b220", "part": [0, 0.22]},
+    {"at": "Script,", "media": {"id": "m10"}}]},
+  {"id": "budget", "say": "It quotes the cost / before it spends, / and caps the budget / at $10 by default.", "shots": [
+    {"page": "b234"},
+    {"at": "$10", "stat": "$10", "sub": "default budget cap · asks above $0.50"}]},
+  {"id": "reference", "say": "You can also start / from a video you love. / It keeps the pacing / and the hook, / and changes the topic.", "shots": [
+    {"code": "b055"},
+    {"at": "keeps", "page": "b058"}]},
+  {"id": "free", "say": "No paid API keys? / It still makes / real videos, / with free Piper narration / and open footage / from NASA.", "shots": [
+    {"stat": "0", "sub": "paid API keys needed"},
+    {"at": "Piper", "page": "b118", "part": [0, 0.28]},
+    {"at": "NASA.", "page": "b118", "part": [0.62, 1]}]},
+  {"id": "start", "say": "To start, / clone the repo / and run make setup. / Then tell your agent / what to make.", "shots": [
+    {"code": "b086", "steps": [{"lines": [1, 2], "at": "clone"}, {"lines": [3, 3], "at": "make"}]},
+    {"at": "tell", "code": "b091"}]},
+  {"id": "end", "say": "OpenMontage. / Link in the caption.", "shots": [
+    {"end": true}]}
+ ]}

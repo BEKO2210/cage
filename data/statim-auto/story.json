@@ -1,0 +1,307 @@
+{
+ "repo": "https://github.com/BEKO2210/statim",
+ "accent": "#34d399",
+ "keys": [
+  "Statim",
+  "Python",
+  "PyTorch",
+  "Laya",
+  "Jev",
+  "GitHub",
+  "JSON",
+  "LLM.",
+  "faster."
+ ],
+ "lines": [
+  {
+   "id": "hook",
+   "say": "This tiny engine / beats an 8B-parameter LLM. / And it's 11× faster.",
+   "shots": [
+    {
+     "page": "name"
+    },
+    {
+     "at": "beats",
+     "page": "b016"
+    },
+    {
+     "at": "11×",
+     "stat": "11×"
+    }
+   ]
+  },
+  {
+   "id": "what",
+   "say": "It's called Statim. / It reads text / or JSON, / and answers typed questions.",
+   "shots": [
+    {
+     "page": "b166"
+    },
+    {
+     "at": "reads",
+     "media": {
+      "id": "m01",
+      "from": 1,
+      "to": 5.4
+     }
+    }
+   ]
+  },
+  {
+   "id": "demo",
+   "say": "Send it / a support ticket. / In one forward pass, / you get the department, / the urgency, / and whether they want a refund.",
+   "shots": [
+    {
+     "flow": {
+      "input": {
+       "label": "support ticket",
+       "title": [
+        "Duplicate charge on",
+        "invoice #4411"
+       ],
+       "body": [
+        "We were billed twice for March.",
+        "Please refund the duplicate",
+        "today or we will cancel."
+       ]
+      },
+      "stream": "one",
+      "pulse": "pass",
+      "outputs": [
+       {
+        "label": "department",
+        "type": "choice",
+        "value": "billing",
+        "sub": "0.99",
+        "at": "department"
+       },
+       {
+        "label": "urgency",
+        "type": "score",
+        "value": "critical",
+        "sub": "0.65",
+        "at": "urgency"
+       },
+       {
+        "label": "refund",
+        "type": "yes/no",
+        "value": "yes",
+        "sub": "0.92",
+        "at": "refund"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "how",
+   "say": "Under the hood, / your text and every question / become one token sequence. / One encoder pass, / and all the answers / come out at once.",
+   "shots": [
+    {
+     "page": "b169"
+    },
+    {
+     "at": "become",
+     "grid": {
+      "tiles": [
+       [
+        "Duplicate",
+        0
+       ],
+       [
+        "charge",
+        0
+       ],
+       [
+        "invoice",
+        0
+       ],
+       [
+        "#4411",
+        0
+       ],
+       [
+        "billed",
+        0
+       ],
+       [
+        "twice",
+        0
+       ],
+       [
+        "refund",
+        0
+       ],
+       [
+        "today",
+        0
+       ],
+       [
+        "department?",
+        1
+       ],
+       [
+        "[MASK]",
+        1
+       ],
+       [
+        "urgency?",
+        2
+       ],
+       [
+        "[MASK]",
+        2
+       ],
+       [
+        "refund?",
+        3
+       ],
+       [
+        "[MASK]",
+        3
+       ]
+      ],
+      "pulse": "encoder",
+      "results": [
+       {
+        "tile": 9,
+        "text": "billing",
+        "at": "answers"
+       },
+       {
+        "tile": 11,
+        "text": "critical",
+        "at": "answers"
+       },
+       {
+        "tile": 13,
+        "text": "yes",
+        "at": "answers"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "lean",
+   "say": "No Python. / No PyTorch. / Just one 5 MB binary.",
+   "shots": [
+    {
+     "page": "b025",
+     "rows": [
+      6,
+      6
+     ]
+    }
+   ]
+  },
+  {
+   "id": "speed",
+   "say": "On a single RTX 3070, / it makes 68 decisions per second. / Qwen3-8B / manages about 6.",
+   "shots": [
+    {
+     "bars": {
+      "items": [
+       {
+        "label": "Statim · Vulkan",
+        "value": 68,
+        "show": "68/s",
+        "at": "68"
+       },
+       {
+        "label": "Qwen3-8B · Ollama",
+        "value": 6,
+        "show": "≈6/s",
+        "at": "Qwen3-8B"
+       }
+      ],
+      "note": "one RTX 3070"
+     }
+    }
+   ]
+  },
+  {
+   "id": "cpu",
+   "say": "Cold start to first answer? / Under half a second, / on a plain CPU.",
+   "shots": [
+    {
+     "page": "b025",
+     "rows": [
+      4,
+      4
+     ]
+    },
+    {
+     "at": "Under",
+     "stat": "0.45 s",
+     "sub": "first answer · ORT: 2.06 s"
+    }
+   ]
+  },
+  {
+   "id": "compat",
+   "say": "Already using Laya or Jev? / Statim speaks the same protocol. / Just change the base URL.",
+   "shots": [
+    {
+     "page": "b009"
+    }
+   ]
+  },
+  {
+   "id": "live",
+   "say": "Want to try it first? / There's a live demo / in your browser. / No install, no key.",
+   "shots": [
+    {
+     "page": "b011",
+     "part": [
+      0,
+      0.2
+     ]
+    }
+   ]
+  },
+  {
+   "id": "start",
+   "say": "Download. / Start. / Ask. / Three steps, / and you're running.",
+   "shots": [
+    {
+     "code": "b036",
+     "steps": [
+      {
+       "lines": [
+        1,
+        7
+       ],
+       "at": "Download."
+      },
+      {
+       "lines": [
+        9,
+        10
+       ],
+       "at": "Start."
+      },
+      {
+       "lines": [
+        12,
+        22
+       ],
+       "at": "Ask."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "cta",
+   "say": "Statim. / Open source, / on GitHub.",
+   "shots": [
+    {
+     "end": true
+    }
+   ]
+  }
+ ]
+}

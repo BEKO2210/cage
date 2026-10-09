@@ -1,0 +1,35 @@
+{
+ "repo": "666ghj/MiroFish",
+ "url": "https://github.com/666ghj/MiroFish",
+ "description": "A Simple and Universal Swarm Intelligence Engine, Predicting Anything. \u7b80\u6d01\u901a\u7528\u7684\u7fa4\u4f53\u667a\u80fd\u5f15\u64ce\uff0c\u9884\u6d4b\u4e07\u7269",
+ "stars": 76712,
+ "forks": 11731,
+ "language": "Python",
+ "languages": {
+  "Python": 66.6,
+  "Vue": 32.5,
+  "JavaScript": 0.8,
+  "HTML": 0.1,
+  "Dockerfile": 0.0
+ },
+ "topics": [
+  "agent-memory",
+  "financial-forecasting",
+  "future-prediction",
+  "knowledge-graph",
+  "llms",
+  "multi-agent-simulation",
+  "public-opinion-analysis",
+  "python3",
+  "social-prediction",
+  "swarm-intelligence"
+ ],
+ "license": "AGPL-3.0",
+ "homepage": "https://mirofish.ai",
+ "created": "2025-11-26",
+ "pushed": "2026-10-01",
+ "release": "v0.1.2",
+ "release_date": "2026-03-07",
+ "owner_avatar": "https://avatars.githubusercontent.com/u/110395318?v=4",
+ "logo": "repo/logo.jpeg"
+}

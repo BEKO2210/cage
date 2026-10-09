@@ -1,0 +1,25 @@
+{
+ "repo": "coreyhaines31/marketingskills",
+ "url": "https://github.com/coreyhaines31/marketingskills",
+ "description": "Marketing skills for Claude Code and AI agents. CRO, copywriting, SEO, analytics, and growth engineering.",
+ "stars": 53319,
+ "forks": 7937,
+ "language": "JavaScript",
+ "languages": {
+  "JavaScript": 93.9,
+  "HTML": 4.0,
+  "Shell": 2.0
+ },
+ "topics": [
+  "claude",
+  "codex",
+  "marketing"
+ ],
+ "license": "MIT",
+ "homepage": "https://marketing-skills.com",
+ "created": "2026-01-15",
+ "pushed": "2026-10-03",
+ "release": "v2.11.17",
+ "release_date": "2026-10-03",
+ "owner_avatar": "https://avatars.githubusercontent.com/u/34802794?v=4"
+}

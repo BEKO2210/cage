@@ -1,0 +1,42 @@
+{"repo": "https://github.com/DietrichGebert/ponytail", "accent": "#f1e05a", "mood": "dark-tech",
+ "keys": ["Ponytail", "flatpickr", "caveman", "Caveman", "Claude", "Codex", "MIT"],
+ "lines": [
+  {"id": "hook", "say": "An AI agent wrote / 404 lines / for one date picker. / Ponytail made it 23.", "shots": [
+   {"page": "name"},
+   {"at": "404", "stat": "404 → 23", "sub": "lines for one date picker"},
+   {"at": "Ponytail", "page": "b012"}]},
+  {"id": "what", "say": "Ponytail is one prompt / that makes your agent / think like the laziest / senior dev.", "shots": [
+   {"page": "b006"},
+   {"at": "think", "page": "b008"}]},
+  {"id": "him", "say": "You know him. / Long ponytail, oval glasses. / Fifty lines in, / one line out.", "shots": [
+   {"page": "b019"},
+   {"at": "Fifty", "stat": "50 → 1", "sub": "lines · he says nothing"}]},
+  {"id": "stars", "say": "That idea has / 156k stars / on GitHub.", "shots": [
+   {"page": "star"}]},
+  {"id": "ladder", "say": "Before it codes, / it climbs a ladder. / Does this need / to exist? / Is it / in the codebase? / Only then: / the minimum that works.", "shots": [
+   {"code": "b058", "steps": [{"lines": [1, 7], "at": "climbs"}, {"lines": [1, 1], "at": "Does"}, {"lines": [2, 2], "at": "Is"}, {"lines": [7, 7], "at": "Only"}]}]},
+  {"id": "before", "say": "Ask for / a date picker: / your agent installs flatpickr, / writes a wrapper, / debates timezones. / Ponytail writes / one line.", "shots": [
+   {"page": "b047"},
+   {"at": "installs", "flow": {"input": {"label": "you ask", "title": ["a date picker"], "body": ["flatpickr", "wrapper component", "stylesheet"]}, "stream": "installs", "pulse": "Ponytail", "outputs": [{"label": "ponytail", "type": "native platform feature", "value": "1 line", "sub": "no flatpickr", "at": "line."}]}}]},
+  {"id": "after", "say": "A native date input. / The browser / already has one.", "shots": [
+   {"code": "b049", "steps": [{"lines": [2, 2], "at": "native"}]},
+   {"at": "browser", "stat": "<input type=\"date\">", "sub": "ponytail: browser has one"}]},
+  {"id": "numbers", "say": "Real agent, real repo, / twelve tickets. / Ponytail cut code / by 54%, / cost by 20% / and time by 27%.", "shots": [
+   {"page": "b070"},
+   {"at": "Ponytail", "bars": {"items": [{"label": "code", "value": 54, "show": "-54%", "at": "54%,"}, {"label": "cost", "value": 20, "show": "-20%", "at": "20%"}, {"label": "time", "value": 27, "show": "-27%", "at": "27%."}], "note": "vs no skill · Claude Code, Haiku 4.5", "hot": 0}}]},
+  {"id": "safe", "say": "Lazy, not negligent: / security and accessibility / are never cut. / Still 100% safe.", "shots": [
+   {"page": "b061"},
+   {"at": "100%", "stat": "100%", "sub": "safe · cuts every metric"}]},
+  {"id": "caveman", "say": "Pair it with caveman: / one shrinks the talk, / one shrinks the code.", "shots": [
+   {"page": "b079"},
+   {"at": "one#2", "page": "b072", "rows": [1, 1]}]},
+  {"id": "install", "say": "Two commands / install it / in Claude Code. / Codex and others / work too.", "shots": [
+   {"code": "b030"},
+   {"at": "Claude", "code": "b033"},
+   {"at": "Codex", "code": "b036"}]},
+  {"id": "cta", "say": "Code you never wrote / scales infinitely. / Send this to someone / who writes fifty lines.", "shots": [
+   {"page": "b082"},
+   {"at": "Send", "page": "b083"}]},
+  {"id": "end", "say": "Ponytail. / MIT licensed: / the shortest license / that works.", "shots": [
+   {"end": true}]}
+ ]}

@@ -1,0 +1,23 @@
+{
+ "repo": "BEKO2210/statim",
+ "url": "https://github.com/BEKO2210/statim",
+ "description": "Native C++20 engine for System-1 decision models \u2014 Laya/Jev-compatible, no Python, bit-exact parity",
+ "stars": 1,
+ "forks": 0,
+ "language": "Python",
+ "languages": {
+  "Python": 66.3,
+  "C++": 20.8,
+  "HTML": 7.9,
+  "Shell": 1.1,
+  "CSS": 1.0
+ },
+ "topics": [],
+ "license": "Apache-2.0",
+ "homepage": "https://beko2210.github.io/statim/",
+ "created": "2026-09-26",
+ "pushed": "2026-10-04",
+ "release": "v0.9.5",
+ "release_date": "2026-10-03",
+ "owner_avatar": "https://avatars.githubusercontent.com/u/129214713?v=4"
+}

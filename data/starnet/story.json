@@ -1,0 +1,54 @@
+{"repo": "https://github.com/androoAGI/starnet", "accent": "#f5a623", "mood": "lo-fi",
+ "keys": ["StarNet", "real", "Real"],
+ "lines": [
+  {"id": "hook", "say": "1,080 people starred / a pixel-art space station. / Its crew? / Real AI agents.",
+   "shots": [
+    {"page": "name"},
+    {"at": "starred", "stat": "1,080"},
+    {"at": "Its", "media": {"id": "m01"}}]},
+  {"id": "what", "say": "StarNet is a / local-first desktop app, / and the station / isn't decoration.",
+   "shots": [
+    {"page": "b010", "part": [0, 0.3]},
+    {"at": "station", "page": "b019", "part": [0.78, 1]}]},
+  {"id": "layout", "say": "The layout you draw / is the workflow / the agents run. / Rooms are teams. / Hallways are handoff lanes. / Placed objects / are real capability grants.",
+   "shots": [
+    {"flow": {"input": {"label": "you draw", "title": ["the station layout"], "body": ["rooms · hallways · objects"]}, "stream": "draw", "pulse": "run.",
+     "outputs": [
+      {"label": "room", "type": "capability-scoped", "value": "team", "at": "Rooms"},
+      {"label": "hallway", "type": "authorized", "value": "handoff lane", "at": "Hallways"},
+      {"label": "placed object", "type": "real capability", "value": "grant", "at": "objects"}]}}]},
+  {"id": "crew", "say": "Several agents / run at once. / Real model calls, / real tools, / real cost.",
+   "shots": [
+    {"page": "b015", "rows": [1, 1]},
+    {"at": "Real", "page": "b011", "part": [0.5, 1]}]},
+  {"id": "night", "say": "Night Shift / keeps them working / while you're away, / on an adjustable leash. / Every away-action is logged.",
+   "shots": [
+    {"page": "b015", "rows": [4, 4]},
+    {"at": "while", "media": {"id": "m01"}}]},
+  {"id": "asks", "say": "Unclear task? / It asks one question / with options, / over Telegram or Slack, / instead of guessing.",
+   "shots": [
+    {"page": "b015", "rows": [6, 6]},
+    {"at": "with", "grid": {"tiles": [["Telegram", 1], ["Discord", 2], ["Slack", 3], ["Signal", 4], ["Matrix", 1]], "pulse": "Telegram"}}]},
+  {"id": "law", "say": "No simulated work, / no simulated spend. / The interface never shows / what the harness / can't prove.",
+   "shots": [
+    {"page": "b020", "part": [0, 0.5]},
+    {"at": "interface", "page": "b020", "part": [0.45, 1]}]},
+  {"id": "code", "say": "It's 92% JavaScript. / The sidecar uses / Node core modules only, / so nothing to install.",
+   "shots": [
+    {"bars": {"items": [{"label": "JavaScript", "value": 92, "show": "92%", "at": "92%"}, {"label": "CSS", "value": 5, "show": "5%", "at": "JavaScript."}, {"label": "HTML", "value": 2, "show": "2%", "at": "JavaScript."}, {"label": "Rust", "value": 0.6, "show": "0.6%", "at": "JavaScript."}, {"label": "Python", "value": 0.2, "show": "0.2%", "at": "JavaScript."}], "note": "languages · GitHub", "hot": 0}},
+    {"at": "sidecar", "page": "b033"}]},
+  {"id": "start", "say": "Clone the repo, / run one Node command, / open localhost 8787, / and bring your own key.",
+   "shots": [
+    {"code": "b034", "steps": [{"lines": [1, 2], "at": "Clone"}, {"lines": [3, 3], "at": "run"}]},
+    {"at": "open", "page": "b037"}]},
+  {"id": "local", "say": "No key, no bill: / pull qwen3 8B / in Ollama. / Expect about 10 GB / of graphics memory.",
+   "shots": [
+    {"page": "b041"},
+    {"at": "Expect", "stat": "10 GB", "sub": "graphics memory · 8B model"}]},
+  {"id": "import", "say": "Coming from OpenClaw / or Hermes? / StarNet imports your agent.",
+   "shots": [
+    {"page": "b047"},
+    {"at": "imports", "page": "b049"}]},
+  {"id": "end", "say": "StarNet. / Your machine, / your data, / your crew.",
+   "shots": [{"end": true}]}
+ ]}

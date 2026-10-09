@@ -1,0 +1,41 @@
+{
+ "repo": "blixvip/NullMotion",
+ "url": "https://github.com/blixvip/NullMotion",
+ "description": "Watch a finished motion-graphics ad play over the HyperFrames drafts it grew from, frame-synced, and export the breakdown as an MP4. Local, zero dependencies. Join the Discord: discord.gg/zEB4VjmfSb",
+ "stars": 705,
+ "forks": 62,
+ "language": "HTML",
+ "languages": {
+  "HTML": 54.3,
+  "JavaScript": 34.3,
+  "CSS": 10.8,
+  "Python": 0.5
+ },
+ "topics": [
+  "animation",
+  "ffmpeg",
+  "frame-accurate",
+  "gsap",
+  "html5-video",
+  "hyperframes",
+  "javascript",
+  "launch-video",
+  "local-first",
+  "motion-design",
+  "motion-graphics",
+  "mp4-export",
+  "nodejs",
+  "storyboard",
+  "video",
+  "video-editing",
+  "webcodecs"
+ ],
+ "license": null,
+ "homepage": "https://www.nullmotion.com/",
+ "created": "2026-09-18",
+ "pushed": "2026-10-04",
+ "release": "v1.0.0",
+ "release_date": "2026-10-04",
+ "owner_avatar": "https://avatars.githubusercontent.com/u/247529250?v=4",
+ "logo": "repo/logo.png"
+}

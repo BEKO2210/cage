@@ -1,0 +1,34 @@
+{
+ "repo": "DietrichGebert/ponytail",
+ "url": "https://github.com/DietrichGebert/ponytail",
+ "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
+ "stars": 155947,
+ "forks": 8373,
+ "language": "JavaScript",
+ "languages": {
+  "JavaScript": 70.2,
+  "Python": 29.4,
+  "PowerShell": 0.2,
+  "Shell": 0.2
+ },
+ "topics": [
+  "agent-skills",
+  "ai-agents",
+  "claude",
+  "claude-code",
+  "claude-code-plugin",
+  "cursor-rules",
+  "developer-tools",
+  "llm",
+  "prompt-engineering",
+  "yagni"
+ ],
+ "license": "MIT",
+ "homepage": "https://ponytail.dev",
+ "created": "2026-06-12",
+ "pushed": "2026-10-05",
+ "release": "v4.13.0",
+ "release_date": "2026-10-05",
+ "owner_avatar": "https://avatars.githubusercontent.com/u/137048761?v=4",
+ "logo": "repo/logo.png"
+}

@@ -1,3 +1,10 @@
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/logo-dark.svg">
+    <img src="assets/logo-light.svg" alt="cage" width="420">
+  </picture>
+</p>
+
 # cage
 
 **A free 9B model on an 8 GB gaming GPU made 41 % fewer factual errors than frontier models,

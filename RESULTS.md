@@ -27,3 +27,19 @@ diagram-design and strata.
   as is (it can only hurt the cage). Five cage scripts are under 150 words, which judges count as a flaw.
 - The free arm is a weak baseline: on long digests the model returned one line; it also copies the story guide's example.
 - Narration only. Shots, music and render are not part of this test. 12 repos is a small sample.
+
+## After the test: a voice pass (dev set only, 2026-10-09) – rejected
+Idea: after the cage, the same 9B model rewrites every line for the ear; numbers and receipt locked, every rewrite goes
+through all bars again. Arm `cage3`, judged blind on the 4 dev repos against gold and the frozen cage (12 verdicts,
+`results/dev-v3.jsonl`):
+
+| | result |
+|---|---|
+| cage2 beats cage3 | 11/12 = 92 % |
+| cage3 beats gold | 3/12 = 25 % (cage2: 5/12 = 42 %) |
+| flagged errors per script | cage2 1.9 · gold 3.2 · cage3 2.7 |
+
+Why it failed: "flair" is where a small model invents claims ("the only choice", "instant answers"), mostly in the
+share and end lines, which carry no receipt, and the 9B fact-checker lets meaning-shifting paraphrases through.
+Lesson: style cannot be bolted on after the cage; the receipt must cover every line, including the call to action.
+Kept from this round: the line-count guard now covers every cage arm, and `*` (bold marks) counts as markup.

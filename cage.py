@@ -226,8 +226,18 @@ The digest of THIS repo ({facts['url']}) - the only source of facts:
 {digest}
 
 Write only the narration: 11-13 lines, 150-190 words in all. Answer as JSON: {{"lines": [{{"id": "...", "say": "..."}}]}}"""
-    out = json.loads(llm(p, model, fmt="json"))
-    return [l["say"].replace(" / ", " ").replace("/", " ") for l in out.get("lines", [])], []
+    for _ in range(2):                                                      # fair to the free arm: read any key, retry once
+        try:
+            out = json.loads(llm(p, model, fmt="json"))
+        except json.JSONDecodeError:
+            continue
+        items = out.get("lines", []) if isinstance(out, dict) else []
+        lines = [l if isinstance(l, str) else next((v for v in l.values() if isinstance(v, str) and len(v.split()) > 2), "")
+                 for l in items if isinstance(l, (str, dict))]
+        lines = [l.replace(" / ", " ").replace("/", " ") for l in lines if l]
+        if lines:
+            return lines, []
+    sys.exit(f"free {F.name}: no lines")
 
 
 def gold(F):

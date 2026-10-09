@@ -72,6 +72,7 @@ SLOTS = [  # id, job, min words, max words, needs a sourced number
     ("proof", "Give proof: a benchmark or measured result with its number, and against what.", 16, 26, True),
     ("proof2", "Give a second, different proof or a striking detail with its number (not one already used).", 14, 24, True),
     ("detail", "One more concrete thing it does that the lines so far did not mention, from the README.", 14, 24, False),
+    ("detail2", "One more fact a developer would want to know before trying it (setup, limits, platforms, numbers), not said yet.", 12, 22, False),
     ("trust", "Build trust: licence, who made it, who uses or tested it. Name the star count only if it is 1,000 or more (rounded down if you round).", 12, 20, False),
     ("start", "How to start: name the install command or the first step from the README, in spoken words.", 12, 20, False),
     ("share", "Ask the viewer to share or save it. Start with 'Send this to someone who' or 'Save this for'. Never ask to follow.", 10, 16, False),

@@ -31,3 +31,12 @@ lists factual errors. Known bias against the cage: some gold scripts were drafte
 - **Cage works:** cage beats free in >= 70 %.
 - **Accuracy:** cage has no more judge-flagged factual errors per script than gold.
 - **Stop:** cage beats gold in < 30 % – report it as it is.
+
+## Frozen for the test run (2026-10-10, before any test repo was touched)
+- Model: `qwen3.5:9b` (Ollama, Q4_K_M, num_ctx >= 8192), chosen on dev: 4/4 repos passed; qwen3:8b 2/4; granite4.2:8b 0/2
+  (unusable as fact-checker: rejects true lines).
+- Cage = arm `cage2` at git tag `frozen-test`: 13 slots; hard rules; every factual line carries a **receipt** (verbatim
+  source quote, checked by plain string search); the fact-checker compares the line with its receipt only, fails closed.
+- Dev result of this design (tag `dev-v2`, 11 verdicts): cage beats free 100 %, cage beats gold 36 %, judge-flagged errors
+  per script: cage 1.3, gold 3.1, free 4.1. Length was 141-146 words, so one slot (`detail2`) was added; archify re-run: 172 words.
+- Observed bias, reported not fixed: the free arm copies the example from the story guide ("beats an 8B-parameter LLM").

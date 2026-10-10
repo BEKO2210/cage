@@ -1,0 +1,985 @@
+{
+ "lines": [
+  "Statim makes 68 decisions per second on a single GPU.",
+  "Laya needs a Python stack, but Statim runs on a 5.5 MB binary plus a gguf model file.",
+  "Statim runs Laya checkpoints and implements the Jev/Laya POST v1/systemone protocol so existing clients can switch by changing the base URL.",
+  "The state and all questions become one token sequence with a mask per option.",
+  "Type a department question and choice, get an answer like billing with 0.9948 probability.",
+  "On S1Bench, Statim 0.7.0 scores 0.638 macro above its untuned Laya base.",
+  "A rank-4 adapter uses 3.3 MB and adds 17 to 28 percent CPU latency.",
+  "You can list loaded models with GET v1 slash models.",
+  "Statim runs on Linux x86-64 with AVX2 and supports Vulkan on an RTX 3070.",
+  "Apache-2.0 licence allows any use, and Lev's authors tested it on S1Bench.",
+  "Copy the release URL, verify the checksums with sha256sum, then extract the tarball.",
+  "Save this for a Python user who wants to switch to a native C++ engine.",
+  "Native C++ replaces Python without losing accuracy."
+ ],
+ "words": 174,
+ "log": [
+  {
+   "slot": "hook",
+   "try": 0,
+   "say": "One RTX 3070 decides 68 times per second, beating Qwen at six.",
+   "receipt": "Full results - Speed: Statim Vulkan f32 reached 68 decisions/s (11.6 ms/decision) in batches of 16 on one RTX 3070... Qwen3-8B reached ≈6 decisions/s through Ollama Q4_K_M with 2 parallel requests",
+   "errs": [
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "hook",
+   "try": 1,
+   "say": "One RTX 3070 decides 68 times per second.",
+   "receipt": "F5: Full results - Speed: Statim Vulkan f32 reached 68 decisions/s (11.6 ms/decision) in batches of 16 on one RTX 3070.",
+   "errs": [
+    "has 8 words, must have 12-20",
+    "number paired wrongly: 3070 - its receipt sentence says nothing about decid, tim"
+   ]
+  },
+  {
+   "slot": "hook",
+   "try": 2,
+   "say": "Statim reaches sixty-eight decisions per second on an RTX 3070.",
+   "receipt": "Full results - Speed: Statim Vulkan f32 reached 68 decisions/s (11.6 ms/decision) in batches of 16 on one RTX 3070.",
+   "errs": [
+    "has 10 words, must have 12-20",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "hook",
+   "try": 0,
+   "say": "Statim decides in fifty-four milliseconds on an RTX 3070.",
+   "receipt": "RTX 3070: 54 ms and 137 ms.",
+   "errs": [
+    "has 9 words, must have 12-20",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "hook",
+   "try": 1,
+   "say": "Statim decides in fifty-four milliseconds on an RTX 3070.",
+   "receipt": "RTX 3070: 54 ms",
+   "errs": [
+    "has 9 words, must have 12-20",
+    "write every number in digits exactly as in the facts, never in words",
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "hook",
+   "try": 2,
+   "say": "Fifty-four milliseconds per decision on an RTX 3070.",
+   "receipt": "RTX 3070: 54 ms",
+   "errs": [
+    "has 8 words, must have 12-20",
+    "write every number in digits exactly as in the facts, never in words",
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "hook",
+   "try": 0,
+   "say": "Statim makes 68 decisions per second on a single GPU.",
+   "receipt": "Decisions/s, one RTX 3070 | **68",
+   "errs": [
+    "has 10 words, must have 12-20"
+   ]
+  },
+  {
+   "slot": "hook",
+   "try": 1,
+   "say": "Statim reaches sixty-eight decisions per second on an RTX 3070. This measures speed for batches of sixteen.",
+   "receipt": "Speed: Statim Vulkan f32 reached 68 decisions/s (11.6 ms/decision) in batches of 16 on one RTX 3070.",
+   "errs": [
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "hook",
+   "try": 2,
+   "say": "Statim reaches sixty-eight decisions per second on an RTX 3070.",
+   "receipt": "F5: Full results - Speed: Statim Vulkan f32 reached 68 decisions/s (11.6 ms/decision) in batches of 16 on one RTX 3070.",
+   "errs": [
+    "has 10 words, must have 12-20",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "problem",
+   "try": 0,
+   "say": "Developers struggle with Python stacks and slow cold starts.",
+   "receipt": "Runtime: Laya needs Python 3.10+, PyTorch, and transformers.",
+   "errs": [
+    "has 9 words, must have 14-24",
+    "not in the sources: Developers struggle with Python stacks and slow cold starts. - The receipt does not state that developers struggle with Python stacks or experience slow cold starts; it only lists the required runtime dependencies (Python 3.10+, PyTorch, and transformers)."
+   ]
+  },
+  {
+   "slot": "problem",
+   "try": 1,
+   "say": "Statim runs on a simple binary instead of a heavy Python stack.",
+   "receipt": "Runtime | Python stack | 5.5 MB + `.gguf`",
+   "errs": [
+    "has 12 words, must have 14-24",
+    "not in the sources: Statim runs on a simple binary instead of a heavy Python stack. - The receipt states the runtime is 5.5 MB + .gguf, but it does not explicitly state that it runs on a binary or that it replaces a Python stack; it only provides the size of the runtime components."
+   ]
+  },
+  {
+   "slot": "problem",
+   "try": 2,
+   "say": "Laya needs PyTorch and transformers; Statim is five point five megabytes plus a GGUF file.",
+   "receipt": "| Measure | Laya | Statim |\n| Runtime | Python stack | 5.5 MB + `.gguf` |",
+   "errs": [
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "problem",
+   "try": 0,
+   "say": "Laya requires a Python stack, but Statim replaces it with a 5.5 MB binary.",
+   "receipt": "| Measure | Laya | Statim |\n| Runtime | Python stack | 5.5 MB + `.gguf` |",
+   "errs": [
+    "fact-check gave no answer"
+   ]
+  },
+  {
+   "slot": "problem",
+   "try": 1,
+   "say": "Laya requires a Python stack, but Statim uses only a 5.5 MB binary.",
+   "receipt": "| Measure | Laya | Statim |\n| Runtime | Python stack | 5.5 MB + `.gguf` |",
+   "errs": [
+    "has 13 words, must have 14-24",
+    "not in the sources: Statim uses only a 5.5 MB binary - The receipt states the runtime is 5.5 MB + `.gguf`, which implies the total size is larger than 5.5 MB because it includes the model file."
+   ]
+  },
+  {
+   "slot": "problem",
+   "try": 2,
+   "say": "Laya needs a Python stack, but Statim runs on a 5.5 MB binary plus a gguf model file.",
+   "receipt": "| Measure | Laya | Statim |\n| Runtime | Python stack | 5.5 MB + `.gguf`",
+   "errs": []
+  },
+  {
+   "slot": "problem",
+   "try": 0,
+   "say": "Developers hate installing Python stacks and large libraries to run System-1 models.",
+   "receipt": "Runtime: Laya needs Python 3.10+, PyTorch, and transformers.",
+   "errs": [
+    "has 12 words, must have 14-24",
+    "not in the sources: Developers hate installing Python stacks and large libraries to run System-1 models. - The receipt does not state that developers hate installing these stacks, nor does it mention 'System-1 models' or the difficulty of installing these specific libraries; it only lists the requirements (Python 3.10+, PyTorch, and transformers)."
+   ]
+  },
+  {
+   "slot": "problem",
+   "try": 1,
+   "say": "Laya needs a Python stack with PyTorch and transformers. Statim uses just a five-point-five-megabyte binary plus a gguf file.",
+   "receipt": "Runtime | Python stack | 5.5 MB + `.gguf`",
+   "errs": [
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "problem",
+   "try": 2,
+   "say": "Laya needs a Python stack with PyTorch and transformers. Statim uses just a five-point-five-megabyte binary plus a gguf file.",
+   "receipt": "| Measure | Laya | Statim |\n| Runtime | Python stack | 5.5 MB + `.gguf` |",
+   "errs": [
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "what",
+   "try": 0,
+   "say": "This is a native C++20 engine for System-1 decision models that runs Laya checkpoints and implements the Jev protocol.",
+   "receipt": "Native C++20 engine for System-1 decision models — Laya/Jev-compatible",
+   "errs": []
+  },
+  {
+   "slot": "what",
+   "try": 0,
+   "say": "Statim is a native C++ engine for System-1 decision models that lets clients switch by changing the base URL.",
+   "receipt": "F2: Statim runs Laya checkpoints and implements the Jev/Laya `POST /v1/systemone` protocol, so existing clients can switch by changing the base URL.",
+   "errs": [
+    "not in the sources: Statim is a native C++ engine",
+    "not in the sources: The receipt states that Statim runs Laya checkpoints and implements a protocol, but it does not specify the programming language (C++) used to build the engine."
+   ]
+  },
+  {
+   "slot": "what",
+   "try": 1,
+   "say": "Statim is a native decision engine compatible with existing clients. It supports English and multilingual models.",
+   "receipt": "BEKO2210/statim: Native C++20 engine for System-1 decision models — Laya/Jev-compatible... Models on Hugging Face: English, multilingual...",
+   "errs": [
+    "receipt not found word for word in the sources: \"models on hugging face: english, multilingual\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "what",
+   "try": 2,
+   "say": "Statim runs Laya checkpoints and implements the Jev protocol so existing clients can switch by changing the base URL.",
+   "receipt": "Fact F2: Statim runs Laya checkpoints and implements the Jev/Laya `POST /v1/systemone` protocol, so existing clients can switch by changing the base URL.",
+   "errs": [
+    "receipt not found word for word in the sources: \"fact f2: statim runs laya checkpoints and implements the jev/laya post /v1/syste\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "what",
+   "try": 0,
+   "say": "Statim is a native C++ engine for System-1 decisions that lets existing clients switch by changing the base URL.",
+   "receipt": "F2: Statim runs Laya checkpoints and implements the Jev/Laya `POST /v1/systemone` protocol, so existing clients can switch by changing the base URL.",
+   "errs": [
+    "not in the sources: Statim is a native C++ engine - The receipt does not state the programming language (C++) or that it is a 'native engine'; it only describes it as a system that runs checkpoints and implements a protocol."
+   ]
+  },
+  {
+   "slot": "what",
+   "try": 1,
+   "say": "Statim runs Laya checkpoints and implements the Jev/Laya POST v1/systemone protocol so existing clients can switch by changing the base URL.",
+   "receipt": "Statim runs Laya checkpoints and implements the Jev/Laya `POST /v1/systemone` protocol, so existing clients can switch by changing the base URL.",
+   "errs": []
+  },
+  {
+   "slot": "how",
+   "try": 0,
+   "say": "Statim runs Laya checkpoints and uses a native C++ tokenizer identical on 3,906 cases plus 140k fuzz strings and about 10× faster.",
+   "receipt": "Laya/Jev-compatible, no Python, bit-exact parity... | Model | Languages | ... | statim-decide-multilingual-base 0.7.0mmBERT-base | 12 evaluated | ... - Statim's native C++ tokenizer is identical on 3,906 cases plus 140k fuzz strings and about 10× faster.",
+   "errs": [
+    "spoken words only: no code or bold marks, no 15k-style shortcuts (say the full number from the facts)",
+    "repeats words an earlier line already said: \"runs laya checkpoints and\" - say something new",
+    "receipt not found word for word in the sources: \"- statim's native c++ tokenizer is identical on 3,906 cases plus 140k fuzz strin\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "how",
+   "try": 1,
+   "say": "Its native C++ tokenizer matches 3,906 test cases while running about ten times faster.",
+   "receipt": "- statim's native c++ tokenizer is identical on 3,906 cases plus 140k fuzz strings and about 10× faster.",
+   "errs": [
+    "has 14 words, must have 16-26",
+    "write every number in digits exactly as in the facts, never in words",
+    "receipt not found word for word in the sources: \"- statim's native c++ tokenizer is identical on 3,906 cases plus 140k fuzz strin\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "how",
+   "try": 2,
+   "say": "Its native C++ tokenizer is identical on 3,906 cases plus 140k fuzz strings and about 10 times faster.",
+   "receipt": "Statim's native C++ tokenizer is identical on 3,906 cases plus 140k fuzz strings and about 10× faster.",
+   "errs": [
+    "spoken words only: no code or bold marks, no 15k-style shortcuts (say the full number from the facts)"
+   ]
+  },
+  {
+   "slot": "how",
+   "try": 0,
+   "say": "It uses a native C++ tokenizer that is identical on thousands of cases and about ten times faster, keeping answers within one step of rounding.",
+   "receipt": "Statim's native C++ tokenizer is identical on 3,906 cases plus 140k fuzz strings and about 10× faster.\nAnswers: ... answers are within 1e-4 of the reference",
+   "errs": [
+    "write every number in digits exactly as in the facts, never in words",
+    "receipt not found word for word in the sources: \"statim's native c++ tokenizer is identical on 3,906 cases plus 140k fuzz strings\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "how",
+   "try": 1,
+   "say": "It uses a native C++ tokenizer that is identical on 3,906 cases plus 140k fuzz strings.",
+   "receipt": "F14: Statim's native C++ tokenizer is identical on 3,906 cases plus 140k fuzz strings and about 10× faster.",
+   "errs": [
+    "spoken words only: no code or bold marks, no 15k-style shortcuts (say the full number from the facts)"
+   ]
+  },
+  {
+   "slot": "how",
+   "try": 2,
+   "say": "It converts questions into a single token sequence with a mask for each option.",
+   "receipt": "The state and all questions become one token sequence with a mask per option.",
+   "errs": [
+    "has 14 words, must have 16-26"
+   ]
+  },
+  {
+   "slot": "how",
+   "try": 0,
+   "say": "It tokenizes questions into one sequence and masks each option before deciding.",
+   "receipt": "The state and all questions become one token sequence with a mask per option.",
+   "errs": [
+    "has 12 words, must have 16-26"
+   ]
+  },
+  {
+   "slot": "how",
+   "try": 1,
+   "say": "The state and all questions become one token sequence with a mask per option.",
+   "receipt": "The state and all questions become one token sequence with a mask per option.",
+   "errs": [
+    "has 14 words, must have 16-26"
+   ]
+  },
+  {
+   "slot": "how",
+   "try": 2,
+   "say": "The state and all questions become one token sequence with a mask per option.",
+   "receipt": "### How it works\nThe state and all questions become one token sequence with a mask per option.",
+   "errs": [
+    "has 14 words, must have 16-26"
+   ]
+  },
+  {
+   "slot": "how2",
+   "try": 0,
+   "say": "Type a question and get a choice, score, or yes/no result in seconds.",
+   "receipt": "\"type questions about text or JSON: pick one of several labels (choice), rate on a scale (score), or give a yes/no p\"",
+   "errs": [
+    "has 13 words, must have 16-26",
+    "receipt not found word for word in the sources: \"\"type questions about text or json: pick one of several labels (choice), rate on\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "how2",
+   "try": 1,
+   "say": "Type a question and get a choice, score, or yes/no result in seconds.",
+   "receipt": "",
+   "errs": [
+    "has 13 words, must have 16-26",
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "how2",
+   "try": 2,
+   "say": "Type a decision request for billing or urgency and get probabilities plus a score response.",
+   "receipt": "{\"answers\": {\"department\": {\"type\": \"choice\", \"choice\": \"billing\", \"probabilities\": {\"billing\": 0.9948, ...}, \"urgency\": {\"type\": \"score\", \"score\": 1.585, ...}}}",
+   "errs": [
+    "has 15 words, must have 16-26",
+    "receipt not found word for word in the sources: \"{\"answers\": {\"department\": {\"type\": \"choice\", \"choice\": \"billing\", \"probabilitie\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "how2",
+   "try": 0,
+   "say": "Type a department question and choice, get an answer like billing with ninety-nine point four eight percent probability.",
+   "receipt": "\"department\": {\"type\": \"choice\", \"choice\": \"billing\", \"probabilities\": {\"billing\": 0.9948, ...\"",
+   "errs": [
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "how2",
+   "try": 1,
+   "say": "Type a department question and choice, get an answer like billing with 0.9948 probability.",
+   "receipt": "the comparison covers 240/240 token sequences; answers are within 1e-4 of the reference... {\"answers\": { \"department\": {\"type\": \"choice\", \"choice\": \"billing\", \"probabilities\": {\"billing\": 0.9948, \"techni",
+   "errs": [
+    "has 14 words, must have 16-26",
+    "not in the sources: Type a department question and choice - The receipt shows a specific example of a "
+   ]
+  },
+  {
+   "slot": "how2",
+   "try": 2,
+   "say": "Send a JSON decision request to get answers like billing at 0.9948 probability.",
+   "receipt": "{\"answers\": { \"department\": {\"type\": \"choice\", \"choice\": \"billing\", \"probabilities\": {\"billing\": 0.9948, \"techni",
+   "errs": [
+    "has 13 words, must have 16-26"
+   ]
+  },
+  {
+   "slot": "how2",
+   "try": 0,
+   "say": "You send a JSON object with department and urgency fields, and it returns probabilities plus a score.",
+   "receipt": "{\"answers\": {\"department\": {\"type\": \"choice\", \"choice\": \"billing\", \"probabilities\": {\"billing\": 0.9948, \"techni\", \"urgency\": {\"type\": \"score\", \"score\": 1.585, \"legend\": {\"0\": \"not urgent\", \"1\": \"soon\", \"2\": \"crit\", \"refund\": {\"type\": \"noul\", \"noul\": 0.9224}}}",
+   "errs": [
+    "receipt not found word for word in the sources: \"{\"answers\": {\"department\": {\"type\": \"choice\", \"choice\": \"billing\", \"probabilitie\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "how2",
+   "try": 1,
+   "say": "Type a JSON question and get an answer with probabilities for billing and a score of 1.585.",
+   "receipt": "{\"answers\": {\"department\": {\"type\": \"choice\", \"choice\": \"billing\", \"probabilities\": {\"billing\": 0.9948, \"techni\" ... \"urgency\": {\"type\": \"score\", \"score\": 1.585, \"legend\": {",
+   "errs": [
+    "receipt not found word for word in the sources: \"{\"answers\": {\"department\": {\"type\": \"choice\", \"choice\": \"billing\", \"probabilitie\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "how2",
+   "try": 2,
+   "say": "Type a JSON question and get an answer with probabilities for billing and a score of 1.585.",
+   "receipt": "{\"answers\": {\"department\": {\"type\": \"choice\", \"choice\": \"billing\", \"probabilities\": {\"billing\": 0.9948, \"techni",
+   "errs": [
+    "receipt not found word for word in the sources: \"{\"answers\": {\"department\": {\"type\": \"choice\", \"choice\": \"billing\", \"probabilitie\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 0,
+   "say": "Statim matches reference answers within 1e-4 on 240 sequences while using 650 MB of server memory.",
+   "receipt": "Answers Reference 240/240; within 1e-4 ... Server memory ... 650 MB",
+   "errs": [
+    "number paired wrongly: 650 - its receipt sentence says nothing about memory, sequenc, server, us"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 1,
+   "say": "Statim scores 0.748 on S1Bench against Qwen3-8B zero-shot on the same held-out items.",
+   "receipt": "On a public suite: S1Bench On S1Bench (13 public subsets, 3,880 items, the harness Lev's authors used), the multilingual model 0.7.0 scores **0.638*",
+   "errs": [
+    "has 13 words, must have 16-26",
+    "not in the sources: Statim scores 0.748 on S1Bench - The receipt states the score is 0.638*",
+    "not in the sources: against Qwen3-8B zero-shot - The receipt does not mention Qwen3-8B or any specific model comparison."
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 2,
+   "say": "On S1Bench, Statim 0.7.0 scores 0.638 macro above its untuned Laya base.",
+   "receipt": "On a public suite: S1Bench On S1Bench (13 public subsets, 3,880 items, the harness Lev's authors used), the multilingual model 0.7.0 scores **0.638*",
+   "errs": [
+    "has 12 words, must have 16-26",
+    "fact-check gave no answer"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 0,
+   "say": "On S1Bench it scores 0.638 macro while Qwen reaches 0.706 on zero-shot.",
+   "receipt": "On S1Bench (13 public subsets, 3,880 items, the harness Lev's authors used), the multilingual model 0.7.0 scores **0.638* ... Qwen3-8B reached ≈6 decisions/s through Ollama Q4_K_M",
+   "errs": [
+    "has 12 words, must have 16-26",
+    "not in the sources: Qwen reaches 0.706 on zero-shot - The receipt states Qwen3-8B reached ≈6 decisions/s, not a score of 0.706. The receipt does not provide a score for Qwen3-8B on S1Bench."
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 1,
+   "say": "Statim scores 0.638 macro on S1Bench, above the untuned Laya base of zero point something.",
+   "receipt": "On S1Bench (13 public subsets, 3,880 items, the harness Lev's authors used), the multilingual model 0.7.0 scores **0.638* macro, above its untuned Laya base (0",
+   "errs": [
+    "has 15 words, must have 16-26",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 2,
+   "say": "On S1Bench, the multilingual model scores 0.638 macro, above the untuned Laya base.",
+   "receipt": "On S1Bench (13 public subsets, 3,880 items, the harness Lev's authors used), the multilingual model 0.7.0 scores **0.638*",
+   "errs": [
+    "has 13 words, must have 16-26",
+    "not in the sources: above the untuned Laya base - the receipt does not mention the Laya base or any comparison to it"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 0,
+   "say": "On S1Bench, Statim scores 0.638 macro above its untuned Laya base.",
+   "receipt": "On S1Bench (13 public subsets, 3,880 items, the harness Lev's authors used), the multilingual model 0.7.0 scores **0.638*",
+   "errs": [
+    "has 11 words, must have 16-26",
+    "not in the sources: Statim scores 0.638 macro above its untuned Laya base. - The receipt states the score is 0.638, but it does not state that this score is "
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 1,
+   "say": "On S1Bench with 3,880 items, Statim scores 0.638 macro.",
+   "receipt": "On S1Bench (13 public subsets, 3,880 items, the harness Lev's authors used), the multilingual model 0.7.0 scores **0.638*",
+   "errs": [
+    "has 9 words, must have 16-26",
+    "not in the sources: Statim scores 0.638 macro - The receipt does not specify that the score is a 'macro' average; it only provides the numerical score of 0.638."
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 2,
+   "say": "On S1Bench, Statim scores 0.638 macro on thirteen public subsets with three thousand eight hundred eighty items.",
+   "receipt": "On a public suite: S1Bench On S1Bench (13 public subsets, 3,880 items, the harness Lev's authors used), the multilingual model 0.7.0 scores **0.638*",
+   "errs": [
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 0,
+   "say": "The multilingual model weighs 438 MB for adapters and uses only 276 MiB of resident memory at startup.",
+   "receipt": "Files: f32 1.5 ... 438 MB for the multilingual f32 model ... Resident memory at start-up, 8-bit | 276 MiB",
+   "errs": [
+    "not in the sources: The multilingual model weighs 438 MB for adapters - The receipt states the 438 MB is for the 'multilingual f32 model', not specifically for 'adapters'."
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 1,
+   "say": "The multilingual f32 model weighs 438 MB, while a rank-4 adapter uses only 3.3 MB.",
+   "receipt": "Each adapter owns a copy of the adapted weights, 438 MB for the multilingual f32 model. A rank-4 adapter uses 3.3 MB.",
+   "errs": [
+    "receipt not found word for word in the sources: \"each adapter owns a copy of the adapted weights, 438 mb for the multilingual f32\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 2,
+   "say": "The multilingual model weighs 438 MB; a rank-4 adapter uses only 3.3 MB.",
+   "receipt": "each adapter owns a copy of the adapted weights, 438 MB for the multilingual f32 model... A rank-4 adapter uses 3.3 MB",
+   "errs": [
+    "has 13 words, must have 14-24"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 0,
+   "say": "The multilingual model uses 438 MB for adapted weights and a rank-4 adapter adds 17–28 % CPU latency.",
+   "receipt": "each adapter owns a copy of the adapted weights, 438 MB for the multilingual f32 model ... A rank-4 adapter uses 3.3 MB and adds 17–28 % CPU latency.",
+   "errs": []
+  },
+  {
+   "slot": "proof2",
+   "try": 0,
+   "say": "A rank-4 adapter uses 3.3 MB and adds 17 to 28 percent CPU latency.",
+   "receipt": "A rank-4 adapter uses 3.3 MB and adds 17–28 % CPU latency.",
+   "errs": []
+  },
+  {
+   "slot": "detail",
+   "try": 0,
+   "say": "Statim serves two published models including a multilingual base for twelve evaluated languages.",
+   "receipt": "| Model | Languages |\n| statim-decide-multilingual-base 0.7.0mmBERT-base | 12 evaluated |",
+   "errs": [
+    "has 13 words, must have 14-24",
+    "write every number in digits exactly as in the facts, never in words",
+    "receipt not found word for word in the sources: \"model languages statim-decide-multilingual-base 0.7.0mmbert-base 12 evaluated\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "detail",
+   "try": 1,
+   "say": "Statim serves two published models including a multilingual base for twelve evaluated languages.",
+   "receipt": "statim-decide-multilingual-base 0.7.0mmBERT-base | 12 evaluated",
+   "errs": [
+    "has 13 words, must have 14-24",
+    "write every number in digits exactly as in the facts, never in words",
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "detail",
+   "try": 2,
+   "say": "Statim serves published models on S1Bench with 3880 items across thirteen public subsets.",
+   "receipt": "On a public suite: S1Bench On S1Bench (13 public subsets, 3,880 items, the harness Lev's authors used), ...",
+   "errs": [
+    "has 13 words, must have 14-24",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "detail",
+   "try": 0,
+   "say": "It serves Prometheus metrics and lists loaded models at GET slash v1 slash models.",
+   "receipt": "| Endpoint | Purpose |\n| `GET /v1/models` | List loaded mod",
+   "errs": [
+    "receipt not found word for word in the sources: \"endpoint purpose get /v1/models list loaded mod\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "detail",
+   "try": 1,
+   "say": "You can list loaded models with GET v1 slash models.",
+   "receipt": "GET /v1/models | List loaded mod",
+   "errs": [
+    "has 10 words, must have 14-24"
+   ]
+  },
+  {
+   "slot": "detail",
+   "try": 2,
+   "say": "You can list loaded models with GET slash v1 slash models endpoint.",
+   "receipt": "| Endpoint | Purpose |\n| `GET /v1/models` | List loaded mod",
+   "errs": [
+    "has 12 words, must have 14-24",
+    "receipt not found word for word in the sources: \"endpoint purpose get /v1/models list loaded mod\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "detail",
+   "try": 0,
+   "say": "It serves English and twelve other languages with adapters that own their weights.",
+   "receipt": "Models | Languages | statim-decide-en-large 0.5.0ModernBERT-large, 395M | English | statim-decide-multilingual-base 0.7.0mmBERT-base | 12 evaluated",
+   "errs": [
+    "has 13 words, must have 14-24",
+    "write every number in digits exactly as in the facts, never in words",
+    "receipt not found word for word in the sources: \"models languages statim-decide-en-large 0.5.0modernbert-large, 395m english stat\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "detail",
+   "try": 1,
+   "say": "The English model is ModernBERT large with three hundred ninety five million parameters.",
+   "receipt": "statim-decide-en-large 0.5.0ModernBERT-large, 395M",
+   "errs": [
+    "has 13 words, must have 14-24",
+    "write every number in digits exactly as in the facts, never in words",
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "detail",
+   "try": 2,
+   "say": "The English model uses ModernBERT large with three hundred ninety five million parameters.",
+   "receipt": "| statim-decide-en-large 0.5.0ModernBERT-large, 395M | English |",
+   "errs": [
+    "has 13 words, must have 14-24",
+    "write every number in digits exactly as in the facts, never in words",
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "detail2",
+   "try": 0,
+   "say": "It supports Linux x86-64 CPU and Vulkan on an RTX 3070.",
+   "receipt": "Linux x86-64 with AVX2 (Haswell or newer), CPU.\n| Platform | Release binary | CI | Tested on hardware |\n| Linux x86-64, Vulkan | yes | builds in the release job only; no GPU runner | RTX 3070",
+   "errs": [
+    "has 11 words, must have 12-22",
+    "receipt not found word for word in the sources: \"linux x86-64 with avx2 (haswell or newer), cpu. platform release binary ci teste\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "detail2",
+   "try": 1,
+   "say": "It runs on Linux x86-64 CPU with AVX2, Haswell or newer.",
+   "receipt": "Linux x86-64 with AVX2 (Haswell or newer), CPU.",
+   "errs": [
+    "has 11 words, must have 12-22"
+   ]
+  },
+  {
+   "slot": "detail2",
+   "try": 2,
+   "say": "Linux x86-64 binaries support Vulkan on RTX 3070 with CUDA source builds.",
+   "receipt": "| Platform | Release binary | CI | Tested on hardware |\n| Linux x86-64, CPU (AVX2, FMA, F16C, BMI2) | yes; glibc 2.28 or newer (0.9.5 and earlier: 2.38) | build, full `ctest`, ASan + UBS |\n| Linux x86-64, Vulkan | yes | builds in the release job only; no GPU runner | RTX 3070, driver 580.159.03: the four `*_vulkan` pa",
+   "errs": [
+    "not in the sources: Linux x86-64 binaries support Vulkan on RTX 3070 with CUDA source builds. - The receipt states that Vulkan binaries were tested on an RTX 3070, but it does not mention "
+   ]
+  },
+  {
+   "slot": "detail2",
+   "try": 0,
+   "say": "Statim runs Linux x86-64 with AVX2 on an Intel Xeon E3-1505M v5 laptop CPU.",
+   "receipt": "Linux x86-64 with AVX2 (Haswell or newer), CPU.",
+   "errs": [
+    "spoken words only: no code or bold marks, no 15k-style shortcuts (say the full number from the facts)"
+   ]
+  },
+  {
+   "slot": "detail2",
+   "try": 1,
+   "say": "Statim runs on Linux x86-64 with AVX2 and supports Vulkan on an RTX 3070.",
+   "receipt": "Linux x86-64, CPU (AVX2, FMA, F16C, BMI2) | yes; ... Linux x86-64, Vulkan | yes",
+   "errs": [
+    "not in the sources: supports Vulkan on an RTX 3070 - The receipt confirms Vulkan support on Linux x86-64, but it does not mention the specific hardware (RTX 3070)."
+   ]
+  },
+  {
+   "slot": "detail2",
+   "try": 2,
+   "say": "Linux binaries require AVX2 instructions or source builds for other platforms like Android.",
+   "receipt": "Platform support: Only what CI builds and tests, or what was run on real hardware, is listed as supported.",
+   "errs": [
+    "receipt not found word for word in the sources: \"platform support: only what ci builds and tests, or what was run on real hardwar\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "detail2",
+   "try": 0,
+   "say": "Statim runs on Linux x86-64 with AVX2, and you can list loaded models via GET slash v1 slash models.",
+   "receipt": "Linux x86-64 with AVX2 (Haswell or newer), CPU. ... Endpoint Purpose GET /v1/models List loaded mod",
+   "errs": [
+    "repeats words an earlier line already said: \"can list loaded models\" - say something new",
+    "receipt not found word for word in the sources: \"endpoint purpose get /v1/models list loaded mod\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "detail2",
+   "try": 1,
+   "say": "Linux x86-64 requires AVX2 features, with RTX 3070 support for Vulkan builds.",
+   "receipt": "Linux x86-64, CPU (AVX2, FMA, F16C, BMI2)",
+   "errs": [
+    "not in the sources: RTX 3070 support for Vulkan builds - The receipt does not mention RTX 3070, Vulkan, or specific GPU support; it only lists CPU instruction sets (AVX2, FMA, F16C, BMI2)."
+   ]
+  },
+  {
+   "slot": "detail2",
+   "try": 2,
+   "say": "Linux x86-64 requires AVX2 features for the release binary.",
+   "receipt": "Linux x86-64, CPU (AVX2, FMA, F16C, BMI2)",
+   "errs": [
+    "has 9 words, must have 12-22"
+   ]
+  },
+  {
+   "slot": "trust",
+   "try": 0,
+   "say": "Apache-2.0 licence, built by BEKO2210 for System-1 decisions.",
+   "receipt": "Source code—engine, server, and tools—is Apache-2.0, free for any use.",
+   "errs": [
+    "has 8 words, must have 12-20",
+    "not in the sources: built by BEKO2210 for System-1 decisions - The receipt does not state that the repository was built for 'System-1 decisions'; it only mentions the license and the components included."
+   ]
+  },
+  {
+   "slot": "trust",
+   "try": 1,
+   "say": "Apache-2.0 licence, native C++20 engine from BEKO2210 repo with one GitHub star.",
+   "receipt": "Source code—engine, server, and tools—is Apache-2.0, free for any use.\nF1: 1 GitHub stars, main language Python\nBEKO2210/statim",
+   "errs": [
+    "receipt not found word for word in the sources: \"source code—engine, server, and tools—is apache-2.0, free for any use. f1: 1 git\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "trust",
+   "try": 2,
+   "say": "Apache-2.0 licence, native C++20 engine from BEKO2210 repo with one GitHub star.",
+   "receipt": "source code—engine, server, and tools—is Apache-2.0, free for any use ... f1: 1 git",
+   "errs": [
+    "not in the sources: native C++20 engine - the receipt states the engine is C++20, but it does not specify that it is 'native' (though this is a common technical descriptor, it is not explicitly in the text)"
+   ]
+  },
+  {
+   "slot": "trust",
+   "try": 0,
+   "say": "Apache licence and a GitHub project with one star.",
+   "receipt": "- **Live demo**: in the browser, no install, no key - **Models on Hugging Face**... |---|---|---:| | Short inputs, f32, 8 threads, ms per state | **257** | 266 | ... - Source code—engine, server, and tools—is Apache-2.0, free for any use.",
+   "errs": [
+    "has 9 words, must have 12-20",
+    "receipt not found word for word in the sources: \"--- --- ---: short inputs, f32, 8 threads, ms per state 257 266\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "trust",
+   "try": 1,
+   "say": "Apache licence, BEKO2210/statim has one star.",
+   "receipt": "F1: 1 GitHub stars, main language Python",
+   "errs": [
+    "has 6 words, must have 12-20",
+    "not in the sources: Apache licence - The receipt does not state the license type."
+   ]
+  },
+  {
+   "slot": "trust",
+   "try": 2,
+   "say": "Apache-2.0 covers it, but BEKO2210/statim has only one star.",
+   "receipt": "Source code—engine, server, and tools—is Apache-2.0 ... 1 GitHub stars",
+   "errs": [
+    "has 9 words, must have 12-20",
+    "no superlatives unless the facts say exactly that"
+   ]
+  },
+  {
+   "slot": "trust",
+   "try": 0,
+   "say": "Apache-2.0 licence allows any use, and Lev's authors tested it on S1Bench.",
+   "receipt": "- Source code—engine, server, and tools—is Apache-2.0, free for any use. ... On a public suite: S1Bench On S1Bench (13 public subsets, 3,880 items, the harness Lev's authors used), the multilingual model 0.7.0 scores **0.638*",
+   "errs": []
+  },
+  {
+   "slot": "start",
+   "try": 0,
+   "say": "Run curl to download the binary, then extract it with tar.",
+   "receipt": "curl -fLO https://github.com/BEKO2210/statim/releases/download/v0.9.5/statim-0.9.5-linux-x86_64-cpu. ... sha256sum -c --ignore-missing SHA256SUMS && tar -xzf statim-0.9.5-linux-x86_64-cpu.tar.gz",
+   "errs": [
+    "has 11 words, must have 12-20"
+   ]
+  },
+  {
+   "slot": "start",
+   "try": 1,
+   "say": "Run curl to download the binary, then extract it with tar to verify both files.",
+   "receipt": "curl -fLO https://github.com/BEKO2210/statim/releases/download/v0.9.5/statim-0.9.5-linux-x86_64-cpu.tar.gz",
+   "errs": [
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "start",
+   "try": 2,
+   "say": "Run curl to download the engine and model, then verify checksums.",
+   "receipt": "# 1. Download the engine (3 MB) and the multilingual model (357 MB), and verify both\ncurl -fLO https://github.com/BEKO2210/statim/releases/download/v0.9.5/statim-0.9.5-linux-x86_64-cpu.\ncurl -fLO https://github.com/BEKO2210/statim/releases/download/v0.9.5/SHA256SUMS\nsha256sum -c --ignore-missing SHA256SUMS",
+   "errs": [
+    "has 11 words, must have 12-20"
+   ]
+  },
+  {
+   "slot": "start",
+   "try": 0,
+   "say": "Run this command to download the engine and model, then start the server with dot slash serve.",
+   "receipt": "curl -fLO https://github.com/BEKO2210/statim/releases/download/v0.9.5/statim-0.9.5-linux-x86_64-cpu.",
+   "errs": [
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "start",
+   "try": 1,
+   "say": "Download the 3 MB engine and 357 MB model, then run statim serve.",
+   "receipt": "curl -fLO https://github.com/BEKO2210/statim/releases/download/v0.9.5/statim-0.9.5-linux-x86_64-cpu.tar.gz ... curl -fLO https://github.com/BEKO2210/statim/releases/download/v0.9.5/SHA256SUMS",
+   "errs": [
+    "receipt not found word for word in the sources: \"curl -flo https://github.com/beko2210/statim/releases/download/v0.9.5/statim-0.9\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "start",
+   "try": 2,
+   "say": "Copy the release URL, verify the checksums with sha256sum, then extract the tarball.",
+   "receipt": "curl -fLO https://github.com/BEKO2210/statim/releases/download/v0.9.5/statim-0.9.5-linux-x86_64-cpu. ... sha256sum -c --ignore-missing SHA256SUMS && tar -xzf statim-0.9.5-linux-x86_64-cpu.tar.gz",
+   "errs": [
+    "number paired wrongly: sha256sum, - its receipt sentence says nothing about checksum, extract, tarball, then, verify"
+   ]
+  },
+  {
+   "slot": "start",
+   "try": 0,
+   "say": "Download the five megabyte binary and verify it against the checksum file.",
+   "receipt": "curl -fLO https://github.com/BEKO2210/statim/releases/download/v0.9.5/statim-0.9.5-linux-x86_64-cpu.",
+   "errs": [
+    "write every number in digits exactly as in the facts, never in words",
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "start",
+   "try": 1,
+   "say": "Run this curl command to download the engine binary and model file.",
+   "receipt": "curl -fLO https://github.com/BEKO2210/statim/releases/download/v0.9.5/statim-0.9.5-linux-x86_64-cpu.tar.gz",
+   "errs": [
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "start",
+   "try": 2,
+   "say": "Download the release binary with curl, then extract the archive.",
+   "receipt": "curl -fLO https://github.com/BEKO2210/statim/releases/download/v0.9.5/statim-0.9.5-linux-x86_64-cpu.tar.gz ... tar -xzf statim-0.9.5-linux-x86_64-cpu.tar.gz",
+   "errs": [
+    "has 10 words, must have 12-20",
+    "receipt not found word for word in the sources: \"curl -flo https://github.com/beko2210/statim/releases/download/v0.9.5/statim-0.9\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "share",
+   "try": 0,
+   "say": "Save this for a friend who wants System One decisions without Python.",
+   "receipt": "Statim runs Laya checkpoints and implements the Jev/Laya `POST /v1/systemone` protocol, so existing clients can switch by changing the base URL.",
+   "errs": []
+  },
+  {
+   "slot": "share",
+   "try": 0,
+   "say": "Save this for a Python user who wants to switch to a native C++ engine.",
+   "receipt": "FACTS:F0: BEKO2210/statim: Native C++20 engine",
+   "errs": []
+  },
+  {
+   "slot": "share",
+   "try": 0,
+   "say": "Send this to someone who needs a native C++20 engine with bit-exact parity.",
+   "receipt": "BEKO2210/statim: Native C++20 engine for System-1 decision models — Laya/Jev-compatible, no Python, bit-exact parity",
+   "errs": [
+    "no numbers in this line: it carries no receipt"
+   ]
+  },
+  {
+   "slot": "share",
+   "try": 1,
+   "say": "Save this for when you need bit-exact parity without Python ... Native C++20 engine for System-1 decision models.",
+   "receipt": "Native C++20 engine for System-1 decision models — Laya/Jev-compatible, no Python, bit-exact parity",
+   "errs": [
+    "has 18 words, must have 10-16",
+    "no '...' in the spoken line (that belongs in the receipt only)",
+    "no numbers in this line: it carries no receipt"
+   ]
+  },
+  {
+   "slot": "share",
+   "try": 2,
+   "say": "Send this to someone who wants a native C++20 engine with bit-exact parity.",
+   "receipt": "BEKO2210/statim: Native C++20 engine for System-1 decision models — Laya/Jev-compatible, no Python, bit-exact parity",
+   "errs": [
+    "no numbers in this line: it carries no receipt"
+   ]
+  },
+  {
+   "slot": "end",
+   "try": 0,
+   "say": "Statim is a native C++20 engine.",
+   "receipt": "BEKO2210/statim: Native C++20 engine for System-1 decision models",
+   "errs": [
+    "no numbers in this line: it carries no receipt"
+   ]
+  },
+  {
+   "slot": "end",
+   "try": 1,
+   "say": "Statim is a native C++20 engine.",
+   "receipt": "BEKO2210/statim: Native C++20 engine for System-1 decision models",
+   "errs": [
+    "no numbers in this line: it carries no receipt"
+   ]
+  },
+  {
+   "slot": "end",
+   "try": 2,
+   "say": "Statim runs Laya checkpoints with bit-exact parity.",
+   "receipt": "F2: Statim runs Laya checkpoints and implements the Jev/Laya `POST /v1/systemone` protocol, so existing clients can switch by changing the base URL.",
+   "errs": [
+    "repeats words an earlier line already said: \"statim runs laya checkpoints\" - say something new"
+   ]
+  },
+  {
+   "slot": "end",
+   "try": 0,
+   "say": "Statim is the native C++20 engine for System-1 decisions.",
+   "receipt": "BEKO2210/statim: Native C++20 engine for System-1 decision models",
+   "errs": [
+    "no numbers in this line: it carries no receipt"
+   ]
+  },
+  {
+   "slot": "end",
+   "try": 1,
+   "say": "Statim runs Laya checkpoints on a 5.5 MB binary.",
+   "receipt": "Runtime | Python stack | 5.5 MB + `.gguf`",
+   "errs": [
+    "repeats a number already said: 5.5",
+    "repeats words an earlier line already said: \"5 5 mb binary\" - say something new",
+    "no numbers in this line: it carries no receipt"
+   ]
+  },
+  {
+   "slot": "end",
+   "try": 2,
+   "say": "The engine is native C++20.",
+   "receipt": "BEKO2210/statim: Native C++20 engine for System-1 decision models",
+   "errs": [
+    "has 5 words, must have 6-12",
+    "no numbers in this line: it carries no receipt"
+   ]
+  },
+  {
+   "slot": "end",
+   "try": 0,
+   "say": "Statim is a native C++ engine for System-1 decisions.",
+   "receipt": "BEKO2210/statim: Native C++20 engine for System-1 decision models",
+   "errs": [
+    "repeats words an earlier line already said: \"a native c engine\" - say something new",
+    "no numbers in this line: it carries no receipt"
+   ]
+  },
+  {
+   "slot": "end",
+   "try": 1,
+   "say": "Native C++ replaces Python without losing accuracy.",
+   "receipt": "BEKO2210/statim: Native C++20 engine for System-1 decision models — Laya/Jev-compatible, no Python",
+   "errs": []
+  }
+ ]
+}

@@ -40,3 +40,28 @@ lists factual errors. Known bias against the cage: some gold scripts were drafte
 - Dev result of this design (tag `dev-v2`, 11 verdicts): cage beats free 100 %, cage beats gold 36 %, judge-flagged errors
   per script: cage 1.3, gold 3.1, free 4.1. Length was 141-146 words, so one slot (`detail2`) was added; archify re-run: 172 words.
 - Observed bias, reported not fixed: the free arm copies the example from the story guide ("beats an 8B-parameter LLM").
+
+# Protocol v2 (written 2026-10-10, before any cage run on the v2 test set)
+
+**Why v2:** in v1 the gold authors saw the full repo page while judges saw only the digest, and the 12 test repos are
+now used up. On the dev set, one run per repo proved too noisy to rank designs: the same cage2 algorithm, run again
+(`cage2r`), beat the frozen cage2 scripts 9/12 and gold 50 % (`results/dev-v6.jsonl`). So v2 decides on 20 fresh repos.
+
+## Test set v2 (fixed in commit c45acb3, before any cage run on it)
+Rule: most-starred GitHub repos created after 2026-03-01, pushed after 2026-09-15, English README, no lists, not in v1.
+career-ops, cli-anything, colibri, dbx, deepseek-harness, ds4, freellmapi, gods-eye-view, graphify, herdr, hyperframes,
+i-have-adhd, mempalace, obscura, odysseus, orca, paperclip, pretext, understand-anything, voicestudio.
+
+## Arms
+- **gold2** – narration by Opus 5.5 from the digest only (the same input as the cage), written once, not edited.
+- **cage2** – the v1 cage algorithm, unchanged (writer and fact-checker `qwen3.5:9b`).
+- **cage6** – cage2 + code pairing check (every number of a line must stand in its receipt sentence next to the words
+  the line puts around it) + fact-checker `gemma4:12b-it-qat` (another model family). Chosen on `data/checker-bank.jsonl`
+  (23 dev pairs): qwen3.5:9b caught 3/12 wrong lines, gemma4:12b 11/12 while rejecting 1/11 true ones.
+Judges as in v1 (codex gpt-5.6-sol, Gemini, Grok), Latin-square order, 60 verdicts.
+
+## Success, decided in advance
+- **Parity:** cage2 or cage6 beats gold2 in >= 45 % of pairwise judgments.
+- **Accuracy:** that arm has no more judge-flagged errors per script than gold2.
+- **Checker:** cage6 has fewer flagged errors per script than cage2 (the claim behind v6).
+- **Stop:** both cages beat gold2 in < 30 % – report it as it is.

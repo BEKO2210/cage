@@ -1,0 +1,926 @@
+{
+ "lines": [
+  "Caveman shrinks a 15,704 token web page down to just 121 tokens.",
+  "Agents chatter too much. Caveman stops the noise.",
+  "Caveman is a voice that tells AI agents to say less so developers get clear answers faster.",
+  "It uses a proxy to rewrite agent speech into simple sentences that keep every fact, code, and number exactly the same.",
+  "Whole sessions use 33.2% fewer input tokens, same answers.",
+  "Caveman browse reads a 200-row table using only 129.8 times fewer tokens than Playwright snapshots.",
+  "It shrinks logs and CSVs to 98.5% smaller sizes while keeping every fact intact.",
+  "Caveman works in Go and cuts cost up to 2.4 times per model.",
+  "Julius Brussee built it with an Apache-2.0 license for privacy, and Adobe Research tested it.",
+  "Run npx skills add JuliusBrussee/caveman -g to install the Go agent that cuts tokens.",
+  "Save this for a teammate who needs to cut their token bill.",
+  "Talk less, code more. That's Caveman."
+ ],
+ "words": 156,
+ "log": [
+  {
+   "slot": "hook",
+   "try": 0,
+   "say": "Caveman cut a web page to 121 tokens from 15,704.",
+   "receipt": "| A web page the agent reads (`caveman browse`, 200-row table) | **121 tokens instead of 15,704** for a Playwright snapshot,",
+   "errs": [
+    "has 10 words, must have 12-20"
+   ]
+  },
+  {
+   "slot": "hook",
+   "try": 1,
+   "say": "Caveman browse reads a table in 121 tokens instead of 15,704.",
+   "receipt": "| A web page the agent reads (`caveman browse`, 200-row table) | **121 tokens instead of 15,704** for a Playwright snapshot,",
+   "errs": [
+    "has 11 words, must have 12-20"
+   ]
+  },
+  {
+   "slot": "hook",
+   "try": 2,
+   "say": "Caveman browse reads a web page in 121 tokens instead of 15,704 for a Playwright snapshot.",
+   "receipt": "| A web page the agent reads (`caveman browse`, 200-row table) | **121 tokens instead of 15,704** for a Playwright snapshot,",
+   "errs": []
+  },
+  {
+   "slot": "hook",
+   "try": 0,
+   "say": "Caveman turns a 15,704-token web page into just 121 tokens.",
+   "receipt": "A web page the agent reads (`caveman browse`, 200-row table) | **121 tokens instead of 15,704** for a Playwright snapshot",
+   "errs": [
+    "has 10 words, must have 12-20"
+   ]
+  },
+  {
+   "slot": "hook",
+   "try": 1,
+   "say": "Caveman shrinks a 15,704 token web page down to just 121 tokens.",
+   "receipt": "| A web page the agent reads (`caveman browse`, 200-row table) | **121 tokens instead of 15,704** for a Playwright snapshot,",
+   "errs": []
+  },
+  {
+   "slot": "hook",
+   "try": 0,
+   "say": "Caveman shrinks web pages to 129.8 times smaller size.",
+   "receipt": "caveman browse vs a Playwright snapshot\nF2: Brain still big.** 33.2% fewerinput tokens through the proxy54 Claude Code runs, 18 of 18 answers right 129.8× smallerweb pages for the agentcaveman browse vs a Playwright snapshot",
+   "errs": [
+    "has 9 words, must have 12-20",
+    "receipt not found word for word in the sources: \"caveman browse vs a playwright snapshot f2: brain still big. 33.2% fewerinput to\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "hook",
+   "try": 1,
+   "say": "Caveman browse makes web pages 129.8 times smaller than Playwright snapshots.",
+   "receipt": "caveman browse vs a Playwright snapshot 129.8× smallerweb pages for the agent",
+   "errs": [
+    "has 11 words, must have 12-20",
+    "receipt not found word for word in the sources: \"caveman browse vs a playwright snapshot 129.8× smallerweb pages for the agent\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "hook",
+   "try": 2,
+   "say": "Caveman browse makes web pages 129.8 times smaller than Playwright snapshots.",
+   "receipt": "caveman browse vs a Playwright snapshot 129.8× smallerweb pages for the agent",
+   "errs": [
+    "has 11 words, must have 12-20",
+    "receipt not found word for word in the sources: \"caveman browse vs a playwright snapshot 129.8× smallerweb pages for the agent\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "problem",
+   "try": 0,
+   "say": "Developers waste tokens on chat history and verbose agent chatter that hides meaning.",
+   "receipt": "Caveman make your AI agent say less and read less.",
+   "errs": [
+    "has 13 words, must have 14-24"
+   ]
+  },
+  {
+   "slot": "problem",
+   "try": 1,
+   "say": "Agents write too much because verbosity adds cost.",
+   "receipt": "The skill shrinks what the agent says.",
+   "errs": [
+    "has 8 words, must have 14-24",
+    "receipt not found word for word in the sources: \"the skill shrinks what the agent says.\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "problem",
+   "try": 2,
+   "say": "Agents waste tokens with long talk until they speak like a caveman.",
+   "receipt": "Caveman make your AI agent say less ... The skill shrinks what the agent **says**.",
+   "errs": [
+    "has 12 words, must have 14-24"
+   ]
+  },
+  {
+   "slot": "problem",
+   "try": 0,
+   "say": "Agents chatter too much and waste tokens on unnecessary words.",
+   "receipt": "Caveman make your AI agent say less",
+   "errs": [
+    "has 10 words, must have 14-24"
+   ]
+  },
+  {
+   "slot": "problem",
+   "try": 1,
+   "say": "Developers lose tokens to agent chatter. Caveman stops the noise.",
+   "receipt": "The skill shrinks what the agent says.",
+   "errs": [
+    "has 10 words, must have 14-24",
+    "receipt not found word for word in the sources: \"the skill shrinks what the agent says.\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "problem",
+   "try": 2,
+   "say": "Agents chatter too much. Caveman stops the noise.",
+   "receipt": "The skill shrinks what the agent says",
+   "errs": [
+    "has 8 words, must have 14-24"
+   ]
+  },
+  {
+   "slot": "problem",
+   "try": 0,
+   "say": "Agents waste huge tokens chatting while tools run.",
+   "receipt": "Quiet tool runs No chatter between tool calls.",
+   "errs": [
+    "has 8 words, must have 14-24"
+   ]
+  },
+  {
+   "slot": "problem",
+   "try": 1,
+   "say": "Agents chatter between tool calls instead of doing quiet runs. ... No chatter between tool calls. One line per phase, one line with the result",
+   "receipt": "Quiet tool runs | No chatter between tool calls. One line per phase, one line with the result",
+   "errs": [
+    "has 25 words, must have 14-24",
+    "no '...' in the spoken line (that belongs in the receipt only)"
+   ]
+  },
+  {
+   "slot": "problem",
+   "try": 2,
+   "say": "Agents chatter between tool calls instead of doing quiet runs.",
+   "receipt": "Quiet tool runs No chatter between tool calls.",
+   "errs": [
+    "has 10 words, must have 14-24"
+   ]
+  },
+  {
+   "slot": "what",
+   "try": 0,
+   "say": "Caveman is a voice for AI agents that says less and reads less.",
+   "receipt": "Caveman make your AI agent say less and read less.",
+   "errs": [
+    "has 13 words, must have 14-22"
+   ]
+  },
+  {
+   "slot": "what",
+   "try": 1,
+   "say": "Caveman is an agent skill that talks plainly so your code runs faster.",
+   "receipt": "Caveman make your AI agent say less and read less.",
+   "errs": [
+    "has 13 words, must have 14-22"
+   ]
+  },
+  {
+   "slot": "what",
+   "try": 2,
+   "say": "Caveman is a skill for coding agents to speak simply and save tokens.",
+   "receipt": "Caveman: why many token when few do trick",
+   "errs": [
+    "has 13 words, must have 14-22"
+   ]
+  },
+  {
+   "slot": "what",
+   "try": 0,
+   "say": "Caveman makes AI agents speak simply for developers who need less chatter.",
+   "receipt": "Caveman is a voice, not broken grammar.",
+   "errs": [
+    "has 12 words, must have 14-22"
+   ]
+  },
+  {
+   "slot": "what",
+   "try": 1,
+   "say": "Caveman is a voice that tells AI agents to say less so developers get clear answers faster.",
+   "receipt": "Caveman-style output, eight models, five datasets | Cost cut 1.4 to 2.4× per mode",
+   "errs": []
+  },
+  {
+   "slot": "what",
+   "try": 0,
+   "say": "Caveman makes AI agents speak simply for developers who want less chatter.",
+   "receipt": "**Caveman make your AI agent say less and read less.** ... **Works in Claude Code, Codex, Gemini CLI, Cursor, Windsurf, Cline, Copilot, and 30+ more.**",
+   "errs": [
+    "has 12 words, must have 14-22"
+   ]
+  },
+  {
+   "slot": "what",
+   "try": 1,
+   "say": "Caveman is a tool for AI agents to stop chatting so much. It keeps code exact.",
+   "receipt": "Caveman: why many token when few do trick ... Meaning never dropped",
+   "errs": []
+  },
+  {
+   "slot": "how",
+   "try": 0,
+   "say": "The proxy turns verbose agent logs into tiny summaries while keeping every number and code path exact.",
+   "receipt": "Caveman-style output... The file, through caveman | ... Payload verbatim | Code, commands, paths, and error messages untouched, character for character",
+   "errs": []
+  },
+  {
+   "slot": "how",
+   "try": 0,
+   "say": "It uses a proxy voice that cuts input tokens by 33.2% while keeping every answer correct out of 18.",
+   "receipt": "### The proxy: 33.2% fewer input tokens | Whole Claude Code session, 3 runs | Session saved | ... **18 of 18 answers right**",
+   "errs": [
+    "receipt not found word for word in the sources: \"the proxy: 33.2% fewer input tokens whole claude code session, 3 runs session sa\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "how",
+   "try": 1,
+   "say": "A proxy voice cuts input tokens by 33.2% while keeping every answer right.",
+   "receipt": "### The proxy: 33.2% fewer input tokens | Whole Claude Code session, 3 runs | Session saved",
+   "errs": [
+    "has 13 words, must have 16-26",
+    "receipt not found word for word in the sources: \"the proxy: 33.2% fewer input tokens whole claude code session, 3 runs session sa\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "how",
+   "try": 2,
+   "say": "The proxy voice cuts input tokens by 33.2%. Whole Claude Code session, 3 runs.",
+   "receipt": "Whole Claude Code session, 3 runs",
+   "errs": [
+    "has 14 words, must have 16-26",
+    "numbers not in your receipt: 33.2 - every number needs its own source sentence in the receipt"
+   ]
+  },
+  {
+   "slot": "how",
+   "try": 0,
+   "say": "It uses a proxy to rewrite agent speech into simple sentences that keep every fact, code, and number exactly the same.",
+   "receipt": "Caveman is a voice, not broken grammar. | Rule | What it means | ... **Meaning never dropped** | Articles can go. *not*, *never*, *no*, *only* never go. Numbers and units stay exact",
+   "errs": []
+  },
+  {
+   "slot": "how2",
+   "try": 0,
+   "say": "Here is a CSV file compressed from twenty-eight thousand tokens down to three hundred and fourteen tokens.",
+   "receipt": "CSV | 28,041 → **314**",
+   "errs": [
+    "write every number in digits exactly as in the facts, never in words",
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "how2",
+   "try": 1,
+   "say": "Run `/caveman` on a CSV file to turn twenty-eight thousand tokens into three hundred fourteen.",
+   "receipt": "| CSV | 28,041 → **314** | **98.9%** | 165,823 → 74,484 | **55.1%** |",
+   "errs": [
+    "has 15 words, must have 16-26",
+    "spoken words only: no code or bold marks, no 15k-style shortcuts (say the full number from the facts)",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "how2",
+   "try": 2,
+   "say": "Run `/caveman` on a CSV file to turn twenty-eight thousand tokens into three hundred fourteen.",
+   "receipt": "CSV | 28,041 → **314**|**98.9%**",
+   "errs": [
+    "has 15 words, must have 16-26",
+    "spoken words only: no code or bold marks, no 15k-style shortcuts (say the full number from the facts)",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "how2",
+   "try": 0,
+   "say": "See a CSV file shrink from twenty-eight thousand tokens to just three hundred fourteen.",
+   "receipt": "CSV | 28,041 → **314**",
+   "errs": [
+    "has 14 words, must have 16-26",
+    "write every number in digits exactly as in the facts, never in words",
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "how2",
+   "try": 1,
+   "say": "See a CSV file shrink from twenty-eight thousand to three hundred fourteen tokens while keeping all data intact.",
+   "receipt": "| CSV | 28,041 → **314** | **98.9%**",
+   "errs": [
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "how2",
+   "try": 2,
+   "say": "See a CSV file shrink from 28,041 to 314 tokens while keeping all data intact.",
+   "receipt": "| CSV | 28,041 → **314**",
+   "errs": [
+    "has 15 words, must have 16-26",
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "how2",
+   "try": 0,
+   "say": "See how it turns a full file into 314 tokens while keeping CSV data exactly right.",
+   "receipt": "CSV | 28,041 → **314**",
+   "errs": [
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "how2",
+   "try": 1,
+   "say": "See a CSV turn into 314 tokens, preserving every number.",
+   "receipt": "CSV | 28,041 → **314**",
+   "errs": [
+    "has 10 words, must have 16-26",
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "how2",
+   "try": 2,
+   "say": "Watch a twenty-eight thousand token log shrink to three hundred forty-eight tokens.",
+   "receipt": "CSV | 28,041 → **314**",
+   "errs": [
+    "has 12 words, must have 16-26",
+    "write every number in digits exactly as in the facts, never in words",
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "how2",
+   "dropped": true
+  },
+  {
+   "slot": "proof",
+   "try": 0,
+   "say": "Logs, CSV, YAML, JSON and test output come out 98.5% to 99.1% smaller.",
+   "receipt": "Logs, CSV, YAML, JSON, and test output come out 98.5% to 99.1% smaller.",
+   "errs": [
+    "has 13 words, must have 16-26"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 1,
+   "say": "Logs, CSV, YAML, JSON and test output come out 98.5% to 99.1% smaller.",
+   "receipt": "Logs, CSV, YAML, JSON, and test output come out 98.5% to 99.1% smaller.",
+   "errs": [
+    "has 13 words, must have 16-26"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 2,
+   "say": "Adobe Research found cost cuts of 1.4 to 2.4 times per model using caveman style output across five datasets.",
+   "receipt": "| **Adobe Research**, CAVEWOMAN paper (cites this repo) | Caveman-style output, eight models, five datasets | **Cost cut 1.4 to 2.4× per mode",
+   "errs": [
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 0,
+   "say": "Caveman gets 18 out of 18 answers right while using 33.2% fewer input tokens for a whole session.",
+   "receipt": "Whole sessions use 33.2% fewer input tokens, same answers.",
+   "errs": [
+    "numbers not in your receipt: 18, 18 - every number needs its own source sentence in the receipt"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 1,
+   "say": "Whole Claude Code sessions use 33.2% fewer input tokens with the same answers.",
+   "receipt": "Whole Claude Code session, 3 runs | Session saved",
+   "errs": [
+    "has 13 words, must have 16-26",
+    "numbers not in your receipt: 33.2 - every number needs its own source sentence in the receipt"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 2,
+   "say": "Whole sessions use 33.2% fewer input tokens, same answers.",
+   "receipt": "F8: The session run is from August 2026, on an engine that only got the JSON file down to 8,106 tokens.",
+   "errs": [
+    "has 9 words, must have 16-26",
+    "numbers not in your receipt: 33.2 - every number needs its own source sentence in the receipt"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 0,
+   "say": "Whole Claude sessions use 33.2% fewer input tokens with all answers right.",
+   "receipt": "Whole sessions use 33.2% fewer input tokens, same answers.",
+   "errs": [
+    "has 12 words, must have 16-26"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 1,
+   "say": "Whole Claude sessions use 33.2% fewer input tokens while keeping all answers right.",
+   "receipt": "Whole Claude Code session, 3 runs | Session saved | Whole sessions use 33.2% fewer input tokens, same answers.",
+   "errs": [
+    "has 13 words, must have 16-26",
+    "receipt not found word for word in the sources: \"whole claude code session, 3 runs session saved whole sessions use 33.2% fewer i\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 2,
+   "say": "Whole Claude Code sessions use 33.2% fewer input tokens while keeping all answers right.",
+   "receipt": "Whole sessions use 33.2% fewer input tokens, same answers.",
+   "errs": [
+    "has 14 words, must have 16-26"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 0,
+   "say": "Adobe Research cuts costs by two times on eight models without losing quality.",
+   "receipt": "Adobe Research, CAVEWOMAN paper (cites this repo) ... Cost cut 1.4 to 2.",
+   "errs": [
+    "has 13 words, must have 14-24",
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words",
+    "receipt not found word for word in the sources: \"adobe research, cavewoman paper (cites this repo)\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 1,
+   "say": "Adobe Research cuts costs 1.4 to 2.4 times on eight models.",
+   "receipt": "| **Adobe Research**, CAVEWOMAN paper (cites this repo) | Caveman-style output, eight models, five datasets | **Cost cut 1.4 to 2.4× per mode",
+   "errs": [
+    "has 11 words, must have 14-24",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 2,
+   "say": "Adobe Research cuts costs 1.4 to 2.4 times per mode.",
+   "receipt": "**Cost cut 1.4 to 2.4× per mode",
+   "errs": [
+    "has 10 words, must have 14-24"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 0,
+   "say": "Logs shrink to 98.5% smaller size while eight models cut costs by 1.4 times.",
+   "receipt": "CSV | Logs | YAML | Test output | JSON ... **98.5%** ... Cost cut 1.4 to 2.",
+   "errs": [
+    "write every number in digits exactly as in the facts, never in words",
+    "receipt not found word for word in the sources: \"csv logs yaml test output json\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 1,
+   "say": "Caveman browse reads a 200-row table using only 129.8 times fewer tokens than Playwright snapshots.",
+   "receipt": "caveman browse, 200-row table | **121 tokens instead of 15,704** for a Playwright snapshot... 129.8",
+   "errs": [
+    "receipt not found word for word in the sources: \"caveman browse, 200-row table 121 tokens instead of 15,704 for a playwright snap\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 2,
+   "say": "Caveman browse reads a 200-row table using only 129.8 times fewer tokens than Playwright snapshots.",
+   "receipt": "A web page the agent reads (`caveman browse`, 200-row table) | **121 tokens instead of 15,704** for a Playwright snapshot, 129.8",
+   "errs": []
+  },
+  {
+   "slot": "proof2",
+   "try": 0,
+   "say": "Caveman slashes output tokens by 8.5% while keeping every answer correct.",
+   "receipt": "8.5% fewer output tokens Two findings shaped caveman.",
+   "errs": [
+    "has 11 words, must have 14-24"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 1,
+   "say": "JetBrains testing found eight point five percent fewer output tokens with no quality loss.",
+   "receipt": "| JetBrains | 86 real coding tasks, paired A/B | **No measurable quality loss** (p = 0.82). 8.5% fewer output tokens",
+   "errs": [
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 2,
+   "say": "JetBrains testing found 8.5% fewer output tokens with no quality loss.",
+   "receipt": "8.5% fewer output tokens",
+   "errs": [
+    "has 11 words, must have 14-24",
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "detail",
+   "try": 0,
+   "say": "It shrinks logs and CSVs to 98.5% smaller sizes while keeping every fact intact.",
+   "receipt": "Logs, CSV, YAML, JSON, and test output come out 98.5% to 99.1% smaller.",
+   "errs": []
+  },
+  {
+   "slot": "detail",
+   "try": 0,
+   "say": "Caveman compresses memory files like CLAUDE.md to be 46 percent smaller while keeping all headings and code blocks intact.",
+   "receipt": "Memory files like `CLAUDE.md` (`/caveman-compress`) | **46% smaller** across five fixtures, with every heading, code block, and path intact",
+   "errs": []
+  },
+  {
+   "slot": "detail",
+   "try": 0,
+   "say": "Caveman turns messy logs into files that are 98.5 percent smaller.",
+   "receipt": "Logs, CSV, YAML, JSON, and test output come out 98.5% to 99.1% smaller.",
+   "errs": [
+    "has 11 words, must have 14-24"
+   ]
+  },
+  {
+   "slot": "detail",
+   "try": 1,
+   "say": "Caveman compresses CSVs from twenty-eight thousand tokens down to just three hundred fourteen.",
+   "receipt": "CSV | 28,041 → **314**",
+   "errs": [
+    "has 13 words, must have 14-24",
+    "write every number in digits exactly as in the facts, never in words",
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "detail",
+   "try": 2,
+   "say": "Caveman turns large CSVs into three hundred fourteen tokens while keeping all data intact.",
+   "receipt": "CSV | 28,041 → **314**",
+   "errs": [
+    "write every number in digits exactly as in the facts, never in words",
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "detail2",
+   "try": 0,
+   "say": "Install with npx and it works on thirty plus models like Claude or Gemini.",
+   "receipt": "Works in Claude Code, Codex, Gemini CLI, Cursor, Windsurf, Cline, Copilot, and 30+ more.npx skills add JuliusBrussee/caveman -g",
+   "errs": [
+    "write every number in digits exactly as in the facts, never in words",
+    "receipt not found word for word in the sources: \"works in claude code, codex, gemini cli, cursor, windsurf, cline, copilot, and 3\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "detail2",
+   "try": 1,
+   "say": "Install with npx skills add JuliusBrussee/caveman -g and it works in Cursor Windsurf Cline Copilot and thirty more.",
+   "receipt": "Works in Claude Code, Codex, Gemini CLI, Cursor, Windsurf, Cline, Copilot, and 30+ more.",
+   "errs": [
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "detail2",
+   "try": 2,
+   "say": "Install with npx skills add JuliusBrussee/caveman -g to work in Cursor Windsurf Cline Copilot and thirty more.",
+   "receipt": "Works in Claude Code, Codex, Gemini CLI, Cursor, Windsurf, Cline, Copilot, and 30+ more.\nnpx skills add JuliusBrussee/caveman -g",
+   "errs": [
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "detail2",
+   "try": 0,
+   "say": "It works with Go, Claude, and Gemini without losing any answers.",
+   "receipt": "F0: ... Viral skill + proxy for coding agents... F1: 110,358 GitHub stars, main language Go... README (for meaning, not for numbers): ### Install Works in Claude Code, Codex, Gemini CLI...",
+   "errs": [
+    "has 11 words, must have 12-22",
+    "receipt not found word for word in the sources: \"readme (for meaning, not for numbers): install works in claude code, codex, gemi\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "detail2",
+   "try": 1,
+   "say": "Caveman runs on Go and costs 2.4 times less per mode.",
+   "receipt": "Cost cut 1.4 to 2.4× per mode",
+   "errs": [
+    "has 11 words, must have 12-22"
+   ]
+  },
+  {
+   "slot": "detail2",
+   "try": 2,
+   "say": "Caveman works in Go and cuts cost up to 2.4 times per model.",
+   "receipt": "| **Adobe Research**, CAVEWOMAN paper (cites this repo) | Caveman-style output, eight models, five datasets | **Cost cut 1.4 to 2.4× per mode",
+   "errs": []
+  },
+  {
+   "slot": "detail2",
+   "try": 0,
+   "say": "Install it with one command and save 8.5% fewer output tokens on real coding tasks.",
+   "receipt": "| Who | Setup | Result | |---|---|---| | **Adobe Research**, CAVEWOMAN paper (cites this repo) | Caveman-style output, eight models, five datasets | **Cost cut 1.4 to 2.4× per mode",
+   "errs": [
+    "numbers not in your receipt: 8.5 - every number needs its own source sentence in the receipt"
+   ]
+  },
+  {
+   "slot": "detail2",
+   "try": 1,
+   "say": "Install with npx skills add JuliusBrussee/caveman -g to save 8.5% fewer output tokens on coding tasks.",
+   "receipt": "| Who | Setup | Result |\n| **Adobe Research**, CAVEWOMAN paper (cites this repo) | Caveman-style output, eight models, five datasets | **Cost cut 1.4 to 2.4× per mode",
+   "errs": [
+    "receipt not found word for word in the sources: \"who setup result adobe research , cavewoman paper (cites this repo) caveman-styl\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "detail2",
+   "try": 2,
+   "say": "Install with npx skills add JuliusBrussee/caveman -g to save 8.5% fewer output tokens on coding tasks.",
+   "receipt": "Elastic, Elasticsearch Labs | Caveman mode remade for Elasticsearch, eight live MCP scenarios | **63.6% fewer response token",
+   "errs": [
+    "receipt not found word for word in the sources: \"elastic, elasticsearch labs caveman mode remade for elasticsearch, eight live mc\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "trust",
+   "try": 0,
+   "say": "Julius Brussee built it with an Apache-2.0 license for privacy, and Adobe Research tested it.",
+   "receipt": "Apache-2.0, whole repo ... Adobe Research",
+   "errs": [
+    "number paired wrongly: Apache-2.0 - its receipt sentence says nothing about built, license, privacy"
+   ]
+  },
+  {
+   "slot": "trust",
+   "try": 1,
+   "say": "Julius Brussee released the repo with an Apache-2.0 license.",
+   "receipt": "Apache-2.0, whole repo.",
+   "errs": [
+    "has 9 words, must have 12-20",
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "trust",
+   "try": 2,
+   "say": "Julius Brussee released the repo with an Apache-2.0 license. Eleven zero thousand three hundred fifty eight GitHub stars.",
+   "receipt": "F1: 110,358 GitHub stars, main language Go",
+   "errs": [
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "trust",
+   "try": 0,
+   "say": "Apache-2.0 license. Adobe Research tested it.",
+   "receipt": "License Apache-2.0, **Adobe Research**, CAVEWOMAN paper (cites this repo)",
+   "errs": [
+    "has 6 words, must have 12-20",
+    "receipt not found word for word in the sources: \"license apache-2.0, adobe research , cavewoman paper (cites this repo)\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "trust",
+   "try": 1,
+   "say": "Apache-2.0 license. Adobe Research tested it via CAVEWOMAN paper.",
+   "receipt": "### License\nApache-2.0, whole repo.\n### (intro)\n### why many token when few do trick\n**Caveman make your AI agent say less and read less.\n| Skill | Same answer | Tokens |\n| `/caveman` | New object ref each render, so React re-renders. Wrap the prop in `useMemo`. | 20 |\n| `/ultracave` | Inline object prop, new ref, re-render. `useMemo`. | 14 |\n| `/megacave` | 新參照致重繪。`useMemo`。 | **13** |\n### How caveman talks\nCaveman is a voice, not broken grammar.\n| Rule | What it means |\n| **Answer first** | `[thing] [action] [reason]. [next step].` No greeting, no \"let me\", no recap, no \"hope this helps\" |\n| **One idea per sentence** | Built on ASD-STE100, the controlled English written for aircraft maintenance manuals: 20 words max, \n| **Meaning never dropped** | Articles can go. *not*, *never*, *no*, *only* never go. Numbers and units stay exact |\n| **Payload verbatim** | Code, commands, paths, and error messages untouched, character for character |\n| **Quiet tool runs** | No chatter between tool calls. One line per phase, one line with the result |\n...\n### Install\nWorks in Claude Code, Codex, Gemini CLI, Cursor, Windsurf, Cline, Copilot, and 30+ more.\n```\nnpx skills add JuliusBrussee/caveman -g\n```\n```\n# Claude Code plugin, auto-starts every session\nclaude plugin marketplace add JuliusBrussee/caveman && claude plugin install caveman@caveman\n\n# Gemini CLI\n...\n```\n### The numbers\nOutside labs first, then ours.\n| Who | Setup | Result |\n| **Adobe Research**, CAVEWOMAN paper (cites this repo) | Caveman-style output, eight models, five datasets | **Cost cut 1.4 to 2.4× per mode\n| **Elastic**, Elasticsearch Labs | Caveman mode remade for Elasticsearch, eight live MCP scenarios | **63.6% fewer response token\n| **JetBrains** | 86 real coding tasks, paired A/B | **No measurable quality loss** (p = 0.82). 8.5% fewer output tokens |\n### The proxy: 33.2% fewer input tokens\n**18 of 18 answers right.** *The file* is each benchmark file run through today's compressor on its own.\n| File type | The file, through caveman | File saved | Whole Claude Code session, 3 runs | Session saved |\n| CSV | 28,041 → **314** | **98.9%** | 165,823 → 74,484 | **55.1%** |\n| Logs | 22,810 → **348** | **98.5%** | 148,807 → 74,068 | **50.2%** |\n| YAML | 20,447 → **178** | **99.1%** | 132,124 → 71,027 | **46.2%** |\n| Test output | 18,806 → **203** | **98.9%** | 150,377 → 108,514 | **27.8%** |\n| JSON | 18,837 → **281** | **98.5%** | 147,975 → 108,939 | **26.4%** |\n|...",
+   "errs": [
+    "has 9 words, must have 12-20",
+    "receipt not found word for word in the sources: \"license apache-2.0, whole repo. (intro) why many token when few do trick caveman\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "trust",
+   "try": 2,
+   "say": "Julius Brussee made it under Apache-2.0 license. Adobe Research tested it in their CAVEWOMAN paper.",
+   "receipt": "Apache-2.0, whole repo ... Adobe Research, CAVEWOMAN paper (cites this repo)",
+   "errs": [
+    "receipt not found word for word in the sources: \"adobe research, cavewoman paper (cites this repo)\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "trust",
+   "try": 0,
+   "say": "Julius Brussee made it, tested by Adobe Research, with over one hundred thousand stars.",
+   "receipt": "F1: 110,358 GitHub stars, main language Go | F5: Who | Setup | Result | |---|---|---| | **Adobe Research**, CAVEWOMAN paper (cites this repo) ...",
+   "errs": [
+    "write every number in digits exactly as in the facts, never in words",
+    "receipt not found word for word in the sources: \"f1: 110,358 github stars, main language go f5: who setup result --- --- --- adob\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "trust",
+   "try": 1,
+   "say": "Apache licensed, made by Julius Brussee, with over 110,358 GitHub stars.",
+   "receipt": "F1: 110,358 GitHub stars, main language Go ... F5: Adobe Research, CAVEWOMAN paper (cites this repo)",
+   "errs": [
+    "has 11 words, must have 12-20",
+    "receipt not found word for word in the sources: \"f5: adobe research, cavewoman paper (cites this repo)\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "trust",
+   "try": 2,
+   "say": "Apache licensed by Julius Brussee with 110358 GitHub stars. Adobe Research tested it on eight models.",
+   "receipt": "License: Apache-2.0, whole repo.\nauthor = {Brussee, Julius}\nf5: | Who | Setup | Result | |---|---|---| | **Adobe Research**, CAVEWOMAN paper (cites this repo) | Caveman-style output, eight models, five datasets",
+   "errs": [
+    "write every number in digits exactly as in the facts, never in words",
+    "receipt not found word for word in the sources: \"license: apache-2.0, whole repo. author = {brussee, julius} f5: who setup result\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "start",
+   "try": 0,
+   "say": "Run this command to install it instantly on your machine.",
+   "receipt": "npx skills add JuliusBrussee/caveman -g",
+   "errs": [
+    "has 10 words, must have 12-20"
+   ]
+  },
+  {
+   "slot": "start",
+   "try": 1,
+   "say": "Run npx skills add JuliusBrussee/caveman -g to start.",
+   "receipt": "```npx skills add JuliusBrussee/caveman -g```",
+   "errs": [
+    "has 8 words, must have 12-20"
+   ]
+  },
+  {
+   "slot": "start",
+   "try": 2,
+   "say": "Run npx skills add JuliusBrussee/caveman -g to install the Go agent that cuts tokens.",
+   "receipt": "```npx skills add JuliusBrussee/caveman -g```",
+   "errs": []
+  },
+  {
+   "slot": "start",
+   "try": 0,
+   "say": "Type npx skills add JuliusBrussee/caveman -g to install the Go tool.",
+   "receipt": "Install Works in Claude Code, Codex, Gemini CLI, Cursor, Windsurf, Cline, Copilot, and 30+ more.\nnpx skills add JuliusBrussee/caveman -g",
+   "errs": [
+    "has 11 words, must have 12-20",
+    "not in the sources: Type npx skills add JuliusBrussee/caveman -g to install the Go tool."
+   ]
+  },
+  {
+   "slot": "start",
+   "try": 1,
+   "say": "Run npx skills add JuliusBrussee/caveman -g on your machine.",
+   "receipt": "npx skills add JuliusBrussee/caveman -g",
+   "errs": [
+    "has 9 words, must have 12-20"
+   ]
+  },
+  {
+   "slot": "start",
+   "try": 2,
+   "say": "Install with npx skills add JuliusBrussee/caveman -g to get the skill.",
+   "receipt": "Works in Claude Code, Codex, Gemini CLI, Cursor, Windsurf, Cline, Copilot, and 30+ more.\nnpx skills add JuliusBrussee/caveman -g",
+   "errs": [
+    "has 11 words, must have 12-20"
+   ]
+  },
+  {
+   "slot": "start",
+   "try": 0,
+   "say": "Run npx skills add JuliusBrussee/caveman minus g to install.",
+   "receipt": "npx skills add JuliusBrussee/caveman -g",
+   "errs": [
+    "has 9 words, must have 12-20",
+    "not in the sources: minus g"
+   ]
+  },
+  {
+   "slot": "start",
+   "try": 1,
+   "say": "Run npx skills add JuliusBrussee/caveman -g to install.",
+   "receipt": "npx skills add JuliusBrussee/caveman -g",
+   "errs": [
+    "has 8 words, must have 12-20"
+   ]
+  },
+  {
+   "slot": "start",
+   "try": 2,
+   "say": "Install with npx skills add JuliusBrussee/caveman -g to get the tool.",
+   "receipt": "npx skills add JuliusBrussee/caveman -g",
+   "errs": [
+    "has 11 words, must have 12-20"
+   ]
+  },
+  {
+   "slot": "share",
+   "try": 0,
+   "say": "Save this for someone who wants an Apache-2.0 agent that keeps every fact intact.",
+   "receipt": "Apache-2.0 ... every fact",
+   "errs": [
+    "repeats a number already said: 2.0",
+    "repeats words an earlier line already said: \"an apache 2 0\" - say something new",
+    "no numbers in this line: it carries no receipt"
+   ]
+  },
+  {
+   "slot": "share",
+   "try": 1,
+   "say": "Send this to someone who needs fewer tokens for their whole session.",
+   "receipt": "Whole sessions use 33.2% fewer input tokens, same answers.",
+   "errs": []
+  },
+  {
+   "slot": "share",
+   "try": 0,
+   "say": "Save this for a dev who needs fewer tokens.",
+   "receipt": "Caveman shrinks a 15,704 token web page down to just 121 tokens.",
+   "errs": [
+    "has 9 words, must have 10-16"
+   ]
+  },
+  {
+   "slot": "share",
+   "try": 1,
+   "say": "Send this to someone coding in Go with more token headroom.",
+   "receipt": "F0: JuliusBrussee/caveman: 🪨 why use many token when few token do trick. Viral skill + proxy for coding agents that cuts 65% of tokens by talking like a caveman.\nF1: 110,358 GitHub stars, main language Go",
+   "errs": []
+  },
+  {
+   "slot": "share",
+   "try": 0,
+   "say": "Save this for a teammate who needs to cut their token bill.",
+   "receipt": "Caveman... cuts 65% of tokens",
+   "errs": []
+  },
+  {
+   "slot": "end",
+   "try": 0,
+   "say": "Caveman is the voice.",
+   "receipt": "### How caveman talks\nCaveman is a voice, not broken grammar.",
+   "errs": [
+    "has 4 words, must have 6-12"
+   ]
+  },
+  {
+   "slot": "end",
+   "try": 1,
+   "say": "Caveman uses a proxy to talk simple.",
+   "receipt": "F0: JuliusBrussee/caveman: 🪨 why use many token when few token do trick. Viral skill + proxy for coding agents that cuts 65% of tokens by talking like a caveman.",
+   "errs": [
+    "repeats words an earlier line already said: \"uses a proxy to\" - say something new"
+   ]
+  },
+  {
+   "slot": "end",
+   "try": 2,
+   "say": "Julius Brussee built Caveman.",
+   "receipt": "title  = {Caveman: why many token when few do trick}, author = {Brussee, Julius}",
+   "errs": [
+    "has 4 words, must have 6-12"
+   ]
+  },
+  {
+   "slot": "end",
+   "try": 0,
+   "say": "Caveman keeps every fact in the code exactly right.",
+   "receipt": "Payload verbatim Code commands paths and error messages untouched character for character",
+   "errs": []
+  },
+  {
+   "slot": "end",
+   "try": 0,
+   "say": "Caveman is a voice that talks like a caveman.",
+   "receipt": "## Big rock: the proxy **The skill shrinks what the agent **says**.",
+   "errs": [
+    "repeats words an earlier line already said: \"caveman is a voice\" - say something new"
+   ]
+  },
+  {
+   "slot": "end",
+   "try": 1,
+   "say": "Talk less, code more. That's Caveman.",
+   "receipt": "Caveman ... why use many token when few token do trick",
+   "errs": []
+  }
+ ]
+}

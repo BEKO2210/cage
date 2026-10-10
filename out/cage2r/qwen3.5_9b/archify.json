@@ -1,0 +1,671 @@
+{
+ "lines": [
+  "tt-a1i/archify has 77,286 GitHub stars. This is for the main JavaScript repository.",
+  "You have code, but no clear way to understand its structure or plan changes quickly.",
+  "It turns any idea or codebase into an interactive diagram. It works with Claude Code, Codex, and more.",
+  "The agent makes a typed JSON plan, validates it against rules, and renders the diagram only when checks pass.",
+  "Describe a web request path, and watch it become a diagram showing the browser calling an API that checks Redis before querying PostgreSQL.",
+  "The Proof Lab shows 11 checked-in scenarios with their JSON sources and validation receipts.",
+  "You can explore a real repository to see its system map generated from source code.",
+  "The output is a standalone HTML file you can open, explore, and share with anyone.",
+  "It is MIT licensed open source, used by developers in the Archify community.",
+  "Run npx skills add tt-a1i/archify -g to install, then describe your idea.",
+  "Send this to someone who needs to see their code clearly.",
+  "See your code clearly with Archify."
+ ],
+ "words": 173,
+ "log": [
+  {
+   "slot": "hook",
+   "try": 0,
+   "say": "Archify has seventy-seven thousand two hundred eighty-six GitHub stars. It turns your code into a beautiful interactive diagram.",
+   "receipt": "77,286 GitHub stars",
+   "errs": [
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words",
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "hook",
+   "try": 1,
+   "say": "tt-a1i/archify has seventy-seven thousand two hundred eighty-six GitHub stars.",
+   "receipt": "F1: 77,286 GitHub stars",
+   "errs": [
+    "has 9 words, must have 12-20",
+    "write every number in digits exactly as in the facts, never in words",
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "hook",
+   "try": 2,
+   "say": "tt-a1i/archify has seventy-seven thousand two hundred eighty-six GitHub stars.",
+   "receipt": "77,286 GitHub stars",
+   "errs": [
+    "has 9 words, must have 12-20",
+    "write every number in digits exactly as in the facts, never in words",
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "hook",
+   "try": 0,
+   "say": "tt-a1i/archify has seventy-seven thousand stars.",
+   "receipt": "F1: 77,286 GitHub stars",
+   "errs": [
+    "has 5 words, must have 12-20",
+    "write every number in digits exactly as in the facts, never in words",
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "hook",
+   "try": 1,
+   "say": "tt-a1i/archify has seventy-seven thousand stars.",
+   "receipt": "F1: 77,286 GitHub stars",
+   "errs": [
+    "has 5 words, must have 12-20",
+    "write every number in digits exactly as in the facts, never in words",
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "hook",
+   "try": 2,
+   "say": "tt-a1i/archify has seventy-seven thousand stars.",
+   "receipt": "77,286 GitHub stars",
+   "errs": [
+    "has 5 words, must have 12-20",
+    "write every number in digits exactly as in the facts, never in words",
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "hook",
+   "try": 0,
+   "say": "tt-a1i/archify has seventy-seven thousand two hundred eighty-six GitHub stars. That is its current fame.",
+   "receipt": "F1: 77,286 GitHub stars",
+   "errs": [
+    "write every number in digits exactly as in the facts, never in words",
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "hook",
+   "try": 1,
+   "say": "tt-a1i/archify has seventy-seven thousand two hundred eighty-six GitHub stars.",
+   "receipt": "77,286 GitHub stars",
+   "errs": [
+    "has 9 words, must have 12-20",
+    "write every number in digits exactly as in the facts, never in words",
+    "receipt missing: copy the supporting sentence from README or FACTS"
+   ]
+  },
+  {
+   "slot": "hook",
+   "try": 2,
+   "say": "tt-a1i/archify has 77,286 GitHub stars. This is for the main JavaScript repository.",
+   "receipt": "F1: 77,286 GitHub stars, main language JavaScript",
+   "errs": []
+  },
+  {
+   "slot": "problem",
+   "try": 0,
+   "say": "It turns any plan into an interactive diagram you can explore.",
+   "receipt": "Turn any idea, plan, or codebase into a beautiful interactive diagram.",
+   "errs": [
+    "has 11 words, must have 14-24"
+   ]
+  },
+  {
+   "slot": "problem",
+   "try": 1,
+   "say": "Turn any idea or codebase into a beautiful interactive diagram.",
+   "receipt": "tt-a1i/archify: Turn any idea, plan, or codebase into a beautiful interactive diagram.",
+   "errs": [
+    "has 10 words, must have 14-24"
+   ]
+  },
+  {
+   "slot": "problem",
+   "try": 2,
+   "say": "You struggle to understand complex systems like this web request flow.",
+   "receipt": "Turn anything you want to understand, plan, or share into an interactive visual.",
+   "errs": [
+    "has 11 words, must have 14-24"
+   ]
+  },
+  {
+   "slot": "problem",
+   "try": 0,
+   "say": "You need to turn any idea, plan, or codebase into a beautiful interactive diagram.",
+   "receipt": "Turn any idea, plan, or codebase into a beautiful interactive diagram.",
+   "errs": []
+  },
+  {
+   "slot": "problem",
+   "try": 0,
+   "say": "You have code, but no clear way to understand its structure or plan changes quickly.",
+   "receipt": "Turn any idea, plan, or codebase into a beautiful interactive diagram.",
+   "errs": []
+  },
+  {
+   "slot": "what",
+   "try": 0,
+   "say": "It turns any idea or codebase into an interactive diagram. It works with Claude Code, Codex, and more.",
+   "receipt": "tt-a1i/archify: Turn any idea, plan, or codebase into a beautiful interactive diagram. An agent skill for Claude Code, Codex, and more.",
+   "errs": []
+  },
+  {
+   "slot": "what",
+   "try": 0,
+   "say": "Archify turns any idea into an interactive diagram for Claude Code, Codex, and more.",
+   "receipt": "tt-a1i/archify: Turn any idea, plan, or codebase into a beautiful interactive diagram. An agent skill for Claude Code, Codex, and more.",
+   "errs": []
+  },
+  {
+   "slot": "what",
+   "try": 0,
+   "say": "Archify turns any idea or codebase into a beautiful interactive diagram for agents like Claude Code.",
+   "receipt": "tt-a1i/archify: Turn any idea, plan, or codebase into a beautiful interactive diagram. An agent skill for Claude Code, Codex, and more.",
+   "errs": []
+  },
+  {
+   "slot": "how",
+   "try": 0,
+   "say": "The agent generates a typed diagram from your description, then validators check the source before delivering the final interactive HTML.",
+   "receipt": "Generate, Validate, Preview (optional), Deliver",
+   "errs": [
+    "receipt not found word for word in the sources: \"generate, validate, preview (optional), deliver\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "how",
+   "try": 1,
+   "say": "The agent creates typed JSON IR from your description, then validators check the source.",
+   "receipt": "Generate | The agent creates typed JSON IR from your description.\nValidate | Bundled validators ... check the source",
+   "errs": [
+    "has 14 words, must have 16-26"
+   ]
+  },
+  {
+   "slot": "how",
+   "try": 2,
+   "say": "Generate a diagram from text, then validate it against layout rules before you share the result.",
+   "receipt": "Generate | The agent creates typed JSON IR from your description. ... Validate | Bundled validators and layout rules check the source; failures identify the exact local repair in machine-readable format.",
+   "errs": [
+    "receipt not found word for word in the sources: \"validate bundled validators and layout rules check the source; failures identify\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "how",
+   "try": 0,
+   "say": "An agent draws a typed diagram, then validators check it before you see the final result.",
+   "receipt": "The agent creates typed JSON IR from your description. Bundled validators and layout rules check the source",
+   "errs": [
+    "receipt not found word for word in the sources: \"the agent creates typed json ir from your description. bundled validators and la\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "how",
+   "try": 1,
+   "say": "An agent creates a diagram, and validators check the source before the final result shows.",
+   "receipt": "The agent creates typed JSON IR from your description. Bundled validators and layout rules check the source; failures identify the exact local repair in machine-readable form.",
+   "errs": [
+    "has 15 words, must have 16-26",
+    "receipt not found word for word in the sources: \"the agent creates typed json ir from your description. bundled validators and la\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "how",
+   "try": 2,
+   "say": "An agent creates a diagram, then bundled validators check the source before the final result shows.",
+   "receipt": "The agent creates typed JSON IR from your description. Bundled validators and layout rules check the source; failures identify the exact local repair in machine-readable format.",
+   "errs": [
+    "receipt not found word for word in the sources: \"the agent creates typed json ir from your description. bundled validators and la\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "how",
+   "try": 0,
+   "say": "The agent makes a typed JSON plan, validates it against rules, and renders the diagram only when checks pass.",
+   "receipt": "Generate | The agent creates typed JSON IR from your description. Validate | Bundled validators and layout rules check the source",
+   "errs": []
+  },
+  {
+   "slot": "how2",
+   "try": 0,
+   "say": "Use Archify to draw: Browser calls the API, the API checks Redis, and a cache miss queries PostgreSQL and fills the cache.",
+   "receipt": "Use Archify to diagram a web request: Browser calls the API,\nthe API checks Redis, and a cache miss queries PostgreSQL and fills the cache.",
+   "errs": []
+  },
+  {
+   "slot": "how2",
+   "try": 0,
+   "say": "Use Archify to draw: Browser calls the API, the API checks Redis, and a cache miss queries PostgreSQL and fills the cache.",
+   "receipt": "Use Archify to diagram a web request: Browser calls the API,\nthe API checks Redis, and a cache miss queries PostgreSQL and fills the cache.",
+   "errs": []
+  },
+  {
+   "slot": "how2",
+   "try": 0,
+   "say": "Describe a web request path, and watch it become a diagram showing the browser calling an API that checks Redis before querying PostgreSQL.",
+   "receipt": "Use Archify to diagram a web request: Browser calls the API, the API checks Redis, and a cache miss queries PostgreSQL and fills the cache.",
+   "errs": []
+  },
+  {
+   "slot": "proof",
+   "try": 0,
+   "say": "Show 8–12 core components, one primary path, external dependencies, and trust boundaries.",
+   "receipt": "Show 8–12 core components, one primary path, external dependencies, and trust boundaries.",
+   "errs": [
+    "has 12 words, must have 16-26"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 1,
+   "say": "The Proof Lab contains all 11 checked-in scenarios, their JSON sources, and validation receipts.",
+   "receipt": "The Proof Lab contains all 11 checked-in scenarios, their JSON sources, and validation receipts.",
+   "errs": [
+    "has 14 words, must have 16-26"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 2,
+   "say": "The Proof Lab shows 11 checked-in scenarios with their JSON sources and validation receipts.",
+   "receipt": "The Proof Lab contains all 11 checked-in scenarios, their JSON sources, and validation receipts.",
+   "errs": [
+    "has 14 words, must have 16-26"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 0,
+   "say": "The Proof Lab contains all 11 checked-in scenarios, their JSON sources, and validation receipts.",
+   "receipt": "The Proof Lab contains all 11 checked-in scenarios, their JSON sources, and validation receipts.",
+   "errs": [
+    "has 14 words, must have 16-26"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 1,
+   "say": "The Proof Lab shows 11 checked-in scenarios with their JSON sources.",
+   "receipt": "The Proof Lab contains all 11 checked-in scenarios, their JSON sources, and validation receipts.",
+   "errs": [
+    "has 11 words, must have 16-26"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 2,
+   "say": "The Proof Lab contains all 11 checked-in scenarios, their JSON sources, and validation receipts.",
+   "receipt": "The Proof Lab contains all 11 checked-in scenarios, their JSON sources, and validation receipts.",
+   "errs": [
+    "has 14 words, must have 16-26"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 0,
+   "say": "The Proof Lab shows all 11 checked-in scenarios with their validation receipts.",
+   "receipt": "The Proof Lab contains all 11 checked-in scenarios, their JSON sources, and validation receipts.",
+   "errs": [
+    "has 12 words, must have 16-26"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 1,
+   "say": "The Proof Lab contains all 11 checked-in scenarios, their JSON sources, and validation receipts.",
+   "receipt": "The Proof Lab contains all 11 checked-in scenarios, their JSON sources, and validation receipts.",
+   "errs": [
+    "has 14 words, must have 16-26"
+   ]
+  },
+  {
+   "slot": "proof",
+   "try": 2,
+   "say": "Check the Proof Lab for all eleven scenarios, their JSON sources, and validation receipts.",
+   "receipt": "The Proof Lab contains all 11 checked-in scenarios, their JSON sources, and validation receipts.",
+   "errs": [
+    "has 14 words, must have 16-26",
+    "must contain a number from the facts",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 0,
+   "say": "The output is a standalone HTML file you can download, open, and explore on any device.",
+   "receipt": "The output is a self-contained HTML file.",
+   "errs": [
+    "must contain a number from the facts"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 1,
+   "say": "The Proof Lab contains all 11 checked-in scenarios with their validation receipts.",
+   "receipt": "The Proof Lab contains all 11 checked-in scenarios, their JSON sources, and validation receipts.",
+   "errs": [
+    "has 12 words, must have 14-24",
+    "repeats a number already said: 11",
+    "repeats words an earlier line already said: \"11 checked in scenarios\" - say something new"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 2,
+   "say": "Download the output file, open it, then explore the standalone HTML diagram without needing any server.",
+   "receipt": "The output is a self-contained HTML file.",
+   "errs": [
+    "must contain a number from the facts"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 0,
+   "say": "Export copies PNG to the clipboard and download.",
+   "receipt": "The Export menu copies PNG to the clipboard and download",
+   "errs": [
+    "has 8 words, must have 14-24",
+    "must contain a number from the facts"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 1,
+   "say": "OpenLux pricing is as low as 8.82 percent for Claude or four percent for OpenAI.",
+   "receipt": "OpenLux offers base pricing for Claude, OpenAI, and Gemini models as low as 8.82%, 4%, and 8% of official rates,",
+   "errs": [
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 2,
+   "say": "The Proof Lab contains all eleven checked-in scenarios with their JSON sources.",
+   "receipt": "The Proof Lab contains all 11 checked-in scenarios, their JSON sources, and validation receipts.",
+   "errs": [
+    "has 12 words, must have 14-24",
+    "must contain a number from the facts",
+    "repeats words an earlier line already said: \"checked in scenarios with\" - say something new",
+    "write every number in digits exactly as in the facts, never in words"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 0,
+   "say": "The output is a standalone HTML file you can download and open anywhere.",
+   "receipt": "The output is a self-contained HTML file.",
+   "errs": [
+    "has 13 words, must have 14-24",
+    "must contain a number from the facts"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 1,
+   "say": "The output is a self-contained HTML file you can download.",
+   "receipt": "The output is a self-contained HTML file.",
+   "errs": [
+    "has 10 words, must have 14-24",
+    "must contain a number from the facts"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "try": 2,
+   "say": "The Proof Lab contains all checked-in scenarios with their JSON sources and validation receipts.",
+   "receipt": "The Proof Lab contains all 11 checked-in scenarios, their JSON sources, and validation receipts.",
+   "errs": [
+    "must contain a number from the facts",
+    "repeats words an earlier line already said: \"checked in scenarios with\" - say something new"
+   ]
+  },
+  {
+   "slot": "proof2",
+   "dropped": true
+  },
+  {
+   "slot": "detail",
+   "try": 0,
+   "say": "You can explore a real repository to see its system map generated from source code.",
+   "receipt": "Understand a real repository CODE → DIAGRAM · A source-backed system map",
+   "errs": []
+  },
+  {
+   "slot": "detail",
+   "try": 0,
+   "say": "The output is a self-contained HTML file you can download and open.",
+   "receipt": "The output is a self-contained HTML file.",
+   "errs": [
+    "has 12 words, must have 14-24"
+   ]
+  },
+  {
+   "slot": "detail",
+   "try": 1,
+   "say": "The output is a standalone HTML file you can download and explore.",
+   "receipt": "The output is a self-contained HTML file.",
+   "errs": [
+    "has 12 words, must have 14-24"
+   ]
+  },
+  {
+   "slot": "detail",
+   "try": 2,
+   "say": "The result is a self-contained HTML file. You can download it to explore the diagram.",
+   "receipt": "The output is a self-contained HTML file.",
+   "errs": []
+  },
+  {
+   "slot": "detail",
+   "try": 0,
+   "say": "You can switch themes with a click or export a PNG directly to your clipboard.",
+   "receipt": "The Export menu copies PNG to the clipboard and download",
+   "errs": []
+  },
+  {
+   "slot": "detail2",
+   "try": 0,
+   "say": "The output is a standalone HTML file you can download, open, and explore instantly.",
+   "receipt": "The output is a self-contained HTML file.",
+   "errs": []
+  },
+  {
+   "slot": "detail2",
+   "try": 0,
+   "say": "The output is a standalone HTML file you can download and open anywhere.",
+   "receipt": "The output is a self-contained HTML file.",
+   "errs": []
+  },
+  {
+   "slot": "detail2",
+   "try": 0,
+   "say": "The output is a standalone HTML file you can open, explore, and share with anyone.",
+   "receipt": "Download it. Open it. Explore it.\nThe output is a self-contained HTML file.",
+   "errs": []
+  },
+  {
+   "slot": "trust",
+   "try": 0,
+   "say": "Archify is MIT licensed and used by sponsors like Kimi Work.",
+   "receipt": "MIT — free to use, modify, and distribute. Archify × Kimi Work.",
+   "errs": [
+    "has 11 words, must have 12-20",
+    "receipt not found word for word in the sources: \"mit — free to use, modify, and distribute. archify × kimi work.\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "trust",
+   "try": 1,
+   "say": "Archify is MIT licensed and sponsored by Kimi Work.",
+   "receipt": "MIT — free to use, modify, and distribute.\n### ❤️ Sponsors\n**Archify × Kimi Work.** Find Archify in the Kimi Work plugin store as **Interactive Architecture Diagram**.",
+   "errs": [
+    "has 9 words, must have 12-20",
+    "receipt not found word for word in the sources: \"mit — free to use, modify, and distribute. ❤️ sponsors archify × kimi work. find\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "trust",
+   "try": 2,
+   "say": "Archify is MIT licensed and sponsored by Kimi Work.",
+   "receipt": "MIT — free to use, modify, and distribute.\n\n❤️ Sponsors\n**Archify × Kimi Work.**",
+   "errs": [
+    "has 9 words, must have 12-20",
+    "receipt not found word for word in the sources: \"mit — free to use, modify, and distribute. ❤️ sponsors archify × kimi work.\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "trust",
+   "try": 0,
+   "say": "It is open source under MIT licence, and it ranks number one on GitHub Trending.",
+   "receipt": "MIT — free to use, modify, and distribute. ... #1 on GitHub Trending's weekly, all-language repository list.",
+   "errs": [
+    "no superlatives unless the facts say exactly that"
+   ]
+  },
+  {
+   "slot": "trust",
+   "try": 1,
+   "say": "Archify is open source under MIT license. It has 77,286 GitHub stars.",
+   "receipt": "MIT — free to use, modify, and distribute.\nF1: 77,286 GitHub stars, main language JavaScript",
+   "errs": [
+    "repeats a number already said: 77286",
+    "repeats words an earlier line already said: \"77 286 github stars\" - say something new",
+    "receipt not found word for word in the sources: \"mit — free to use, modify, and distribute. f1: 77,286 github stars, main languag\" - copy it exactly"
+   ]
+  },
+  {
+   "slot": "trust",
+   "try": 2,
+   "say": "Archify is open source under MIT licence, made by tt-a1i/archify.",
+   "receipt": "MIT — free to use, modify, and distribute.",
+   "errs": [
+    "has 10 words, must have 12-20"
+   ]
+  },
+  {
+   "slot": "trust",
+   "try": 0,
+   "say": "It is MIT licensed open source, used by developers in the Archify community.",
+   "receipt": "MIT — free to use, modify, and distribute.",
+   "errs": []
+  },
+  {
+   "slot": "start",
+   "try": 0,
+   "say": "Type npx skills add tt-a1i/archify -g to install it.",
+   "receipt": "npx skills add tt-a1i/archify -g",
+   "errs": [
+    "has 9 words, must have 12-20"
+   ]
+  },
+  {
+   "slot": "start",
+   "try": 1,
+   "say": "Run npx skills add tt-a1i/archify -g to get started.",
+   "receipt": "npx skills add tt-a1i/archify -g",
+   "errs": [
+    "has 9 words, must have 12-20"
+   ]
+  },
+  {
+   "slot": "start",
+   "try": 2,
+   "say": "Run npx skills add tt-a1i/archify -g in your terminal.",
+   "receipt": "npx skills add tt-a1i/archify -g",
+   "errs": [
+    "has 9 words, must have 12-20"
+   ]
+  },
+  {
+   "slot": "start",
+   "try": 0,
+   "say": "Run npx skills add tt-a1i/archify -g to install, then describe your idea.",
+   "receipt": "npx skills add tt-a1i/archify -g ... Describe your idea",
+   "errs": []
+  },
+  {
+   "slot": "start",
+   "try": 0,
+   "say": "Run this command to install it with npx skills add tt-a1i/archify -g.",
+   "receipt": "npx skills add tt-a1i/archify -g",
+   "errs": []
+  },
+  {
+   "slot": "share",
+   "try": 0,
+   "say": "Save this for when you need to understand complex systems fast.",
+   "receipt": "Turn any idea, plan, or codebase into a beautiful interactive diagram.",
+   "errs": []
+  },
+  {
+   "slot": "share",
+   "try": 0,
+   "say": "Share this to help someone understand a complex system in seconds.",
+   "receipt": "Turn any idea, plan, or codebase into a beautiful interactive diagram.",
+   "errs": [
+    "must start with 'Send this to someone who' or 'Save this for'"
+   ]
+  },
+  {
+   "slot": "share",
+   "try": 1,
+   "say": "Send this to someone who needs to see their code clearly.",
+   "receipt": "Turn any idea, plan, or codebase into a beautiful interactive diagram.",
+   "errs": []
+  },
+  {
+   "slot": "share",
+   "try": 0,
+   "say": "Save this for when you need to map a messy codebase quickly.",
+   "receipt": "Turn any idea, plan, or codebase into a beautiful interactive diagram.",
+   "errs": []
+  },
+  {
+   "slot": "end",
+   "try": 0,
+   "say": "Archify turns your code into a clear, interactive diagram.",
+   "receipt": "Turn any idea, plan, or codebase into a beautiful interactive diagram.",
+   "errs": []
+  },
+  {
+   "slot": "end",
+   "try": 0,
+   "say": "Generate a standalone HTML file you can open instantly.",
+   "receipt": "The output is a self-contained HTML file.",
+   "errs": [
+    "repeats words an earlier line already said: \"a standalone html file\" - say something new"
+   ]
+  },
+  {
+   "slot": "end",
+   "try": 1,
+   "say": "Archify is the tool.",
+   "receipt": "tt-a1i/archify: Turn any idea, plan, or codebase into a beautiful interactive diagram.",
+   "errs": [
+    "has 4 words, must have 6-12"
+   ]
+  },
+  {
+   "slot": "end",
+   "try": 2,
+   "say": "Use Archify to turn your code into a clear diagram.",
+   "receipt": "Turn any idea, plan, or codebase into a beautiful interactive diagram.",
+   "errs": []
+  },
+  {
+   "slot": "end",
+   "try": 0,
+   "say": "See your code clearly with Archify.",
+   "receipt": "tt-a1i/archify: Turn any idea, plan, or codebase into a beautiful interactive diagram.",
+   "errs": []
+  }
+ ]
+}

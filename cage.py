@@ -212,6 +212,47 @@ Answer as JSON: {{"unsupported": ["<claim> - <why>", ...]}} (an empty list if ev
     return [f"not in the sources: {b}" for b in bad if isinstance(b, str) and b.strip()]
 
 
+STOP = {"with", "from", "that", "this", "than", "just", "only", "into", "your", "they", "their", "about", "over", "under", "more",
+        "less", "each", "every", "what", "when", "which", "while", "also", "uses", "gets", "makes", "turns"}
+stem = lambda w: re.sub(r"(ing|ed|es|s)$", "", w.lower().strip(".,"))
+
+
+def pairing(say, receipt, facts, model):
+    """Cage v5, the second, independent bar: code first (every number of the line must stand in its receipt), then a
+    cold reader asks only one question per number: does it measure the same thing here as in the receipt?"""
+    nums = numbers_in(say)
+    missing = [n for n in nums if n not in numbers_in(receipt)]
+    if missing:
+        return [f"numbers not in your receipt: {', '.join(missing)} - every number needs its own source sentence in the receipt"]
+    if not nums:
+        return []
+    pieces = [flat(x) for x in re.split(r"\s*(?:\.\.\.|…)\s*|(?<=[.!?])\s+", receipt) if x.strip()]
+    words = re.findall(r"[\w.,%×-]+", say)
+    for i, w in enumerate(words):                                          # code, not a model: the words next to a number in the
+        n = numbers_in(w)                                                  # line must stand in a receipt sentence with that number
+        if not n:
+            continue
+        near = {stem(x) for x in words[max(0, i - 4):i + 5] if not numbers_in(x) and len(x) > 3 and x.lower() not in STOP}
+        homes = [q for q in pieces if n[0] in numbers_in(q)]
+        if near and not any(near & {stem(x) for x in re.findall(r"[\w-]+", q)} for q in homes):
+            return [f"number paired wrongly: {w} - its receipt sentence says nothing about {', '.join(sorted(near))}"]
+    if model is None:                                                      # cage v6: code only (the model part rejected true lines)
+        return []
+    p = f"""RECEIPT: {receipt}
+LINE: {say}
+For each number in the LINE ({', '.join(nums)}): what does it measure in the LINE (thing, unit, condition, compared with
+what), and what does the same number measure in the RECEIPT? A number is wrong if any of these differ, or if it is
+joined with another number or name the receipt does not join it with.
+Answer as JSON: {{"wrong": ["<number> - <line says> vs <receipt says>", ...]}} (an empty list if every number matches)"""
+    try:
+        bad = json.loads(llm(p, model, temperature=0, fmt="json"))["wrong"]
+    except (json.JSONDecodeError, KeyError, TypeError):
+        return ["number check gave no answer"]                            # fail closed
+    if not isinstance(bad, list):
+        return ["number check gave no answer"]
+    return [f"number paired wrongly: {b}" for b in bad if isinstance(b, str) and b.strip()]
+
+
 def pick(cands, slot, facts, story, model):
     if len(cands) == 1:
         return cands[0]
@@ -226,7 +267,7 @@ Answer as JSON: {{"best": <index>}}"""
         return cands[0]
 
 
-def cage(F, model, tries=3, keep=3, with_voice=False, v4=False):
+def cage(F, model, tries=3, keep=3, with_voice=False, v4=False, v5=False, checker=None):
     digest, facts = (F / "repo/digest.md").read_text(), json.loads((F / "repo/facts.json").read_text())
     sheet, rd = fact_sheet(digest, facts), readme(digest)
     ok_nums = allowed_numbers("\n".join(sheet) + rd, facts)
@@ -246,7 +287,11 @@ def cage(F, model, tries=3, keep=3, with_voice=False, v4=False):
                     errs += check_receipt(receipt, source)
                 length_only = bool(say) and all(e.startswith("has ") for e in errs)
                 if length_only and slot[0] not in no_receipt:
-                    errs += verify(say, receipt, facts, model)
+                    errs += verify(say, receipt, facts, checker or model)    # v6: a checker from another model family
+                    if v5 and all(e.startswith("has ") for e in errs):
+                        errs += pairing(say, receipt, facts, None if checker else model)
+                if v5 and slot[0] in no_receipt and numbers_in(say):
+                    errs.append("no numbers in this line: it carries no receipt")
                     length_only = all(e.startswith("has ") for e in errs)
                 log.append({"slot": slot[0], "try": t, "say": say, "receipt": receipt, "errs": errs})
                 if not errs:
@@ -349,7 +394,8 @@ def gold(F):
 if __name__ == "__main__":
     F, arm = Path(sys.argv[1]).resolve(), sys.argv[2]
     model = sys.argv[sys.argv.index("--model") + 1] if "--model" in sys.argv else "qwen3:8b"
-    lines, log = gold(F) if arm == "gold" else free(F, model) if arm == "free" else cage(F, model, with_voice=arm == "cage3", v4=arm == "cage4")
+    lines, log = gold(F) if arm == "gold" else free(F, model) if arm == "free" else cage(F, model, with_voice=arm == "cage3", v4=arm == "cage4", v5=arm in ("cage5", "cage6"),
+                                                                                                        checker="gemma4:12b-it-qat" if arm == "cage6" else None)
     if arm.startswith("cage") and len(lines) < 10:                       # was == "cage": let cage2 claude-mem in with 9 lines
         sys.exit(f"cage {F.name}: only {len(lines)} lines passed - not saved as a result")
     out = HERE / "out" / arm / (model.replace(":", "_").replace("/", "_") if arm != "gold" else "gold") / f"{F.name}.json"
